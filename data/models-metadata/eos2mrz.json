@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos2mrz",
+    "Slug": "deepsmiles",
+    "Status": "Ready",
+    "Title": "DeepSMILES, an alternate SMILES representation for deep learning",
+    "Description": "DeepSMILES converts a SMILES string to a more accurate syntax for molecule representation, taking into account both the branches (closed parenthesis in the SMILES strings) and rings (using a single symbol at ring closure that also indicates ring size). This syntax is particularly suitable in generative models, when the output is a SMILES string. With DeepSMILES, scientists can train a network using this new syntax, generate new molecules represented as DeepSMILES and then decode them back to normal SMILES strings.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "String representing a DeepSMILES",
+    "Tag": [
+        "Chemical language model",
+        "Chemical notation"
+    ],
+    "Publication": "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/60c73ed6567dfe7e5fec388d/original/deep-smiles-an-adaptation-of-smiles-for-use-in-machine-learning-of-chemical-structures.pdf",
+    "Source Code": "https://github.com/baoilleach/deepsmiles",
+    "License": "MIT",
+    "Contributor": "brosular",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2mrz.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2mrz",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

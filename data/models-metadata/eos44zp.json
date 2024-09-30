@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos44zp",
+    "Slug": "ncats-cyp450",
+    "Status": "Ready",
+    "Title": "CYP450 metabolism",
+    "Description": "Analysis of metabolic stability, determining the inhibition of CYP450 activity and whether the compounds are a substrate for the CYP450 enzymes. The data to build these models is publicly available at PubChem, AID1645840, AID1645841, AID1645842. The tested cyps include CYP2C9, CYP2D6 and CYP3A4.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Probability of inhibiting the enzyme and probability of being a ubstrate of the enzyme. Activity in both indicates the compound is a ligand of the enzyme.",
+    "Tag": [
+        "CYP450",
+        "ADME",
+        "Metabolism"
+    ],
+    "Publication": "https://dmd.aspetjournals.org/content/49/9/822",
+    "Source Code": "https://github.com/ncats/ncats-adme",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos44zp.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos44zp",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

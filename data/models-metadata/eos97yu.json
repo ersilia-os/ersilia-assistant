@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos97yu",
+    "Slug": "pampa-permeability",
+    "Status": "Ready",
+    "Title": "PAMPA effective permeability",
+    "Description": "The authors provide a dataset of 200 small molecules and their experimentally measured permeability in a PAMPA assay. Using this data, we have trained a model that predicts the logarithm of the effective permeability coefficient.\n",
+    "Mode": "In-house",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Experimental value"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "logPe",
+    "Tag": [
+        "Permeability",
+        "ADME",
+        "LogP"
+    ],
+    "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6651837/",
+    "Source Code": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6651837/",
+    "License": "None",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos97yu.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos97yu",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

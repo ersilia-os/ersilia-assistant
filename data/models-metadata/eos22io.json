@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos22io",
+    "Slug": "idl-ppbopt",
+    "Status": "Ready",
+    "Title": "Human Plasma Protein Binding (PPB) of Compounds",
+    "Description": "IDL-PPB aims to obtain the plasma protein binding (PPB) values of a compound. Based on an interpretable deep learning model and using the algorithm fingerprinting (AFP) this model predicts the binding affinity of the plasma protein with the compound.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Regression"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Experimental value"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "This model receives smiles as input and returns as output the fraction PPB, which measures the affinity of the binding of the plasma protein. In the analysis of results by the author, they indicate high affinity (fraction of ppb >80%), medium affinity (40% <= fraction of ppb <=80%) and as low levels of affinity (fraction of ppb < 40%). Note: Inorganics and salts are out of the applicability domain of the model, So for these compounds the output is Null.",
+    "Tag": [
+        "Fraction bound",
+        "ADME"
+    ],
+    "Publication": "https://pubs.acs.org/doi/10.1021/acs.jcim.2c00297",
+    "Source Code": "https://github.com/Louchaofeng/IDL-PPBopt",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos22io.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos22io",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

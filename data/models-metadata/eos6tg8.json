@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos6tg8",
+    "Slug": "natural-product-fingerprint",
+    "Status": "Ready",
+    "Title": "Natural product fingerprint",
+    "Description": "The model uses a combination of two multilayer perceptron networks (baseline and auxiliar) and an autoencoder-like network to extract natural-product specific fingerprints that outperform traditional methods for molecular representation. The training sets correspond to the coconut database (NP) and the Zinc database (synthetic). \n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Descriptor of a molecule",
+    "Tag": [
+        "Natural product",
+        "Fingerprint",
+        "Descriptor"
+    ],
+    "Publication": "https://www.sciencedirect.com/science/article/pii/S2001037021003226?via%3Dihub#f0010",
+    "Source Code": "https://github.com/kochgroup/neural_npfp",
+    "License": "None",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6tg8.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6tg8",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

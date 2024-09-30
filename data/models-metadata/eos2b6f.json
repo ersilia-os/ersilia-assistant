@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos2b6f",
+    "Slug": "pkasolver",
+    "Status": "Ready",
+    "Title": "Microstate pKa values",
+    "Description": "This model employs transfer learning with graph neural networks in order to predict micro-state pKa values of small molecules. The model enumerates the molecule's protonation states and predicts its pKa values. It was trained in two phases, first, using a large ChEMBL dataset and then fine-tuning the model for a small training set of molecules with available pKa values. The model in this repository is the pkasolver-light, which does not require an Epik license and is limited to monoprotic molecules.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Experimental value"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Acidity of a molecule (lower pKa indicates stronger acid)",
+    "Tag": [
+        "pKa",
+        "ADME"
+    ],
+    "Publication": "https://www.biorxiv.org/content/10.1101/2022.01.20.476787v1",
+    "Source Code": "https://github.com/mayrf/pkasolver",
+    "License": "MIT",
+    "Contributor": "svolk19-stanford ",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2b6f.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2b6f",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

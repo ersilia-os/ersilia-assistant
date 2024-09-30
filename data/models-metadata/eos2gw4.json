@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos2gw4",
+    "Slug": "eosce",
+    "Status": "Ready",
+    "Title": "Ersilia Compound Embeddings",
+    "Description": "Bioactivity-aware chemical embeddings for small molecules. Using transfer learning, we have created a fast network that produces embeddings of 1024 features condensing physicochemical as well as bioactivity information The training of the network has been done using the FS-Mol and ChEMBL datasets, and Grover, Mordred and ECFP descriptors",
+    "Mode": "In-house",
+    "Task": [
+        "Representation"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Embedding of 1024 features representing a compound",
+    "Tag": [
+        "Descriptor",
+        "Embedding"
+    ],
+    "Publication": "https://github.com/ersilia-os/compound-embedding",
+    "Source Code": "https://github.com/ersilia-os/compound-embedding",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2gw4.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2gw4",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

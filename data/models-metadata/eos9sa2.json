@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos9sa2",
+    "Slug": "bayesian-drug-likeness",
+    "Status": "Ready",
+    "Title": "Drug-likeness prediction with Bayesian neural networks",
+    "Description": "To define drug-likeness, a set of 2136 approved drugs from DrugBank was taken as drug-like, and three negative datasets were selected from ZINC15 (19M), the Network of Organic Chemistry (6M) and ligands from the Protein Data Bank (13k), respectively. The drug dataset was combined with an equal subsampling of the negative dataset for each experiment, using five different molecular representations (Mold2, RDKit, MCS, EXFP4, Mol2Vec). We have re-trained it following the author\u2019s specifications.\n",
+    "Mode": "Retrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Drug-likeness probability",
+    "Tag": [
+        "Drug-likeness"
+    ],
+    "Publication": "https://www.nature.com/articles/s42256-020-0209-y",
+    "Source Code": "https://github.com/Nanotekton/drugability/tree/v0.1",
+    "License": "Non-commercial",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9sa2.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9sa2",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

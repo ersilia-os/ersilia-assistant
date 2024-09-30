@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos5axz",
+    "Slug": "morgan-counts",
+    "Status": "Ready",
+    "Title": "Morgan counts fingerprints",
+    "Description": "The Morgan Fingerprints, or extended connectivity fingerprints (ECFP4) are one of the most widely used molecular representations. They are circular representations (from an atom, search the atoms around with a radius n) and can have thousands of features. This implementation uses the RDKit package and is done with radius 3 and 2048 dimensions.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Integer"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Vector representation of a molecule",
+    "Tag": [
+        "Fingerprint",
+        "Descriptor"
+    ],
+    "Publication": "https://www.rdkit.org/docs/RDKit_Book.html",
+    "Source Code": "https://github.com/rdkit/rdkit",
+    "License": "BSD-3.0",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5axz.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5axz",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

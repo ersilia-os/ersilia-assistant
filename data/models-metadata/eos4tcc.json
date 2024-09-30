@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos4tcc",
+    "Slug": "bayesherg",
+    "Status": "Ready",
+    "Title": "BayeshERG: hERG channel blockade",
+    "Description": "BayeshERG is a predictor of small molecule-induced blockade of the hERG ion channel. To increase its predictive power, the authors pretrained a bayesian graph neural network with 300,000 molecules as a transfer learning exercise. The pretraining set was obtained from Du et al, 2015, and the fine tuning dataset is a collection of 14,322 molecules from public databases (8488 positives and 5834 negatives). The model was validated on external datasets and experimentally, from 12 selected compounds (>0.95 probability) one candidate showed strong hERG inhibition (IC 50 < 1 \u03bcM) and three moderate (1 \u03bcM < IC 50 < 10 \u03bcM) in a patch-clamp in vitro assay.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of hERG channel blockade. The cut-off used in the training set to define hERG blockade was IC50 <= 10 \u03bcM",
+    "Tag": [
+        "hERG",
+        "Toxicity",
+        "Cardiotoxicity"
+    ],
+    "Publication": "https://academic.oup.com/bib/article-abstract/23/4/bbac211/6609519",
+    "Source Code": "https://github.com/GIST-CSBL/BayeshERG",
+    "License": "GPL-3.0",
+    "Contributor": "azycn",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4tcc.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4tcc",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

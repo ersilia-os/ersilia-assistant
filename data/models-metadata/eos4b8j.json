@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos4b8j",
+    "Slug": "gdbchembl-similarity",
+    "Status": "Ready",
+    "Title": "GDBChEMBL similarity search",
+    "Description": "The model looks for 100 nearest neighbors of a given molecule, according to ECFP4 Tanimoto similarity, in the GDBChEMBL database. GDBChEMBL is a 10M molecule-sampling from GDB17, a database containing all the enumerated molecules of up to 17 atoms heavy atoms (166.4B molecules). GDBChEMBL compounds were selected using a ChEMBL-likeness score, with the objective of having a collection with higher synthetic accessibility and high bioactivity while maintaining continuous coverage of the GDB17 chemical space. The whole GDBChEMBL database is not downloaded with the model, by using it you post queries to an online server external to Ersilia.\n",
+    "Mode": "Online",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Similarity"
+    ],
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "List of 100 nearest neighbors",
+    "Tag": [
+        "Similarity",
+        "ChEMBL"
+    ],
+    "Publication": "https://www.frontiersin.org/articles/10.3389/fchem.2020.00046/full",
+    "Source Code": "https://gdb-chembl-simsearch.gdb.tools/",
+    "License": "None",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4b8j.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4b8j",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

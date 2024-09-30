@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos8a4x",
+    "Slug": "rdkit-descriptors",
+    "Status": "Ready",
+    "Title": "Physicochemical descriptors available from RDKIT",
+    "Description": "A set of 200 physicochemical descriptors available from the RDKIT, including molecular weight, solubility and druggability parameters. We have used the DescriptaStorus selection of RDKit descriptors for simplicity.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Vector representation of small molecules",
+    "Tag": [
+        "Descriptor"
+    ],
+    "Publication": "https://www.rdkit.org/docs/RDKit_Book.html",
+    "Source Code": "https://github.com/bp-kelley/descriptastorus",
+    "License": "Proprietary",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8a4x.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8a4x",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

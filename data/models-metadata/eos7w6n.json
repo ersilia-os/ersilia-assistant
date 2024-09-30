@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos7w6n",
+    "Slug": "grover-embedding",
+    "Status": "Ready",
+    "Title": "Large-scale graph transformer",
+    "Description": "GROVER is a self-supervised Graph Neural Network for molecular representation pretrained with 10 million unlabelled molecules from ChEMBL and ZINC15. The model provided has been pre-trained on 10 million molecules (GROVERlarge). GROVER has then been fine-tuned to predict several activities from the MoleculeNet benchmark, consistently outperforming other state-of-the-art methods for serveral benchmark datasets.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Embedding representation of a molecule",
+    "Tag": [
+        "Chemical graph model",
+        "Embedding",
+        "Descriptor"
+    ],
+    "Publication": "https://papers.nips.cc/paper/2020/file/94aef38441efa3380a3bed3faf1f9d5d-Paper.pdf",
+    "Source Code": "https://github.com/tencent-ailab/grover",
+    "License": "MIT",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7w6n.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7w6n",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

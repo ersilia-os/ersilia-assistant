@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos526j",
+    "Slug": "aizynthfinder",
+    "Status": "Ready",
+    "Title": "Retrosynthesis planning",
+    "Description": "A tool for planning retrosynthesis of a target molecule based on template reactions and a stock of precursors. The algorithm breaks down the input molecule into purchasable blocks until it has been completely solved.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Generative"
+    ],
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "String",
+        "Float"
+    ],
+    "Output Shape": "Flexible List",
+    "Interpretation": "The fraction of solved precursors and the number of reactions required for synthesis. Close to 1.0 for a solved compound, less than 0.8 for unsolved.",
+    "Tag": [
+        "Synthetic accessibility",
+        "Chemical synthesis"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00472-1",
+    "Source Code": "https://github.com/MolecularAI/aizynthfinder",
+    "License": "MIT",
+    "Contributor": "svolk19-stanford ",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos526j.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos526j",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

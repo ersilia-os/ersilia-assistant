@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos8ioa",
+    "Slug": "natural-product-score",
+    "Status": "Ready",
+    "Title": "Natural product score",
+    "Description": "A simple score to distinguish between natural products (-like) and synthetic compounds. The score was calculated using an analysis of the structural features that distinguish natural products (NP) from synthetic molecules. NP structures were obtained from the CRC Dictionary of Natural products and synthetic molecules belong to an in-house collection. This method has been contributed to the RDKit package, Ersilia is simply implementing the RDKit NP\\_Score.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Higher score indicates higher natural product likeness",
+    "Tag": [
+        "Natural product",
+        "Drug-likeness"
+    ],
+    "Publication": "http://pubs.acs.org/doi/abs/10.1021/ci700286x",
+    "Source Code": "https://github.com/rdkit/rdkit/tree/master/Contrib/NP_Score",
+    "License": "BSD-3.0",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8ioa.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8ioa",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

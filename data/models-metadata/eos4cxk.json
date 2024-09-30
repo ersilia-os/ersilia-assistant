@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos4cxk",
+    "Slug": "sars-cov-2-antiviral-screen",
+    "Status": "Ready",
+    "Title": "SARS-CoV-2 Anti viral screening",
+    "Description": "ImageMol is a Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. This model is fine tuned on 13 assays concerned with a number of target categories ranging from viral entry to toxicity in humans. These interactions are formulated as binary classification tasks",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Boolean"
+    ],
+    "Output Type": [
+        "Integer"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "The output is comprised of binary classification across thirteen assays that are as follows: 3C-like enzymatic activity (3CL), ACE2 enzymatic activity (ACE2), Human Embryonic Kidney 293 Cell line toxicity (HEK293), Human fibroblast toxicity (Human), MERS Pseudotyped particle entry (MERS_PPE), MERS Pseudotyped particle entry counterscreen (MERS_PPE_cs), SarsCov Pseudotyped particle entry (Cov_PPE), SarsCov Pseudotyped particle entry counterscreen (Cov_PPE_cs), SarsCov2 cytopathic effect (COV2_CPE), SarsCov2 cytopathic effect counterscreen (COV2_Cytotox), Spike ACE2 Protein-protein interaction (AlphaLISA), Spike ACE2 Protein-protein interaction counterscreen (TruHit), Transmembrane protease serine 2 enzymatic activity (TMPRSS2)",
+    "Tag": [
+        "Sars-CoV-2",
+        "Antiviral activity"
+    ],
+    "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
+    "Source Code": "https://github.com/HongxinXiang/ImageMol",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4cxk.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4cxk",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

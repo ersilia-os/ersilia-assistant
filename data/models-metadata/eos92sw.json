@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos92sw",
+    "Slug": "etoxpred",
+    "Status": "Ready",
+    "Title": "Toxicity and synthetic accessibility prediction",
+    "Description": "The eToxPred tool has been developed to predict, on one hand, the synthetic accessibility (SA) score, or how easy it is to make the molecule in the laboratory, and, on the other hand, the toxicity (Tox) score, or the probability of the molecule of being toxic to humans. The authors trained and cross-validated both predictors on a large number of datasets, and demonstrated the method usefulness in building virtual custom libraries.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Higher scores indicate easier synthetic accessibility and higher toxicity, respectively",
+    "Tag": [
+        "Toxicity",
+        "Synthetic accessibility"
+    ],
+    "Publication": "https://bmcpharmacoltoxicol.biomedcentral.com/articles/10.1186/s40360-018-0282-6",
+    "Source Code": "https://github.com/pulimeng/eToxPred",
+    "License": "GPL-3.0",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos92sw",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

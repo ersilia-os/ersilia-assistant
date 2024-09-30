@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos9zw0",
+    "Slug": "molpmofit",
+    "Status": "Ready",
+    "Title": "Molecular Prediction Model Fine-Tuning (MolPMoFiT)",
+    "Description": "Using self-supervised learning, the authors pre-trained a large model using one millon unlabelled molecules from ChEMBL. This model can subsequently be fine-tuned for various QSAR tasks. Here, we provide the encodings for the molecular structures using the pre-trained model, not the fine-tuned QSAR models.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Representation"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Other value"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Matrix",
+    "Interpretation": "Embedding vectors of each smiles are obtained, represented in a matrix, where each row is a vector of embedding of each smiles character, with a dimension of 400. The pretrained model is loaded using the fastai library",
+    "Tag": [
+        "Descriptor",
+        "Embedding"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00430-x",
+    "Source Code": "https://github.com/XinhaoLi74/MolPMoFiT",
+    "License": "CC",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9zw0.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9zw0",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos7pw8",
+    "Slug": "syba-synthetic-accessibility",
+    "Status": "Ready",
+    "Title": "Bayesian prediction of synthetic accessibility",
+    "Description": "SYBA uses a fragment-based approach to classify whether a molecule is easy or hard to synthesize, and it can also be used to analyze the contribution of individual fragments to the total synthetic accessibility. The easy-to-synthesize dataset is an extract of the ZINC purchasable compounds, and the hard-to-synthesize dataset is generated using a Nonpher approach (introducing small molecular perturbations to transform molecules into more complex compounds). The fragments are calculated with ECFP8 descriptors, and independence between fragments is assumed.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Higher score indicates higher confidence that the molecule is synthetically available",
+    "Tag": [
+        "Synthetic accessibility",
+        "Chemical synthesis"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00439-2",
+    "Source Code": "https://github.com/lich-uct/syba",
+    "License": "GPL-3.0",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7pw8.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7pw8",
+    "Docker Architecture": [
+        "AMD64"
+    ],
+    "Memory Gb": 16
+}

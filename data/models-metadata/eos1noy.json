@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos1noy",
+    "Slug": "chembl-sampler",
+    "Status": "Ready",
+    "Title": "ChEMBL Molecular Sampler",
+    "Description": "A simple sampler of the ChEMBL database using their API. It looks for similar molecules to the input molecule and returns a list of 100 molecules by default. This model has been developed by Ersilia. It posts queries to an online server.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Similarity"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "100 nearest molecules in ChEMBL",
+    "Tag": [
+        "Similarity"
+    ],
+    "Publication": "https://academic.oup.com/nar/article/40/D1/D1100/2903401",
+    "Source Code": "https://github.com/ersilia-os/chem-sampler/blob/main/chemsampler/samplers/chembl/sampler.py",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1noy.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos1noy",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

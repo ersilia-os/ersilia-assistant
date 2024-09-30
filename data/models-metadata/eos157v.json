@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos157v",
+    "Slug": "grover-freesolv",
+    "Status": "Ready",
+    "Title": "Hydration free energy of small molecules in water",
+    "Description": "Model based on experimental and calculated hydration free energy of small molecules in water, the FreeSolv dataset from MoleculeNet. Hydration free energies are relevant to understand the binding interaction between a molecule (in solution) into its binding site.  This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER). \n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Other value"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Calculated Hydration Free energy in kcal/mol",
+    "Tag": [
+        "MoleculeNet",
+        "Chemical graph model",
+        "Quantum properties"
+    ],
+    "Publication": "https://papers.nips.cc/paper/2020/hash/94aef38441efa3380a3bed3faf1f9d5d-Abstract.html",
+    "Source Code": "https://github.com/tencent-ailab/grover",
+    "License": "MIT",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos157v.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos157v",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

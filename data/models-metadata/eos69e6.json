@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos69e6",
+    "Slug": "pgmg-pharmacophore",
+    "Status": "Ready",
+    "Title": "Pharmacophore-guided molecular generation",
+    "Description": "Based on a molecule's pharmacophore, this model generates new molecules de-novo to match the pharmacophore. Internally, pharmacophore hypotheses are generated for a given ligand. A graph neural network encodes spatially distributed chemical features and a transformer decoder generates molecules.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Generative"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Model generates new molecules from input molecule by first creating pharmacophore hypotheses and then constraining generation.",
+    "Tag": [
+        "Chemical graph model",
+        "Compound generation"
+    ],
+    "Publication": "https://www.nature.com/articles/s41467-023-41454-9",
+    "Source Code": "https://github.com/CSUBioGroup/PGMG",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos69e6.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos69e6",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

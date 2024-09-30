@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos1vms",
+    "Slug": "chembl-multitask-descriptor",
+    "Status": "Ready",
+    "Title": "Multi-target prediction based on ChEMBL data",
+    "Description": "This is a ligand-based target prediction model developed by the ChEMBL team. They trained the model using pairs of small molecules and their protein targets, and produced a multitask predictor. The thresholds of activity where determined by protein families (kinases: <= 30nM,  GPCRs: <= 100nM, Nuclear Receptors: <= 100nM, Ion Channels: <= 10\u03bcM, Non-IDG Family Targets: <= 1\u03bcM). Here we provide the model trained on ChEMBL_28, which showed an accuracy of 85%.",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Probability of having the protein (identified by ChEMBL ID), as target",
+    "Tag": [
+        "Bioactivity profile",
+        "Target identification",
+        "ChEMBL"
+    ],
+    "Publication": "http://chembl.blogspot.com/2019/05/multi-task-neural-network-on-chembl.html",
+    "Source Code": "https://github.com/chembl/chembl_multitask_model/",
+    "License": "None",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1vms.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos1vms",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

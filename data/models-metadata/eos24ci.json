@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos24ci",
+    "Slug": "drugtax",
+    "Status": "Ready",
+    "Title": "DrugTax: Drug taxonomy",
+    "Description": "DrugTax takes SMILES inputs and classifies the molecule according to their taxonomy, organic or inorganic kingdom and their subclasses, using a 0/1 binary classification for each one. It generates a vector of 163 features including the taxonomy classification and other key information such as number of carbons, nitrogens\u2026 These vectors can be used for subsequent molecular representation in chemoinformatic pipelines.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Integer"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "A vector of 163 points, each one corresponding to a particular taxonomic or structural molecular feature",
+    "Tag": [
+        "Fingerprint",
+        "Descriptor"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-022-00649-w",
+    "Source Code": "https://github.com/MoreiraLAB/DrugTax",
+    "License": "GPL-3.0",
+    "Contributor": "Femme-js",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos24ci.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos24ci",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

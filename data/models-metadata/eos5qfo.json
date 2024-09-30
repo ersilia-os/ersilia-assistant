@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos5qfo",
+    "Slug": "rexgen",
+    "Status": "Ready",
+    "Title": "Organic reaction outcome prediction",
+    "Description": "Utilizes a Weisfeiler-Lehman network (attentive mechanism) to predict the products of an organic reaction given the reactants. The model identifies the reaction centers (set of atoms/bonds that change from reactant to product) and obtains the products directly from a graph-based neural network.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "List",
+    "Task": [
+        "Generative"
+    ],
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "Flexible List",
+    "Interpretation": "Products of an organic reaction",
+    "Tag": [
+        "Chemical synthesis"
+    ],
+    "Publication": "https://arxiv.org/pdf/1709.04555v3.pdf",
+    "Source Code": "https://github.com/connorcoley/rexgen_direct",
+    "License": "GPL-3.0",
+    "Contributor": "svolk19-stanford ",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5qfo.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5qfo",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

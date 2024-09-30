@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos6hy3",
+    "Slug": "image-mol-hiv",
+    "Status": "Ready",
+    "Title": "ImageMol HIV growth inhibition",
+    "Description": "TThis model has been developed using ImageMol, a deep learning model pretrained on 10 million unlabelled small molecules and fine-tuned in a second step to predict the inhibition of the human immunodeficiency virus (HIV). The HIV dataset is from MoleculeNet and contains 43850 small molecules and their in vitro activity against HIV (CA - Confirmed active, CM - Confirmed moderately active, CI - Confirmed inactive). The classification was based on EC50 values and expert knowledge.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of HIV inhibition. Active compounds are considered those classified as CA/CM.",
+    "Tag": [
+        "HIV",
+        "Antiviral activity",
+        "MoleculeNet"
+    ],
+    "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
+    "Source Code": "https://github.com/ChengF-Lab/ImageMol",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6hy3.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6hy3",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

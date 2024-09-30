@@ -1,0 +1,34 @@
+{
+    "Identifier": "eos4qda",
+    "Slug": "fasmifra",
+    "Status": "Ready",
+    "Title": "FasmiFra molecule generator",
+    "Description": "FasmiFra is a molecular generator based on (deep)SMILES fragments. The authors use Deep SMILES to ensure the generated molecules are syntactically valid, and by working on string operations they are able to obtain high performance (>340,000 molecule/s). Here, we use 100k compounds from ChEMBL to sample fragments. Only assembled molecules containing one of the fragments of the input molecule are retained.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Generative"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "1000 generated molecules per each input",
+    "Tag": [
+        "Compound generation"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00566-4",
+    "Source Code": "https://github.com/UnixJunkie/FASMIFRA",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4qda.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4qda",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

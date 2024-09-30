@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos9be7",
+    "Slug": "chemnet-distance",
+    "Status": "Ready",
+    "Title": "FCD: Fr\u00e9chet ChemNet Distance to evaluate generative models",
+    "Description": "The Fr\u00e9chet ChemNet distance is a metric to evaluate generative models. It unifies, in a single score, whether the generated molecules are valid according to chemical and biological properties as well as their diversity from the training set. The score measures the Fr\u00e9chet Inception Distance between molecules represented by ChemNet, a deep neural network trained to predict biological and chemical properties of small molecules. \n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Pair of Lists",
+    "Task": [
+        "Similarity"
+    ],
+    "Output": [
+        "Distance"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Frechet ChemNet Distance (FCD). Higher FCD indicates higher difference to the training set",
+    "Tag": [
+        "Similarity",
+        "Bioactivity profile",
+        "Compound generation"
+    ],
+    "Publication": "https://pubs.acs.org/doi/10.1021/acs.jcim.8b00234",
+    "Source Code": "https://github.com/bioinf-jku/FCD",
+    "License": "LGPL-3.0",
+    "Contributor": "brosular",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9be7.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9be7",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

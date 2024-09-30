@@ -1,0 +1,39 @@
+{
+    "Identifier": "eos39dp",
+    "Slug": "phakinpro",
+    "Status": "Ready",
+    "Title": "Pharmacokinetics Profiler (PhaKinPro)",
+    "Description": "Pharmacokinetics Profiler (PhaKinPro) predicts the pharmacokinetic (PK) properties of drug candidates. It has been built using a manually curated database of 10.000 compounds with information for 12 PK endpoints. Each model provides a multi-classifier output for a single endpoint, along with a confidence estimate of the prediction and whether the query molecule is within the applicability domain of the model.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "A list of several ADME predictions",
+    "Tag": [
+        "Microsomal stability",
+        "ADME",
+        "Metabolism",
+        "Half-life",
+        "Permeability"
+    ],
+    "Publication": "https://pubs.acs.org/doi/10.1021/acs.jmedchem.3c02446",
+    "Source Code": "https://github.com/molecularmodelinglab/PhaKinPro",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos39dp.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos39dp",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

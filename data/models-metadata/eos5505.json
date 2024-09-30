@@ -1,0 +1,39 @@
+{
+    "Identifier": "eos5505",
+    "Slug": "ncats-rlm",
+    "Status": "Ready",
+    "Title": "Rat liver microsomal stability",
+    "Description": "Hepatic metabolic stability is key to ensure the drug attains the desired concentration in the body. The Rat Liver Microsomal (RLM) stability is a good approximation of a compound\u2019s stability in the human body, and NCATS has collected a proprietary dataset of 20216 compounds with its associated RLM (in vitro half-life; unstable \u226430 min, stable >30 min) and used it to train a classifier based on an ensemble of several ML approaches (random forest, deep neural networks, graph convolutional neural networks and recurrent neural networks)",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of a compound being unstable in RLM assay (half-life \u2264 30min)",
+    "Tag": [
+        "Microsomal stability",
+        "Rat",
+        "ADME",
+        "Metabolism",
+        "Half-life"
+    ],
+    "Publication": "https://slas-discovery.org/article/S2472-5552(22)06765-X/fulltext",
+    "Source Code": "https://github.com/ncats/ncats-adme",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5505.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5505",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

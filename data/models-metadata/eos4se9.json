@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos4se9",
+    "Slug": "smiles2iupac",
+    "Status": "Ready",
+    "Title": "STOUT: SMILES to IUPAC name translator",
+    "Description": "Small molecules are represented by a variety of machine-readable strings (SMILES, InChi, SMARTS, among others). On the contrary, IUPAC (International Union of Pure and Applied Chemistry) names are devised for human readers. The authors trained a language translator model treating the SMILES and IUPAC as two different languages. 81 million SMILES were downloaded from PubChem and converted to SELFIES for model training. The corresponding IUPAC names for the 81 million SMILES were obtained with ChemAxon molconvert software.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Text"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "IUPAC name of a specific SMILES",
+    "Tag": [
+        "Chemical notation",
+        "Chemical language model"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00512-4",
+    "Source Code": "https://github.com/Kohulan/Smiles-TO-iUpac-Translator",
+    "License": "MIT",
+    "Contributor": "carcablop",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4se9.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4se9",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

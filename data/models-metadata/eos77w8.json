@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos77w8",
+    "Slug": "grover-sider",
+    "Status": "Ready",
+    "Title": "Adverse Drug Reactions",
+    "Description": "The model predicts the putative adverse drug reactions (ADR) of a molecule, using the SIDER database (MoleculeNet) that contains pairs of marketed drugs and their described ADRs. This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER).\n\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Predicted ADRs classified in 27 groups",
+    "Tag": [
+        "Toxicity",
+        "MoleculeNet",
+        "Side effects"
+    ],
+    "Publication": "https://arxiv.org/abs/2007.02835",
+    "Source Code": "https://github.com/tencent-ailab/grover",
+    "License": "MIT",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos77w8.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos77w8",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

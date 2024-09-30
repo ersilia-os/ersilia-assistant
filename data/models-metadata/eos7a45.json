@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos7a45",
+    "Slug": "coprinet-molecule-price",
+    "Status": "Ready",
+    "Title": "Small molecule price prediction",
+    "Description": "CoPriNet has been trained on 2D graph representations of small molecules with their associated price in the Mcule catalog. The predicted price provides a better overview of the compound availability than standard synthetic accessibility scores or retrosynthesis tools. The Mcule catalog is proprietary but the trained model as well as the test dataset (100K) are publicly available.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Other value"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Price value prediction",
+    "Tag": [
+        "Price",
+        "Compound generation",
+        "Chemical synthesis"
+    ],
+    "Publication": "https://pubs.rsc.org/en/content/articlelanding/2023/dd/d2dd00071g",
+    "Source Code": "https://github.com/oxpig/CoPriNet",
+    "License": "MIT",
+    "Contributor": "anamika-yadav99",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7a45.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7a45",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

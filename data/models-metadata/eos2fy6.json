@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos2fy6",
+    "Slug": "s2dv-hepg2-toxicity",
+    "Status": "Ready",
+    "Title": "S2DV HepG2 toxicity",
+    "Description": "The model uses Word2Vec, a natural language processing technique to represent SMILES strings. The model was trained on over <2000 small molecules with associated experimental HepG2 cytotoxicity data (IC50) to classify compounds as HepG2 toxic (IC50 <= 30 uM) or non-toxic. Data was gathered from the public repository ChEMBL.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Experimental value"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of HepG2 Toxicity (IC50 < 30 uM)",
+    "Tag": [
+        "ChEMBL",
+        "IC50",
+        "Toxicity"
+    ],
+    "Publication": "https://pubmed.ncbi.nlm.nih.gov/35062019/",
+    "Source Code": "https://github.com/NTU-MedAI/S2DV",
+    "License": "Apache-2.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2fy6.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2fy6",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

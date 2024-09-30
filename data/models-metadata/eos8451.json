@@ -1,0 +1,40 @@
+{
+    "Identifier": "eos8451",
+    "Slug": "grover-esol",
+    "Status": "Ready",
+    "Title": "Water solubility",
+    "Description": "Prediction of water solubility data (log solubility in mols per litre) for common organic small molecules. trained using the Molecule Net ESOL dataset.\nThis model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER).  GROVER predictions consistently outperformed other state-of-the-art methods benchmark datasets from\u00a0[MoleculeNet](https://pubs.rsc.org/en/content/articlelanding/2018/sc/c7sc02664a#!divAbstract).\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Experimental value"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Log Solubility (Mols/Litre)",
+    "Tag": [
+        "Solubility",
+        "MoleculeNet",
+        "ADME",
+        "LogS",
+        "Chemical graph model"
+    ],
+    "Publication": "https://papers.nips.cc/paper/2020/hash/94aef38441efa3380a3bed3faf1f9d5d-Abstract.html",
+    "Source Code": "https://github.com/tencent-ailab/grover",
+    "License": "MIT",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8451.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8451",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

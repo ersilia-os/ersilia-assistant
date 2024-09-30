@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos39co",
+    "Slug": "unimol-representation",
+    "Status": "In progress",
+    "Title": "Uni-Mol molecular representation",
+    "Description": "Uni-Mol offers a simple and effective SE(3) equivariant transformer architecture for pre-training molecular representations that capture 3D information. The model is trained on >200M conformations. The current model outputs a representation embedding.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Representation"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Uni-Mol representation embedding",
+    "Tag": [
+        "Fingerprint"
+    ],
+    "Publication": "https://openreview.net/forum?id=6K2RM6wVqKu",
+    "Source Code": "https://github.com/deepmodeling/Uni-Mol",
+    "License": "GPL-3.0-only",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos39co.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos39co",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

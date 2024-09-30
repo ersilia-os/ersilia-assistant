@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos4x30",
+    "Slug": "pmapper-3d",
+    "Status": "Ready",
+    "Title": "3D pharmacophore descriptor",
+    "Description": "The pharmacophore mapper (pmapper) identifies common 3D pharmacophores of active compounds against a specific target and uniquely encodes them with hashes suitable for fast identification of identical pharmacophores. The obtained signatures are amenable for downstream ML tasks.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Representation"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Integer"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "vector representation of pharmacophores",
+    "Tag": [
+        "Descriptor",
+        "Fingerprint"
+    ],
+    "Publication": "https://www.mdpi.com/1422-0067/20/23/5834",
+    "Source Code": "https://github.com/DrrDom/pmapper",
+    "License": "BSD-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4x30",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

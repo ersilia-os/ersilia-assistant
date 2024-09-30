@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos238c",
+    "Slug": "mesh-therapeutic-use",
+    "Status": "Ready",
+    "Title": "MeSH therapeutic use based on chemical structure",
+    "Description": "Drug function, defined as Medical Subject Headings (MeSH) \u201ctherapeutic use\u201d is predicted based on the chemical structure. 6955 non-redundant molecules, pertaining to one of the twelve therapeutic use classes selected, were downloaded from PubChem and used to train a binary classifier. The model provides the probability that a molecule has one of the following therapeutic uses: antineoplastic, cardiovascular, central nervous system (CNS), anti-infective, gastrointestinal, anti-inflammatory, dermatological, hematologic, lipid regulating, reproductive control, respiratory system, urological.\n",
+    "Mode": "In-house",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Probability that the molecule belongs to each therapeutic use specified.",
+    "Tag": [
+        "Therapeutic indication"
+    ],
+    "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819987/",
+    "Source Code": "https://github.com/jgmeyerucsd/drug-class",
+    "License": "GPL-3.0",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos238c",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

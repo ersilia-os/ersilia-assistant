@@ -1,0 +1,39 @@
+{
+    "Identifier": "eos1amr",
+    "Slug": "grover-bbbp",
+    "Status": "Ready",
+    "Title": "Blood-brain barrier penetration",
+    "Description": "This model predicts the Blood-Brain Barrier (BBB) penetration potential of small molecules using as training data the curated MoleculeNet benchmark containing 2000 experimental data points. It has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER). \n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability that a molecule crosses the blood brain barrier",
+    "Tag": [
+        "Permeability",
+        "MoleculeNet",
+        "Chemical graph model",
+        "Alzheimer"
+    ],
+    "Publication": "https://papers.nips.cc/paper/2020/hash/94aef38441efa3380a3bed3faf1f9d5d-Abstract.html",
+    "Source Code": "https://github.com/tencent-ailab/grover",
+    "License": "MIT",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1amr.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos1amr",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos8h6g",
+    "Slug": "avalon",
+    "Status": "Ready",
+    "Title": "Avalon fingerprint",
+    "Description": "Avalon is a path-based substructure key fingerprint (1024 bits), developed for substructure screen-out when searching. It is part of the Avalon Chemoinformatics Toolkit and has also been implemented as an external RDKit tool.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Integer"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Bitvector representation of a molecule",
+    "Tag": [
+        "Fingerprint"
+    ],
+    "Publication": "https://pubs.acs.org/doi/full/10.1021/ci050413p",
+    "Source Code": "https://github.com/rdkit/rdkit/tree/master/External/AvalonTools",
+    "License": "BSD-3.0",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8h6g.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8h6g",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

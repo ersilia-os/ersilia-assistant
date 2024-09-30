@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos4u6p",
+    "Slug": "cc-signaturizer",
+    "Status": "Ready",
+    "Title": "Chemical Checker signaturizer",
+    "Description": "A set of 25 Chemical Checker bioactivity signatures (including 2D & 3D fingerprints, scaffold, binding, crystals, side effects, cell bioassays, etc) to capture properties of compounds beyond their structures. Each signature has a length of 128 dimensions. In total, there are 3200 dimensions. The signaturizer is periodically updated. We use the 2020-02 version of the signaturizer.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "2D projection of bioactivity signatures",
+    "Tag": [
+        "Descriptor",
+        "Bioactivity profile",
+        "Embedding"
+    ],
+    "Publication": "https://www.nature.com/articles/s41467-021-24150-4",
+    "Source Code": "http://gitlabsbnb.irbbarcelona.org/packages/signaturizer",
+    "License": "MIT",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4u6p.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4u6p",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

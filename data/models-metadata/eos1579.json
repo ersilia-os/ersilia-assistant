@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos1579",
+    "Slug": "metabokiller",
+    "Status": "Ready",
+    "Title": "Carcinogenic potential of metabolites and small molecules",
+    "Description": "Carcinogenicity is a result of several potential effects on  cells. This model predicts the carcinogenic potential of a small molecule based on their potential to induce cellular proliferation, genomic instability, oxidative stress, anti-apoptotic responses and epigenetic alterations. Metabokiller uses the Chemical Checker signaturizer to featurize the molecules, and the Lime package to provide interpretable results. Using Metabokiller, the authors screened a panel of human metabolites and experimentally demonstrated two of the predicted carcinogenic metabolites induced carcinogenic transformations in yeast and human cells.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Probability that the molecule has each of the specified carcinogenic properties",
+    "Tag": [
+        "Toxicity",
+        "Cancer",
+        "Metabolism"
+    ],
+    "Publication": "https://doi.org/10.1038/s41589-022-01110-7",
+    "Source Code": "https://github.com/the-ahuja-lab/Metabokiller",
+    "License": "Non-commercial",
+    "Contributor": "brosular",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1579.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos1579",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

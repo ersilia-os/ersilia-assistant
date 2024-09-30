@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos8fma",
+    "Slug": "stoned-sampler",
+    "Status": "Ready",
+    "Title": "Stoned Sampler",
+    "Description": "The STONED sampler uses small modifications to molecules represented as SELFIES to perform a search of the chemical space and generate new molecules. The use of string modifications in the SELFIES molecular representation bypasses the need for large amounts of data while maintaining a performance comparable to deep generative models.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Generative"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Up to 1000 derivatives of the input molecule",
+    "Tag": [
+        "Compound generation"
+    ],
+    "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153210/",
+    "Source Code": "https://github.com/aspuru-guzik-group/stoned-selfies",
+    "License": "Apache-2.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fma.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8fma",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

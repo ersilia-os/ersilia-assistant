@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos1ut3",
+    "Slug": "molfeat-usrcat",
+    "Status": "Ready",
+    "Title": "USR descriptors with pharmacophoric constraints",
+    "Description": "USRCAT is a real-time ultrafast molecular shape recognition with pharmacophoric constraints. It integrates atom type to the traditional Ultrafast Shape Recognition (USR) descriptor to improve the performance of shape-based virtual screening, being able to discriminate between compounds with similar shape but distinct pharmacophoric features",
+    "Mode": "Pretrained",
+    "Task": [
+        "Representation"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "60 features based on USRCAT",
+    "Tag": [
+        "Descriptor",
+        "Embedding"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-4-27",
+    "Source Code": "https://molfeat.datamol.io/featurizers/usrcat",
+    "License": "Apache-2.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1ut3.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos1ut3",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

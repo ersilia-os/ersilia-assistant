@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos21q7",
+    "Slug": "inter_dili",
+    "Status": "Ready",
+    "Title": "InterDILI: drug-induced injury prediction",
+    "Description": "This model has been trained on a publicly available collection of 5 datasets manually curated for drug-induced-liver-injury (DILI). DILI outcome has been binarised, and ECFP descriptors, together with physicochemical properties have been used to train a random forest classifier which achieves AUROC > 0.9",
+    "Mode": "Retrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of Drug-Induced Liver Injury (DILI), higher score indicates higer risk",
+    "Tag": [
+        "Toxicity",
+        "Human",
+        "Metabolism"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00796-8",
+    "Source Code": "https://github.com/bmil-jnu/InterDILI",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos21q7.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos21q7",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

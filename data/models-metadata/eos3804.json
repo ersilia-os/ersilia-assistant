@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos3804",
+    "Slug": "chemprop-abaumannii",
+    "Status": "Ready",
+    "Title": "Inhibition of A.Baumannii growth",
+    "Description": "This model is a Chemprop neural network trained with a growth inhibition dataset. Authors screened ~7,500 molecules for those that inhibited the growth of A. baumannii in vitro. They discovered abaucin, an antibacterial compound with narrow-spectrum activity against A. baumannii.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of growth inhibition of the bacteria A. Baumannii (threshold > 80%)",
+    "Tag": [
+        "A.baumannii",
+        "Antimicrobial activity"
+    ],
+    "Publication": "https://www.nature.com/articles/s41589-023-01349-8",
+    "Source Code": "https://github.com/GaryLiu152/chemprop_abaucin",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3804.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos3804",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

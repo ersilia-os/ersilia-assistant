@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos80ch",
+    "Slug": "malaria-mam",
+    "Status": "Ready",
+    "Title": "Antimalarial activity (ABS and sexual stages)",
+    "Description": "Prediction of the antimalarial potential of small molecules using data from various chemical libraries that were\nscreened against the asexual and sexual (gametocyte) stages of the parasite. Several\ncompounds\u2019 molecular fingerprints were used to train machine learning models to recognize stage-specific\nactive and inactive compounds.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Probability of inhibition of the malaria parasite growth",
+    "Tag": [
+        "Malaria",
+        "P.falciparum"
+    ],
+    "Publication": "https://pubs.acs.org/doi/10.1021/acsomega.3c05664",
+    "Source Code": "https://github.com/M2PL",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos80ch.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos80ch",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

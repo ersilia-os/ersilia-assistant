@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos24ur",
+    "Slug": "whales-scaled",
+    "Status": "Ready",
+    "Title": "WHALES scaled",
+    "Description": "Scaled version of the WHALES descriptors (see eos3ae6). WHALES are holistic molecular descriptors useful for scaffold hopping, based on 3D structure to facilitate natural product featurization. The scaling uses sklearn's Robust Scaler trained on a random set of 100K molecules from ChEMBL.",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Scaled vector representation of a molecule",
+    "Tag": [
+        "Natural product",
+        "Descriptor"
+    ],
+    "Publication": "https://www.nature.com/articles/s42004-018-0043-x",
+    "Source Code": "https://github.com/grisoniFr/scaffold_hopping_whales",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos24ur.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos24ur",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

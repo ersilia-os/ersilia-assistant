@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos6aun",
+    "Slug": "rxn-fingerprint",
+    "Status": "Ready",
+    "Title": "RXNFP - chemical reaction fingerprints",
+    "Description": "RXNFP uses a pre-trained BERT Language Model to transform a reaction represented as smiles into a fingerprint amenable for downstream applications. The authors show how the RXN-fps can be used to identify nearest neighbors on reaction datasets, or map the reaction space without knowing the reaction centers.",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Matrix",
+    "Interpretation": "Fingerprint of the reaction.",
+    "Tag": [
+        "Fingerprint",
+        "Embedding",
+        "Chemical synthesis"
+    ],
+    "Publication": "https://www.nature.com/articles/s42256-020-00284-w",
+    "Source Code": "https://github.com/rxn4chemistry/rxnfp/tree/master/",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6aun.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6aun",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

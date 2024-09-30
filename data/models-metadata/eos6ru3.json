@@ -1,0 +1,34 @@
+{
+    "Identifier": "eos6ru3",
+    "Slug": "whales-qmug",
+    "Status": "Ready",
+    "Title": "WHALES similarity search on 600k molecules from Q-Mug",
+    "Description": "Search Q-Mug based on WHALES descriptors. Q-Mug is a subset of 600k bioactive molecules from ChEMBL. Three conformers are given for each molecule. WhALES is a simple descriptor useful for scaffold hopping.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Generative"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "The top 100 most similar molecules are returned, based on WHALES descriptors. 3D conformer generation is done internally.",
+    "Tag": [
+        "Similarity"
+    ],
+    "Publication": "https://link.springer.com/protocol/10.1007/978-1-0716-1209-5_2",
+    "Source Code": "https://github.com/ETHmodlab/scaffold_hopping_whales",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6ru3.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6ru3",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

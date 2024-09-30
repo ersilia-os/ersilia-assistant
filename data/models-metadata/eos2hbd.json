@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos2hbd",
+    "Slug": "passive-permeability",
+    "Status": "Ready",
+    "Title": "Passive permeability based on simulations",
+    "Description": "Using Coarse Grained (CG) models, where several atoms are aggregated into a single bead, the authors obtain a set of 500,000 compounds with their simulated permeability across a single-component DOPC lipid bilayer. With this approach, the authors are able to cover a large and representative portion of the chemical space. We have used the data generated in this publication to train a simple regression model to predict compound permeability.\n",
+    "Mode": "In-house",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Experimental value"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Permeability coefficient (P). Cut-off: 6",
+    "Tag": [
+        "Permeability",
+        "ADME",
+        "Papp"
+    ],
+    "Publication": "https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718?ref=recommended",
+    "Source Code": "https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718?ref=recommended",
+    "License": "None",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2hbd.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2hbd",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

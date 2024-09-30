@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos9yy1",
+    "Slug": "ncats-hlcs",
+    "Status": "Ready",
+    "Title": "Human Liver Cytosolic Stability",
+    "Description": "The human liver cytosol stability model is used for predicting the stability of a drug in the cytosol of human liver cells, which is beneficial for identifying potential drug candidates early during the drug discovery process. If a drug compound is quickly absorbed, it may not reach the intended target in the body or become toxic. On the other hand, if a drug compound is too stable, it could accumulate and cause detrimental effects. The authors use an NCATS dataset of 1450 compounds screened in vitro in mouse and human cytosol fractions. Compounds were classified as stable (half-life > 30min) or unstable (half-life \u2264 30 min). Note that authors report the dataset was biased towards stable compounds. The validation set of 250 compounds is openly available.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of a compound being unstable (half-life \u2264 30min) due to liver cells metabolism",
+    "Tag": [
+        "ADME",
+        "Metabolism",
+        "Human",
+        "Half-life"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00426-7",
+    "Source Code": "https://github.com/ncats/ncats-adme",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9yy1.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9yy1",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

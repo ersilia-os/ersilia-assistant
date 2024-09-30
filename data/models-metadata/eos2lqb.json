@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos2lqb",
+    "Slug": "hob-pre",
+    "Status": "Ready",
+    "Title": "Human oral bioavailability prediction",
+    "Description": "HobPre predicts the oral bioavailability of small molecules in humans. It has been trained using public data on ~1200 molecules (Falc\u00f3n-Cano et al, 2020, complemented with other literature and ChEMBL compounds). The molecules were labeled according to two cut-offs: HOB > 20% and HOB > 50%, due to ongoing discussions as to which would be a more appropriate cut-off.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Probability of a compound having high oral bioavailability (HOB >20% and HOB >50%)",
+    "Tag": [
+        "ADME",
+        "Solubility",
+        "Human"
+    ],
+    "Publication": "https://doi.org/10.1186/s13321-021-00580-6",
+    "Source Code": "https://github.com/whymin/HOB",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2lqb.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2lqb",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

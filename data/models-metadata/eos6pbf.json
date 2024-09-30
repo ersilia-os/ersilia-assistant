@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos6pbf",
+    "Slug": "selfies",
+    "Status": "Ready",
+    "Title": "SELF-referencIng Embedded Strings",
+    "Description": "String representation of small molecules that is more robust than SMILES, since, by design, all SELFIES strings are valid molecules. It is particularly helpful when applied in generative models, as all the SELFIES proposed are valid molecules. The authors also found that on generative models, SELFIES produces more diverse molecules than compared to SMILES.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "String representation of a molecule (SELFIE)",
+    "Tag": [
+        "Chemical notation",
+        "Chemical language model",
+        "Compound generation"
+    ],
+    "Publication": "https://arxiv.org/pdf/1905.13741",
+    "Source Code": "https://github.com/aspuru-guzik-group/selfies",
+    "License": "Apache-2.0",
+    "Contributor": "brosular",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6pbf.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6pbf",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

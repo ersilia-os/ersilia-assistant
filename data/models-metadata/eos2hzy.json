@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos2hzy",
+    "Slug": "pubchem-sampler",
+    "Status": "Ready",
+    "Title": "PubChem Molecular Sampler",
+    "Description": "A simple sampler of the PubChem database using their API. It looks for similar molecules to the input molecule and returns a list of 100 molecules by default. This model has been developed by Ersilia and posts queries to an online server.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Similarity"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "100 nearest molecules in PubChem",
+    "Tag": [
+        "Similarity"
+    ],
+    "Publication": "https://academic.oup.com/nar/article/51/D1/D1373/6777787",
+    "Source Code": "https://github.com/ersilia-os/chem-sampler/blob/main/chemsampler/samplers/pubchem/sampler.py",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2hzy.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2hzy",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

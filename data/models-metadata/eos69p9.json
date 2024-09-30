@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos69p9",
+    "Slug": "ssl-gcn-tox21",
+    "Status": "Ready",
+    "Title": "Toxicity prediction across the Tox21 panel with semi-supervised learning",
+    "Description": "Toxicity prediction across the Tox21 panel from MoleculeNet, comprising 12 toxicity pathways. The model uses the Mean Teacher Semi-Supervised Learning (MT-SSL) approach to overcome the low number of data points experimentally annotated for toxicity tasks. For the MT-SSL, Tox21 (831 compounds and 12 different endpoints) was used as labeled data and a selection of 50K compounds from other MoleculeNet datasets was used as unlabeled data.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Probability of toxicity across 12 tasks defined in Tox21",
+    "Tag": [
+        "Tox21",
+        "Toxicity",
+        "MoleculeNet"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00570-8",
+    "Source Code": "https://github.com/chen709847237/SSL-GCN",
+    "License": "None",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos69p9.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos69p9",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

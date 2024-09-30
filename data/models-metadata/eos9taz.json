@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos9taz",
+    "Slug": "moler-enamine-fragments",
+    "Status": "Ready",
+    "Title": "Extending molecular scaffolds with fragments",
+    "Description": "MoLeR is a graph-based generative model that combines fragment-based and atom-by-atom generation of new molecules with scaffold-constrained optimization. It does not depend on generation history and therefore MoLeR is able to complete arbitrary scaffolds. The model has been trained on the GuacaMol dataset. Here we sample a fragment library from Enamine.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Generative"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "1000 new molecules are sampled for each input molecule, preserving its scaffold. ",
+    "Tag": [
+        "Chemical graph model",
+        "Compound generation"
+    ],
+    "Publication": "https://arxiv.org/abs/2103.03864",
+    "Source Code": "https://github.com/microsoft/molecule-generation",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9taz.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9taz",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

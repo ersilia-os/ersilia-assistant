@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos7a04",
+    "Slug": "cdd-descriptor",
+    "Status": "Ready",
+    "Title": "Continuous and data-driven descriptors",
+    "Description": "Low dimension continuous descriptor based on a neural machine translation model. This model has been trained by inputting a IUPAC molecular representation to obtain its SMILES. The intermediate continuous vector representation encoded by when reading the IUPAC name is a representation of the molecule, containing all the information to generate the output sequence (SMILES). This model has been pretrained on a large dataset combining ChEMBL and ZINC.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Embedding representation of a molecule",
+    "Tag": [
+        "Descriptor",
+        "Chemical language model"
+    ],
+    "Publication": "https://pubs.rsc.org/en/content/articlelanding/2019/sc/c8sc04175j",
+    "Source Code": "https://github.com/jrwnter/cddd",
+    "License": "MIT",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7a04.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7a04",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

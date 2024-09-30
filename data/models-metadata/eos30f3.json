@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos30f3",
+    "Slug": "dmpnn-herg",
+    "Status": "Ready",
+    "Title": "Prediction of hERG Channel Blockers with Directed Message Passing Neural Networks",
+    "Description": "This model leverages the ChemProp network (D-MPNN, see original Stokes et al, Cell, 2020 for more information) to build a predictor of hERG-mediated cardiotoxicity. The model has been trained using a dataset published by Cai et al, J Chem Inf Model, 2019, which contains 7889 molecules with several cut-offs for hERG blocking activity. The authors select a 10 uM cut-off. This implementation of the model does not use any specific featurizer, though the authors suggest the moe206 descriptors (closed-source) improve performance even further.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of blocking hERG (cut-off: 10uM)",
+    "Tag": [
+        "Cardiotoxicity",
+        "hERG",
+        "Toxicity",
+        "Descriptor"
+    ],
+    "Publication": "https://pubs.rsc.org/en/content/articlehtml/2022/ra/d1ra07956e",
+    "Source Code": "https://github.com/AI-amateur/DMPNN-hERG",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos30f3.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos30f3",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

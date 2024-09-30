@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos7asg",
+    "Slug": "padel",
+    "Status": "Ready",
+    "Title": "PADEL small molecule descriptors",
+    "Description": "PaDEL is a commonly used molecular descriptor. It calculates 1875 molecular descriptors (1444 1D and 2D descriptors, 431 3D descriptors) and 12 types of fingerprints for small molecule representation. Originally developed in Java, here we provide PaDDELPy, its python implementation.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Vector representation of a molecule",
+    "Tag": [
+        "Descriptor"
+    ],
+    "Publication": "https://onlinelibrary.wiley.com/doi/10.1002/jcc.21707",
+    "Source Code": "https://github.com/ecrl/padelpy",
+    "License": "MIT",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7asg.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7asg",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

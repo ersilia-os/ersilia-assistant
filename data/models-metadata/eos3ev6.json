@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos3ev6",
+    "Slug": "ncats-cyp3a4",
+    "Status": "Ready",
+    "Title": "CYP3A4 Metabolism",
+    "Description": "Analysis of metabolic stability, determining the inhibition of CYP3A4 activity and whether the compounds are a substrate for the CYP3A$ enzyme. The data to build these models has been publicly available at PubChem (AID1645840, AID1645841, AID1645842) by ADME@NCATS.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Probability of inhibiting the enzyme and probability of being a ubstrate of the enzyme. Activity in both indicates the compound is a ligand of the enzyme.",
+    "Tag": [
+        "CYP450",
+        "ADME",
+        "Metabolism"
+    ],
+    "Publication": "https://dmd.aspetjournals.org/content/49/9/822",
+    "Source Code": "https://github.com/ncats/ncats-adme",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3ev6.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos3ev6",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos9yui",
+    "Slug": "natural-product-likeness",
+    "Status": "Ready",
+    "Title": "Natural product likeness score",
+    "Description": "The model is a derivation of the natural product fingerprint (eos6tg8). In addition to generating specific natural product fingerprints, the activation value of the neuron that predicts if a molecule is a natural product or not can be used as a NP-likeness score. The method outperforms the NP\\_Score implemented in RDKit.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Higher score indicates higher natural product likeness",
+    "Tag": [
+        "Natural product",
+        "Drug-likeness"
+    ],
+    "Publication": "https://www.sciencedirect.com/science/article/pii/S2001037021003226?",
+    "Source Code": "https://github.com/kochgroup/neural_npfp",
+    "License": "None",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9yui.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9yui",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

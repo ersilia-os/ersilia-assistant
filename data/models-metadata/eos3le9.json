@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos3le9",
+    "Slug": "hepg2-mmv",
+    "Status": "Ready",
+    "Title": "HepG2 Toxicity - MMV",
+    "Description": "This model predicts the toxicity of small molecules in HepG2 cells. It has been developed by Ersilia thanks to data provided by MMV. We have used two cut-offs to define activity (5 and 10 uM respectively) with a dataset of 1335 molecules. 5-fold crossvalidation showed an AUROC of 0.8 and 0.77 respectively",
+    "Mode": "In-house",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Probability of toxicity in HepG2 cells. Cut-offs: 5 and 10 uM",
+    "Tag": [
+        "Toxicity",
+        "Human"
+    ],
+    "Publication": "https://ersilia.io",
+    "Source Code": "https://github.com/ersilia-os/lazy-qsar",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3le9.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos3le9",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

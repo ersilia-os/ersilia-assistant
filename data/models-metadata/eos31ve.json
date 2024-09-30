@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos31ve",
+    "Slug": "ncats-hlm",
+    "Status": "Ready",
+    "Title": "Human Liver Microsomal Stability",
+    "Description": "The Human Liver Microsomal assay takes into account the liver-mediated drug metabolism to assess the stability of a compound in the human body. The NIH-NCATS group took a proprietary dataset of 4300 compounds with its associated HLM (in vitro half-life; unstable \u2264\u2009 30 min, stable >30 min) and used it to train a classifier.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of a compound being unstable in a HLM assay (half-life \u2264 30min)",
+    "Tag": [
+        "Metabolism",
+        "ADME",
+        "Human",
+        "Microsomal stability",
+        "Half-life"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00426-7",
+    "Source Code": "https://github.com/ncats/ncats-adme/tree/master",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos31ve.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos31ve",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

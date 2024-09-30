@@ -1,0 +1,40 @@
+{
+    "Identifier": "eos7kpb",
+    "Slug": "h3d-virtual-screening-cascade-light",
+    "Status": "Ready",
+    "Title": "H3D virtual screening cascade light",
+    "Description": "This panel of models provides predictions for the H3D virtual screening cascade. It leverages the Ersilia Compound Embedding and FLAML. The H3D virtual screening cascade contains models for Mycobacterium tuberculosis and Plasmodium falciparum IC50 predictions, as well as ADME, cytotoxicity and solubility assays",
+    "Mode": "In-house",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "The raw scores are the ones emerging from the FLAML model. The ones with a sufix _perc represent the percentile in the scale 0-1 over a ChEMBL dataset of 200k compounds.",
+    "Tag": [
+        "Malaria",
+        "P.falciparum",
+        "Tuberculosis",
+        "M.tuberculosis",
+        "ADME",
+        "Cytotoxicity",
+        "Solubility"
+    ],
+    "Publication": "https://www.nature.com/articles/s41467-023-41512-2",
+    "Source Code": "https://github.com/ersilia-os/h3d-screening-cascade-models",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7kpb.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7kpb",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "Identifier": "eos2re5",
+    "Slug": "admetlab",
+    "Status": "Ready",
+    "Title": "ADMETlab models for evaluation of drug candidates",
+    "Description": "A series of models for the systematic ADMET evaluation of drug candidate molecules. Models include blood-brain barrier penetration; inhibition and substrate affinity for CYP1A2, CYP2C9, CYP2C19, CYP2D6, CYP3A4, and pgp; F 20% and F 30% bioavailability; human intestinal absorption; Ames mutagenicity; skin sensitization; plasma protein binding; volume distribution; LD50 of acute toxicity; human hepatotoxicity; hERG blocking; clearance; half-life; Papp (caco-2 permeability); LogD distribution coefficient; and LogS solubility.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification",
+        "Regression"
+    ],
+    "Output": [
+        "Experimental value"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Regression models provide a numerical result (LogS (log mol/L), LogP (distribution coefficient), Papp (Caco-2 permeability in cm/s), PPB (%)). Classifications provide the probability of activity according to ADMETlab thresholds.",
+    "Tag": [
+        "ADME",
+        "Toxicity",
+        "Lipophilicity",
+        "Solubility",
+        "Permeability"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-018-0283-x",
+    "Source Code": "https://github.com/ifyoungnet/ADMETlab",
+    "License": "GPL-3.0",
+    "Contributor": "svolk19-stanford ",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2re5.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2re5",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

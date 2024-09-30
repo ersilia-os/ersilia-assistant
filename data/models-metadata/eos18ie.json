@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos18ie",
+    "Slug": "antibiotics-ai",
+    "Status": "Ready",
+    "Title": "Substructure-based search of novel antibiotics",
+    "Description": "The authors use a large dataset (>30k) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the chemical space. Using this method, they were able to screen 283 compounds and identify a candidate active against methicillin-resistant S. aureus (MRSA) and vancomycin-resistant enterococci.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability off growth inhibition (80% cut off at 50uM)",
+    "Tag": [
+        "Cytotoxicity",
+        "Antimicrobial activity",
+        "ESKAPE"
+    ],
+    "Publication": "https://www.nature.com/articles/s41586-023-06887-8",
+    "Source Code": "https://github.com/felixjwong/antibioticsai",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos18ie.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos18ie",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

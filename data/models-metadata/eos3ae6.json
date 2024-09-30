@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos3ae6",
+    "Slug": "whales-descriptor",
+    "Status": "Ready",
+    "Title": "Holistic molecular descriptors for scaffold hopping",
+    "Description": "Weighted Holistic Atom Localization and Entity Shape (WHALES) is a descriptors based on 3D structure to facilitate natural product featurization. It is aimed at scaffold hopping exercises from natural products to synthetic compounds\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Vector representation of a molecule",
+    "Tag": [
+        "Natural product",
+        "Descriptor"
+    ],
+    "Publication": "https://www.nature.com/articles/s42004-018-0043-x",
+    "Source Code": "https://github.com/ETHmodlab/scaffold_hopping_whales",
+    "License": "MIT",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3ae6.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos3ae6",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

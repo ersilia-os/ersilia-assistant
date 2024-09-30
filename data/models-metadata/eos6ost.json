@@ -1,0 +1,34 @@
+{
+    "Identifier": "eos6ost",
+    "Slug": "reinvent4-libinvent",
+    "Status": "Ready",
+    "Title": "REINVENT 4 LibInvent",
+    "Description": "REINVENT 4 LibInvent creates new molecules by appending R groups to a given input. If the input SMILES string contains specified attachment points, it is directly processed by LibInvent to generate new molecules. If no attachment points given, the model try to find potential attachment points, and iterates through different combinations of these points. It passes each combination to LibInvent to generate new molecules.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Generative"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Tag": [
+        "Similarity"
+    ],
+    "Interpretation": "Model generates ~1000 similar molecules per input molecule.",
+    "Publication": "https://chemrxiv.org/engage/chemrxiv/article-details/65463cafc573f893f1cae33a",
+    "Source Code": "https://github.com/MolecularAI/REINVENT4",
+    "License": "Apache-2.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6ost.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6ost",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

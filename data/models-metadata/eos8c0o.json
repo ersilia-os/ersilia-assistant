@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos8c0o",
+    "Slug": "image-mol-bace",
+    "Status": "Ready",
+    "Title": "ImageMol human beta-secretase-1 (BACE-1) inhibition",
+    "Description": "This model has been developed using ImageMol, a deep learning model pretrained on 10 million unlabelled small molecules and fine-tuned in a second step to predict the binding of inhibitors to the human beta secretase 1 (BACE-1) protein. The BACE-1 dataset from MoleculeNet contains 1522 compounds with their associated pIC50. A compound with pIC50 => 7 is considered a BACE-1 inhibitor.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of BACE-1 inhibition (>0.5: Inhibitor). Compounds with pIC50 => 7 are considered BACE-1 inhibitors",
+    "Tag": [
+        "BACE",
+        "Chemical graph model",
+        "MoleculeNet"
+    ],
+    "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
+    "Source Code": "https://github.com/ChengF-Lab/ImageMol",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8c0o.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8c0o",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

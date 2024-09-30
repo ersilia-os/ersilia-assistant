@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos2gth",
+    "Slug": "maip-malaria-surrogate",
+    "Status": "Ready",
+    "Title": "MAIP distillation: antimalarial potential prediction",
+    "Description": "Prediction of the antimalarial potential of small molecules. This model was originally trained on proprietary data from various sources, up to a total of >7M compounds. The training sets belong to Evotec, Johns Hopkins, MRCT, MMV - St. Jude, AZ, GSK, and St. Jude Vendor Library. In this implementation, we have used a teacher-student approach to train a surrogate model based on ChEMBL data (2M molecules) to provide a lite downloadable version of the original MAIP\n",
+    "Mode": "Retrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Higher score indicates Higher antimalarial potential",
+    "Tag": [
+        "P.falciparum",
+        "Malaria",
+        "Antimicrobial activity"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00487-2",
+    "Source Code": "https://www.ebi.ac.uk/chembl/maip/",
+    "License": "None",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2gth.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2gth",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

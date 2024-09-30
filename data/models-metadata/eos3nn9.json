@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos3nn9",
+    "Slug": "mpro-covid19",
+    "Status": "Ready",
+    "Title": "Predict bioactivity against Main Protease of SARS-CoV-2",
+    "Description": "MProPred predicts the efficacy of compounds against the main protease of SARS-CoV-2, which is a promising drug target since it processes polyproteins of SARS-CoV-2. This model uses PaDEL-Descriptor to calculate molecular descriptors of compounds. It is based on a dataset of 758 compounds that have inhibition efficacy against the Main Protease, as published in peer-reviewed journals between January, 2020 and August, 2021. Input compounds are compared to compounds in the dataset to measure molecular similarity with MACCS.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Regression"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Gives the pIC50 values for each compound to compare their bioactivity against the main protease",
+    "Tag": [
+        "COVID19"
+    ],
+    "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10289339/",
+    "Source Code": "https://github.com/Nadimfrds/Mpropred",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3nn9.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos3nn9",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

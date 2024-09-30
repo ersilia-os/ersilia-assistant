@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos9p4a",
+    "Slug": "deep-dl",
+    "Status": "In progress",
+    "Title": "Drug-likeness scoring based on unsupervised learning",
+    "Description": "This model evaluates drug-likeness using an unsupervised learning approach, eliminating the need for labeled data and avoiding biases from incomplete negative sets. It extracts features directly from known drug molecules, identifying common characteristics through a recurrent neural network (RNN) language model. By representing molecules as SMILES strings, the model learns the probability distribution of known drugs and assesses new molecules based on their likelihood of appearing in this space. This method offers a robust and consistent evaluation of drug-likeness, outperforming traditional supervised models like TCC in generalization across various datasets.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Regression"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Higher score indicates higher drug likeness",
+    "Tag": [
+        "Drug-likeness"
+    ],
+    "Publication": "https://pubs.rsc.org/en/content/articlehtml/2022/sc/d1sc05248a",
+    "Source Code": "https://github.com/SeonghwanSeo/DeepDL",
+    "License": "GPL-3.0-or-later",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9p4a.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9p4a",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

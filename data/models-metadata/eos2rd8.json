@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos2rd8",
+    "Slug": "molt5-smiles-to-caption",
+    "Status": "Ready",
+    "Title": "MolT5-Translation between Molecules and Natural Language",
+    "Description": "MolT5 (Molecular T5) is a self-supervised learning framework pretrained on unlabeled natural language text and molecule strings with two end goals: molecular captioning (given a molecule, generate its description) and text-based de novo molecular generation (given a description, propose a molecule that matches it). This implementation is focused on molecular captioning.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Text"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Description of a molecule",
+    "Tag": [
+        "Chemical language model",
+        "Chemical notation"
+    ],
+    "Publication": "https://arxiv.org/abs/2204.11817",
+    "Source Code": "https://github.com/blender-nlp/MolT5",
+    "License": "None",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2rd8.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2rd8",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

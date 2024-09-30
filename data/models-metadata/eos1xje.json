@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos1xje",
+    "Slug": "biogpt-embeddings",
+    "Status": "Ready",
+    "Title": "BioGPT embeddings",
+    "Description": "BioGPT is a pre-trained transformer for biomedical text. This domain-specific model has been trained on large-scale biomedical literature. In this implementation, we use BioGPT to generate numerical embeddings for bioassay and other biomedical texts.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Representation"
+    ],
+    "Input": [
+        "Text"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Biomedical text embedding",
+    "Tag": [
+        "Embedding",
+        "Biomedical text"
+    ],
+    "Publication": "https://academic.oup.com/bib/article/23/6/bbac409/6713511?guestAccessKey=a66d9b5d-4f83-4017-bb52-405815c907b9&login=false",
+    "Source Code": "https://github.com/microsoft/biogpt",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1xje.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos1xje",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

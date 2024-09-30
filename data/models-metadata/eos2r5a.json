@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos2r5a",
+    "Slug": "retrosynthetic-accessibility",
+    "Status": "Ready",
+    "Title": "Retrosynthetic accessibility score",
+    "Description": "Retrosynthetic accessibility score based on the computer aided synthesis planning tool AiZynthfinder. The authors have selected a ChEMBL subset of 200.000 molecules, and checked whether AiZinthFinder could identify a synthetic route or not. This data has been trained to create a classifier that computes 4500 times faster than the underlying AiZynthFinder. Molecules outside the applicability domain, such as the GBD database, need to be fine tuned to their use case.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Higher score indicates easier retrosynthetic accessibility",
+    "Tag": [
+        "Synthetic accessibility",
+        "Chemical synthesis"
+    ],
+    "Publication": "https://pubs.rsc.org/en/content/articlelanding/2021/sc/d0sc05401a",
+    "Source Code": "https://github.com/reymond-group/RAscore",
+    "License": "MIT",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2r5a.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2r5a",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

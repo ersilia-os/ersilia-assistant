@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos5cl7",
+    "Slug": "ngonorrhoeae-inh",
+    "Status": "Ready",
+    "Title": "Growth Inhibitors of Neisseria gonorrhoeae",
+    "Description": "The authors curated a dataset of 282 compounds from ChEMBL, of which 160 (56.7%) were labeled as active N. gonorrhoeae inhibitor compounds. They used this dataset to build a na\u00efve Bayesian model and used it to screen a commercial library. With this method,they identified and validated two hits. We have used the dataset to build a model using LazyQSAR with Ersilia Compound Embeddings as molecular descriptors. LazyQSAR is an AutoML Ersilia-developed library.",
+    "Mode": "Retrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of activity for the inhibition of the Antimicrobial pathogen N. gonorrhoeae",
+    "Tag": [
+        "Antimicrobial activity",
+        "ChEMBL",
+        "N.gonorrhoeae"
+    ],
+    "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8274436/",
+    "Source Code": "https://github.com/ersilia-os/lazy-qsar",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5cl7.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5cl7",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos3ae7",
+    "Slug": "chemical-vae",
+    "Status": "Ready",
+    "Title": "Variational autoencoder for small molecule generation",
+    "Description": "This variational autoencoder (VAE) for chemistry uses an encoder-decoder-predictor framework to predict new small molecules. The input SMILES molecule is converted into a continuous vector, and the decoder converts this molecular representation back to a discrete SMILES. These continuous molecular representations allow for simple operations to generate new chemical matter. The decoder is constrained to produce valid molecules. In addition, a predictor estimates the chemical properties of the molecules represented as continuous vectors (logP, QED, synthetic accessibility). The chemicalVAE was trained on 250k drugs from ZINC.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Generative"
+    ],
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Compounds generated based on the input molecule",
+    "Tag": [
+        "Compound generation"
+    ],
+    "Publication": "https://pubs.acs.org/doi/10.1021/acscentsci.7b00572",
+    "Source Code": "https://github.com/aspuru-guzik-group/chemical_vae",
+    "License": "Apache-2.0",
+    "Contributor": "brosular",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3ae7.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos3ae7",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

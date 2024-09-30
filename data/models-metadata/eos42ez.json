@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos42ez",
+    "Slug": "antibiotics-ai-cytotox",
+    "Status": "Ready",
+    "Title": "Human cytotoxicity endpoints",
+    "Description": "The authors tested the dataset of 39312 compounds from the antibiotics-ai model (eos18ie) against several cytotoxicity endpoints; human liver carcinoma cells (HepG2), human primary skeletal muscle cells (HSkMCs) and human lung fibroblast cells (IMR-90). Cellular viability was measured after 20133 days of treatment with each compound at 10 \u03bcM and activities were binarized using a 90% cell viability cut-off. 341 (8.5%), 490 (3.8%) and 447 (8.8%) compounds classified as cytotoxic for HepG2 cells, HSk-MCs and IMR-90 cells",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Predicting cytotoxicity in  human liver carcinoma cells (HepG2), human primary skeletal muscle cells (HSkMCs) and human lung fibroblast cells (IMR-90)",
+    "Tag": [
+        "Cytotoxicity",
+        "ESKAPE"
+    ],
+    "Publication": "https://www.nature.com/articles/s41586-023-06887-8",
+    "Source Code": "https://github.com/felixjwong/antibioticsai",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos42ez.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos42ez",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

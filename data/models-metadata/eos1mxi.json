@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos1mxi",
+    "Slug": "smiles-pe",
+    "Status": "Ready",
+    "Title": "SmilesPE: tokenizer algorithm for SMILES, DeepSMILES, and SELFIES",
+    "Description": "The Smiles Pair Encoding method generates smiles substring tokens based on high-frequency token pairs from large chemical datasets. This method is well-suited for both QSAR activities as well as generative models. The model provided here has been pretrained using ChEMBL.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Generative"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "Flexible List",
+    "Interpretation": "A data-driven tokenization method for SMILES-based deep learning models in cheminformatics, demonstrating high performance in molecular generation and QSAR prediction tasks compared to atom-level tokenization",
+    "Tag": [
+        "Chemical language model",
+        "Chemical notation",
+        "ChEMBL"
+    ],
+    "Publication": "https://pubs.acs.org/doi/abs/10.1021/acs.jcim.0c01127",
+    "Source Code": "https://github.com/XinhaoLi74/SmilesPE",
+    "License": "Apache-2.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1mxi.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos1mxi",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

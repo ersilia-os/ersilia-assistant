@@ -1,0 +1,39 @@
+{
+    "Identifier": "eos2mhp",
+    "Slug": "grover-bace",
+    "Status": "Ready",
+    "Title": "BACE-1 inhibition",
+    "Description": "Prediction of Beta-secretase 1 (BACE-1) inhibition. BACE-1 is expressed mainly in neurons and has been involved in the development of Alzheimer's disease. This model has been trained on the BACE dataset from MoleculeNet using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER). \n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability that the molecule is a BACE-1 inhibitor (using a 0.1 uM cut-off)",
+    "Tag": [
+        "Alzheimer",
+        "BACE",
+        "MoleculeNet",
+        "Chemical graph model"
+    ],
+    "Publication": "https://arxiv.org/abs/2007.02835",
+    "Source Code": "https://github.com/tencent-ailab/grover",
+    "License": "MIT",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2mhp.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2mhp",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

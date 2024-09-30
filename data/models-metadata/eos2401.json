@@ -1,0 +1,34 @@
+{
+    "Identifier": "eos2401",
+    "Slug": "scaffold-decoration",
+    "Status": "Ready",
+    "Title": "Scaffold decoration",
+    "Description": "The context discusses a novel notation system called Sequential Attachment-based Fragment Embedding (SAFE) that improves upon traditional molecular string representations like SMILES. SAFE reframes SMILES strings as an unordered sequence of interconnected fragment blocks while maintaining compatibility with existing SMILES parsers. This streamlines complex molecular design tasks by facilitating autoregressive generation under various constraints. The effectiveness of SAFE is demonstrated by training a GPT2-like model on a dataset of 1.1 billion SAFE representations that exhibited versatile and robust optimization performance for molecular design.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Generative"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Model generates new molecules from input molecule by replacing side chains of input molecule.",
+    "Tag": [
+        "Compound generation"
+    ],
+    "Publication": "https://arxiv.org/pdf/2310.10773.pdf",
+    "Source Code": "https://github.com/datamol-io/safe/tree/main",
+    "License": "CC-BY-4.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2401.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2401",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

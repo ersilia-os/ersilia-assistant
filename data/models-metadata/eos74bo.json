@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos74bo",
+    "Slug": "ncats-solubility",
+    "Status": "Ready",
+    "Title": "Aqueous Kinetic Solubility",
+    "Description": "Kinetic aqueous solubility (\u03bcg/mL) was experimentally determined using the same SOP in over 200 NCATS drug discovery projects. A final dataset of 11780 non-redundant molecules and their associated solubility was used to train a SVM classifier. Approximately half of the dataset has poor solubility (< 10 \u03bcg/mL), and two-thirds of these low soluble molecules report values of < 1 \u03bcg/mL. A subset of the data used is available at PubChem (AID 1645848).",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of a compound having poor solublibity (< 10 \u00b5g/ml)",
+    "Tag": [
+        "ADME",
+        "Solubility"
+    ],
+    "Publication": "https://slas-discovery.org/article/S2472-5552(22)06765-X/fulltext",
+    "Source Code": "https://github.com/ncats/ncats-adme",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos74bo.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos74bo",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

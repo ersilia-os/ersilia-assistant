@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos5gge",
+    "Slug": "dilipred",
+    "Status": "Ready",
+    "Title": "Early prediction of Drug-Induced Liver Injury",
+    "Description": "The DILI-Predictor predicts 10 features related to DILI toxicity including _in-vivo_ and _in-vitro_ and physicochemical parameters. It has been developed by the Broad Institute using the DILIst dataset (1020 compounds) from the FDA and achieved an accuracy balance of 70% on a test set of 255 compounds held out from the same dataset. The authors show how the model can correctly predict compounds that are not toxic in human despite being toxic in mice.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Prediction of 10 DILI-related endpoints. The most important is the first, DILI. Threshold for DILI active is set at 0.16 by the authors.",
+    "Tag": [
+        "Toxicity",
+        "Metabolism"
+    ],
+    "Publication": "https://pubs.acs.org/doi/10.1021/acs.chemrestox.4c00015",
+    "Source Code": "https://github.com/Manas02/dili-pip",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5gge.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5gge",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

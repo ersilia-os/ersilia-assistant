@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos8fth",
+    "Slug": "redial-2020",
+    "Status": "Ready",
+    "Title": "SARS-CoV-2 antiviral prediction: REDIAL-2020",
+    "Description": "Predictor of several endpoints related to Sars-CoV-2. It provides predictions for Live Virus Infectivity, Viral Entry, Viral Replication, In Vitro Infectivity and Human Cell Toxicity using a combination of three models. Consensus results are obtained by averaging the prediction for the three different models for each activity and toxicity models. The models have been built using NCATS COVID19 data. Further details on result interpretations can be found here: https://drugcentral.org/Redial",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "The model returns the probability of 1 (active) in each assay. Good drugs are active in CPE, 3CL and are inactive in cytotox, hCYTOX and ACE2 and/or are active in at least one of the following: AlphaLISA, CoV-PPE, MERS-PPE, while inactive in the counter screen, respectively: TruHit, CoV-PPE_cs, MERS-PPE_cs.",
+    "Tag": [
+        "Sars-CoV-2",
+        "COVID19",
+        "Antiviral activity"
+    ],
+    "Publication": "https://www.nature.com/articles/s42256-021-00335-w#Sec9",
+    "Source Code": "https://github.com/sirimullalab/redial-2020/tree/v1.0",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fth.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8fth",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

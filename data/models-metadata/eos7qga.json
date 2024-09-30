@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos7qga",
+    "Slug": "datamol-smiles2canonical",
+    "Status": "Ready",
+    "Title": "Converter of SMILES in Canonical, Selfie, Inchi, Inchi Key form",
+    "Description": "Using the Datamol package, the model receives a SMILE as input, then goes through a process of sanitizing and standardization of the molecule to generate four outputs: Canonical SMILES, SELFIES, InChI and InChIKey",
+    "Mode": "Pretrained",
+    "Task": [
+        "Representation"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "Matrix",
+    "Interpretation": "Compound represented in its canonical SMILES, SELFIES, InChI and InChIKey forms",
+    "Tag": [
+        "Chemical notation"
+    ],
+    "Publication": "https://doc.datamol.io/stable/tutorials/Preprocessing.html",
+    "Source Code": "https://github.com/datamol-org/datamol",
+    "License": "Apache-2.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7qga",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

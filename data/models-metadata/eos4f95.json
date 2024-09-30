@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos4f95",
+    "Slug": "mycetos",
+    "Status": "Ready",
+    "Title": "Inhibition of Eumycetoma from MycetOS",
+    "Description": "This model predicts the growth of the fungus M. mycetomatis, causal agent of Mycetoma, in presence of small drugs. It has been developed using the data from MycetOS, an opemn source initiative aiming at finding new patent-free drugs. The model has been trained using the LazyQSAR package (MorganBinaryClassifier) from Ersilia.",
+    "Mode": "In-house",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of inhibition of M. mycetomatis (growth assay, cut-off at 20% growth)",
+    "Tag": [
+        "Mycetoma",
+        "Antifungal activity"
+    ],
+    "Publication": "https://www.ijidonline.com/article/S1201-9712(20)31735-5/fulltext",
+    "Source Code": "https://github.com/ersilia-os/lazy-qsar",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4f95.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4f95",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

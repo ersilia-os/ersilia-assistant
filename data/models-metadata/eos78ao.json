@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos78ao",
+    "Slug": "mordred",
+    "Status": "Ready",
+    "Title": "Mordred chemical descriptors",
+    "Description": "A set of ca 1,800 chemical descriptors, including both RDKit and original modules. It is comparable to the well known PaDEL-Descriptors (see eos7asg), but has shorter calculation times and can process larger molecules.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Vector representation of a molecule",
+    "Tag": [
+        "Descriptor"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-018-0258-y",
+    "Source Code": "https://github.com/mordred-descriptor/mordred",
+    "License": "BSD-3.0",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos78ao.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos78ao",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

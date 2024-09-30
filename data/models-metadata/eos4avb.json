@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos4avb",
+    "Slug": "image-mol-embeddings",
+    "Status": "Ready",
+    "Title": "Molecular representation learning",
+    "Description": "Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Representation"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Matrix",
+    "Interpretation": "ImageMol embeddings of shape [1512] reshaped as a Numpy 1D array before serializing. These embeddings can be used as the input features of a fully connected classification or regression layer in a neural network.",
+    "Tag": [
+        "Embedding"
+    ],
+    "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
+    "Source Code": "https://github.com/HongxinXiang/ImageMol",
+    "License": "MIT",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4avb.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4avb",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

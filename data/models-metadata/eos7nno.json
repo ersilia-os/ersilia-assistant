@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos7nno",
+    "Slug": "ncats-cyp2d6",
+    "Status": "Ready",
+    "Title": "CYP2D6 Metabolism",
+    "Description": "Analysis of metabolic stability, determining the inhibition of CYP2D6 activity and whether the compounds are a substrate for the CYP2D6 enzyme. The data to build these models has been publicly available at PubChem (AID1645840, AID1645841, AID1645842) by ADME@NCATS",
+    "Mode": "Pretrained",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Probability of inhibiting the enzyme and probability of being a ubstrate of the enzyme. Activity in both indicates the compound is a ligand of the enzyme.",
+    "Tag": [
+        "CYP450",
+        "ADME",
+        "Metabolism"
+    ],
+    "Publication": "https://dmd.aspetjournals.org/content/49/9/822",
+    "Source Code": "https://github.com/ncats/ncats-adme",
+    "License": "None",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7nno.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7nno",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

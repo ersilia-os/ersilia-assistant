@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos2ta5",
+    "Slug": "cardiotoxnet-herg",
+    "Status": "Ready",
+    "Title": "Ligand-based prediction of hERG blockade",
+    "Description": "A robust predictor for hERG channel blockade based on an ensemble of five deep learning models. The authors have collected a dataset from public sources, such as BindingDB and ChEMBL on hERG blockers and non-blockers. The cut-off for hERG blockade was set at IC50 < 10 uM for the classifier.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Probability that the compound inhibits hERG (IC50 < 10 uM)",
+    "Tag": [
+        "hERG",
+        "Toxicity",
+        "Cardiotoxicity"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00541-z",
+    "Source Code": "https://github.com/Abdulk084/CardioTox",
+    "License": "None",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2ta5.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2ta5",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

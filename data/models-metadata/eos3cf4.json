@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos3cf4",
+    "Slug": "molfeat-chemgpt",
+    "Status": "Ready",
+    "Title": "ChemGPT-4.7",
+    "Description": "ChemGPT (4.7M params) is a language-based transformer model for generative molecular modeling, which was pretrained on the PubChem10M dataset. Pre-trained ChemGPT models are also robust, self-supervised representation learners that generalize to previously unseen regions of chemical space and enable embedding-based nearest-neighbor search.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Representation"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "128 features based on a chemical language model",
+    "Tag": [
+        "Descriptor",
+        "Chemical language model",
+        "Chemical graph model",
+        "Embedding"
+    ],
+    "Publication": "https://chemrxiv.org/engage/chemrxiv/article-details/627bddd544bdd532395fb4b5",
+    "Source Code": "https://molfeat.datamol.io/featurizers/ChemGPT-4.7M",
+    "License": "Apache-2.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3cf4.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos3cf4",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

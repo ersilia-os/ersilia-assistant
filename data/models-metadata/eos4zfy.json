@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos4zfy",
+    "Slug": "maip-malaria",
+    "Status": "Ready",
+    "Title": "MAIP: antimalarial activity prediction",
+    "Description": "Prediction of the antimalarial potential of small molecules. This model is an ensemble of smaller QSAR models trained on proprietary data from various sources, up to a total of >7M compounds. The training sets belong to Evotec, Johns Hopkins, MRCT, MMV - St. Jude, AZ, GSK, and St. Jude Vendor Library. The code and training data are not released, using this model posts predictions to the MAIP online server. The Ersilia Model Hub also offers MAIP-surrogate as a downloadable package for IP-sensitive queries.\n",
+    "Mode": "Online",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Higher score indicates higher antimalarial potential",
+    "Tag": [
+        "P.falciparum",
+        "Malaria",
+        "Antimicrobial activity"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00487-2",
+    "Source Code": "https://www.ebi.ac.uk/chembl/maip/",
+    "License": "None",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4zfy.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4zfy",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

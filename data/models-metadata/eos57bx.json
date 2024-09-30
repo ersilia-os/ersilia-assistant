@@ -1,0 +1,34 @@
+{
+    "Identifier": "eos57bx",
+    "Slug": "reinvent4-mol2mol-scaffold",
+    "Status": "Ready",
+    "Title": "REINVENT 4 Mol2MolScaffold",
+    "Description": "Mol2MolScaffold uses REINVENT4's mol2mol_scaffold.prior and mol2mol_scaffold_generic.prior to generate around 500 new molecules similar to the provided molecules. The generated molecules will be relatively similar to the input molecules.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Generative"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Model generates ~500 similar molecules per input molecule.",
+    "Tag": [
+        "Similarity"
+    ],
+    "Publication": "https://chemrxiv.org/engage/chemrxiv/article-details/65463cafc573f893f1cae33a",
+    "Source Code": "https://github.com/MolecularAI/REINVENT4",
+    "License": "Apache-2.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos57bx.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos57bx",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

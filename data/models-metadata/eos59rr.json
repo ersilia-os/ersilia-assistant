@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos59rr",
+    "Slug": "bidd-molmap-fps",
+    "Status": "Ready",
+    "Title": "Molecular fingerprint maps based on broadly learned knowledge-based representations",
+    "Description": "Molecular representation of small molecules via ingerprint-based molecular maps (images). Typically, the goal is to use these images as inputs for an image-based deep learning model such as a convolutional neural network. The authors have demonstrated high performance of MolMap out-of-the-box with a broad range of tasks from MoleculeNet.",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Representation"
+    ],
+    "Output": [
+        "Image",
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Matrix",
+    "Interpretation": "Image representation of a molecule. Each pixel represents a molecular feature",
+    "Tag": [
+        "Fingerprint"
+    ],
+    "Publication": "https://www.nature.com/articles/s42256-021-00301-6",
+    "Source Code": "https://github.com/shenwanxiang/bidd-molmap",
+    "License": "GPL-3.0",
+    "Contributor": "samuelmaina",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos59rr.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos59rr",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

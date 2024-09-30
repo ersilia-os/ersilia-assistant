@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos481p",
+    "Slug": "grover-toxcast",
+    "Status": "Ready",
+    "Title": "ToxCast toxicity panel",
+    "Description": "Prediction across the ToxCast toxicity panel, containing hundreds of toxicity outcomes, as part of the MoleculeNet benchmark. This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Probability of toxicity against 617 biological targets",
+    "Tag": [
+        "Toxicity",
+        "ToxCast",
+        "Chemical graph model"
+    ],
+    "Publication": "https://papers.nips.cc/paper/2020/hash/94aef38441efa3380a3bed3faf1f9d5d-Abstract.html",
+    "Source Code": "https://github.com/tencent-ailab/grover",
+    "License": "MIT",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos481p.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos481p",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

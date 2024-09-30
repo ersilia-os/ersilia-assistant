@@ -1,0 +1,35 @@
+{
+    "Identifier": "eos935d",
+    "Slug": "meta-trans",
+    "Status": "Ready",
+    "Title": "MetaTrans: human drug metabolites",
+    "Description": "Small molecules are metabolized by the liver in what is known as phase I and phase II reactions. Those can lead to reduced drug efficacy and generation of toxic metabolites, causing serious side effects. This model predicts the human metabolites of small molecules using a molecular transformer pr-trained on general chemical reactions and fine tuned to human metabolism. It provides up to 10 metabolites for each input molecule.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Generative"
+    ],
+    "Output": [
+        "Compound"
+    ],
+    "Output Type": [
+        "String"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "A maximum of 10 human metabolites generated from the input molecule",
+    "Tag": [
+        "Metabolism"
+    ],
+    "Publication": "https://pubs.rsc.org/en/content/articlelanding/2020/sc/d0sc02639e#fn1",
+    "Source Code": "https://github.com/KavrakiLab/MetaTrans",
+    "License": "BSD-3.0",
+    "Contributor": "carcablop",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos935d.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos935d",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

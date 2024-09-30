@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos2l0q",
+    "Slug": "schisto-swisstph",
+    "Status": "Ready",
+    "Title": "Anti-schistosomiasis activity",
+    "Description": "Prediction of the activity of small molecules against the schistosoma parasite. This model has been developed by Ersilia thanks to the data provided by the Swiss TPH. In vitro activity against newly transformed schistosoma (nts) and adult worms was measured (% of inhibition of activity and IC50, respectively)",
+    "Mode": "In-house",
+    "Task": [
+        "Classification"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "The probabilities of the molecule being active against schistosoma in NTS stage (in a % of inhibition assay at 70 and 90% inhibition 10uM) and adult stage (in IC50 assay at cut-offs 5 and 10uM",
+    "Tag": [
+        "Neglected tropical disease",
+        "Schistosomiasis",
+        "IC50"
+    ],
+    "Publication": "https://pubmed.ncbi.nlm.nih.gov/30398059",
+    "Source Code": "https://github.com/ersilia-os/lazy-qsar",
+    "License": "GPL-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2l0q.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2l0q",
+    "Docker Architecture": [
+        "AMD64"
+    ]
+}

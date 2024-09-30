@@ -1,0 +1,38 @@
+{
+    "Identifier": "eos5smc",
+    "Slug": "grover-tox21",
+    "Status": "Ready",
+    "Title": "Predicts activity of compounds accross the Tox21 panel",
+    "Description": "Predicts activity of compounds in the Tox21 toxicity panel, comprising of 12 toxicity pathways, as part of the MoleculeNet benchmark datasets. This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Classification"
+    ],
+    "Output": [
+        "Probability"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Toxicity measurements against 12 biological targets",
+    "Tag": [
+        "Tox21",
+        "Toxicity",
+        "Chemical graph model"
+    ],
+    "Publication": "https://papers.nips.cc/paper/2020/file/94aef38441efa3380a3bed3faf1f9d5d-Paper.pdf",
+    "Source Code": "https://github.com/tencent-ailab/grover",
+    "License": "MIT",
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5smc.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5smc",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}
