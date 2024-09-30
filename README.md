@@ -1,2 +1,2 @@
 # Ersilia Assistant
-A chat assistant to help you design experimental workflows with Ersilia models with ease!
+A chat assistant to help users design experimental workflows with Ersilia models with ease!

@@ -1,0 +1,37 @@
+{
+    "Identifier": "eos9ei3",
+    "Slug": "sa-score",
+    "Status": "Ready",
+    "Title": "Synthetic accessibility score",
+    "Description": "Estimation of synthetic accessibility score (SAScore) of drug-like molecules based on molecular complexity and fragment contributions. The fragment contributions are based on a 1M sample from PubChem and the molecular complexity is based on the presence/absence of non-standard structural features. It has been validated comparing the SAScore and the estimates of medicinal chemist experts for 40 molecules (r2 = 0.89). The SAScore has been contributed to the RDKit Package.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Score"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
+    "Interpretation": "Low scores indicate higher synthetic accessibility",
+    "Tag": [
+        "Synthetic accessibility",
+        "Chemical synthesis"
+    ],
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8",
+    "Source Code": "https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score",
+    "License": "BSD-3.0",
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ei3.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9ei3",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}

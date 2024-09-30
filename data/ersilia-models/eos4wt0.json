@@ -1,0 +1,36 @@
+{
+    "Identifier": "eos4wt0",
+    "Slug": "morgan-fps",
+    "Status": "Ready",
+    "Title": "Morgan Fingerprints",
+    "Description": "The Morgan Fingerprints are one of the most widely used molecular representations. They are circular representations (from an atom,search the atoms around with a radius n) and can have thousands of features. This implementation uses the RDKit package and is done with radius 3 and 2048 dimensions,providing a binary vector as output. For Morgan counts, see eos5axz.",
+    "Mode": "Pretrained",
+    "Task": [
+        "Representation"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
+        "Descriptor"
+    ],
+    "Output Type": [
+        "Integer"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Binary vector representing the SMILES",
+    "Tag": [
+        "Descriptor",
+        "Fingerprint"
+    ],
+    "Publication": "https://pubmed.ncbi.nlm.nih.gov/20426451/",
+    "Source Code": "https://www.rdkit.org/docs",
+    "License": "BSD-3.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4wt0.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4wt0",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
+}
