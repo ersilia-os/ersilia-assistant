@@ -12,5 +12,5 @@ Models in consideration are:
 - Meta-Llama-3-8B-Instruct-Q4_K_M
 - Meta-Llama-3-8B-Instruct-Q5_K_S
 - Meta-Llama-3-8B-Instruct-Q5_K_M
-- llava-v1.5-7b-q4
+
 
