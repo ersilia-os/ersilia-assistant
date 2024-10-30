@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Llamafile on Lambda with Python
+
+Resources:
+  Lambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Architectures:
+        - x86_64
+      PackageType: Image
+      MemorySize: 10240
+      Timeout: 600
+      FunctionUrlConfig:
+        AuthType: NONE
+        InvokeMode: RESPONSE_STREAM
+
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: ./src
+      DockerTag: llama-lambda
+
+Outputs:
+  LambdaFunctionUrl:
+    Description: Lambda Function URL
+    Value: !GetAtt LambdaUrl.FunctionUrl

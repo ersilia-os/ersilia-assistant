@@ -1,0 +1,10 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "llamafile-lambda-python"
+resolve_s3 = true
+s3_prefix = "llamafile-lambda-python"
+region = "eu-central-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["Lambda=443413310934.dkr.ecr.eu-central-1.amazonaws.com/llamafilelambdapython0b3dc2e8/lambda04a7da3crepo"]
+disable_rollback = true

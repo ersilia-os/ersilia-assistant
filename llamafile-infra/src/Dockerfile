@@ -1,0 +1,28 @@
+FROM python:3.12-slim-bullseye
+
+# Create llamafile files
+RUN mkdir -p /opt/llamafile
+COPY ./tmp/llamafile/Meta-Llama-3.1-8B-Instruct.Q3_K_S.llamafile /opt/llamafile
+COPY ./command.sh /opt/llamafile/
+
+# Install packages to support llamafile and other required tools
+RUN apt-get update && \
+    apt-get install -y wget findutils gzip && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+RUN wget -O /usr/bin/ape https://cosmo.zip/pub/cosmos/bin/ape-$(uname -m).elf && \
+    chmod +x /usr/bin/ape
+
+# Lambda Web Adapter
+COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:0.8.3 /lambda-adapter /opt/extensions/lambda-adapter
+ENV AWS_LWA_INVOKE_MODE=response_stream
+ENV AWS_LWA_ASYNC_INIT=true
+ENV AWS_LWA_READINESS_CHECK_PATH=/health
+
+RUN mkdir -p /var/task
+WORKDIR "/var/task"
+
+COPY runner.py ./
+EXPOSE 8080
+
+ENTRYPOINT ["python", "runner.py"]
