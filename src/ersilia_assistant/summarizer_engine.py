@@ -5,7 +5,7 @@ from llama_index.core.llms import ChatMessage, MessageRole
 from llama_index.core import PromptTemplate
 from llama_index.llms.llamafile import Llamafile
 
-from defaults import BASE_URL, STOP_TOKENS
+from .defaults import BASE_URL, STOP_TOKENS
 
 
 class Summarizer:

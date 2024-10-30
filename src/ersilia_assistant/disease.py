@@ -2,7 +2,7 @@ import os
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.llms.llamafile import Llamafile
 
-from defaults import EMBEDDING, BASE_URL
+from .defaults import EMBEDDING, BASE_URL
 
 # TODO Clean this up
 CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))

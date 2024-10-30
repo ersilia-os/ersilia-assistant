@@ -1,15 +1,12 @@
 import streamlit as st
 
-from summarizer_engine import Summarizer
-from model_selector import ModelSelector
-from recipe_generator import RecipeGenerator
-from defaults import EOF_TOKEN
+from ersilia_assistant import Summarizer, ModelSelector, RecipeGenerator
 
 st.title("Ersilia Assistant")
 
 st.sidebar.title("About the Ersilia Open Source Initiative")
 
-st.sidebar.warning("This is an AI-based assistant and is intended for research use only. blabla")
+st.sidebar.warning("This is an AI-based assistant and is intended for research use only.")
 
 # History storage for storing all user inputs
 # Initialize chat history

@@ -1,7 +1,7 @@
 from typing import Generator
 
-from metadata_engine import ErsiliaModelMetadataIndex
-from defaults import EOF_TOKEN
+from .metadata_engine import ErsiliaModelMetadataIndex
+from .defaults import EOF_TOKEN
 
 class ModelSelector:
     def __init__(self) -> None:

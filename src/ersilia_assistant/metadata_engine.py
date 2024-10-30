@@ -2,11 +2,11 @@ import os
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, StorageContext
 from llama_index.llms.llamafile import Llamafile
 
-from defaults import EMBEDDING, BASE_URL
+from .defaults import EMBEDDING, BASE_URL
 
-# TODO Clean this up
+
 CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
-DATA_DIR = os.path.abspath(os.path.join(CURRENT_DIR, "../..", "data"))
+DATA_DIR = os.path.abspath(os.path.join(CURRENT_DIR, "data"))
 METADATA_DIR = os.path.join(DATA_DIR, "models-metadata")
 
 

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ersilia-assistant"
+version = "1.0.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "llama-index==0.11.14",
+    "llama-index-core==0.11.14",
+    "llama-index-llms-llamafile==0.2.1",
+    "llama-index-embeddings-huggingface==0.3.1"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"ersilia_assistant" = ["data/diseases/*.json", "data/models-metadata/*.json"]
