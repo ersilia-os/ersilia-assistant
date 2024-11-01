@@ -18,7 +18,10 @@ class ErsiliaModelMetadataIndex:
         You are a helpful assistant who can select the best models from the context for the task.
         Select all relevant model identifiers from the context.
         """
-        documents = SimpleDirectoryReader(METADATA_DIR).load_data()
+
+        # It may happen that the package data ends up in an environment that's 'hidden'
+        # So we set exclude_hidden=False to ensure metadata discoverability
+        documents = SimpleDirectoryReader(METADATA_DIR, exclude_hidden=False).load_data()
         self.index = VectorStoreIndex.from_documents(documents, embed_model=EMBEDDING)
 
     def query_engine(self, top_k=10, streaming=True):

@@ -1,7 +1,8 @@
 import os
+
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
-LLAMAFILE_URL = os.environ.get("LLAMAFILE_URL", "http://127.0.0.1:8080")
+LLAMAFILE_URL = os.environ.get("llamafile_url")
 BASE_URL = LLAMAFILE_URL
 EMBEDDING = HuggingFaceEmbedding("BAAI/bge-base-en-v1.5")
 

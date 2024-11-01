@@ -166,3 +166,6 @@ cython_debug/
 bin/tmp/*
 llamafile-infra/src/tmp/*
 llamafile-infra/.aws-sam/*
+
+# Streamlit secrets
+*secrets.toml
