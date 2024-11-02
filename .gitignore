@@ -169,3 +169,5 @@ llamafile-infra/.aws-sam/*
 
 # Streamlit secrets
 *secrets.toml
+
+bin/nohup*

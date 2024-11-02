@@ -62,7 +62,7 @@ echo "Starting the assistant now!"
 # Run the llamafile server at port 8080 in a sub shell
 # The llamafile server is a simple HTTP server that serves the llamafile
 (
-    $llamafile_path \
+    nohup $llamafile_path \
     --server \
     --fast \
     --gpu DISABLE \
@@ -71,7 +71,8 @@ echo "Starting the assistant now!"
     --nobrowser \
     --host 0.0.0.0 \
     --log-disable \
-    --port 8080
+    --port 8080 \
+    &
 
     # Check if the llamafile server is already running
     if [ $? -eq 0 ]; then
