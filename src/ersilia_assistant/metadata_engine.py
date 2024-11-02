@@ -2,7 +2,7 @@ import os
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, StorageContext
 from llama_index.llms.llamafile import Llamafile
 
-from .defaults import EMBEDDING, BASE_URL
+from .defaults import EMBEDDING, BASE_URL, REQUEST_TIMEOUT
 
 
 CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -13,7 +13,7 @@ METADATA_DIR = os.path.join(DATA_DIR, "models-metadata")
 # TODO CustomQueryEngine?
 class ErsiliaModelMetadataIndex:
     def __init__(self) -> None:
-        self.llm = Llamafile(base_url=BASE_URL)
+        self.llm = Llamafile(base_url=BASE_URL, request_timeout=REQUEST_TIMEOUT)
         self.llm.system_prompt = """
         You are a helpful assistant who can select the best models from the context for the task.
         Select all relevant model identifiers from the context.
