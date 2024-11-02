@@ -1,23 +1,26 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "ersilia-assistant"
 version = "1.0.0"
 description = ""
+authors = ["Dhanshree Arora <dhanshree@ersilia.io>"]
+license = "GPL-3.0"
 readme = "README.md"
-requires-python = ">=3.8"
-dependencies = [
-    "llama-index==0.11.14",
-    "llama-index-core==0.11.14",
-    "llama-index-llms-llamafile==0.2.1",
-    "llama-index-embeddings-huggingface==0.3.1",
-    "streamlit==1.39.0"
+repository = "https://github.com/ersilia-os/ersilia-assistant"
+packages = [{ include = "ersilia_assistant", from = "src" }]
+include = [
+    "data/diseases/*.json",
+    "data/models-metadata/*.json"
 ]
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+llama-index = "^0.11.21"
+llama-index-core = "^0.11.21"
+llama-index-llms-llamafile = "^0.2.2"
+llama-index-embeddings-huggingface = "^0.3.1"
+streamlit = "^1.39.0"
 
-[tool.setuptools.package-data]
-"ersilia_assistant" = ["data/diseases/*.json", "data/models-metadata/*.json"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
