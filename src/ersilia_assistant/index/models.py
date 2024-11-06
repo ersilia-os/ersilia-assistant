@@ -9,9 +9,12 @@ METADATA_DIR = os.path.join(DATA_DIR, "models")
 class ErsiliaModelMetadataIndex(BaseErsiliaIndex):
     def __init__(self) -> None:
         super().__init__(METADATA_DIR)
+        self.llm.system_prompt = """
+        You are a helpful assistant who can select the best models from the context for the task.
+        Select all relevant model identifiers from the context.
+        """
 
     def query_engine(self, top_k=10, streaming=True):
-        # This is ugly, we should use kwargs instead and add more customizations
         if not top_k:
             return self.index.as_query_engine(llm=self.llm, streaming=streaming)
         else:

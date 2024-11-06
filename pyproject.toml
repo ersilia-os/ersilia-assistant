@@ -18,12 +18,23 @@ include = [
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
-llama-index = "^0.11.21"
-llama-index-core = "^0.11.21"
-llama-index-llms-llamafile = "^0.2.2"
-llama-index-embeddings-huggingface = "^0.3.1"
+huggingface-hub = "0.25.1"
+llama-index = "0.11.14"
+llama-index-agent-openai = "0.3.4"
+llama-index-core = "0.11.14"
+llama-index-embeddings-huggingface = "0.3.1"
+llama-index-embeddings-openai = "0.2.5"
+llama-index-llms-llamafile = "0.2.1"
+llama-index-llms-openai = "0.2.9"
+llama-index-multi-modal-llms-openai = "0.2.1"
+llama-index-question-gen-openai = "0.2.0"
+openai = "1.47.1"
+sentence-transformers = "3.1.1"
 streamlit = "^1.39.0"
+tiktoken = "0.7.0"
+tokenizers = "0.20.0"
 torch = "2.4.1"
+transformers = "4.45.1"
 
 
 [build-system]
