@@ -9,7 +9,11 @@ repository = "https://github.com/ersilia-os/ersilia-assistant"
 packages = [{ include = "ersilia_assistant", from = "src" }]
 include = [
     "data/diseases/*.json",
-    "data/models-metadata/*.json"
+    "data/diseases/store/*.json",
+    "data/models/*.json",
+    "data/models/store/*.json",
+    "data/publications/*.json",
+    "data/publications/store/*.json",
 ]
 
 [tool.poetry.dependencies]
@@ -19,6 +23,7 @@ llama-index-core = "^0.11.21"
 llama-index-llms-llamafile = "^0.2.2"
 llama-index-embeddings-huggingface = "^0.3.1"
 streamlit = "^1.39.0"
+torch = "2.4.1"
 
 
 [build-system]

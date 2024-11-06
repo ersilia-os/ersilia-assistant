@@ -15,7 +15,7 @@ class Summarizer:
         self.response_header = """
         This is my understanding of your query:
         """
-        
+
         self.response_format = f"""
         When generating a response you should separate each line by a newline character and use numerical bullets.
         Each line should be in second person.
@@ -34,14 +34,13 @@ class Summarizer:
             content=self.response_format,
         )
         self.summary_gen_prompt = PromptTemplate(
-            template=self.summary_prompt_template_str,
-            prompt_type="summary"
+            template=self.summary_prompt_template_str, prompt_type="summary"
         )
 
     def summarize(self, query: str):
         messages = [
             self.system_message,
-            self.summary_gen_prompt.format_messages(query=query)[0]
+            self.summary_gen_prompt.format_messages(query=query)[0],
         ]
         for chunk in self.llm.stream_chat(messages=messages, stop=STOP_TOKENS):
             # stream_chat returns a generator of ChatResponse objects

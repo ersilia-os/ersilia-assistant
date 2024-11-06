@@ -1,6 +1,7 @@
 from typing import List, Generator
 import re
 
+
 class RecipeGenerator:
     def __init__(self) -> None:
         self.fetch_cmd = "ersilia fetch eos-identifier"
@@ -25,7 +26,7 @@ class RecipeGenerator:
             List of model identifiers
         """
         return set(re.findall(r"eos[a-zA-Z0-9]+", text))
-    
+
     def generate(self, text: str) -> Generator[str, None, None]:
         models = self.get_models(text)
 
@@ -35,9 +36,8 @@ class RecipeGenerator:
             single_model_recipe += self.fetch_cmd.replace("eos-identifier", mdl) + "\n"
             single_model_recipe += self.serve_cmd.replace("eos-identifier", mdl) + "\n"
             single_model_recipe += self.run_cmd.replace("eos-identifier", mdl) + "\n"
-        
+
             final_recipe += single_model_recipe + "```\n"
-            
+
         for token in final_recipe.split(sep=" "):
-            yield token+" "
-        
+            yield token + " "
