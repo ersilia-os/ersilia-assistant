@@ -1,0 +1,25 @@
+{
+    "title": "Self-Supervised Graph Transformer on Large-Scale Molecular Data",
+    "authors": "Y. Rong, Y. Bian, T. Xu, W. Xie, Y. Wei, W. Huang, J. Huang",
+    "journal": "Neural Information Processing Systems",
+    "year": 2020,
+    "suggested_slug": "grover-molecular-graph-transformer",
+    "suggested_computational_title": "GROVER, self-supervised graph transformer for molecular representation",
+    "tldr": "GROVER is a self-supervised graph transformer improving molecular representation learning with unlabelled data, achieving significant performance gains in property prediction.",
+    "summary": "The publication presents GROVER, a novel framework for molecular representation learning using a self-supervised graph transformer model. GROVER tackles the challenges of insufficient labeled data and poor generalization in molecular tasks by leveraging self-supervised tasks at node, edge, and graph levels. The model integrates message passing networks with transformer architectures to capture rich structural and semantic information from a large dataset of 10 million unlabelled molecules. The pre-trained GROVER model, with 100 million parameters, shows significant improvements in molecular property prediction tasks across 11 benchmarks, outperforming state-of-the-art methods with an average improvement of over 6%. The framework underscores the potential of self-supervised learning to enhance the performance of graph neural networks in drug discovery.",
+    "relevance_to_biomedical_research": "GROVER is highly relevant to drug discovery as it provides a robust method for molecular property prediction, crucial in the drug development pipeline. By learning from large-scale unlabelled data, GROVER addresses the limited labeled data challenge in biomedicine, enhancing virtual screening and drug prediction.",
+    "computational_methods": "GROVER uses a self-supervised learning framework combining graph neural networks with transformer architectures. It pre-trains on 10 million unlabelled molecules with 100 million parameters, employing node-, edge-, and graph-level tasks. The model uses a dynamic message passing network to enhance generalization, achieving significant performance improvements.",
+    "biomedical_keywords": [
+        "Molecular representation",
+        "Drug discovery",
+        "Molecular property prediction"
+    ],
+    "computational_keywords": [
+        "Self-supervised learning",
+        "Graph neural networks",
+        "Transformer architecture"
+    ],
+    "strengths": "GROVER leverages unlabelled data through self-supervised learning, overcoming scarce labeled data limitations. Its integration of GNNs with transformers captures local and global structural information, offering a robust tool for drug discovery.",
+    "limitations": "GROVER's main limitation is its reliance on large computational resources, which may not be accessible to all. The novelty of its techniques is incremental, and dataset quality affects generalization. More diverse tasks could enhance performance.",
+    "overall_relevance": "GROVER holds medium to high relevance in computational drug discovery due to its performance improvements and effective use of unlabelled data. Its advanced methods align with self-supervised learning trends, contributing significantly to the field."
+}

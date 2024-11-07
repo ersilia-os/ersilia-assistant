@@ -1,0 +1,25 @@
+{
+    "title": "Learning to Extend Molecular Scaffolds with Structural Motifs",
+    "authors": "K. Maziarz, H. Jackson-Flux, P. Cameron, F. Sirockin, N. Schneider, N. Stiefl, M. Segler, M. Brockschmidt",
+    "journal": "ICLR Conference Proceedings",
+    "year": 2022,
+    "suggested_slug": "moler-scaffold-extension",
+    "suggested_computational_title": "MoLeR, molecular scaffold extension with graph-based motifs",
+    "tldr": "MoLeR is a graph-based model for molecular generation, incorporating fixed scaffolds, and outperforming existing methods in scaffold-based tasks.",
+    "summary": "MoLeR, a novel graph-based generative model, addresses the challenge of including fixed scaffolds in molecules for drug discovery. Unlike traditional models, MoLeR uses a motif-based approach to incorporate predefined scaffolds without dependency on generation history, ensuring syntactic and semantic validity. MoLeR matches state-of-the-art performance in unconstrained molecular optimization and outperforms others in scaffold-constrained tasks, with significant improvements in training and sampling speed. The study explores generation order and motif vocabulary size's impact on performance, showing deterministic starting points and larger vocabularies enhance results.",
+    "relevance_to_biomedical_research": "Highly relevant to drug discovery, MoLeR facilitates scaffold-constrained generation, supporting the creation of novel molecules retaining critical elements of known active compounds, accelerating the in silico drug discovery process.",
+    "computational_methods": "MoLeR uses a graph-based generative model with motifs for molecular generation, incorporating fixed scaffolds via GNNs to encode molecules and partial graphs. The decoder selects atoms or motifs and determines bond formations, ensuring chemical validity. Training uses a variational autoencoder framework, involving reconstruction and property prediction objectives. Trained on 1.5 million molecules, performance is evaluated through metrics like Frechet ChemNet Distance.",
+    "biomedical_keywords": [
+        "Molecular scaffolds",
+        "Drug discovery",
+        "Scaffold hopping"
+    ],
+    "computational_keywords": [
+        "Graph neural networks",
+        "Motif-based generation",
+        "Variational autoencoder"
+    ],
+    "strengths": "MoLeR excels in scaffold incorporation during molecular generation, outperforming existing models. Its training and sampling efficiency make it suitable for large-scale applications, offering speed, accuracy, and flexibility in generating chemically valid molecules.",
+    "limitations": "MoLeR's effectiveness depends on the motif vocabulary and generation order, requiring careful tuning. Its ability to generate valid molecules from arbitrary scaffolds may not fully represent chemical diversity, and reliance on large datasets limits applicability in data-scarce scenarios.",
+    "overall_relevance": "The publication is medium to highly relevant in molecular generation for drug discovery, offering improvements in efficiency and scaffold incorporation. While not entirely novel, it provides valuable insights into graph-based molecular generation."
+}

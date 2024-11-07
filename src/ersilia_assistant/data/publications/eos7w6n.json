@@ -1,0 +1,25 @@
+{
+    "title": "Self-Supervised Graph Transformer on Large-Scale Molecular Data",
+    "authors": "Y. Rong, Y. Bian, T. Xu, W. Xie, Y. Wei, W. Huang, J. Huang",
+    "journal": "Conference on Neural Information Processing Systems",
+    "year": 2020,
+    "suggested_slug": "grover-molecular-data",
+    "suggested_computational_title": "GROVER, self-supervised graph transformer for molecular data",
+    "tldr": "GROVER is a novel self-supervised graph transformer framework for molecular representation learning, trained on 10 million unlabelled molecules to improve property prediction.",
+    "summary": "The paper introduces GROVER, a framework for learning molecular representations using a self-supervised graph transformer. GROVER aims to overcome the limitations of Graph Neural Networks (GNNs) in drug discovery due to insufficient labeled data and poor generalization to new molecules. By integrating Message Passing Networks into a Transformer-style architecture, GROVER learns structural and semantic information from unlabelled molecular data through self-supervised tasks at node, edge, and graph levels. Trained on the largest dataset for such tasks, GROVER shows significant improvements in molecular property prediction, outperforming state-of-the-art methods by over 6% on average across 11 benchmarks. The study highlights the potential of self-supervised learning and pre-trained models in enhancing the performance of molecular representation tasks.",
+    "relevance_to_biomedical_research": "This publication is highly relevant to biomedicine and drug discovery as it addresses the challenge of molecular property prediction, a crucial aspect in drug development.",
+    "computational_methods": "GROVER employs a self-supervised learning framework using a Transformer-style architecture integrated with Message Passing Networks. The input comprises molecular graphs, and the output is a rich molecular representation used for property prediction. Self-supervised tasks are designed at node, edge, and graph levels to learn contextual and semantic information.",
+    "biomedical_keywords": [
+        "Molecular property prediction",
+        "Drug discovery",
+        "Virtual screening"
+    ],
+    "computational_keywords": [
+        "Graph Neural Networks",
+        "Self-supervised learning",
+        "Transformer architecture"
+    ],
+    "strengths": "GROVER's strengths lie in its innovative integration of Message Passing Networks within a Transformer architecture, allowing it to capture structural and semantic information of molecules.",
+    "limitations": "The main limitation is the reliance on unlabelled molecular data, which may not capture the complete range of molecular properties needed for specific drug discovery tasks.",
+    "overall_relevance": "The publication holds high relevance in molecular representation learning and drug discovery, particularly due to its large-scale application and significant performance improvements."
+}

@@ -1,0 +1,25 @@
+{
+    "title": "Stereochemically-aware bioactivity descriptors for uncharacterized chemical compounds",
+    "authors": "A. Comajuncosa-Creus, A. Lenes, M. S\u00e1nchez-Palomino, P. Aloy",
+    "journal": "bioRxiv",
+    "year": 2024,
+    "suggested_slug": "stereochemical-bioactivity-descriptors",
+    "suggested_computational_title": "Stereochemically-aware bioactivity prediction using Signaturizers3D",
+    "tldr": "A new generation of deep learning models, Signaturizers3D, was developed to create stereochemically-aware bioactivity descriptors, improving bioactivity predictions for small molecules.",
+    "summary": "The publication introduces Signaturizers3D, a set of deep learning models designed to produce stereochemically-aware bioactivity descriptors for small molecules. This development addresses the limitations of previous models that relied solely on 2D representations and could not differentiate between stereoisomers, which often display significant variations in bioactivity. Analysis of over 1 million compounds showed that around 40% of stereoisomer pairs have distinct bioactivities. Signaturizers3D were trained using 3D molecular representations derived from extensive bioactivity data in the Chemical Checker database. These models accurately capture the subtle differences in stereochemistry that impact bioactivity. The study highlights the importance of stereochemistry in pharmacology and demonstrates the improved ability of Signaturizers3D to differentiate compounds based on their bioactivity profiles, thereby enhancing the prediction of bioactivity signatures for uncharacterized compounds.",
+    "relevance_to_biomedical_research": "This publication is highly relevant to biomedicine and drug discovery as it enhances the understanding of small molecule bioactivity concerning stereochemistry. By improving the prediction of bioactivity signatures for stereoisomers, the study advances drug design and development.",
+    "computational_methods": "The study employed deep neural networks to create stereochemically-aware bioactivity descriptors, named Signaturizers3D. These models use 3D molecular representations to address the limitations of earlier models that relied on 2D structures and could not distinguish stereoisomers. Training data comprised over 1 million compounds from the Chemical Checker, which provides bioactivity data across various complexity levels. The models were fine-tuned using the Uni-Mol pre-trained model, employing a multitarget regression approach.",
+    "biomedical_keywords": [
+        "Stereochemistry",
+        "Bioactivity prediction",
+        "Drug design"
+    ],
+    "computational_keywords": [
+        "Deep neural networks",
+        "3D molecular representations",
+        "Signaturizers3D"
+    ],
+    "strengths": "The publication presents a significant advancement in bioactivity prediction by incorporating stereochemistry into molecular descriptors. The use of 3D representations allows for a more nuanced understanding of small molecule bioactivity, addressing a critical gap in existing predictive models.",
+    "limitations": "While the study successfully integrates stereochemistry into bioactivity prediction, it may face limitations related to the computational cost of generating 3D conformations for large datasets. Moreover, the reliance on existing bioactivity data could constrain the model's applicability.",
+    "overall_relevance": "The publication is of high relevance, providing a novel approach to bioactivity prediction by incorporating stereochemistry. The development of Signaturizers3D represents a significant contribution to computational drug discovery, offering improved accuracy in predicting compound activities."
+}

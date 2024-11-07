@@ -1,0 +1,25 @@
+{
+    "title": "Highly Predictive and Interpretable Models for PAMPA Permeability",
+    "authors": "H. Sun, K. Nguyen, E. Kerns, Z. Yan, K. R. Yu, P. Shah, A. Jadhav, X. Xu",
+    "journal": "Bioorganic & Medicinal Chemistry",
+    "year": 2017,
+    "suggested_slug": "pampa-permeability-prediction",
+    "suggested_computational_title": "Predictive modeling for PAMPA permeability using SVR and SVC",
+    "tldr": "A highly predictive in silico model for drug permeability was developed using PAMPA data and SVM techniques, achieving strong predictive accuracy.",
+    "summary": "An in silico model predicting drug permeability was developed using a dataset of 7488 compound entries measured by PAMPA, focusing on 5435 structurally unique molecules. The model employed support vector regression (SVR) and support vector classification (SVC) techniques. The SVR model, trained with 4071 compounds with quantitative data, predicted the permeability of 1364 compounds with qualitative data, achieving an AUC-ROC of 0.90. The SVC model, trained with half of the entire dataset, also demonstrated high accuracy with an AUC-ROC of 0.88. The study highlights the potential of the SVR model as a tool for medicinal chemists to design and synthesize novel compounds with favorable drug-like properties, thus aiding in the lead optimization phase of drug discovery.",
+    "relevance_to_biomedical_research": "Permeability is a critical factor in drug absorption and bioavailability, making this work highly relevant to drug discovery. The developed models provide a valuable tool for predicting oral drug permeability, essential for optimizing the pharmacokinetic profile of drug candidates.",
+    "computational_methods": "The publication utilized support vector machine (SVM) techniques, specifically support vector regression (SVR) and support vector classification (SVC), to predict PAMPA permeability. The input data consisted of molecular descriptors derived from a dataset of 5435 compounds, and the output was the predicted permeability value. The models were validated using receiver operating characteristic (ROC) curves, showcasing their accuracy and generalizability.",
+    "biomedical_keywords": [
+        "Drug permeability",
+        "Oral bioavailability",
+        "PAMPA assay"
+    ],
+    "computational_keywords": [
+        "Support vector regression",
+        "Predictive modeling",
+        "Molecular descriptors"
+    ],
+    "strengths": "The publication provides a robust and interpretable model for predicting drug permeability, using a large and diverse dataset with consistent assay conditions. The use of advanced SVM techniques ensures high predictive accuracy.",
+    "limitations": "The study's limitations include potential biases from using a single lab's dataset, which may affect generalizability. The PAMPA model does not account for active transport mechanisms, limiting its applicability to passive diffusion.",
+    "overall_relevance": "The publication is of medium to high relevance, offering a valuable tool for predicting drug permeability, crucial in drug development. Its novelty lies in the large dataset and advanced SVM techniques."
+}

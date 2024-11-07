@@ -1,0 +1,25 @@
+{
+    "title": "Development of Robust Quantitative Structure-Activity Relationship Models for CYP2C9, CYP2D6, and CYP3A4 Catalysis and Inhibition",
+    "authors": "E. Gonzalez, S. Jain, P. Shah, N. Torimoto-Katori, A. Zakharov, T. Nguyen, S. Sakamuru, R. Huang, M. Xia, R. S. Obach, C. E. C. A. Hop, A. Simeonov, X. Xu",
+    "journal": "Drug Metabolism and Disposition",
+    "year": 2021,
+    "suggested_slug": "qsar-models-for-cyp450-enzymes",
+    "suggested_computational_title": "QSAR models for CYP450 substrate and inhibitor prediction",
+    "tldr": "Robust QSAR models were developed to predict CYP2C9, CYP2D6, and CYP3A4 interactions, aiding early drug discovery by minimizing drug-drug interaction risks.",
+    "summary": "Cytochrome P450 enzymes metabolize over 75% of drugs, making their profiling crucial in drug discovery. This study developed quantitative structure-activity relationship (QSAR) models to predict interactions of compounds with the major cytochrome P450 enzymes CYP2C9, CYP2D6, and CYP3A4. A library of 5000 compounds was screened, including clinically approved drugs and drug-like molecules. The models were created using data from metabolic stability assays and luminescence-based inhibition assays. These models, with balanced accuracies above 70%, help distinguish substrates and inhibitors, thus reducing the risk of drug-drug interactions and variability in pharmacokinetics due to cytochrome P450 polymorphisms. The data and models are publicly available to support drug discovery efforts.",
+    "relevance_to_biomedical_research": "Cytochrome P450 enzymes play a critical role in drug metabolism, influencing pharmacokinetics and drug-drug interactions. The QSAR models developed in this study are relevant to early drug discovery, providing insights into how new compounds may interact with CYP2C9, CYP2D6, and CYP3A4.",
+    "computational_methods": "The study utilized quantitative structure-activity relationship (QSAR) models to predict cytochrome P450 enzyme interactions. Random forest and multitask deep neural networks were employed, with models trained on data from metabolic stability and inhibition assays. The input comprised molecular descriptors and fingerprints, while the output classified compounds as substrates or inhibitors. Training data included 5000 compounds from the NCATS Pharmaceutical Collection. Accuracy was assessed using balanced accuracy and Matthews correlation coefficient, with models achieving balanced accuracies above 70%.",
+    "biomedical_keywords": [
+        "Cytochrome P450",
+        "Drug metabolism",
+        "Drug-drug interactions"
+    ],
+    "computational_keywords": [
+        "QSAR models",
+        "Random forest",
+        "Multitask deep neural networks"
+    ],
+    "strengths": "The study presents robust QSAR models with high predictive accuracy for cytochrome P450 substrates and inhibitors, based on a large, diverse dataset. The models are publicly accessible, enhancing their utility across research groups.",
+    "limitations": "While the models demonstrate high accuracy, their reliance on a fixed dataset may limit their applicability to novel compounds with unique structures. The models do not explore the mechanistic basis of cytochrome P450 interactions in depth.",
+    "overall_relevance": "The publication is of medium to high relevance, given its contribution to predictive modeling in drug metabolism and its potential to streamline early drug discovery processes."
+}

@@ -1,0 +1,25 @@
+{
+    "title": "Identification of active molecules against Mycobacterium tuberculosis through machine learning",
+    "authors": "Q. Ye, X. Chai, D. Jiang, L. Yang, C. Shen, X. Zhang, D. Li, D. Cao, T. Hou",
+    "journal": "Briefings in Bioinformatics",
+    "year": 2021,
+    "suggested_slug": "mycobacterium-tuberculosis-inhibitors",
+    "suggested_computational_title": "ChemTB, a webserver for Mycobacterium tuberculosis inhibitors prediction",
+    "tldr": "Machine learning models were developed to identify Mycobacterium tuberculosis inhibitors, with XGBoost showing the best prediction performance and a webserver ChemTB was created for online predictions.",
+    "summary": "The study aims to address the challenge of drug-resistant Mycobacterium tuberculosis (Mtb) by discovering new inhibitors using machine learning (ML). Four algorithms\u2014support vector machine (SVM), random forest (RF), extreme gradient boosting (XGBoost), and deep neural networks (DNN)\u2014were used to classify Mtb inhibitors and noninhibitors based on different molecular representations. The XGBoost model exhibited the best predictive performance, achieving area under the receiver operating characteristic curve (AUC) values of 0.842 for the cross-validated training set and 0.942 for the external test set. Additionally, two consensus strategies were used to integrate predictions, enhancing model accuracy. The SHapley Additive exPlanations (SHAP) method provided insights into the relationship between molecular descriptors and bioactivities. Finally, a webserver named ChemTB was developed, offering a freely available tool for predicting potential Mtb inhibitors.",
+    "relevance_to_biomedical_research": "The publication is highly relevant to biomedicine because it focuses on discovering novel drug candidates to combat drug-resistant Mycobacterium tuberculosis, a significant global health threat. By employing advanced machine learning techniques, the research contributes to the early stage of the drug discovery pipeline.",
+    "computational_methods": "The study employed four machine learning algorithms\u2014SVM, RF, XGBoost, and DNN\u2014to develop models that classify Mtb inhibitors and noninhibitors. Different molecular representations were used as input features, and the models were trained on a dataset with 2424 inhibitors and 6094 noninhibitors. XGBoost demonstrated superior performance, with an AUC of 0.842 for cross-validation and 0.942 for the test set. Ensemble methods, including voting and stacking, were used to improve predictive accuracy. The SHAP method interpreted the model outputs by identifying important molecular descriptors.",
+    "biomedical_keywords": [
+        "Mycobacterium tuberculosis",
+        "Drug resistance",
+        "Tuberculosis inhibitors"
+    ],
+    "computational_keywords": [
+        "XGBoost",
+        "Machine learning models",
+        "Model fusion"
+    ],
+    "strengths": "The publication leverages multiple machine learning algorithms to address the pressing issue of drug-resistant tuberculosis. The use of consensus strategies and the SHAP method enhances model interpretability and robustness. The development of the ChemTB webserver provides a practical tool for researchers.",
+    "limitations": "While the study presents promising results, there are limitations in the dataset's diversity and size, which may impact the model's generalizability. The models demonstrate lower sensitivity in predicting inhibitors compared to noninhibitors, likely due to class imbalance.",
+    "overall_relevance": "The publication has medium to high relevance in the field of computational drug discovery, particularly for tuberculosis. The integration of advanced machine learning techniques and model interpretation tools is a commendable effort, contributing valuable insights for Mtb inhibitor identification."
+}

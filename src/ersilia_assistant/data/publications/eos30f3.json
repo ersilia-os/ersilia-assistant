@@ -1,0 +1,25 @@
+{
+    "title": "Predicting hERG channel blockers with directed message passing neural networks",
+    "authors": "M. Shan, C. Jiang, J. Chen, L.-P. Qin, J.-J. Qin, G. Cheng",
+    "journal": "RSC Advances",
+    "year": 2022,
+    "suggested_slug": "herg-blockers-prediction-d-mpnn",
+    "suggested_computational_title": "D-MPNN for hERG channel blocker prediction",
+    "tldr": "D-MPNN with moe206 descriptors predicts hERG channel blockers, offering a reliable in silico method for early drug discovery.",
+    "summary": "Human ether-a-go-go-related gene (hERG) encodes a potassium channel crucial in cardiac action potential. Blockage can cause cardiotoxicity, making hERG inhibition assessment vital in drug discovery. This study employs a directed message passing neural network (D-MPNN) to predict hERG blockers using diverse datasets and molecular descriptors. Among various combinations, D-MPNN with moe206 descriptors achieved superior performance with AUC-ROC values of 0.956 and 0.922 under random and scaffold splits, respectively. Comparisons with recent machine learning models confirmed that D-MPNN + moe206 is one of the best classification models. This model offers a promising tool for identifying potential hERG blockers, aiding in the discovery of safer pharmaceuticals.",
+    "relevance_to_biomedical_research": "hERG channel blockage can lead to severe cardiotoxicity, making its prediction crucial in drug discovery. This study's innovative application enhances in silico screening, potentially reducing the need for laborious assays.",
+    "computational_methods": "The study utilizes the directed message passing neural network (D-MPNN) for predicting hERG channel blockers. D-MPNN processes molecular graphs using edge-dependent networks to pass messages and generate representations. SMILES strings are converted to graphs with nodes (atoms) and edges (bonds), predicting hERG blocking activity. Trained on datasets like Cai's, containing 7889 compounds, the model achieved up to 0.956 AUC-ROC under random split. Incorporating moe206 descriptors improved performance, demonstrating robustness in distinguishing blockers from non-blockers.",
+    "biomedical_keywords": [
+        "hERG channel blockers",
+        "Cardiotoxicity",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Directed message passing neural networks (D-MPNN)",
+        "Molecular descriptors",
+        "AUC-ROC"
+    ],
+    "strengths": "The publication significantly contributes by employing D-MPNN with moe206 descriptors, achieving high predictive accuracy for hERG blockers. This robust tool aids early-stage cardiotoxicity assessment, reducing reliance on costly assays.",
+    "limitations": "Limitations include potential biases in dataset selection and the need for larger, high-quality datasets to validate performance. Some descriptors may not reflect molecular characteristics, impacting generalizability.",
+    "overall_relevance": "The publication is highly relevant to drug discovery, applying D-MPNN for predicting hERG blockers, crucial for cardiotoxicity assessment. Despite dataset limitations, it aligns with computational toxicology trends."
+}

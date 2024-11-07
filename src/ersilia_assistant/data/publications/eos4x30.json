@@ -1,0 +1,25 @@
+{
+    "title": "Virtual Screening Using Pharmacophore Models Retrieved from Molecular Dynamic Simulations",
+    "authors": "P. Polishchuk, A. Kutlushina, D. Bashirova, O. Mokshyna, T. Madzhidov",
+    "journal": "International Journal of Molecular Sciences",
+    "year": 2019,
+    "suggested_slug": "pharmacophore-screening-molecular-dynamics",
+    "suggested_computational_title": "Pharmacophore-based screening using MD simulations",
+    "tldr": "Pharmacophore models from molecular dynamics enhance screening for CDK2 inhibitors.",
+    "summary": "The study develops a virtual screening method using pharmacophore models derived from molecular dynamics (MD) simulations. By capturing the dynamic nature of protein-ligand interactions, this approach potentially outperforms static models from X-ray structures. The study proposes selecting representative pharmacophores by removing duplicates with identical 3D hashes and introduces a conformer coverage approach to rank compounds. Tested on cyclin-dependent kinase 2 (CDK2) complexes, the method demonstrated improved performance over traditional approaches. The importance of pharmacophore model complexity is highlighted, suggesting that more complex models yield better results. These methods are implemented in open-source software on GitHub, facilitating their application in drug discovery.",
+    "relevance_to_biomedical_research": "The publication is relevant to drug discovery, aiding early hit identification. It enhances virtual screening for cyclin-dependent kinase 2 inhibitors, a cancer research target. Dynamic simulations address static model limitations, improving active compound identification.",
+    "computational_methods": "Pharmacophore models from molecular dynamics simulations enhance virtual screening. MD trajectories from protein-ligand complexes generate models. A conformer coverage approach ranks compounds by matching conformers to pharmacophores, indicating binding affinity. Duplicate models are removed with 3D hashes, reducing complexity. Evaluated with the DUD-E dataset, the method outperformed traditional approaches, showing potential for improved screening outcomes.",
+    "biomedical_keywords": [
+        "Cyclin-dependent kinase 2",
+        "Virtual screening",
+        "Pharmacophore models"
+    ],
+    "computational_keywords": [
+        "Molecular dynamics simulations",
+        "Conformer coverage approach",
+        "3D pharmacophore hashes"
+    ],
+    "strengths": "The publication introduces a novel method for selecting representative pharmacophore models from MD simulations, effectively capturing dynamic protein-ligand interactions. The conformer coverage approach improves screening accuracy. Open-source implementation increases accessibility.",
+    "limitations": "The study focuses on cyclin-dependent kinase 2 and lacks validation on other targets. The reliance on pharmacophore complexity limits applicability to simpler systems. Further validation across datasets is needed to confirm generalizability.",
+    "overall_relevance": "The publication presents a moderately relevant advancement in virtual screening, especially for targets like cyclin-dependent kinase 2. Dynamic pharmacophore models address static model limitations, contributing valuable insights. Further validation on diverse targets would enhance its impact."
+}

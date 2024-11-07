@@ -1,0 +1,25 @@
+{
+    "title": "Predictive models of aqueous solubility of organic compounds built on a large dataset of high integrity",
+    "authors": "H. Sun, P. Shah, K. Nguyen, K. R. Yu, E. Kerns, M. Kabir, Y. Wang, X. Xu",
+    "journal": "Bioorganic & Medicinal Chemistry",
+    "year": 2019,
+    "suggested_slug": "solubility-prediction-organic-compounds",
+    "suggested_computational_title": "Solubility prediction using SVC and atom typing descriptors",
+    "tldr": "Predictive model using SVC for aqueous solubility developed with 11,780 compounds dataset.",
+    "summary": "Aqueous solubility is crucial in drug discovery as it affects various drug properties. Predictive models for kinetic solubility were developed using a large dataset of 11,780 compounds from NCATS. The dataset, one of the largest of high quality, was used to train support vector classification (SVC) models based on custom atom type descriptors. These models demonstrated high predictive performance with area under the curve values of 0.93 and 0.91 for different solubility thresholds. The models can identify insoluble compounds, provide design insights to improve solubility, and help prioritize compound libraries. The study highlights the importance of solubility in drug development and offers tools to address solubility challenges in drug discovery.",
+    "relevance_to_biomedical_research": "Aqueous solubility is critical in drug discovery, affecting biological activity and pharmacokinetics. This publication is relevant as it addresses solubility prediction, aiding in the selection and optimization of drug candidates.",
+    "computational_methods": "Support vector classification (SVC) models were employed to predict kinetic solubility using customized atom type descriptors. The dataset had 11,780 compounds, with 80% for training and 20% for testing. The models achieved ROC-AUC values of 0.93 and 0.91 for different insolubility thresholds. Inputs were molecular descriptors, and outputs classified compounds as soluble or insoluble, providing insights into solubility-related features.",
+    "biomedical_keywords": [
+        "Aqueous solubility",
+        "Drug discovery",
+        "Pharmacokinetics"
+    ],
+    "computational_keywords": [
+        "Support vector classification",
+        "Atom typing descriptors",
+        "QSAR modeling"
+    ],
+    "strengths": "The study presents a highly predictive model using one of the largest solubility datasets, ensuring prediction reliability. Atom-type-based descriptors enhance interpretability, with high AUC values indicating robustness.",
+    "limitations": "The focus on kinetic solubility may not generalize to other solubility types without further validation. Reliance on a single dataset may limit applicability to new chemical spaces. Atom-type descriptors might need adaptation for novel structures.",
+    "overall_relevance": "The publication is medium to high relevance in drug discovery, focusing on solubility, a key physicochemical property. The large dataset adds value, though the methods aren't novel, slightly reducing overall impact."
+}

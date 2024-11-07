@@ -1,0 +1,25 @@
+{
+    "title": "Discovery of a Structural Class of Antibiotics with Explainable Deep Learning",
+    "authors": "F. Wong, E. J. Zheng, J. A. Valeri, N. M. Donghia, M. N. Anahtar, S. Omori, A. Li, A. Cubillos-Ruiz, A. Krishnan, W. Jin, A. L. Manson, J. Friedrichs, R. Helbig, B. Hajian, D. K. Fiejtek, F. F. Wagner, H. H. Soutter, A. M. Earl, J. M. Stokes, L. D. Renner, J. J. Collins",
+    "journal": "Nature",
+    "year": 2024,
+    "suggested_slug": "antibiotic-class-explainable-deep-learning",
+    "suggested_computational_title": "Explainable deep learning for antibiotic class discovery",
+    "tldr": "A novel antibiotic class was discovered using explainable deep learning, predicting activity and cytotoxicity, offering insights into chemical substructures.",
+    "summary": "The study focuses on the urgent need for new antibiotics to combat rising antibiotic resistance by developing an explainable deep learning approach that identifies chemical substructures linked to antibiotic activity. Researchers screened 39,312 compounds for activity against Staphylococcus aureus and evaluated cytotoxicity to human cells. They employed graph neural networks to predict activity and cytotoxicity for over 12 million compounds. Using explainable graph algorithms, they identified substructures driving activity predictions, leading to the discovery of new antibiotic structural classes. Empirical tests confirmed effectiveness against methicillin-resistant S. aureus and other resistant strains in mouse models. This approach aids in identifying potential antibiotics and enhances the interpretability of machine learning models in drug discovery.",
+    "relevance_to_biomedical_research": "The study is crucial for antibiotic drug discovery, addressing antibiotic-resistant bacteria like MRSA. It identifies new structural classes, filling a gap in drug discovery and enhancing machine learning model interpretability.",
+    "computational_methods": "Graph neural networks were used to predict antibiotic activity and cytotoxicity from a large dataset of compounds. Ensembles of GNNs trained on 39,312 compounds used RDKit-computed features. Models predicted activity with an AUPRC of 0.364. Monte Carlo tree search identified substructures responsible for high scores, predicting antibiotic classes. Models were validated with additional datasets and empirical testing, confirming generalizability to unseen chemical spaces.",
+    "biomedical_keywords": [
+        "Antibiotic resistance",
+        "Staphylococcus aureus",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Graph neural networks",
+        "Substructure identification",
+        "Monte Carlo tree search"
+    ],
+    "strengths": "The study introduces a novel approach combining explainable deep learning with traditional methods to identify new antibiotic classes, offering chemical insights. Extensive dataset use and explainable AI techniques enhance prediction reliability. Empirical validation against resistant strains highlights potential real-world impact.",
+    "limitations": "The predictive performance of models, reflected by AUPRC, suggests improvement potential. Reliance on existing chemical libraries may limit novel discoveries. Focus on one pathogen might not capture diversity in activity against others. Computational methods are not entirely novel, building on existing GNN frameworks.",
+    "overall_relevance": "The study is of medium to high relevance for integrating explainable AI in antibiotic discovery, with potential impact on antibiotic resistance. While GNN use is significant, model performance and pathogen specificity may limit broader applicability. Publication in Nature highlights its field significance."
+}

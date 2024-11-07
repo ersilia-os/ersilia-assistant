@@ -1,0 +1,25 @@
+{
+    "title": "Improved Detection of Drug-Induced Liver Injury by Integrating Predicted In Vivo and In Vitro Data",
+    "authors": "S. Seal, D. Williams, L. Hosseini-Gerami, M. Mahale, A. E. Carpenter, O. Spjuth, A. Bender",
+    "journal": "Chemical Research in Toxicology",
+    "year": 2024,
+    "suggested_slug": "dilipredictor-drug-induced-liver-injury",
+    "suggested_computational_title": "DILIPredictor: Integrated in vivo/in vitro DILI prediction",
+    "tldr": "DILIPredictor uses in vivo and in vitro data to predict drug-induced liver injury, achieving improved detection with a likelihood ratio of 2.68.",
+    "summary": "The study addresses the challenge of predicting drug-induced liver injury (DILI), a significant issue in drug discovery, by developing a model known as DILIPredictor. This model integrates in vivo and in vitro data, including pharmacokinetic parameters and chemical structures, to enhance the prediction of DILI. The DILIPredictor was trained on 888 compounds and tested on a set of 223 compounds, achieving an AUC-PR of 0.79. The study demonstrated that the integration of diverse datasets, encompassing human hepatotoxicity, preclinical, and animal studies, improves the prediction accuracy and differentiation between species sensitivity. DILIPredictor also allows for the identification of chemical substructures responsible for DILI and differentiates between compounds toxic to animals but not humans, such as 2-butoxyethanol. The model is publicly available and offers a comprehensive tool for assessing the hepatotoxic potential of compounds early in drug development.",
+    "relevance_to_biomedical_research": "Drug-induced liver injury is a major hurdle in the drug discovery pipeline, often leading to clinical trial failures and drug withdrawals. The DILIPredictor model is relevant as it enhances the ability to predict hepatotoxicity early in the drug development process, potentially reducing late-stage clinical failures.",
+    "computational_methods": "The study utilized machine learning to predict drug-induced liver injury by first predicting nine proxy-DILI labels, which were then used alongside chemical structural features to predict DILI. Inputs included in vitro data, in vivo data, and pharmacokinetic parameters. The DILIPredictor model was trained on 888 compounds and tested on 223 compounds, achieving an AUC-PR of 0.79. It uses a FeatureNet approach, integrating predictions from individual models to enhance final predictions. The model provided feature interpretation, identifying chemical substructures causing DILI, and demonstrated the ability to differentiate between human and animal sensitivity.",
+    "biomedical_keywords": [
+        "Drug-induced liver injury",
+        "Hepatotoxicity",
+        "Pharmacokinetics"
+    ],
+    "computational_keywords": [
+        "Random Forest",
+        "FeatureNet",
+        "Proxy labels"
+    ],
+    "strengths": "The study's strength lies in its integration of diverse data sources, including in vitro, in vivo, and pharmacokinetic data, to improve the prediction of drug-induced liver injury. The model's ability to differentiate between animal and human sensitivity and its feature interpretation capabilities are significant contributions to the field.",
+    "limitations": "One limitation is the reliance on empirical datasets, which may not capture all relevant factors such as dosage and time points. The model's performance on a scaffold-based split test set was lower compared to previous studies using random splits.",
+    "overall_relevance": "The publication is of medium relevance due to its contribution to improving early-stage prediction of drug-induced liver injury, a critical aspect of drug development. The integration of multiple data types and the model's public availability enhance its impact."
+}

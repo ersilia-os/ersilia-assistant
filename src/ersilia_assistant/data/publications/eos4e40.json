@@ -1,0 +1,25 @@
+{
+    "title": "A Deep Learning Approach to Antibiotic Discovery",
+    "authors": "J. M. Stokes, K. Yang, K. Swanson, W. Jin, A. Cubillos-Ruiz, N. M. Donghia, C. R. MacNair, S. French, L. A. Carfrae, Z. Bloom-Ackerman, V. M. Tran, A. Chiappino-Pepe, A. H. Badran, I. W. Andrews, E. J. Chory, G. M. Church, E. D. Brown, T. S. Jaakkola, R. Barzilay, J. J. Collins",
+    "journal": "Cell",
+    "year": 2020,
+    "suggested_slug": "deep-learning-antibiotic-discovery",
+    "suggested_computational_title": "Antibiotic Discovery Using Deep Learning",
+    "tldr": "The study uses a deep neural network to discover new antibiotics, identifying halicin, a structurally distinct molecule with broad-spectrum activity.",
+    "summary": "The publication presents a deep learning approach for discovering novel antibiotics, addressing the urgent need due to rising antibiotic resistance. A deep neural network model was trained on 2,335 molecules to predict antibacterial activity, targeting Escherichia coli. The model identified halicin, a structurally distinct molecule effective against Mycobacterium tuberculosis and carbapenem-resistant Enterobacteriaceae. Halicin showed broad-spectrum activity in mouse models. The model also screened the ZINC15 database, identifying eight additional compounds. This work demonstrates deep learning's potential in identifying novel antibacterial agents, improving discovery accuracy and reducing costs.",
+    "relevance_to_biomedical_research": "This study is highly relevant to biomedical research in antibiotic discovery, addressing the global challenge of antibiotic resistance. It identifies halicin, effective against resistant pathogens, showcasing the potential for discovering new antibiotics with novel structures and mechanisms.",
+    "computational_methods": "The study uses a directed-message passing neural network model, Chemprop, to predict antibacterial activity. The input is a molecular graph, outputting a probability score for Escherichia coli growth inhibition. Features are computed by RDKit with hyperparameter optimization and ensemble methods enhancing performance. The model, trained on 2,335 molecules, achieved a ROC-AUC of 0.896, with predictions empirically validated. It was applied to large libraries, including ZINC15, for screening potential antibiotics.",
+    "biomedical_keywords": [
+        "Antibiotic resistance",
+        "Halicin",
+        "Mycobacterium tuberculosis"
+    ],
+    "computational_keywords": [
+        "Chemprop",
+        "Directed-message passing neural network",
+        "Molecular property prediction"
+    ],
+    "strengths": "The study's strength is its innovative use of deep learning to identify novel antibiotics, highlighting Chemprop's high accuracy in predicting antibacterial activity. Discovering halicin, a structurally novel compound, shows the model's capacity to generalize beyond known structures.",
+    "limitations": "While the study identifies halicin, the methods rely on existing neural networks. The dataset is small relative to the chemical space. Predictions require resource-intensive empirical validation. Long-term efficacy or resistance development is not addressed.",
+    "overall_relevance": "The publication is highly relevant given the need for new antibiotics and the innovative application of deep learning in drug discovery. Results are promising with significant implications for antibiotic development, though empirical validation is crucial for practical application."
+}

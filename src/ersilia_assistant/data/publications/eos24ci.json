@@ -1,0 +1,25 @@
+{
+    "title": "DrugTax: package for drug taxonomy identification and explainable feature extraction",
+    "authors": "A. J. Preto, P. C. Correia, I. S. Moreira",
+    "journal": "Journal of Cheminformatics",
+    "year": 2022,
+    "suggested_slug": "drugtax-explainable-feature-extraction",
+    "suggested_computational_title": "DrugTax, a Python-based tool for drug taxonomy and feature extraction",
+    "tldr": "DrugTax is a Python package for small molecule characterization and taxonomy identification, aiding AI and ML with tools for data visualization and chemical space analysis.",
+    "summary": "DrugTax is a Python package designed to facilitate the classification and feature extraction of small molecules for use in artificial intelligence and machine learning applications. It extends existing chemical taxonomy frameworks, making them accessible and simple to use. The package leverages SMILES representations of small molecules to concurrently extract taxonomy information and key features for big data processing. DrugTax provides functionalities for bulk analysis and visualization, enabling chemical space representation and assessment of molecular similarity. It addresses the limitations of existing protocols, such as Classyfire, by offering overlapping superclass classifications and user-installable code. DrugTax is integrated easily into drug discovery pipelines and is available for installation via PyPI and GitHub.",
+    "relevance_to_biomedical_research": "DrugTax is relevant to biomedicine and drug discovery as it provides a comprehensive tool for chemical characterization and feature extraction, crucial for AI and ML applications in drug discovery.",
+    "computational_methods": "DrugTax utilizes a Python-based framework to perform taxonomy identification and feature extraction from small molecules using SMILES representations. The input is a SMILES string, and the output is a list of taxonomy classifications and extracted features that can be used in ML algorithms.",
+    "biomedical_keywords": [
+        "Drug taxonomy",
+        "Small molecules",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Feature extraction",
+        "SMILES representation",
+        "Taxonomy classification"
+    ],
+    "strengths": "DrugTax offers an easy-to-use interface and integrates seamlessly into existing drug discovery pipelines, enhancing chemical characterization and providing detailed taxonomy and feature information.",
+    "limitations": "While DrugTax addresses many limitations of existing protocols, its novelty is limited as it builds on frameworks like Classyfire. Reliance on SMILES may limit applicability to certain molecules.",
+    "overall_relevance": "DrugTax is of medium relevance, improving ease of use and functionality in chemical characterization for drug discovery, though it does not introduce fundamentally novel computational methods."
+}

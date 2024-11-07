@@ -1,0 +1,25 @@
+{
+    "title": "Predicting Liver Cytosol Stability of Small Molecules",
+    "authors": "P. Shah, V.B. Siramshetty, A.V. Zakharov, N.T. Southall, X. Xu, D.-T. Nguyen",
+    "journal": "Journal of Cheminformatics",
+    "year": 2020,
+    "suggested_slug": "liver-cytosol-stability-small-molecules",
+    "suggested_computational_title": "MMPA and QSAR models for liver cytosol stability prediction",
+    "tldr": "This study develops computational models to predict liver cytosol-mediated metabolic stability of small molecules, offering valuable insights for medicinal chemists.",
+    "summary": "The study focused on predicting liver cytosol-mediated metabolic stability of small molecules, a critical aspect often overlooked in drug discovery. A total of 1450 compounds were screened for cytosolic enzyme-mediated metabolism using human and mouse liver cytosol fractions. Matched molecular pairs analysis (MMPA) and qualitative structure activity relationship (QSAR) models were employed to ascertain chemical structure transformations that influence cytosolic stability. These transformation rules were validated both prospectively and on a diverse chemical library, comprising nearly 250 compounds. In silico classification models were developed using molecular descriptors and machine learning methods, such as Random Forests, Support Vector Machines, and BayesNet, to predict cytosol-mediated liabilities. The study presents the first systematic in silico approach to address cytosolic enzyme-mediated liabilities, providing datasets and predictive models that can aid medicinal chemists in designing compounds with improved cytosolic stability.",
+    "relevance_to_biomedical_research": "Understanding cytosolic enzyme-mediated metabolism is crucial for drug discovery, as it can impact the pharmacokinetics and toxicity of drug candidates. This study provides insights into cytosolic metabolism, which is particularly relevant for drugs that bypass cytochrome P450-mediated metabolism.",
+    "computational_methods": "The study employed matched molecular pairs analysis (MMPA) to identify structural transformations affecting cytosolic stability and validated these using a test set. Additionally, various QSAR models were developed using Random Forests, Support Vector Machines, and BayesNet, along with descriptors from RDKit and QNA. The models underwent cross-validation, with SVM classifiers generally showing better sensitivity. Despite the models' mixed performance, they represent the first computational approach to predict cytosolic stability.",
+    "biomedical_keywords": [
+        "Xenobiotic metabolism",
+        "Cytosol stability",
+        "Liver enzymes"
+    ],
+    "computational_keywords": [
+        "Matched molecular pairs analysis",
+        "QSAR modeling",
+        "Random Forests"
+    ],
+    "strengths": "The study provides a novel computational approach to predict cytosolic stability of small molecules, filling a gap in the drug discovery process. The large dataset and systematic validation enhance the robustness of the findings.",
+    "limitations": "The study's computational models demonstrated limited performance in external validation, partly due to the homogeneous nature of the training set. The dataset's skew towards stable compounds may have affected the ability to generalize the findings.",
+    "overall_relevance": "The publication is of medium relevance, offering a pioneering approach to predict cytosolic stability, a critical aspect of drug metabolism. Further research is needed to fully realize its potential in drug discovery."
+}

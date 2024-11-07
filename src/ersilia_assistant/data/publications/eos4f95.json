@@ -1,0 +1,25 @@
+{
+    "title": "Comparative analysis of antifungal susceptibility testing methods for echinocandins in candidemia isolates",
+    "authors": "S. Upadhyay, S. Sarma, A. Chowdhary",
+    "journal": "International Journal of Infectious Diseases",
+    "year": 2021,
+    "suggested_slug": "antifungal-susceptibility-testing",
+    "suggested_computational_title": "Echinocandin susceptibility analysis in candidemia",
+    "tldr": "The study compares antifungal susceptibility testing methods for echinocandins in candidemia isolates, focusing on Candida auris and other nonalbicans Candida species.",
+    "summary": "The study addresses the growing issue of antifungal resistance among Candida species, particularly Candida auris, known for its nosocomial outbreaks and reduced susceptibility to antifungal agents. Conducted in Haryana, India, the research evaluates three methods for antifungal susceptibility testing (AFST) on 100 clinical bloodstream Candida isolates. These methods included VITEK 2, Etest, and CLSI Broth Microdilution. The study focused on determining the minimum inhibitory concentration (MIC) of echinocandins, specifically caspofungin and micafungin. Results indicated that nonalbicans Candida species were more commonly isolated than Candida albicans. Among the methods tested, CLSI BMD and Etest showed similar results, while VITEK 2 demonstrated slight deviations. The findings suggest that while all methods are useful, CLSI BMD and Etest might be more reliable for clinical laboratories. The study emphasizes the importance of identifying Candida species and performing AFST for effective management of invasive candidiasis.",
+    "relevance_to_biomedical_research": "This publication is highly relevant to the management of invasive fungal infections like candidiasis. Candida auris poses challenges due to its resistance to common treatments, making susceptibility testing crucial. The study's insights aid in optimizing treatment strategies and improving patient outcomes.",
+    "computational_methods": "The study employed three antifungal susceptibility testing (AFST) methods: VITEK 2, Etest, and CLSI Broth Microdilution (BMD), to determine the minimum inhibitory concentration (MIC) for echinocandins, specifically caspofungin and micafungin, in Candida isolates. These methods quantify antifungal activity against Candida species, including Candida auris. Despite minor deviations, especially with VITEK 2, the differences were not statistically significant, suggesting that CLSI BMD and Etest provide reliable results.",
+    "biomedical_keywords": [
+        "Candida auris",
+        "Echinocandins",
+        "Antifungal resistance"
+    ],
+    "computational_keywords": [
+        "Minimum inhibitory concentration",
+        "Antifungal susceptibility testing",
+        "CLSI Broth Microdilution"
+    ],
+    "strengths": "The study addresses a critical issue in infectious disease management by evaluating multiple antifungal susceptibility testing methods. It provides valuable insights into the reliability and discrepancies among methods, aiding laboratories in choosing suitable approaches.",
+    "limitations": "The focus on a single geographic location may limit the generalizability of findings. The sample size might not capture the full diversity of antifungal resistance patterns. Further research with larger samples and across regions would enhance reliability.",
+    "overall_relevance": "The publication holds medium relevance due to its practical implications for antifungal therapy management and focus on Candida auris. While methods are not novel, it provides essential data for laboratories to refine testing protocols."
+}

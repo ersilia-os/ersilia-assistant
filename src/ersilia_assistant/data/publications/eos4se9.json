@@ -1,0 +1,25 @@
+{
+    "title": "STOUT: SMILES to IUPAC names using neural machine translation",
+    "authors": "K. Rajan, A. Zielesny, C. Steinbeck",
+    "journal": "Journal of Cheminformatics",
+    "year": 2021,
+    "suggested_slug": "stout-smiles-iupac",
+    "suggested_computational_title": "stout-neural-machine-translation-chemical-nomenclature",
+    "tldr": "STOUT converts SMILES strings to IUPAC names with high accuracy using neural machine translation.",
+    "summary": "STOUT is a neural machine translation tool designed to convert SMILES strings into IUPAC names and vice versa. It achieves high accuracy with BLEU scores around 90% and Tanimoto similarity indices over 0.9. Built on deep learning, STOUT treats SMILES and IUPAC as languages, translating them using a recurrent neural network with gated recurrent units and soft attention. Training utilized PubChem datasets filtered to 81 million molecules, processed with molconvert for IUPAC generation. Google's Tensor Processing Units significantly accelerated training, facilitating large dataset handling. STOUT shows strong performance in chemical translation, advancing data-driven cheminformatics approaches.",
+    "relevance_to_biomedical_research": "The work is relevant to drug discovery, automating chemical name generation, a key step in drug development. It aids chemical information management, crucial in pharmacology and medicinal chemistry.",
+    "computational_methods": "STOUT uses neural machine translation with deep learning, recurrent neural networks, and gated recurrent units to convert SMILES and IUPAC names. Training on 81 million PubChem molecules, datasets were filtered and converted, resulting in 30 million SELFIES and 60 million IUPAC entries. Google's TPUs optimized training, reducing time and improving efficiency. Performance was evaluated using BLEU scores and Tanimoto similarity, demonstrating strong predictive accuracy.",
+    "biomedical_keywords": [
+        "IUPAC names",
+        "SMILES",
+        "Cheminformatics"
+    ],
+    "computational_keywords": [
+        "Neural machine translation",
+        "Recurrent neural networks",
+        "Attention mechanism"
+    ],
+    "strengths": "STOUT offers high accuracy in chemical conversion, utilizing large datasets and TPUs for efficient training. It enhances chemical nomenclature automation, essential for managing chemical databases.",
+    "limitations": "STOUT's accuracy depends on input quality, sometimes producing invalid outputs. It requires substantial computational resources and may not match deterministic systems' precision in all cases.",
+    "overall_relevance": "STOUT advances cheminformatics with neural machine translation for chemical information management, offering medium to high relevance for impacting chemical data handling in biomedicine."
+}

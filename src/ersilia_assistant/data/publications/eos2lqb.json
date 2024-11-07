@@ -1,0 +1,25 @@
+{
+    "title": "HobPre: Accurate Prediction of Human Oral Bioavailability for Small Molecules",
+    "authors": "M. Wei, X. Zhang, X. Pan, B. Wang, C. Ji, Y. Qi, J. Z. H. Zhang",
+    "journal": "Journal of Cheminformatics",
+    "year": 2022,
+    "suggested_slug": "hobpre-oral-bioavailability-prediction",
+    "suggested_computational_title": "HobPre, predicting human oral bioavailability using random forest models",
+    "tldr": "HobPre predicts human oral bioavailability with high accuracy using random forest models and molecular descriptors, aiding drug candidate screening.",
+    "summary": "Human oral bioavailability (HOB) is critical for drug success in clinical trials, traditionally measured through costly experimental tests. HobPre introduces a computational model leveraging random forest algorithms to predict HOB for small molecules before synthesis, thus streamlining the drug development process. The model was developed using a dataset of 1588 molecules and employs consensus predictions from five random forest models. It achieved high accuracy on two independent test sets with cutoffs of 20% and 50% for molecular classification. The model identifies key molecular descriptors affecting HOB, providing insights into the structural properties influencing bioavailability. HobPre is accessible via a web server, allowing quick assessment of oral bioavailability. This tool offers a reliable and efficient method for early-stage drug screening, potentially reducing late-stage clinical trial failures.",
+    "relevance_to_biomedical_research": "This publication is highly relevant to drug discovery as it addresses the prediction of human oral bioavailability, a key pharmacokinetic property affecting drug efficacy. By providing a computational model to predict this property, HobPre can significantly impact early-stage drug development, reducing the need for expensive and time-consuming experimental tests.",
+    "computational_methods": "The publication introduces HobPre, a computational model using random forest algorithms to predict human oral bioavailability. The model utilizes a dataset of 1588 molecules, with training and test sets comprising 1157 and 290 molecules, respectively. Two classification cutoffs of 20% and 50% were applied. The consensus model, combining predictions from five individual random forest models, demonstrated high accuracy on independent test sets. SHapley Additive exPlanation (SHAP) analysis was employed to identify important molecular descriptors influencing predictions. The model outputs a classification of molecules as having high or low bioavailability.",
+    "biomedical_keywords": [
+        "Oral bioavailability",
+        "ADMET",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Random forest",
+        "SHAP analysis",
+        "Consensus model"
+    ],
+    "strengths": "The publication presents a robust computational model for predicting human oral bioavailability, a critical factor in drug development. The use of random forest algorithms and consensus modeling enhances prediction accuracy.",
+    "limitations": "While the model shows high accuracy, there is potential for overfitting, as indicated by the slight decrease in accuracy on test sets. The dataset size may limit the generalizability of the model across diverse chemical spaces.",
+    "overall_relevance": "The publication holds medium to high relevance in the field of drug discovery, given its contribution to predicting a critical pharmacokinetic property. The model's accuracy and accessibility enhance its practical value."
+}

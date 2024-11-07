@@ -1,0 +1,25 @@
+{
+    "title": "Development of Robust Quantitative Structure-Activity Relationship Models for CYP2C9, CYP2D6, and CYP3A4 Catalysis and Inhibition",
+    "authors": "E. Gonzalez, S. Jain, P. Shah, N. Torimoto-Katori, A. Zakharov, D. Nguyen, S. Sakamuru, R. Huang, M. Xia, R. Obach, C. Hop, A. Simeonov, X. Xu",
+    "journal": "Drug Metabolism and Disposition",
+    "year": 2021,
+    "suggested_slug": "qsar-models-for-cyp-enzymes",
+    "suggested_computational_title": "QSAR models for CYP-mediated drug metabolism",
+    "tldr": "QSAR models were developed to predict substrates and inhibitors of CYP2C9, CYP2D6, and CYP3A4, aiding drug discovery.",
+    "summary": "The publication details the development of QSAR models for predicting interactions with CYP2C9, CYP2D6, and CYP3A4 enzymes, essential for drug metabolism. These models aim to predict drug clearance and potential interactions early in drug discovery. A library of about 5,000 compounds was screened using high-throughput assays to build robust models with accuracies above 70%. These models are publicly available to aid in drug discovery by predicting substrates and inhibitors, helping identify compounds with favorable metabolic profiles and reducing adverse drug interactions.",
+    "relevance_to_biomedical_research": "This research is significant for drug discovery, particularly in predicting drug metabolism and interactions involving cytochrome P450 enzymes. It helps identify compounds with optimal pharmacokinetic profiles, reducing variability in drug response and minimizing adverse interactions, thus streamlining drug development.",
+    "computational_methods": "The study used QSAR models developed with machine learning techniques, including stratified bagging with random forests and multi-task deep neural networks. Trained on a dataset of 5,000 compounds, the models classify compounds as substrates or inhibitors based on molecular fingerprints and physicochemical properties, achieving accuracies above 70%.",
+    "biomedical_keywords": [
+        "Cytochrome P450",
+        "Drug metabolism",
+        "Pharmacokinetics"
+    ],
+    "computational_keywords": [
+        "QSAR modeling",
+        "Stratified bagging",
+        "Deep neural networks"
+    ],
+    "strengths": "The study advances drug metabolism prediction with robust QSAR models for cytochrome P450 enzymes, using a large dataset for reliability. Publicly available models democratize access to predictive tools, supporting diverse research settings with high accuracy.",
+    "limitations": "The models, while accurate, are limited to predicting substrates and inhibitors and lack mechanistic insights. High-throughput data may introduce variability, and the models' applicability outside the training set is uncertain, requiring further validation.",
+    "overall_relevance": "The publication is of medium to high relevance in drug metabolism and pharmacokinetics, offering accurate QSAR models for early drug discovery. Its focus on key enzymes maintains its importance, despite the journal's moderate impact and existing models."
+}

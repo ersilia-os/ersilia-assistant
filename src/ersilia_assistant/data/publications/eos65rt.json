@@ -1,0 +1,25 @@
+{
+    "title": "Predicting the membrane permeability of organic fluorescent probes by the deep neural network based lipophilicity descriptor DeepFl-LogP",
+    "authors": "K. Soliman, F. Grimm, C. A. Wurm, A. Egner",
+    "journal": "Scientific Reports",
+    "year": 2021,
+    "suggested_slug": "deepfl-logp-membrane-permeability",
+    "suggested_computational_title": "DeepFl-LogP, membrane permeability prediction for fluorescent probes",
+    "tldr": "A deep neural network-based descriptor, DeepFl-LogP, predicts fluorescent probes' membrane permeability, aiding cell-permeable fluorophore development.",
+    "summary": "The study introduces DeepFl-LogP, a novel lipophilicity descriptor developed using a deep neural network, to predict the membrane permeability of organic fluorescent probes. This descriptor targets limitations of existing models that often rely on multiple molecular descriptors with moderate accuracy. DeepFl-LogP shows high correlation with experimental partition coefficient data (R2 = 0.892, MSE = 0.359) for drug-like substances. It employs a threshold permeability model categorizing probe permeability with 96% accuracy. Trained and validated on over 13,000 molecules from the OPERA dataset, supplemented with additional compounds, DeepFl-LogP enables rapid, accurate predictions, facilitating cell-permeable fluorophore development and benefiting bioimaging and drug discovery research.",
+    "relevance_to_biomedical_research": "This publication is relevant to biomedicine by offering a computational tool for predicting cell permeability of fluorescent probes, essential for super-resolution imaging. It aids efficient probe development with optimal photophysical properties, enhancing bioimaging applications and drug discovery.",
+    "computational_methods": "The study develops the DeepFl-LogP descriptor using a deep neural network (DNN) to predict LogP values of fluorescent probes. The DNN features an input layer with 319 neurons, three hidden layers, and an output layer. It was trained and validated with the OPERA dataset and additional compounds, achieving high accuracy (R2 = 0.892, MSE = 0.359). The model uses molecular fingerprints and fragment descriptors for input, classifying permeability with 96% accuracy, outperforming existing LogP descriptors.",
+    "biomedical_keywords": [
+        "Fluorescent probes",
+        "Membrane permeability",
+        "Bioimaging"
+    ],
+    "computational_keywords": [
+        "Deep neural networks",
+        "Lipophilicity descriptor",
+        "OPERA dataset"
+    ],
+    "strengths": "The publication's primary strength is the robust DeepFl-LogP descriptor for predicting membrane permeability with 96% accuracy, surpassing existing models. Its extensive training dataset enhances reliability and applicability in drug discovery and bioimaging.",
+    "limitations": "DeepFl-LogP's generalizability may be limited by not covering all chemical diversity in fluorescent probes and reliance on specific datasets. The novelty of using DNNs is diminished by similar machine learning applications.",
+    "overall_relevance": "The publication holds medium to high relevance in bioimaging and drug discovery. While machine learning applications are common, DeepFl-LogP's novel application improves fluorescent probe permeability prediction, important for bioimaging tool development."
+}

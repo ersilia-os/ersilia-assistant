@@ -1,0 +1,25 @@
+{
+    "title": "Mordred: a molecular descriptor calculator",
+    "authors": "H. Moriwaki, Y.-S. Tian, N. Kawashita, T. Takagi",
+    "journal": "Journal of Cheminformatics",
+    "year": 2018,
+    "suggested_slug": "mordred-molecular-descriptor",
+    "suggested_computational_title": "Mordred, efficient molecular descriptor calculation",
+    "tldr": "Mordred is a fast, open-source software for calculating over 1800 molecular descriptors, useful in cheminformatics and QSPR studies.",
+    "summary": "Mordred is a molecular descriptor calculation software designed to address common issues with existing tools, such as bugs, update frequency, and licensing constraints. It can compute over 1800 descriptors, including two- and three-dimensional ones, and supports command line, web application, and Python package interfaces. Mordred is particularly noted for its speed, outperforming the well-known PaDEL-Descriptor software in benchmarks, and can handle large molecules. Released under the BSD license, Mordred is accessible for both commercial and non-commercial use. It provides a flexible, easy-to-install platform that includes automated testing to ensure accurate descriptor calculations, making it a valuable tool for cheminformatics studies like quantitative structure-property relationships (QSPR).",
+    "relevance_to_biomedical_research": "Mordred is relevant to biomedical research as it facilitates the computation of molecular descriptors, which are crucial for QSPR models predicting biological activity, toxicity, and other chemical properties, aiding drug discovery.",
+    "computational_methods": "Mordred employs a variety of computational techniques to calculate molecular descriptors swiftly and accurately, improving algorithms for descriptors like DetourMatrix, Chi, and Framework. It supports parallel computation, automated testing, and is built using Python with dependencies like RDKit and NumPy.",
+    "biomedical_keywords": [
+        "Molecular descriptors",
+        "Cheminformatics",
+        "Quantitative structure-property relationship"
+    ],
+    "computational_keywords": [
+        "Descriptor calculation",
+        "Python package",
+        "Parallel computation"
+    ],
+    "strengths": "Mordred's strengths include high calculation speed, ability to handle complex molecules, open-source accessibility, ease of installation, and the reliability of automated testing, making it a robust tool for cheminformatics.",
+    "limitations": "Mordred may still contain defects due to implementation or dependencies. Its reliance on Python could limit performance compared to Java-based tools, although its efficiency mitigates this. Feedback is encouraged to improve the tool.",
+    "overall_relevance": "Mordred is of medium to high relevance in cheminformatics due to its efficient descriptor calculation capabilities. Its open-source nature broadens its impact, offering solutions to persistent software issues."
+}

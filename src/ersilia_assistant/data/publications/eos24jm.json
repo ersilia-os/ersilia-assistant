@@ -1,0 +1,25 @@
+{
+    "title": "Prediction of QcrB Inhibition as a Measure of Antitubercular Activity with Machine Learning Protocols",
+    "authors": "A. A. Khan, S. S. Poojary, K. K. Bhave, S. R. Nandan, K. R. Iyer, E. C. Coutinho",
+    "journal": "ACS Omega",
+    "year": 2022,
+    "suggested_slug": "qcrb-inhibition-antitubercular-activity",
+    "suggested_computational_title": "QcrB inhibition prediction using SVM and molecular features",
+    "tldr": "Machine learning models predict QcrB inhibition, a promising target for tuberculosis, using molecular features from 350 compounds.",
+    "summary": "The publication addresses the challenge of developing effective therapies against Mycobacterium tuberculosis by targeting the cytochrome bcc complex, specifically the QcrB component. Using a dataset of 350 molecules, the authors employed machine learning techniques to develop predictive models for QcrB inhibition. They explored three molecular feature sets: MACCS keys, ECFP6 fingerprints, and Mordred descriptors, training them with eight classifier algorithms. The support vector machine (SVM) classifier using ECFP6 fingerprints emerged as the most effective model, accurately classifying known potent inhibitors. The model's robustness was validated through external datasets and Y-randomization tests. A web application, Q-TB, was developed to facilitate the evaluation of potential QcrB inhibitors, making the model accessible for broader research applications.",
+    "relevance_to_biomedical_research": "The publication is relevant to biomedicine as it addresses the urgent need for new therapeutic approaches against tuberculosis. By focusing on the novel target QcrB, the study contributes to the drug discovery pipeline by identifying potential inhibitors that could lead to effective treatments for tuberculosis.",
+    "computational_methods": "The study employed machine learning techniques to predict QcrB inhibition using a dataset of 350 compounds. Three types of molecular features were utilized: MACCS keys, ECFP6 fingerprints, and Mordred descriptors. Eight classifiers were tested, including logistic regression, k-nearest neighbors, support vector machines (SVM), and random forest. The SVM classifier using ECFP6 fingerprints was identified as the best performer. The model was optimized using grid-search with 10-fold cross-validation and validated with external datasets.",
+    "biomedical_keywords": [
+        "Tuberculosis",
+        "QcrB inhibition",
+        "Antitubercular activity"
+    ],
+    "computational_keywords": [
+        "Support vector machine",
+        "ECFP6 fingerprints",
+        "Molecular descriptors"
+    ],
+    "strengths": "The study successfully applies machine learning to predict QcrB inhibition. The use of multiple feature sets and classifier algorithms enhances model robustness. The publicly accessible web application, Q-TB, allows for broader use and validation of the model.",
+    "limitations": "The dataset is limited to 350 compounds, possibly not capturing the required chemical diversity for QcrB inhibition prediction. The study relies on existing molecular features, leaving potential novel feature discovery unexplored. Further validation is needed with larger datasets.",
+    "overall_relevance": "The publication holds medium relevance in tuberculosis research and drug discovery. While innovative, the dataset size and reliance on existing features may limit immediate impact. Results are promising, with potential implications for discovering antitubercular agents."
+}

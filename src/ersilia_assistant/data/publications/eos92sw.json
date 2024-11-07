@@ -1,0 +1,25 @@
+{
+    "title": "eToxPred: a machine learning-based approach to estimate the toxicity of drug candidates",
+    "authors": "L. Pu, M. Naderi, T. Liu, H.-C. Wu, S. Mukhopadhyay, M. Brylinski",
+    "journal": "BMC Pharmacology and Toxicology",
+    "year": 2019,
+    "suggested_slug": "etoxpred-toxicity-estimation",
+    "suggested_computational_title": "eToxPred, toxicity and synthetic accessibility prediction using machine learning",
+    "tldr": "eToxPred uses machine learning to predict toxicity and synthetic accessibility of small molecules, achieving 72% accuracy for toxicity prediction.",
+    "summary": "eToxPred is a computational tool designed to predict the toxicity and synthetic accessibility of small organic compounds using machine learning. It uses molecular fingerprints as input for its models, which are trained and validated against datasets of known drugs, hazardous chemicals, natural products, and synthetic bioactive compounds. The tool demonstrates a mean square error of 4% for synthetic accessibility and achieves a 72% accuracy for toxicity prediction. eToxPred can be incorporated into virtual screening pipelines to filter potentially toxic or difficult-to-synthesize drug candidates. It employs a deep belief network for synthetic accessibility and extremely randomized trees for toxicity prediction. Available as open-access software, it supports the construction of custom libraries for drug discovery.",
+    "relevance_to_biomedical_research": "Toxicity prediction is crucial in drug discovery to identify harmful drug candidates early in development. eToxPred provides a method to estimate the toxicity of small molecules, reducing reliance on experimental tests. Its ability to predict synthetic accessibility aids researchers in designing feasible drug candidates, improving virtual screening efficiency.",
+    "computational_methods": "eToxPred uses machine learning algorithms, specifically a Deep Belief Network (DBN) for synthetic accessibility and Extremely Randomized Trees (ET) for toxicity prediction. The DBN processes 1024-bit molecular fingerprints with three hidden layers, optimizing weights through Gibbs sampling. The ET classifier constructs decision trees with randomized splitting, using a 1024-bit input vector. The models are trained on known drugs and toxic chemicals, with cross-validation ensuring generalizability. The tool achieves 72% accuracy for toxicity prediction and a mean square error of 4% for synthetic accessibility.",
+    "biomedical_keywords": [
+        "Toxicity prediction",
+        "Drug candidates",
+        "Synthetic accessibility"
+    ],
+    "computational_keywords": [
+        "Molecular fingerprints",
+        "Deep Belief Network",
+        "Extremely Randomized Trees"
+    ],
+    "strengths": "eToxPred excels in predicting toxicity and estimating synthetic accessibility of small molecules. Utilizing molecular fingerprints, it handles diverse datasets. Advanced machine learning techniques enhance predictive capabilities. Open-source availability broadens its drug discovery application.",
+    "limitations": "eToxPred's performance depends on the quality and diversity of training datasets. Reliance on molecular fingerprints may limit applicability to novel compounds. The 72% accuracy for toxicity prediction indicates room for improvement with diverse datasets or algorithm refinement.",
+    "overall_relevance": "eToxPred is of medium to high relevance in computational drug discovery for its use of machine learning in toxicity and synthetic accessibility prediction. While methods are not novel, their integration into a single tool is valuable. Its open-source availability enhances impact in the pharmaceutical industry."
+}

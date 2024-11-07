@@ -1,0 +1,25 @@
+{
+    "title": "AiZynthFinder: a fast, robust and flexible open-source software for retrosynthetic planning",
+    "authors": "S. Genheden, A. Thakkar, V. Chadimov\u00e1, J.-L. Reymond, O. Engkvist, E. Bjerrum",
+    "journal": "Journal of Cheminformatics",
+    "year": 2020,
+    "suggested_slug": "aizynthfinder-retrosynthetic-planning",
+    "suggested_computational_title": "AiZynthFinder, efficient retrosynthesis planning with Monte Carlo tree search",
+    "tldr": "AiZynthFinder is an open-source software for retrosynthetic planning using Monte Carlo tree search and neural network guidance, providing fast and robust solutions.",
+    "summary": "AiZynthFinder is an open-source software designed for retrosynthetic planning, utilizing a Monte Carlo tree search algorithm to efficiently break down target molecules into purchasable precursors. The software employs an artificial neural network to guide the process by suggesting potential reaction templates from a library of known reactions. This approach allows for rapid identification of synthetic routes, typically within seconds. AiZynthFinder is engineered with software development best practices, ensuring robustness and maintainability, and is accessible to both novice and experienced users due to comprehensive documentation. It offers both command-line and graphical interfaces for flexibility, and supports batch processing of compounds. The tool is available on GitHub and aims to facilitate reproducible research and collaboration in the field of retrosynthesis.",
+    "relevance_to_biomedical_research": "AiZynthFinder is relevant to drug discovery as it aids in the synthesis planning of complex molecules, crucial for developing new pharmaceuticals. By providing a fast and open-source solution for retrosynthetic analysis, it accelerates the process of identifying viable synthetic routes for drug candidates.",
+    "computational_methods": "AiZynthFinder uses a Monte Carlo tree search algorithm, guided by a neural network policy, to perform retrosynthetic planning. The input is a target molecule, and the output is a list of purchasable precursors. The neural network suggests reaction templates based on a database of known reactions, and the Monte Carlo tree search evaluates possible synthetic routes. The neural network was trained using the USPTO reaction dataset. AiZynthFinder prioritizes ease of use and maintainability, offering both CLI and GUI for user interaction.",
+    "biomedical_keywords": [
+        "Retrosynthesis",
+        "Synthesis planning",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Monte Carlo tree search",
+        "Neural network policy",
+        "Reaction templates"
+    ],
+    "strengths": "AiZynthFinder's strengths lie in its open-source nature, speed, and flexibility in retrosynthetic planning. It is designed with robust software engineering principles, ensuring high maintainability and ease of use. Its use of a neural network to guide a Monte Carlo tree search offers a powerful combination for identifying synthetic routes efficiently.",
+    "limitations": "While AiZynthFinder is powerful, it does not incorporate filters for unfeasible reactions, which may affect search efficiency. The reliance on the USPTO dataset for training may limit its applicability to reactions not well represented in the dataset.",
+    "overall_relevance": "AiZynthFinder provides a significant contribution to computational retrosynthesis with its open-source, fast, and flexible approach. Its implementation and accessibility make it valuable for researchers in drug discovery. The software's relevance is enhanced by its continuous development and potential for integration into larger workflows."
+}

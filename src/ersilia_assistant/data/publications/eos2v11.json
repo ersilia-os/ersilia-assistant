@@ -1,0 +1,25 @@
+{
+    "title": "ADMETlab 2.0: an integrated online platform for accurate and comprehensive predictions of ADMET properties",
+    "authors": "G. Xiong, Z. Wu, J. Yi, L. Fu, Z. Yang, C. Hsieh, M. Yin, X. Zeng, C. Wu, A. Lu, X. Chen, T. Hou, D. Cao",
+    "journal": "Nucleic Acids Research",
+    "year": 2021,
+    "suggested_slug": "admetlab-2-for-admet-predictions",
+    "suggested_computational_title": "ADMETlab 2.0, a multi-task graph attention framework for ADMET properties prediction",
+    "tldr": "ADMETlab 2.0 is an enhanced web platform for predicting ADMET properties of chemicals using a multi-task graph attention framework, improving accuracy and usability.",
+    "summary": "ADMETlab 2.0 is a web-based platform designed to predict absorption, distribution, metabolism, excretion, and toxicity (ADMET) properties of chemical compounds. This upgraded version includes the prediction of 88 ADMET-related parameters, nearly double the number supported by its predecessor. The tool utilizes a multi-task graph attention framework to enhance the robustness and accuracy of its predictive models. The platform is built on Python and uses the Django framework, allowing users to input chemical structures via SMILES strings or drawing tools, and receive predictions in both tabular and graphical formats. ADMETlab 2.0 includes single-molecule and batch evaluation capabilities and offers a user-friendly interface. The platform is freely accessible and aims to support medicinal chemists in lead optimization and drug development by providing comprehensive ADMET profiles efficiently.",
+    "relevance_to_biomedical_research": "Accurate ADMET predictions are crucial in drug discovery to identify potential failures in pharmacokinetics and toxicity early, reducing costs and time. ADMETlab 2.0 facilitates this by providing comprehensive, in silico evaluations of compounds, important for optimizing lead compounds and ensuring drug safety.",
+    "computational_methods": "ADMETlab 2.0 employs a multi-task graph attention framework, designed for regression and classification tasks for ADMET predictions. Input is the chemical structure as a SMILES string or drawn with an editor, output is a comprehensive ADMET profile in tabular and graphical formats. The framework uses graph neural networks to model molecular structures and predict properties, sharing parameters across tasks for enhanced generalization. The dataset includes 0.25 million entries across 53 endpoints from open-access databases and peer-reviewed literature, achieving high accuracy with AUC values above 0.85 for classification and R-squared values above 0.72 for regression tasks.",
+    "biomedical_keywords": [
+        "Pharmacokinetics",
+        "Drug discovery",
+        "Toxicity prediction"
+    ],
+    "computational_keywords": [
+        "Multi-task graph attention framework",
+        "ADMET prediction",
+        "In silico evaluation"
+    ],
+    "strengths": "ADMETlab 2.0 provides comprehensive and accurate prediction tools for ADMET properties, crucial for drug development. The multi-task graph attention framework improves prediction accuracy and efficiency. It handles both single and batch evaluations, enhancing usability for medicinal chemists.",
+    "limitations": "While ADMETlab 2.0 enhances ADMET prediction, improvement is needed in prediction accuracy for certain endpoints, which may be limited by data availability. The methods could benefit from optimization and validation against larger datasets. Computational predictions require supplementary experimental validation.",
+    "overall_relevance": "ADMETlab 2.0 is highly relevant for the biomedical field, offering state-of-the-art computational methods for predicting ADMET properties, critical in drug development. Advanced machine learning techniques and comprehensive datasets enhance its capability, with significant improvements over similar platforms."
+}

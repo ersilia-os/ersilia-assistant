@@ -1,0 +1,25 @@
+{
+    "title": "Natural product scores and fingerprints extracted from artificial neural networks",
+    "authors": "J. Menke, J. Massa, O. Koch",
+    "journal": "Computational and Structural Biotechnology Journal",
+    "year": 2021,
+    "suggested_slug": "neural-fingerprints-natural-products",
+    "suggested_computational_title": "Neural fingerprint generation for natural products",
+    "tldr": "Neural networks generate fingerprints for natural products, outperforming traditional methods in identifying NP-likeness and aiding virtual screening.",
+    "summary": "Natural products are a crucial source of novel drugs but pose challenges for traditional cheminformatics methods due to their distinct structural features. This publication explores the use of neural networks to generate fingerprints tailored for natural products. A curated dataset of natural products and synthetic decoys was used to train a multi-layer perceptron and an autoencoder-like network. The resulting neural fingerprints were evaluated against traditional and natural product-specific fingerprints, showing superior performance across three datasets. Additionally, the output layer's activations were used to create a novel natural product likeness score. The study demonstrates how neural networks can enhance ligand-based virtual screening by producing more relevant molecular representations for natural products. Two natural product-specific datasets and the code for generating these fingerprints and scores were made publicly available.",
+    "relevance_to_biomedical_research": "Natural products are vital in drug discovery due to their bioavailability and structural diversity. This work is relevant to early-stage drug discovery, particularly in virtual screening and similarity searches, by providing improved methods for identifying and assessing natural product-like compounds.",
+    "computational_methods": "The study employed multi-layer perceptron and autoencoder-like neural networks to generate natural product-specific fingerprints. The input comprised molecular structures encoded as extended connectivity fingerprints (ECFP4) and surface descriptors. The networks were trained using a dataset of 394,939 natural products and 210,412 synthetic compounds. Outputs were neural fingerprints and a natural product likeness score, derived from the output layer activations. These neural fingerprints were evaluated using AUC and EF metrics, outperforming traditional methods. The training utilized a 5-fold cross-validation and ADAM optimization, achieving high predictive performance.",
+    "biomedical_keywords": [
+        "Natural products",
+        "Drug discovery",
+        "Virtual screening"
+    ],
+    "computational_keywords": [
+        "Neural networks",
+        "Fingerprint generation",
+        "Autoencoder"
+    ],
+    "strengths": "The publication introduces neural networks as a novel approach to generate fingerprints specific to natural products, demonstrating superior performance over traditional methods. The study provides valuable datasets and code for further research, emphasizing reproducibility.",
+    "limitations": "The neural network-based approach requires large, high-quality datasets, which may not always be available. The study lacks extensive hyperparameter optimization, which could further improve performance. The neural network score's binary nature may limit nuanced differentiation.",
+    "overall_relevance": "This publication provides a medium to high relevance contribution to the field of drug discovery by addressing the challenges of natural product identification with advanced computational techniques. It aligns with trends in applying machine learning to cheminformatics."
+}

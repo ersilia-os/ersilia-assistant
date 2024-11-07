@@ -1,0 +1,25 @@
+{
+    "title": "Drug-likeness scoring based on unsupervised learning",
+    "authors": "K. Lee, J. Jang, S. Seo, J. Lim, W. Y. Kim",
+    "journal": "Chemical Science",
+    "year": 2022,
+    "suggested_slug": "drug-likeness-scoring-unsupervised",
+    "suggested_computational_title": "Unsupervised learning model for drug-likeness scoring",
+    "tldr": "A novel unsupervised learning model for drug-likeness prediction was developed, demonstrating consistent performance across datasets without relying on negative training data.",
+    "summary": "The publication introduces an unsupervised learning approach for predicting drug-likeness, addressing the limitations of existing binary classification models reliant on negative datasets. The authors propose a recurrent neural network (RNN)-based language model trained solely on known drugs, eliminating the need for a negative set. This model predicts drug-likeness by evaluating how similar a query molecule is to known drugs in a learned feature space. The model was tested against traditional methods and a two-class classification (TCC) model based on graph convolutional networks (GCN). The RNN model exhibited consistent performance across various datasets, unlike TCC models that showed data dependency issues. The RNN-based approach provides a pragmatic tool for drug-likeness scoring and can potentially be applied to other biochemical fields.",
+    "relevance_to_biomedical_research": "Drug-likeness prediction is crucial in virtual screening for drug discovery, as it helps identify compounds likely to succeed in clinical trials. This publication offers a novel approach to predict drug-likeness using unsupervised learning, eliminating the dependency on negative datasets and potentially improving the efficiency of identifying viable drug candidates.",
+    "computational_methods": "The authors employed a recurrent neural network (RNN)-based language model for unsupervised learning, using only known drug molecules for training. The model predicts drug-likeness by evaluating the probability distribution of query molecules' features in a learned drug space. The RNN model assesses the similarity between input molecules and known drugs, providing a drug-likeness score. The study compared this model to a graph convolutional network (GCN)-based two-class classification model, trained with a positive set of known drugs and a negative set from the ZINC database.",
+    "biomedical_keywords": [
+        "Drug-likeness",
+        "Virtual screening",
+        "Drug development"
+    ],
+    "computational_keywords": [
+        "Unsupervised learning",
+        "Recurrent neural network",
+        "Language model"
+    ],
+    "strengths": "The publication presents a novel unsupervised learning approach that circumvents the dependency on negative datasets, a common issue in previous models. This method leverages a language model to provide consistent drug-likeness predictions across diverse datasets, demonstrating robustness and practical applicability in drug discovery.",
+    "limitations": "The RNN-based model may exhibit numerical biases, such as favoring molecules with shorter SMILES codes, which could affect the accuracy of drug-likeness scoring. Further exploration of alternative molecular representations and model architectures could enhance the model's predictive capabilities.",
+    "overall_relevance": "The publication is of medium to high relevance, given its novel approach to drug-likeness prediction using unsupervised learning. It addresses key limitations of previous models and demonstrates improved generalization across datasets."
+}

@@ -1,0 +1,25 @@
+{
+    "title": "MAIP: a web service for predicting blood-stage malaria inhibitors",
+    "authors": "N. Bosc, E. Felix, R. Arcila, D. Mendez, M. R. Saunders, D. V. S. Green, J. Ochoada, A. A. Shelat, E. J. Martin, P. Iyer, O. Engkvist, A. Verras, J. Duffy, J. Burrows, J. M. F. Gardner, A. R. Leach",
+    "journal": "Journal of Cheminformatics",
+    "year": 2021,
+    "suggested_slug": "maip-malaria-inhibitor-prediction",
+    "suggested_computational_title": "MAIP, predicting malaria inhibitors using QSAR models",
+    "tldr": "MAIP is a web service using machine learning to predict blood-stage malaria inhibitors by integrating diverse QSAR models.",
+    "summary": "MAIP is a web service aimed at predicting blood-stage malaria inhibitors through machine learning models. It expands a previous initiative by integrating multiple QSAR models to boost prediction accuracy, dealing with the challenge of proprietary data by sharing descriptor weights instead of raw data. This platform, developed using an open-source software framework, is publicly accessible for predicting antimalarial compounds. Utilizing eleven datasets from different partners, the MAIP web service consolidates these into a consensus model for broader community application. The service's goal is to aid drug discovery by offering a tool to identify promising compounds for further exploration, overcoming data integration challenges, and employing open-source technology to ensure reproducibility and accessibility.",
+    "relevance_to_biomedical_research": "This publication is highly relevant to antimalarial drug discovery. It tackles the urgent need for new therapies to fight malaria, especially in regions with high mortality rates like sub-Saharan Africa. By offering a computational tool to predict blood-stage malaria inhibitors, MAIP aids the drug discovery pipeline's early stages, potentially accelerating new treatment development against drug-resistant strains.",
+    "computational_methods": "The study employs machine learning, specifically QSAR modeling, to predict malaria inhibitors. Models were trained using Na\u00efve Bayes algorithms on eleven datasets, using RDKit for descriptors and molecule standardization. A consensus approach enhanced prediction by combining models. The input is molecular descriptors, with output as a probability score for antimalarial activity. Validation used three datasets, with metrics like ROC AUC scores and enrichment factors. MAIP provides predictions via a web interface.",
+    "biomedical_keywords": [
+        "Malaria",
+        "Antimalarial drug discovery",
+        "Blood-stage inhibitors"
+    ],
+    "computational_keywords": [
+        "QSAR modeling",
+        "Na\u00efve Bayes",
+        "Data fusion"
+    ],
+    "strengths": "The study's strengths include integrating multiple datasets without compromising confidentiality, resulting in a robust prediction model. Open-source software ensures reproducibility and accessibility. The consensus model improves accuracy, offering a valuable tool for drug discovery. Public platform availability benefits the wider community from extensive data insights.",
+    "limitations": "A limitation is potential overlap between training and validation datasets, affecting generalization to new compounds. Some datasets' proprietary nature means chemical structures are inaccessible. While methods are robust, they are not novel, relying on established techniques like Na\u00efve Bayes.",
+    "overall_relevance": "The publication is of medium to high relevance in malaria drug discovery for its dataset integration and public prediction tool. While methods aren't novel, the study's strength lies in its collaborative data sharing and model consensus approach, guiding research and drug discovery efforts despite proprietary data limitations."
+}

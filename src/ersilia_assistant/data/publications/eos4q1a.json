@@ -1,0 +1,25 @@
+{
+    "title": "CReM: chemically reasonable mutations framework for structure generation",
+    "authors": "P. Polishchuk",
+    "journal": "Journal of Cheminformatics",
+    "year": 2020,
+    "suggested_slug": "crem-structure-generation",
+    "suggested_computational_title": "CReM, a framework for chemically reasonable mutations in structure generation",
+    "tldr": "CReM is an open-source Python framework for fragment-based chemical structure generation, ensuring chemically valid structures with control over diversity and synthetic feasibility.",
+    "summary": "The paper presents CReM, a new framework for fragment-based chemical structure generation in de novo design studies. CReM aims to overcome limitations of existing methods by ensuring chemically valid structures while providing flexible control over diversity, novelty, and synthetic complexity. The framework is implemented as an open-source Python module, allowing researchers to create custom workflows for chemical space exploration. CReM relies on the concept of interchangeable fragments, which are fragments occurring in the same local chemical context in known compounds. This ensures the generation of chemically valid structures and indirectly controls synthetic feasibility. The framework is designed to integrate with third-party software, offering three modes of structure generation: mutate, grow, and link. CReM was evaluated using various benchmark tests, demonstrating its effectiveness in generating diverse and synthetically feasible chemical structures.",
+    "relevance_to_biomedical_research": "CReM is relevant to drug discovery as it facilitates the exploration of chemical space for novel compounds with desirable properties. The framework's ability to generate chemically valid structures while considering synthetic feasibility is crucial for early-stage drug discovery. By allowing flexible control over structure diversity and novelty, CReM can aid in identifying potential lead compounds for further development. Its open-source nature and compatibility with existing modeling tools make it a valuable resource for researchers in cheminformatics and medicinal chemistry.",
+    "computational_methods": "CReM employs a fragment-based approach for chemical structure generation, focusing on interchangeable fragments that ensure chemical validity. The framework operates in three modes: mutate, grow, and link, allowing researchers to explore chemical space iteratively. The input comprises known compounds' structures, which are fragmented to create a database of interchangeable fragments. The output is a set of generated structures with controlled diversity and novelty. CReM uses RDKit for fragment processing and ensures chemically reasonable mutations by matching local chemical contexts. The framework's effectiveness was validated through various benchmarks, including Guacamol, where it demonstrated high scores compared to reference methods.",
+    "biomedical_keywords": [
+        "De novo design",
+        "Chemical space exploration",
+        "Synthetic feasibility"
+    ],
+    "computational_keywords": [
+        "Fragment-based structure generation",
+        "Interchangeable fragments",
+        "RDKit"
+    ],
+    "strengths": "CReM's main strength lies in its ability to generate chemically valid structures with controlled diversity and synthetic feasibility. The framework's open-source nature and integration capabilities with third-party software make it highly adaptable for custom workflows. It offers flexibility in exploring chemical space, enabling researchers to tailor structure generation to specific needs. The approach's validation against benchmark tests demonstrates its potential effectiveness in drug discovery applications.",
+    "limitations": "CReM's current limitation is its inability to create new ring systems, which restricts the diversity of generated compounds to those represented in the input database. Additionally, while the framework can generate chemically valid structures, it does not directly address the prediction of biological activity. The reliance on existing compound databases may also limit the novelty of generated structures, depending on the database's diversity.",
+    "overall_relevance": "CReM presents a medium to high relevance in the context of current chemical structure generation methods. While its approach to ensuring chemical validity and synthetic feasibility is valuable, the limitation in generating new ring systems is a notable drawback. However, its open-source framework and integration potential make it a versatile tool for researchers. The publication in the Journal of Cheminformatics, a reputable journal in the field, further supports its relevance. The framework's performance in benchmark tests also indicates its potential utility in drug discovery workflows."
+}

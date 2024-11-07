@@ -1,0 +1,25 @@
+{
+    "title": "Drug-Membrane Permeability across Chemical Space",
+    "authors": "R. Menichetti, K. H. Kanekal, T. Bereau",
+    "journal": "ACS Central Science",
+    "year": 2019,
+    "suggested_slug": "drug-membrane-permeability",
+    "suggested_computational_title": "High-throughput coarse-grained simulations for drug permeability",
+    "tldr": "A high-throughput coarse-grained simulation method explores drug-membrane permeability, linking chemical structure to permeability using molecular descriptors.",
+    "summary": "Understanding the relationship between the chemical structure of small drug-like compounds and their passive permeation rate across lipid membranes is crucial for pharmaceutical applications. The study presents a method that reduces the complexity of chemical space using a physics-based coarse-grained model. This model allows for efficient exploration and simulation of drug permeability across lipid membranes. By simulating over 500,000 compounds, the researchers establish a permeability surface using molecular descriptors like bulk partitioning free energy and pKa. This approach enables inverse design by linking specific chemical groups to permeability coefficients. The method offers significant implications for drug synthesis by narrowing the range of permeabilities through common chemical moieties. The study highlights that coarse-grained simulations provide a cost-effective and comprehensive way to predict drug permeability and establish structure-property relationships.",
+    "relevance_to_biomedical_research": "This publication is relevant to biomedicine, particularly in drug development, as it provides insights into drug-membrane interactions and passive permeation, which are critical for understanding drug absorption and bioavailability.",
+    "computational_methods": "The study uses high-throughput coarse-grained simulations to model drug permeability across lipid membranes. The method reduces chemical space complexity by representing compounds with coarse-grained models, significantly speeding up simulations. The permeability surface is constructed based on two molecular descriptors: bulk partitioning free energy and pKa. The simulations cover compounds ranging from 30 to 160 Da, predicting permeability coefficients for over 500,000 compounds.",
+    "biomedical_keywords": [
+        "Drug permeability",
+        "Lipid membranes",
+        "Passive permeation"
+    ],
+    "computational_keywords": [
+        "Coarse-grained simulations",
+        "High-throughput screening",
+        "Molecular descriptors"
+    ],
+    "strengths": "The publication presents a novel approach to predict drug permeability using high-throughput coarse-grained simulations, offering significant computational efficiency and broad chemical space coverage.",
+    "limitations": "The coarse-grained model may lack the detailed resolution of atomistic simulations. The reliance on specific molecular descriptors may not capture all relevant chemical interactions, potentially limiting the model's applicability to more complex compounds.",
+    "overall_relevance": "This publication has medium to high relevance in the field of drug discovery, offering a novel computational approach to predict drug permeability efficiently."
+}

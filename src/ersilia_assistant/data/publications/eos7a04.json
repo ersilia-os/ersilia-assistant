@@ -1,0 +1,25 @@
+{
+    "title": "Learning continuous and data-driven molecular descriptors by translating equivalent chemical representations",
+    "authors": "R. Winter, F. Montanari, F. No\u00e9, D. Clevert",
+    "journal": "Chemical Science",
+    "year": 2019,
+    "suggested_slug": "data-driven-molecular-descriptors",
+    "suggested_computational_title": "Data-driven molecular descriptor learning via translation",
+    "tldr": "Deep neural networks translate chemical representations to learn molecular descriptors that outperform traditional fingerprints in virtual screening.",
+    "summary": "The publication introduces a novel approach for generating molecular descriptors using deep neural networks to translate between chemical representations such as SMILES and InChI. By employing neural machine translation, the model captures the semantic meaning of these representations in a continuous low-dimensional vector. This vector serves as a molecular descriptor, showing competitive performance in QSAR modeling and significantly outperforming traditional molecular fingerprints in virtual screening tasks. The method combines data-driven feature extraction with the ability to generalize across chemical space, thanks to pretraining on a large dataset of 72 million compounds. The continuous nature of the descriptors allows for smooth exploration and optimization in chemical space.",
+    "relevance_to_biomedical_research": "This publication is relevant to drug discovery as it offers a new method to predict molecular properties and activities. The model's descriptors are useful for QSAR and virtual screening, crucial stages in drug discovery, and may improve the identification of biologically active compounds.",
+    "computational_methods": "The method uses a neural machine translation model to learn molecular descriptors by translating between SMILES and InChI. The sequences are tokenized and converted into one-hot vectors for processing in an encoder-decoder architecture. The model, trained on 72 million compounds, performs well in QSAR and VS tasks. The continuous and reversible descriptors enable exploration of chemical space.",
+    "biomedical_keywords": [
+        "Molecular descriptors",
+        "Quantitative structure-activity relationship",
+        "Virtual screening"
+    ],
+    "computational_keywords": [
+        "Neural machine translation",
+        "Encoder-decoder architecture",
+        "Continuous representation"
+    ],
+    "strengths": "The publication presents a novel molecular descriptor learning approach that outperforms traditional methods in virtual screening tasks. It uses neural machine translation to derive continuous, meaningful descriptors, enhancing generalization and reducing overfitting.",
+    "limitations": "A limitation is the complexity in translating between molecular representations, like InChI to SMILES. The model's reliance on a large pretraining dataset limits applicability to smaller chemical spaces, requiring further validation across diverse datasets.",
+    "overall_relevance": "The publication is highly relevant due to its novel approach and improvements in molecular descriptor performance. Published in Chemical Science, it addresses current descriptor learning limitations, opening new avenues for drug discovery applications, particularly in virtual screening."
+}

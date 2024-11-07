@@ -1,0 +1,25 @@
+{
+    "title": "PubChem 2023 Update",
+    "authors": "S. Kim, J. Chen, T. Cheng, A. Gindulyte, J. He, S. He, Q. Li, B. A. Shoemaker, P. A. Thiessen, B. Yu, L. Zaslavsky, J. Zhang, E. E. Bolton",
+    "journal": "Nucleic Acids Research",
+    "year": 2023,
+    "suggested_slug": "pubchem-2023-update",
+    "suggested_computational_title": "Enhanced chemical database with new data sources and functionalities",
+    "tldr": "Significant updates to PubChem include integration of data from over 120 new sources, improved programmatic access, and expanded patent data coverage.",
+    "summary": "PubChem, a public chemical database at the NCBI, has undergone significant updates over the past two years. Data from more than 120 new sources have been integrated, expanding PubChem's coverage to over 870 data sources. Notable additions include drug information from the FDA and chemical safety data from Haz-Map and the EPA. PubChem has also incorporated patent data from Google Patents, significantly expanding its patent collection. New data collections, Cell Line and Taxonomy, have been created to provide easy access to chemical information related to specific cell lines and taxa. The bioassay data model has been updated to include endpoint qualifiers and support UTF-8 characters. Programmatic access has been enhanced with new functionalities in PUG-REST and PUG-View, including target-centric data access. PubChemRDF has been updated to better reflect external ontological frameworks and now uses protein accession identifiers instead of GI numbers.",
+    "relevance_to_biomedical_research": "The updates to PubChem enhance its utility as a comprehensive resource for chemical information, benefiting researchers in fields such as drug discovery and toxicology. The inclusion of drug and safety data supports the identification of potential therapeutic agents and understanding of chemical hazards. The expanded patent data aids in intellectual property research, while the new Cell Line and Taxonomy collections facilitate the exploration of chemical interactions with specific biological models.",
+    "computational_methods": "The publication highlights improvements in PubChem's programmatic interfaces, particularly PUG-REST and PUG-View, which now offer enhanced functionalities. These include the 'standardize' operation, allowing users to obtain standardized chemical structures and target-centric data access for proteins, genes, cell lines, and taxa. PubChemRDF has also been updated to utilize RDF triples, facilitating semantic data integration. The bioassay data model now stores data points in a row-based format, improving data management. The data integration from over 120 new sources ensures a comprehensive dataset, enhancing the accuracy and reliability of the information available through PubChem's computational tools.",
+    "biomedical_keywords": [
+        "Chemical database",
+        "Drug discovery",
+        "Chemical safety"
+    ],
+    "computational_keywords": [
+        "PubChemRDF",
+        "Programmatic access",
+        "Data integration"
+    ],
+    "strengths": "The updated PubChem database provides a comprehensive and authoritative resource for chemical information, integrating data from a wide range of high-quality sources. The enhanced programmatic access and updated data models improve usability and data management, supporting diverse research applications. The inclusion of significant new data sources and expanded patent information increases the breadth of available chemical data, making PubChem a valuable tool for researchers in various fields.",
+    "limitations": "While the updates to PubChem are substantial, the integration of new data and functionalities may require users to update existing workflows and software to accommodate changes in data models and programmatic interfaces. The distinction between claimed and non-claimed subject matters in patent documents remains a challenge, which may affect the utility of patent data for specific applications.",
+    "overall_relevance": "PubChem's updates are highly relevant to the biomedical research community, particularly in the context of chemical information retrieval and analysis. The integration of new data sources and enhanced programmatic access improve the database's utility for drug discovery and chemical safety research. Overall, the relevance of the publication is medium to high, given the significant improvements to a widely used resource."
+}

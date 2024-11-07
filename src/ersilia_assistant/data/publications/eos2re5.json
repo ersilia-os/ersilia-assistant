@@ -1,0 +1,25 @@
+{
+    "title": "ADMETlab: a platform for systematic ADMET evaluation based on a comprehensively collected ADMET database",
+    "authors": "J. Dong, N.-N. Wang, Z.-J. Yao, L. Zhang, Y. Cheng, D. Ouyang, A.-P. Lu, D.-S. Cao",
+    "journal": "Journal of Cheminformatics",
+    "year": 2018,
+    "suggested_slug": "admetlab-platform-admet-evaluation",
+    "suggested_computational_title": "ADMETlab, a comprehensive ADMET evaluation platform",
+    "tldr": "ADMETlab is a web-based platform designed for systematic ADMET evaluation using a large database, aiding in early drug discovery.",
+    "summary": "ADMETlab is a web-based platform created to facilitate systematic evaluation of absorption, distribution, metabolism, excretion, and toxicity (ADMET) properties of chemical compounds. It is built upon a comprehensive database containing 288,967 entries, offering four main modules for drug-likeness analysis, ADMET prediction, systematic evaluation, and database/similarity searching. ADMETlab provides predictions for 31 ADMET-related endpoints using a combination of drug-likeness rules and models, and supports batch computations for high-throughput screening. The platform is implemented using the Django framework in Python, and is freely accessible online, with the aim of advancing the drug discovery process by enabling early evaluations and virtual screenings.",
+    "relevance_to_biomedical_research": "ADMETlab is relevant to drug discovery as it addresses the high attrition rates in pharmaceutical R&D due to ADMET-related issues. By providing early predictions of ADMET properties, it helps identify potential efficacy and safety deficiencies, thus minimizing failures in the drug discovery pipeline.",
+    "computational_methods": "ADMETlab employs a variety of computational methods including random forests, support vector machines, and decision trees to generate regression and classification models for ADMET prediction. The platform utilizes molecular descriptors and fingerprints calculated using Python packages like RDKit and Chemopy. The models are trained on data sets sourced from peer-reviewed publications and databases like ChEMBL, ensuring a large and structurally diverse data pool.",
+    "biomedical_keywords": [
+        "ADMET",
+        "Drug discovery",
+        "Toxicity prediction"
+    ],
+    "computational_keywords": [
+        "Random forests",
+        "Virtual screening",
+        "Molecular descriptors"
+    ],
+    "strengths": "ADMETlab's strength lies in its comprehensive database and the wide range of endpoints it covers, which surpasses existing tools in scope. The platform's user-friendly interface and support for batch computation make it highly practical for high-throughput screening.",
+    "limitations": "While ADMETlab provides extensive coverage of ADMET properties, some models may still require further optimization, particularly for challenging endpoints like clearance and half-life. The quality and accuracy of predictions could be further enhanced with more diverse and high-quality data.",
+    "overall_relevance": "ADMETlab holds medium to high relevance in the field of cheminformatics and drug discovery due to its comprehensive approach to ADMET evaluation and the integration of a large dataset."
+}

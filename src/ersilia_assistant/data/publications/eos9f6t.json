@@ -1,0 +1,25 @@
+{
+    "title": "A Deep Learning Approach to Antibiotic Discovery",
+    "authors": "J. M. Stokes, K. Yang, K. Swanson, W. Jin, A. Cubillos-Ruiz, N. M. Donghia, C. R. MacNair, S. French, L. A. Carfrae, Z. Bloom-Ackermann, V. M. Tran, A. Chiappino-Pepe, A. H. Badran, I. W. Andrews, E. J. Chory, G. M. Church, E. D. Brown, T. S. Jaakkola, R. Barzilay, J. J. Collins",
+    "journal": "Cell",
+    "year": 2020,
+    "suggested_slug": "deep-learning-antibiotic-discovery",
+    "suggested_computational_title": "Antibiotic prediction using deep neural networks",
+    "tldr": "A deep learning model predicts antibacterial activity of molecules, identifying Halicin as a novel antibiotic effective against diverse pathogens.",
+    "summary": "The study addresses the urgent need for new antibiotics due to rising antibiotic resistance by employing a deep learning approach to predict antibacterial molecules. A deep neural network model was trained on a dataset of 2,335 molecules to predict antibacterial properties based on structure. Using this model, the team screened a Drug Repurposing Hub and identified halicin, a structurally unique molecule, which exhibited broad-spectrum antibacterial activity, including efficacy against Mycobacterium tuberculosis and carbapenem-resistant Enterobacteriaceae. Additionally, the model screened over 107 million molecules from the ZINC15 database, identifying eight compounds with antibacterial activity. The findings underscore the potential of deep learning to uncover novel antibiotics with unique structures that could combat resistant bacterial strains.",
+    "relevance_to_biomedical_research": "The discovery of new antibiotics is critical in combating antibiotic-resistant bacteria, a pressing issue in global health. This research identifies novel antibacterial compounds with distinct structures, demonstrating potential to replenish the antibiotic arsenal, especially against significant pathogens.",
+    "computational_methods": "The study utilized a deep neural network for predicting antibacterial activity from molecular structures. The model was trained on 2,335 molecules, using a directed-message passing approach to convert molecular graphs into continuous vectors for property prediction. The model was enhanced with molecular features from RDKit, hyperparameter optimization, and an ensemble of classifiers to improve robustness. Predictions were made on the Drug Repurposing Hub and the ZINC15 database, highlighting the model's capacity to identify compounds with antibacterial properties. The model achieved a ROC-AUC of 0.896, indicating strong predictive capability.",
+    "biomedical_keywords": [
+        "Antibiotic resistance",
+        "Antibacterial activity",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Deep neural networks",
+        "Molecular representation",
+        "Directed message passing"
+    ],
+    "strengths": "The publication demonstrates the effective use of a deep learning model to predict novel antibacterial compounds. It successfully identified halicin, a structurally unique molecule with broad-spectrum activity, showcasing the model's ability to explore vast chemical spaces efficiently.",
+    "limitations": "The study relies on a relatively small initial dataset for training, which may limit the model's generalizability. Empirical validation was conducted on a small subset of predictions, and further work is needed to confirm the clinical viability of identified compounds.",
+    "overall_relevance": "This publication holds medium to high relevance in antibiotic discovery due to the urgent need for new antibiotics. While promising, the impact is tempered by the initial dataset's size and the need for extensive empirical validation, yet its publication in Cell underscores its significance."
+}

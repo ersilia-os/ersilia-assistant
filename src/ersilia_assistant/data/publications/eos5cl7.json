@@ -1,0 +1,25 @@
+{
+    "title": "Machine Learning Platform to Discover Novel Growth Inhibitors of Neisseria gonorrhoeae",
+    "authors": "J. C. Pereira, S. S. Daher, K. M. Zorn, M. Sherwood, R. Russo, A. L. Perryman, X. Wang, M. J. Freundlich, S. Ekins, J. S. Freundlich",
+    "journal": "Pharmaceutical Research",
+    "year": 2021,
+    "suggested_slug": "machine-learning-neisseria-inhibitors",
+    "suggested_computational_title": "naive-bayesian-neisseria-growth-inhibitors",
+    "tldr": "A naive Bayesian model was used to predict novel small molecule inhibitors for Neisseria gonorrhoeae, identifying two promising compounds.",
+    "summary": "This study developed a machine learning platform using a naive Bayesian model to predict novel growth inhibitors for the bacterium Neisseria gonorrhoeae. Utilizing data curated from the ChEMBL database, a training set comprising 282 compounds was established. The Bayesian model employed Extended-Connectivity Fingerprints (ECFP6) and other metrics such as recall and precision for model optimization. The trained model was then used to virtually screen over 190,000 small molecules from the Asinex BioDesign Library. From this screening, two compounds, JSF-4439 and JSF-4444, were identified as promising hits with effective minimum inhibitory concentrations (MICs) against various strains of N. gonorrhoeae. The study highlights the significance of employing a chemical diversity filter to enhance the discovery process. The results present potential chemical tools for drug discovery against this globally relevant bacterium.",
+    "relevance_to_biomedical_research": "The publication is highly relevant to biomedicine and drug discovery due to its focus on Neisseria gonorrhoeae, a pathogen responsible for gonorrhea. The emergence of drug-resistant strains poses a significant public health challenge. This research identifies novel chemical scaffolds that could be developed into new therapeutics to combat resistant strains.",
+    "computational_methods": "The computational approach employed a naive Bayesian model using Assay Central software, with Extended-Connectivity Fingerprints (ECFP6) for descriptor generation. The model was trained on a curated dataset from ChEMBL, comprising 282 compounds, 160 of which were active. The model's performance was evaluated using metrics such as recall, precision, and ROC curve, achieving an AUC of 0.8470. The model then screened over 190,000 compounds from the Asinex BioDesign Library, identifying two compounds with promising antibacterial activity. The diversity filter played a critical role in selecting the most chemically diverse candidates for further validation.",
+    "biomedical_keywords": [
+        "Neisseria gonorrhoeae",
+        "Antibacterial resistance",
+        "Gonorrhea treatment"
+    ],
+    "computational_keywords": [
+        "Naive Bayesian model",
+        "Virtual screening",
+        "Extended-connectivity fingerprints"
+    ],
+    "strengths": "The publication demonstrates the use of a naive Bayesian model to predict growth inhibitors for Neisseria gonorrhoeae, addressing the global health challenge posed by drug-resistant strains. The use of a curated dataset and a chemical diversity filter enhances the robustness and innovation of the method.",
+    "limitations": "The study's main limitation is the small number of hits identified, with only two compounds showing promising activity. The Bayesian model, although well-established, is not novel, and the dataset is relatively small. Further in vivo validation and improvement of metabolic stability are needed.",
+    "overall_relevance": "The publication holds medium relevance due to its contribution to addressing antibiotic resistance in Neisseria gonorrhoeae. While the methods and results are solid, the novelty of the approach is limited, and the dataset size constrains the study. Nonetheless, the identification of new chemotypes is significant for drug discovery efforts."
+}

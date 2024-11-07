@@ -1,0 +1,25 @@
+{
+    "title": "ChEMBL-Likeness Score and Database GDBChEMBL",
+    "authors": "S. B\u00fchlmann, J.-L. Reymond",
+    "journal": "Frontiers in Chemistry",
+    "year": 2020,
+    "suggested_slug": "chembl-likeness-score-gdbchembl",
+    "suggested_computational_title": "GDBChEMBL, a database of ChEMBL-like molecules",
+    "tldr": "GDBChEMBL is a database of 10 million molecules selected from GDB17 using a ChEMBL-likeness score, enhancing synthetic accessibility and potential bioactivity.",
+    "summary": "GDBChEMBL is a new molecular database derived from the larger GDB17 dataset, which contains 166.4 billion molecules. It comprises 10 million molecules selected based on a ChEMBL-likeness score (CLscore), which is calculated from the frequency of occurrence of circular substructures found in ChEMBL. The selection process involves filtering GDB17 molecules using a CLscore cutoff, followed by uniform sampling across molecular size, stereocenters, and heteroatoms. GDBChEMBL aims to improve synthetic accessibility and bioactivity potential compared to previous subsets of GDB17, while maintaining a broad coverage of chemical space. The database offers a continuous chemical space map and is accessible for download and browsing. It is anticipated that the molecules in GDBChEMBL will facilitate target prediction and inspire molecular design due to their shared substructures with known bioactive compounds.",
+    "relevance_to_biomedical_research": "The GDBChEMBL database is highly relevant to biomedical research, particularly in drug discovery. It provides a vast collection of molecules with enhanced synthetic accessibility and potential bioactivity, making it a valuable resource for identifying novel drug candidates.",
+    "computational_methods": "The computational methods involve calculating a ChEMBL-likeness score (CLscore) for molecules in GDB17, based on the frequency of circular substructures found in the ChEMBL database. The CLscore is similar to the synthetic accessibility score and is computed using molecular shingles, which form the basis for ECFP4 and MHFP6 molecular fingerprints. The entire GDB17 dataset is filtered using a CLscore cutoff, and a subset of 10 million molecules is selected through uniform sampling across molecular size, stereochemistry, and heteroatoms.",
+    "biomedical_keywords": [
+        "Drug discovery",
+        "Bioactivity",
+        "Synthetic accessibility"
+    ],
+    "computational_keywords": [
+        "ChEMBL-likeness score",
+        "Molecular shingles",
+        "Chemical space mapping"
+    ],
+    "strengths": "The main strength lies in the innovative use of a ChEMBL-likeness score to filter and sample molecules from an extensive database, yielding a dataset with enhanced synthetic accessibility and bioactivity potential.",
+    "limitations": "The limitation of this work is that it relies on existing substructures from ChEMBL, which may not capture entirely novel chemical motifs. The CLscore is dependent on known bioactive substructures, potentially overlooking innovative molecules.",
+    "overall_relevance": "The publication has medium to high relevance in the field of drug discovery. The development of GDBChEMBL using a ChEMBL-likeness score provides a unique database that is both accessible and rich in bioactivity potential."
+}

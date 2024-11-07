@@ -1,0 +1,25 @@
+{
+    "title": "Molecular generation by Fast Assembly of (Deep)SMILES fragments",
+    "authors": "F. Berenger, K. Tsuda",
+    "journal": "Journal of Cheminformatics",
+    "year": 2021,
+    "suggested_slug": "fast-assembly-of-smiles",
+    "suggested_computational_title": "Fast SMILES fragment assembly for molecular generation",
+    "tldr": "A method for rapid and diverse molecular generation using SMILES and DeepSMILES encoding is introduced, achieving high rates of valid molecule production.",
+    "summary": "The publication introduces a method for rapid molecular generation using the Fast Assembly of SMILES Fragments. It achieves a rate of over 300,000 molecules per second on a single CPU core. The approach leverages SMILES and DeepSMILES string operations, with peak performance in string manipulations. The method is evaluated against existing methods for speed, diversity, and distribution matching, showing robustness in generating diverse molecules aligning partially with the training set's distribution. The open-source software is accessible on GitHub, offering a foundation for further exploration in molecular design and dataset augmentation.",
+    "relevance_to_biomedical_research": "This publication is relevant to drug discovery, especially in early-stage molecular design. It aids in exploring chemical space by producing diverse molecular structures, potentially accelerating the discovery of novel therapeutic candidates.",
+    "computational_methods": "The method uses Fast Assembly of SMILES Fragments, focusing on string operations for efficient molecule generation. It involves fragmenting molecules and reassembling them into new structures. The input is a molecular training set, and the output is valid SMILES or DeepSMILES-encoded molecules. The approach ensures syntactic validity and partial distribution matching. Tested on datasets like GDB-13 and ChEMBL, it shows high-speed, diverse unique molecular structure generation.",
+    "biomedical_keywords": [
+        "Molecular generation",
+        "Drug discovery",
+        "SMILES"
+    ],
+    "computational_keywords": [
+        "Fragment assembly",
+        "DeepSMILES",
+        "Molecular diversity"
+    ],
+    "strengths": "The method excels in generating valid molecules rapidly using SMILES and DeepSMILES string operations. Its open-source nature enhances accessibility, and its ability to match training set distributions and generate diverse structures is valuable for chemical space exploration.",
+    "limitations": "The method is limited by requiring a molecular training set, restricting it to known chemical spaces. It cannot create new ring structures and may duplicate molecules. Its novelty is lower than some methods, though adjustable by disabling extended bond typing.",
+    "overall_relevance": "The publication is moderately relevant in cheminformatics and drug discovery. Its speed and efficiency are notable, and its open-source availability enhances utility. However, reliance on training sets and limitations in novel structure generation reduce its impact."
+}

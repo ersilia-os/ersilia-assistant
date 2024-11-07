@@ -1,0 +1,25 @@
+{
+    "title": "Learning Drug Functions from Chemical Structures with Convolutional Neural Networks and Random Forests",
+    "authors": "J. G. Meyer, S. Liu, I. J. Miller, J. J. Coon, A. Gitter",
+    "journal": "Journal of Chemical Information and Modeling",
+    "year": 2019,
+    "suggested_slug": "drug-function-prediction",
+    "suggested_computational_title": "Drug function prediction using CNN and RF",
+    "tldr": "The study predicts drug functions from chemical structures using CNN and RF, showing superior accuracy compared to traditional methods.",
+    "summary": "The publication explores predicting drug functions using chemical structure representations, specifically CNN and RF, to classify molecules into therapeutic categories. Evaluating these methods against existing benchmarks that use transcriptomic data, the study demonstrates superior performance with accuracies between 83% to 88% using chemical structure-derived inputs. The CNN model processes chemical images, while the RF model uses molecular fingerprints. These models do not require empirical data, allowing them to leverage a larger training set of over 6000 compounds. The study further explores the applicability in predicting side effects and drug repurposing opportunities, highlighting their capability in multilabel classification tasks. The results underscore the potential of chemical-structure-based models in drug function prediction, providing insights into drug mechanisms and repurposing possibilities.",
+    "relevance_to_biomedical_research": "The study is relevant to drug discovery by predicting therapeutic uses based on chemical structure, reducing time and cost of drug efficacy testing, and aiding drug repurposing.",
+    "computational_methods": "The study uses CNN and RF for drug function prediction from chemical structures. CNNs analyze chemical images, while RFs use molecular fingerprints. Achieving 83-88% accuracy on over 6000 compounds, the CNN model uses a pre-trained ResNext101 architecture, fine-tuned with chemical images, and RFs are trained on Morgan fingerprints. The methods are scalable, not requiring empirical data, evaluated using metrics like accuracy, ROC AUC, and average precision.",
+    "biomedical_keywords": [
+        "Drug discovery",
+        "Therapeutic use",
+        "Drug repurposing"
+    ],
+    "computational_keywords": [
+        "Convolutional neural networks",
+        "Random forests",
+        "Molecular fingerprints"
+    ],
+    "strengths": "The study advances drug function prediction using chemical structure data, offering a cost-effective alternative to empirical methods. CNN and RF models achieve high accuracy and scalability, exploring side effects and drug repurposing.",
+    "limitations": "The study relies on chemical structures which may not capture all biological interactions. The models may not generalize to new chemical entities, and integration with empirical data like transcriptomics is not explored.",
+    "overall_relevance": "The publication is of medium to high relevance in drug discovery, using CNN and RF for chemical structure analysis in therapeutic use prediction. Despite not being novel, the study offers valuable insights into drug repurposing and discovery."
+}

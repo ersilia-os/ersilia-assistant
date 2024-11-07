@@ -1,0 +1,25 @@
+{
+    "title": "USRCAT: real-time ultrafast shape recognition with pharmacophoric constraints",
+    "authors": "A. M. Schreyer, T. Blundell",
+    "journal": "Journal of Cheminformatics",
+    "year": 2012,
+    "suggested_slug": "usrcat-ultrafast-shape-recognition",
+    "suggested_computational_title": "USRCAT, enhanced shape-based virtual screening with pharmacophoric constraints",
+    "tldr": "USRCAT extends ultrafast shape recognition by adding pharmacophoric information, improving molecular shape discrimination in virtual screening.",
+    "summary": "USRCAT is an enhancement of the Ultrafast Shape Recognition (USR) algorithm, designed to include pharmacophoric constraints while maintaining the rapid performance of the original method. The USR algorithm is a moment-based virtual screening tool that uses the positions of atoms to describe molecular shape, but lacks the ability to differentiate between molecules with similar shapes but different atom types. USRCAT addresses this by incorporating pharmacophoric features, allowing it to outperform traditional USR in retrospective virtual screening benchmarks. The method is implemented with a relational database capable of screening a million conformers in milliseconds and supports complex query parameters. This makes USRCAT particularly useful for ligand-based virtual screening, aiding researchers with limited resources in discovering new hits. The method is freely available and easily modifiable for specific needs.",
+    "relevance_to_biomedical_research": "USRCAT enhances ligand-based virtual screening, improving the prediction of active compounds, aiding in scaffold hopping, and facilitating drug discovery.",
+    "computational_methods": "USRCAT extends the USR algorithm by incorporating pharmacophoric information. It calculates USR moments for specific atom subsets and uses a variant of the Manhattan distance for similarity assessment. The method supports rapid screening of large databases and was benchmarked using the DUD-E database, showing superior performance.",
+    "biomedical_keywords": [
+        "Virtual screening",
+        "Pharmacophore",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Ultrafast shape recognition",
+        "Pharmacophoric constraints",
+        "Moment-based methods"
+    ],
+    "strengths": "USRCAT enhances molecular discrimination by integrating pharmacophoric information into ultrafast shape recognition, improving screening accuracy. It supports rapid database screening.",
+    "limitations": "USRCAT's performance varies with dataset differences and faces challenges with diverse molecular sizes and shapes. It is not entirely novel, building on existing USR technology.",
+    "overall_relevance": "USRCAT is a valuable tool for ligand-based virtual screening in drug discovery, enhancing accuracy with pharmacophoric constraints, though its novelty is limited."
+}

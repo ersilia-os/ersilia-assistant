@@ -1,0 +1,25 @@
+{
+    "title": "Beyond generative models: superfast traversal, optimization, novelty, exploration and discovery (STONED) algorithm for molecules using SELFIES",
+    "authors": "A. K. Nigam, R. Pollice, M. Krenn, G. dos Passos Gomes, A. Aspuru-Guzik",
+    "journal": "Chemical Science",
+    "year": 2021,
+    "suggested_slug": "stoned-algorithm-using-selfies",
+    "suggested_computational_title": "STONED, a SELFIES-based molecular discovery algorithm",
+    "tldr": "STONED efficiently explores chemical space using SELFIES, achieving results comparable to deep generative models without large datasets or long training times.",
+    "summary": "The STONED algorithm offers a novel approach to molecular exploration and interpolation using the SELFIES molecular representation, bypassing the need for extensive datasets and training associated with deep generative models. It achieves performance on par with state-of-the-art models by manipulating SELFIES strings to explore chemical space efficiently. STONED demonstrates applications in high-throughput virtual screening for drug design and materials science, achieving non-trivial results on established benchmarks without sophisticated optimization engines. The algorithm also allows for deterministic interpolation between molecules, forming local chemical subspaces and chemical paths that enable both property and structure-based exploration. This work anticipates further development of inverse design models and benchmarking tools to enhance the adoption of generative models in various fields.",
+    "relevance_to_biomedical_research": "STONED is relevant to biomedicine and drug discovery as it provides an efficient method for exploring chemical spaces and generating novel molecules without the need for extensive datasets or computational resources.",
+    "computational_methods": "STONED utilizes the SELFIES molecular representation for efficient molecular exploration and interpolation by performing string manipulations such as character replacements, deletions, and additions. The algorithm does not require training, relying on the robustness of SELFIES to ensure valid molecules are generated without validity checks. It employs techniques like forming local chemical subspaces and chemical paths, allowing deterministic interpolation between molecules. The input consists of seed molecular structures, and the output is a set of novel, structurally diverse molecules. The approach is computationally efficient, parallelizable, and comparable in speed to state-of-the-art generative models, offering a significant reduction in computational resources and time.",
+    "biomedical_keywords": [
+        "Drug discovery",
+        "Molecular design",
+        "High-throughput screening"
+    ],
+    "computational_keywords": [
+        "SELFIES",
+        "Molecular interpolation",
+        "Chemical space exploration"
+    ],
+    "strengths": "STONED's main strength is its ability to efficiently explore chemical space without requiring large datasets or extensive training, making it accessible and cost-effective.",
+    "limitations": "One limitation of STONED is that, while it provides a robust exploration method, the absence of sophisticated optimization engines may limit its ability to achieve optimal property-specific results.",
+    "overall_relevance": "STONED is of medium to high relevance due to its innovative approach to chemical space exploration and its potential applications in drug discovery and materials science."
+}

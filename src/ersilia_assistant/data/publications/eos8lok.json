@@ -1,0 +1,25 @@
+{
+    "title": "S2DV: Converting SMILES to a Drug Vector for Predicting the Activity of Anti-HBV Small Molecules",
+    "authors": "J. Shao, Q. Gong, Z. Yin, W. Pan, S. Pandiyan, L. Wang",
+    "journal": "Briefings in Bioinformatics",
+    "year": 2022,
+    "suggested_slug": "s2dv-drug-vector-prediction",
+    "suggested_computational_title": "S2DV, Predictive Modeling for Anti-HBV Drug Activity",
+    "tldr": "A natural language processing and machine learning method predicts anti-HBV activity and liver toxicity of compounds, validated by experiments.",
+    "summary": "The publication introduces S2DV, a computational method using natural language processing and machine learning to predict the activity of anti-HBV small molecules. It converts SMILES strings into drug vectors using a modified word2vec model with the Ising model. Trained on ChEMBL database data, it predicts inhibitory effects on HBV and liver toxicity. The model's reliability is validated by wet-lab experiments and a web tool for predicting potential compounds is presented. The method's integration of word2vec and the Ising model provides a new perspective in drug discovery for hepatitis B, enhancing drug activity prediction performance.",
+    "relevance_to_biomedical_research": "The research is relevant to hepatitis B drug discovery, enhancing the prediction of anti-HBV drug activity and liver toxicity. It supports early drug discovery stages, potentially accelerating safe treatment development and reducing experimental screening resources and time.",
+    "computational_methods": "The computational approach converts SMILES strings into vectors using a modified word2vec model with Ising correction. It predicts HBV inhibitory effects and liver toxicity using ChEMBL data, employing logistic regression and tokenization techniques. The RandomForest classifier achieved high accuracy, validated in vitro, with AUCs of 0.92 for HBV activity and 0.94 for liver toxicity.",
+    "biomedical_keywords": [
+        "Hepatitis B virus",
+        "Drug discovery",
+        "Liver toxicity"
+    ],
+    "computational_keywords": [
+        "SMILES",
+        "Word embedding",
+        "Ising model"
+    ],
+    "strengths": "The integration of NLP and machine learning significantly improves predictive accuracy for anti-HBV activity and toxicity. The Ising model enhances word2vec performance. Validation with experiments and a web tool increases accessibility and offers a cost-effective alternative to traditional methods.",
+    "limitations": "The methodology relies on existing ChEMBL data, possibly limiting compound diversity and novelty. Model performance depends on data quality and quantity, affecting generalizability. It doesn't address multi-target activities and needs further validation with larger datasets.",
+    "overall_relevance": "The publication is of medium to high relevance in computational drug discovery for anti-HBV therapies. The novel integration offers a promising approach, but reliance on existing data and the journal's impact factor may limit immediate impact. Further validation could enhance its significance."
+}

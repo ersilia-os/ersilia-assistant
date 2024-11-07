@@ -1,0 +1,25 @@
+{
+    "title": "Learning to Extend Molecular Scaffolds with Structural Motifs",
+    "authors": "K. Maziarz, H. Jackson-Flux, P. Cameron, F. Sirockin, N. Schneider, N. Stiefl, M. Segler, M. Brockschmidt",
+    "journal": "ICLR",
+    "year": 2022,
+    "suggested_slug": "moler-scaffold-extension",
+    "suggested_computational_title": "MoLeR, graph-based scaffold extension model",
+    "tldr": "MoLeR is a graph-based model that extends molecular scaffolds using structural motifs, enhancing scaffold-based molecular generation and outperforming state-of-the-art methods.",
+    "summary": "The paper introduces MoLeR, a graph-based generative model designed to extend molecular scaffolds using structural motifs. Unlike previous generative models that condition on generation history, MoLeR initiates the generative process using a predefined scaffold, allowing it to excel in scaffold-constrained tasks. The model outperforms existing methods in both unconstrained and scaffold-based molecular generation tasks, offering faster training and inference times. MoLeR integrates atom-by-atom and motif-based generation, maintaining chemical validity and optimizing scaffold retention. Experiments demonstrate MoLeR's ability to match the distribution of training data and outperform baseline methods in scaffold-based tasks, while also exploring the impact of generation order and motif vocabulary size on performance.",
+    "relevance_to_biomedical_research": "This publication is highly relevant to drug discovery as it addresses the challenge of scaffold-based molecular generation, a common requirement in pharmaceutical development. By improving the efficiency and accuracy of generating molecules with specific structural constraints, MoLeR can significantly accelerate the drug design process, particularly in lead optimization and candidate development stages.",
+    "computational_methods": "MoLeR employs a graph-based approach using graph neural networks (GNNs) to generate molecular structures. It utilizes a motif vocabulary to decompose molecules and guide the generation process, either adding entire motifs in a single step or building atom-by-atom. The model is trained with a variational autoencoder (VAE) framework, optimizing a combination of prior, reconstruction, and property prediction losses. Input includes molecular graphs with atom features and motif embeddings, while output is a complete molecular structure with a predefined scaffold. MoLeR achieves faster training and sampling due to its parallel processing of generation steps and the flexibility to switch between fragment-based and atom-by-atom generation.",
+    "biomedical_keywords": [
+        "Drug discovery",
+        "Molecular scaffolds",
+        "Scaffold-based generation"
+    ],
+    "computational_keywords": [
+        "Graph neural networks",
+        "Variational autoencoder",
+        "Molecular generation"
+    ],
+    "strengths": "MoLeR's ability to integrate motifs and atom-level generation offers flexibility and precision in scaffold-based molecular design. Its faster training and sampling rates compared to other models enhance its practicality for large-scale applications. The model's adaptability to different generation orders and motif vocabularies further showcases its robustness and efficiency in drug discovery tasks.",
+    "limitations": "The reliance on a predefined motif vocabulary may limit the exploration of novel chemical structures not represented in the training data. While MoLeR shows improved scaffold retention, its performance in generating complex scaffolds could still be constrained by the motif selection and generation order. The study does not deeply explore reconstruction accuracy, which may affect certain downstream applications.",
+    "overall_relevance": "MoLeR is of high relevance due to its novel approach to scaffold-based molecular generation, an important aspect of drug discovery. Published in ICLR 2022, a reputable conference, it demonstrates significant improvements over existing methods in terms of speed and scaffold retention. However, the reliance on motif vocabularies and the potential limitations in reconstructive capabilities suggest that further validation and refinement could enhance its applicability in diverse drug discovery contexts."
+}

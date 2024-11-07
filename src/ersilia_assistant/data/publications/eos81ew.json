@@ -1,0 +1,25 @@
+{
+    "title": "Using in vitro ADME data for lead compound selection: An emphasis on PAMPA pH 5 permeability and oral bioavailability",
+    "authors": "J. Williams, V. Siramshetty, \u00d0. Nguy\u1ec5n, E. C. Padilha, M. Kabir, K. R. Yu, A. Q. Wang, T. Zhao, M. Itkin, P. Shinn, E. A. Math, X. Xu, P. Shah",
+    "journal": "Bioorganic & Medicinal Chemistry",
+    "year": 2022,
+    "suggested_slug": "pampa-ph5-permeability",
+    "suggested_computational_title": "QSAR models for PAMPA pH 5 permeability prediction",
+    "tldr": "A QSAR model using a large PAMPA pH 5 dataset was developed to predict drug permeability, showing high correlation with oral bioavailability.",
+    "summary": "Membrane permeability is crucial for oral drug absorption, and PAMPA serves as a cost-effective alternative to cell-based assays. This study developed a quantitative structure activity relationship (QSAR) model using a PAMPA pH 5 dataset consisting of approximately 6500 compounds. Various machine learning techniques, including Random Forest, eXtreme Gradient Boosting, deep neural networks, and graph convolutional neural networks, were employed to model permeability. The graph convolutional neural network demonstrated the best classification performance with accuracies ranging from 71% to 78% on external validation. An ~85% correlation was observed between PAMPA pH 5 permeability and in vivo oral bioavailability in mice and rats. This indicates that PAMPA data can effectively rank-order compounds for preclinical testing, potentially reducing drug discovery costs and attrition rates. A subset of 486 compounds and the best models are available publicly.",
+    "relevance_to_biomedical_research": "The publication is relevant to drug discovery, focusing on improving the selection of lead compounds by predicting oral bioavailability. It addresses membrane permeability, a key factor in drug absorption, using PAMPA assays.",
+    "computational_methods": "The study employed multiple machine learning techniques to predict PAMPA pH 5 permeability, using a dataset of approximately 6500 compounds. Techniques included Random Forest, eXtreme Gradient Boosting, deep neural networks (DNN), and graph convolutional neural networks (GCNN). Input features comprised molecular descriptors and fingerprints, with molecular graphs used for GCNN. Models were trained on a balanced dataset, achieving accuracies between 71% and 78% on external validation sets. The GCNN, which directly processes molecular graphs, showed the best performance. The model's predictive power was assessed using metrics like AUC, balanced accuracy, and Cohen's Kappa, with the best correlation between permeability and oral bioavailability reaching ~85%.",
+    "biomedical_keywords": [
+        "Oral bioavailability",
+        "ADME",
+        "Drug absorption"
+    ],
+    "computational_keywords": [
+        "QSAR models",
+        "Graph convolutional neural network",
+        "Random forest"
+    ],
+    "strengths": "The publication presents a robust QSAR model using a large PAMPA pH 5 dataset, demonstrating high predictive accuracy. The use of diverse machine learning techniques, including advanced methods like GCNN, highlights the computational rigor.",
+    "limitations": "The dataset, while large, remains partially proprietary, limiting external validation. The models primarily predict passive permeability, potentially overlooking active transport mechanisms. The study focuses on pH 5, which may not fully capture the pH variability in the human gastrointestinal tract.",
+    "overall_relevance": "The publication holds medium to high relevance in the field of drug discovery, offering insights into predicting oral bioavailability via permeability models. While the methods are not entirely novel, the large dataset and model transparency add value."
+}

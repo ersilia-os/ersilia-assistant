@@ -1,0 +1,25 @@
+{
+    "title": "Discovery of a structural class of antibiotics with explainable deep learning",
+    "authors": "F. Wong, E. J. Zheng, J. A. Valeri, N. M. Donghia, M. N. Anahtar, S. Omori, A. Li, A. Cubillos-Ruiz, A. Krishnan, W. Jin, A. L. Manson, J. Friedrichs, R. Helbig, B. Hajian, D. K. Fiejtek, F. F. Wagner, H. H. Soutter, A. M. Earl, J. M. Stokes, L. D. Renner, J. J. Collins",
+    "journal": "Nature",
+    "year": 2024,
+    "suggested_slug": "explainable-antibiotic-discovery",
+    "suggested_computational_title": "Explainable deep learning for antibiotic discovery",
+    "tldr": "An explainable deep learning approach was developed to discover new antibiotic classes, predicting structural classes with high activity against methicillin-resistant Staphylococcus aureus.",
+    "summary": "The study presents a novel method for discovering structural classes of antibiotics using explainable deep learning. By employing graph neural networks, the researchers identified chemical substructures associated with antibiotic activity, predicting and empirically validating compounds with promising activity against Staphylococcus aureus, including methicillin-resistant strains. They screened 39,312 compounds for antibiotic activity and human cytotoxicity, applying their model to over 12 million compounds. The approach successfully identified new structural classes with high predicted activity and low cytotoxicity. One such class showed efficacy against methicillin-resistant S. aureus and vancomycin-resistant enterococci, demonstrating substantial resistance evasion in mouse models. This work highlights the potential of interpretable machine learning models in drug discovery, offering insights into chemical substructures that underlie selective antibiotic activity and advancing the exploration of chemical spaces for novel antibiotics.",
+    "relevance_to_biomedical_research": "The publication addresses the urgent need for new antibiotics due to rising antibiotic resistance, particularly against methicillin-resistant Staphylococcus aureus. By discovering novel structural classes of antibiotics, the research contributes to the early-stage drug discovery pipeline.",
+    "computational_methods": "The publication employs explainable deep learning using graph neural networks to predict antibiotic activity and cytotoxicity. The models process chemical structures represented as graphs, predicting inhibition of bacterial growth based on substructures. Models were trained on 39,312 compounds, and the best-performing models incorporated RDKit-computed molecular features. The ensemble of models showed good performance, with an area under the precision-recall curve of 0.364 for antibiotic activity. Predictions were made on over 12 million compounds, filtering for high predicted activity and low cytotoxicity. Rationales for predictions were identified using Monte Carlo tree search, explaining model decisions based on chemical substructures.",
+    "biomedical_keywords": [
+        "Antibiotic resistance",
+        "Staphylococcus aureus",
+        "Methicillin-resistant"
+    ],
+    "computational_keywords": [
+        "Graph neural networks",
+        "Explainable AI",
+        "Monte Carlo tree search"
+    ],
+    "strengths": "The study introduces an interpretable deep learning approach that successfully predicts new antibiotic classes, demonstrating a significant advancement in leveraging machine learning for drug discovery. The method's ability to identify chemical substructures offers insights into model predictions, enhancing its utility in discovering antibiotics that evade resistance.",
+    "limitations": "The main limitation is the modest true positive rate for predicting known antibiotic classes, indicating room for improvement in model accuracy. The AUPRC for cytotoxicity predictions was lower, suggesting potential challenges in reliably filtering out toxic compounds.",
+    "overall_relevance": "The publication is of high relevance, given its contribution to addressing antibiotic resistance through novel computational methods. The explainability of the model provides a significant advantage over traditional black box approaches, offering insights into chemical substructures."
+}

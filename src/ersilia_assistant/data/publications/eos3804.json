@@ -1,0 +1,25 @@
+{
+    "title": "Deep learning-guided discovery of an antibiotic targeting Acinetobacter baumannii",
+    "authors": "G. Liu, D. B. Catacutan, K. Rathod, K. Swanson, W. Jin, J. C. Mohammed, A. Chiappino-Pepe, S. A. Syed, M. Fragis, K. Rachwalski, J. Magolan, M. G. Surette, B. K. Coombes, T. Jaakkola, R. Barzilay, J. J. Collins, J. M. Stokes",
+    "journal": "Nature Chemical Biology",
+    "year": 2023,
+    "suggested_slug": "antibiotic-discovery-acinetobacter",
+    "suggested_computational_title": "Neural network-driven antibiotic discovery for A. baumannii",
+    "tldr": "A neural network was trained on growth inhibition data to discover abaucin, a novel antibiotic targeting multidrug-resistant Acinetobacter baumannii.",
+    "summary": "The study aims to discover new antibiotics specifically targeting Acinetobacter baumannii, a Gram-negative pathogen known for multidrug resistance. Approximately 7,500 molecules were screened for their ability to inhibit the growth of A. baumannii, followed by training a neural network on the obtained dataset. This trained model was then used for in silico predictions to identify structurally novel molecules with potential antibacterial activity against A. baumannii. The process led to the discovery of abaucin, an antibacterial compound with narrow-spectrum activity. Abaucin was found to interfere with lipoprotein trafficking in A. baumannii by targeting the LolE protein, and it demonstrated efficacy in controlling infections in a mouse wound model. This research underscores the potential of machine learning in exploring chemical spaces for antibiotic discovery against challenging pathogens.",
+    "relevance_to_biomedical_research": "The publication is highly relevant to biomedicine as it addresses the urgent need for new antibiotics to combat multidrug-resistant Acinetobacter baumannii, a significant nosocomial pathogen. The study highlights a promising approach that combines machine learning with chemical biology to identify novel compounds, thereby contributing to the early stages of the drug discovery pipeline.",
+    "computational_methods": "The study utilized a directed message-passing neural network trained on a dataset of ~7,500 molecules screened for A. baumannii growth inhibition. The model translates molecular graphs into continuous vectors, capturing molecular complexity through iterative message-passing steps. Additionally, RDKit-computed molecular features were integrated to enhance predictive accuracy. An ensemble of ten classifiers was used, achieving an area under the precision-recall curve of 0.337 and an area under the ROC curve of 0.792. The model predicted antibacterial activity for molecules in the Drug Repurposing Hub, identifying abaucin as a candidate. Predictions were based on a threshold score, followed by structural uniqueness filtering using Tanimoto similarity.",
+    "biomedical_keywords": [
+        "Acinetobacter baumannii",
+        "Antibiotic resistance",
+        "Lipoprotein trafficking"
+    ],
+    "computational_keywords": [
+        "Neural networks",
+        "Message-passing",
+        "Ensemble learning"
+    ],
+    "strengths": "The publication showcases the effective use of a message-passing neural network in discovering a novel antibiotic, demonstrating the model's ability to generalize to structurally diverse compounds. The integration of RDKit features improved predictive performance, and the rapid prediction process allowed for efficient identification of promising molecules.",
+    "limitations": "While the model achieved reasonable predictive performance, the dataset size and structural diversity could be further enhanced to improve generalization. The stringent filtering criteria, while effective, may also limit the exploration of potentially useful chemical spaces.",
+    "overall_relevance": "The publication is of high relevance, given the urgent need for new antibiotics against multidrug-resistant pathogens like Acinetobacter baumannii. Published in a reputable journal, the study provides valuable insights into the application of machine learning in drug discovery. However, the need for further validation and exploration of broader chemical spaces limits its immediate impact."
+}

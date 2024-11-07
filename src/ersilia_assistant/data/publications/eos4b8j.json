@@ -1,0 +1,25 @@
+{
+    "title": "ChEMBL-Likeness Score and Database GDBChEMBL",
+    "authors": "S. B\u00fchlmann, J.-L. Reymond",
+    "journal": "Frontiers in Chemistry",
+    "year": 2020,
+    "suggested_slug": "gdbchembl-chembl-likeness-score",
+    "suggested_computational_title": "GDBChEMBL, a database of ChEMBL-like molecules",
+    "tldr": "GDBChEMBL is a subset of GDB17, featuring 10 million molecules selected using a ChEMBL-likeness score to ensure synthetic accessibility and potential bioactivity.",
+    "summary": "The publication introduces GDBChEMBL, a database derived from GDB17, which comprises 166.4 billion molecules. GDBChEMBL includes 10 million molecules selected based on a ChEMBL-likeness score, calculated from the frequency of circular substructures found in ChEMBL, ensuring synthetic feasibility and potential bioactivity. This subset aims to address the complexity of molecules in GDB17, making them more suitable for chemical synthesis. The selection process involves filtering molecules based on the ChEMBL-likeness score, followed by uniform sampling across molecular size, stereocenters, and heteroatoms. The resulting database maintains a broad chemical space coverage similar to GDB17, with enhanced synthetic accessibility and possibly higher bioactivity. GDBChEMBL is accessible for download and browsing through an interactive chemical space map.",
+    "relevance_to_biomedical_research": "The publication is relevant to biomedicine and drug discovery as it provides a database of molecules with enhanced synthetic accessibility and bioactivity potential, crucial for drug design and development.",
+    "computational_methods": "The computational methods involve the calculation of a ChEMBL-likeness score based on the frequency of circular substructures in molecules from the ChEMBL database. This score is used to filter molecules from GDB17, retaining those with higher scores indicative of synthetic accessibility and potential bioactivity. The selection process involves uniform sampling across molecular size, stereocenters, and heteroatoms, forming a database of 10 million molecules with broad chemical space coverage. The dataset is visualized using an interactive 3D map and similarity searches are facilitated through an online portal.",
+    "biomedical_keywords": [
+        "Chemical space exploration",
+        "Drug discovery",
+        "Molecular database"
+    ],
+    "computational_keywords": [
+        "ChEMBL-likeness score",
+        "Molecular shingles",
+        "Virtual screening"
+    ],
+    "strengths": "The publication's strengths lie in its innovative approach to selecting molecules based on a ChEMBL-likeness score, enhancing synthetic accessibility and bioactivity potential. The GDBChEMBL database offers broad chemical space coverage and provides comprehensive tools for medicinal chemists.",
+    "limitations": "One limitation is the reliance on existing data from ChEMBL, which may constrain the novelty of the generated molecules. Additionally, while the score improves synthetic accessibility, it may not guarantee actual bioactivity.",
+    "overall_relevance": "The publication holds medium relevance in chemical space exploration and drug discovery. It provides useful insights for medicinal chemists but does not introduce groundbreaking methods, indicating moderate importance in advancing the field."
+}

@@ -1,0 +1,25 @@
+{
+    "title": "ADMET-AI: A machine learning ADMET platform for evaluation of large-scale chemical libraries",
+    "authors": "K. Swanson, P. Walther, J. Leitz, S. Mukherjee, J. C. Wu, R. V. Shivnaraine, J. Zou",
+    "journal": "Not specified",
+    "year": 2023,
+    "suggested_slug": "admet-ai-platform",
+    "suggested_computational_title": "ADMET-AI, a platform for rapid chemical library assessment",
+    "tldr": "ADMET-AI uses machine learning to predict ADMET properties of large chemical libraries, offering fast and accurate assessments for drug discovery.",
+    "summary": "ADMET-AI is a machine learning platform designed to predict the Absorption, Distribution, Metabolism, Excretion, and Toxicity (ADMET) properties of small molecules. By leveraging large chemical repositories and the Therapeutics Data Commons (TDC) datasets, the platform offers a fast and accurate solution for filtering potential drug candidates. It employs a graph neural network called Chemprop-RDKit, which integrates 200 molecular features from RDKit, and surpasses existing tools in speed and accuracy. ADMET-AI is available both as a web server and a local Python package, enabling users to perform high-throughput ADMET predictions. The platform's unique features include contextual ADMET predictions using approved drugs from DrugBank, providing valuable insights into drug-likeness. ADMET-AI's models demonstrate robust performance, with high R\u00b2 and AUROC scores across regression and classification tasks, respectively.",
+    "relevance_to_biomedical_research": "ADMET-AI is highly relevant to drug discovery as it facilitates the rapid evaluation of chemical libraries for drug-like properties, particularly ADMET characteristics. This is crucial for identifying compounds with a higher likelihood of success in therapeutic development.",
+    "computational_methods": "ADMET-AI utilizes a deep learning model architecture called Chemprop-RDKit for predicting ADMET properties. The model is a graph neural network augmented with 200 molecular features computed by RDKit. It processes atom and bond features through message-passing layers to create a molecular representation, which is then combined with RDKit features for endpoint prediction.",
+    "biomedical_keywords": [
+        "ADMET properties",
+        "Drug discovery",
+        "Chemical libraries"
+    ],
+    "computational_keywords": [
+        "Graph neural networks",
+        "Chemprop-RDKit",
+        "Therapeutics Data Commons"
+    ],
+    "strengths": "ADMET-AI's strengths lie in its combination of speed, accuracy, and flexibility. The use of a graph neural network model, Chemprop-RDKit, enables precise ADMET property prediction. The platform's ability to rapidly process large datasets locally and its open-source availability enhance its utility for drug discovery projects.",
+    "limitations": "One limitation is the potential bias in predictions due to the reliance on existing datasets, which may not fully capture the diversity of chemical space. Further validation with experimental data is necessary to confirm prediction reliability.",
+    "overall_relevance": "ADMET-AI holds medium to high relevance in the context of current drug discovery methodologies. Its novel approach to integrating graph neural networks with cheminformatics features and its high-speed prediction capabilities position it as a valuable tool in early-stage drug development."
+}

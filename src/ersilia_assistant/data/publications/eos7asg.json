@@ -1,0 +1,25 @@
+{
+    "title": "PaDEL-Descriptor: An Open Source Software to Calculate Molecular Descriptors and Fingerprints",
+    "authors": "C. W. Yap",
+    "journal": "Journal of Computational Chemistry",
+    "year": 2011,
+    "suggested_slug": "padel-descriptor-software",
+    "suggested_computational_title": "PaDEL-Descriptor for molecular descriptor calculation",
+    "tldr": "PaDEL-Descriptor is open-source software for molecular descriptors and fingerprints, supporting over 90 file formats and multiple platforms.",
+    "summary": "PaDEL-Descriptor is an open-source software designed for calculating molecular descriptors and fingerprints. It computes 797 descriptors, including 663 1D and 2D descriptors and 134 3D descriptors, alongside 10 fingerprint types. Built with Java, it features a library and an interface component, allowing integration into QSAR software or standalone use. Utilizing a Master/Worker design, it leverages multiple CPU cores for faster calculations. Supporting over 90 molecular file formats, it is compatible with Windows, Linux, and MacOS, offering both graphical and command line interfaces. Its open-source nature enables customization and extension, promoting wide accessibility and integration of new features for researchers.",
+    "relevance_to_biomedical_research": "Molecular descriptors are essential for QSAR models that predict biological activities of compounds. PaDEL-Descriptor aids drug discovery by enhancing descriptor and fingerprint calculation relevant to biomedical applications.",
+    "computational_methods": "PaDEL-Descriptor, implemented in Java, has a library and an interface. It uses the Chemistry Development Kit and custom algorithms to calculate descriptors and fingerprints. Employing a Master/Worker pattern, it distributes calculations across multiple CPU cores. It supports over 90 file formats, outputs results in CSV, and offers GUI and command line interfaces, catering to diverse user needs.",
+    "biomedical_keywords": [
+        "Molecular descriptors",
+        "QSAR",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Java",
+        "Master/Worker pattern",
+        "Chemistry Development Kit"
+    ],
+    "strengths": "PaDEL-Descriptor's strengths include its open-source nature, extensive file format support, and cross-platform compatibility. It enhances calculation speed via multi-core processing and offers versatile interfaces. Its open-source license encourages community-driven innovation.",
+    "limitations": "A limitation is its smaller descriptor count compared to some commercial software. While it offers more fingerprint types, some calculations are slower due to complex pattern matching. Dependence on CDK limits algorithmic flexibility.",
+    "overall_relevance": "PaDEL-Descriptor is relevant in computational chemistry and drug discovery for its open-source model, broad platform support, and file compatibility. Despite fewer descriptors than some commercial tools, its multi-threading approach aids QSAR modeling and cheminformatics research."
+}

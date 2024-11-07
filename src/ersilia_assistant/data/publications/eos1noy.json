@@ -1,0 +1,25 @@
+{
+    "title": "ChEMBL: a large-scale bioactivity database for drug discovery",
+    "authors": "A. Gaulton, L. J. Bellis, A. P. Bento, J. Chambers, M. Davies, A. Hersey, Y. Light, S. McGlinchey, D. Michalovich, B. Al-Lazikani, J. P. Overington",
+    "journal": "Nucleic Acids Research",
+    "year": 2012,
+    "suggested_slug": "chembl-bioactivity-database",
+    "suggested_computational_title": "ChEMBL database for comprehensive bioactivity data integration",
+    "tldr": "ChEMBL is an open-access database with bioactivity data for over 1 million compounds and 5200 protein targets, aiding drug discovery and chemical biology research.",
+    "summary": "ChEMBL is a comprehensive open data resource offering bioactivity data for drug-like compounds. It includes information on binding, functional, and ADMET properties of over 1 million compounds against 5200 protein targets. The database is manually curated from primary literature to ensure quality and consistency. ChEMBL standardizes bioactivity data, facilitating advanced analysis. It includes FDA-approved drugs for assessing drug-likeness and safety profiles and integrates with resources like PubChem and BindingDB. Access is via a web interface, data downloads, and web services, allowing flexible data retrieval and integration into research applications.",
+    "relevance_to_biomedical_research": "ChEMBL is crucial for biomedicine and drug discovery, providing extensive bioactivity data for identifying and optimizing drug candidates. It supports various stages of the drug discovery pipeline and aids in understanding drug mechanisms and discovering therapeutic applications.",
+    "computational_methods": "ChEMBL uses manual extraction and curation from literature, ensuring high data quality. It integrates chemical structures, assay results, and target information, standardized for robust querying. Unique identifiers facilitate cross-referencing with external databases. The web interface and RESTful services support complex searches, aiding computational drug discovery and cheminformatics.",
+    "biomedical_keywords": [
+        "Drug discovery",
+        "Bioactivity",
+        "ADMET"
+    ],
+    "computational_keywords": [
+        "Data curation",
+        "Database integration",
+        "Standardization"
+    ],
+    "strengths": "ChEMBL's strengths include comprehensive bioactivity data coverage, high-quality curation, and information standardization. Its integration with other databases and user-friendly access enhance its utility for researchers, aiding drug repurposing and safety assessment.",
+    "limitations": "ChEMBL's reliance on manual data extraction may slow updates and limit coverage. Despite integrating various sources, it may not include all bioactivity data. Data curation complexity could lead to inconsistencies, and the focus is on data integration rather than developing predictive models.",
+    "overall_relevance": "ChEMBL is highly relevant in drug discovery, offering extensive datasets and integration capabilities that support drug development stages. Despite non-novel methods, its comprehensive nature and resource integration make it invaluable, though ongoing updates are needed for continued relevance."
+}

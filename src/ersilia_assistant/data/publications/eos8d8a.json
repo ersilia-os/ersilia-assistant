@@ -1,0 +1,25 @@
+{
+    "title": "MycPermCheck: the Mycobacterium tuberculosis permeability prediction tool for small molecules",
+    "authors": "B. Merget, D. Zilian, T. M\u00fcller, C.A. Sotriffer",
+    "journal": "Bioinformatics",
+    "year": 2013,
+    "suggested_slug": "mycpermcheck-tb-permeability-tool",
+    "suggested_computational_title": "MycPermCheck, a tool for predicting mycobacterial permeability",
+    "tldr": "MycPermCheck is an online tool developed for predicting the permeability of small organic compounds against Mycobacterium tuberculosis, aiding in drug discovery.",
+    "summary": "MycPermCheck is an online tool designed to predict the permeability of small molecules across the mycobacterial cell wall, a critical factor in developing new drugs against Mycobacterium tuberculosis (MTB). The tool is based on a regression model derived from data mining the Collaborative Drug Discovery Tuberculosis (CDD TB) database, which includes 3815 compounds classified as permeable. The model uses five key physico-chemical descriptors to distinguish permeable compounds from a generic dataset of drug-like molecules. MycPermCheck estimates permeability probabilities, providing a valuable criterion for selecting potential inhibitors of MTB in virtual screening efforts. Validation results indicate high practical value, making it a useful addition to drug discovery projects targeting antibiotic-resistant strains of tuberculosis.",
+    "relevance_to_biomedical_research": "The publication is highly relevant to the field of drug discovery, particularly in combating the tuberculosis pandemic exacerbated by drug-resistant strains. The tool addresses a significant challenge in the drug discovery pipeline\u2014predicting the permeability of compounds through the unique and resistant MTB cell wall.",
+    "computational_methods": "MycPermCheck employs a data mining approach using the CDD TB database to develop a regression model that predicts the permeability of small molecules across the MTB cell wall. The model is based on five key physico-chemical descriptors derived from 3727 active compounds. Using logistic regression and principal component analysis (PCA), the tool predicts permeability probabilities, providing values between 0 and 1.",
+    "biomedical_keywords": [
+        "Tuberculosis",
+        "Mycobacterium tuberculosis",
+        "Drug resistance"
+    ],
+    "computational_keywords": [
+        "Permeability prediction",
+        "Logistic regression",
+        "Principal component analysis"
+    ],
+    "strengths": "The publication's strength lies in its novel approach to predicting mycobacterial permeability, a key challenge in tuberculosis drug discovery. By leveraging a large dataset and employing robust statistical methods, MycPermCheck provides a valuable tool for virtual screening.",
+    "limitations": "The publication's approach is limited by the lack of a dataset containing experimentally confirmed impermeable compounds, which affects the model's accuracy in identifying non-permeable substances.",
+    "overall_relevance": "The publication presents a medium to high relevance in the current landscape of tuberculosis drug discovery. While the methods and results demonstrate novelty and practical utility, the absence of a comprehensive impermeable dataset limits the robustness of the conclusions."
+}

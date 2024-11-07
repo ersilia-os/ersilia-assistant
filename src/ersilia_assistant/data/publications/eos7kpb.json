@@ -1,0 +1,29 @@
+{
+    "title": "First fully-automated AI/ML virtual screening cascade implemented at a drug discovery centre in Africa",
+    "authors": "G. Turon, J. Hlozek, J. G. Woodland, A. Kumar, K. Chibale, M. Duran-Frigola",
+    "journal": "Nature Communications",
+    "year": 2023,
+    "suggested_slug": "zairachem-ai-virtual-screening",
+    "suggested_computational_title": "ZairaChem, AI/ML-based virtual screening for malaria and tuberculosis drug discovery",
+    "tldr": "ZairaChem is a fully automated AI/ML tool for drug discovery, implemented at H3D Centre in Africa, streamlining virtual screening for malaria and tuberculosis.",
+    "summary": "ZairaChem is an AI/ML-driven pipeline designed for QSAR/QSPR modelling, facilitating drug discovery, especially in resource-limited settings. Implemented at the H3D Centre, a leading African drug discovery unit, the tool leverages over a decade of in-house data to develop a virtual screening cascade for malaria and tuberculosis. This cascade includes 15 models for assays ranging from whole-cell screening to ADMET properties like solubility and cardiotoxicity. The system allows computational profiling of compounds before synthesis, thus aiding in decision making for drug progression. ZairaChem can operate on standard computers, needing minimal data science expertise, and supports model updates with new data. This initiative marks a pioneering deployment of AI/ML tools on the African continent, aiming to make drug discovery more sustainable and scalable in low-resource environments.",
+    "relevance_to_biomedical_research": "This publication targets the drug discovery process for malaria and tuberculosis, enhancing efficiency and reducing costs. The automated virtual screening improves hit identification, crucial for discovering new therapeutics.",
+    "computational_methods": "ZairaChem employs AI/ML techniques for QSAR/QSPR modelling, using descriptors like physicochemical parameters and structural fingerprints. AutoML algorithms predict binary outcomes, achieving strong performance with AUROC scores above 0.75. The pipeline incorporates models from public repositories, ensuring robust predictions.",
+    "biomedical_keywords": [
+        "Malaria",
+        "Tuberculosis",
+        "Drug discovery",
+        "QSAR/QSPR",
+        "ADMET"
+    ],
+    "computational_keywords": [
+        "ZairaChem",
+        "Virtual screening",
+        "AutoML",
+        "Molecular descriptors",
+        "AI/ML models"
+    ],
+    "strengths": "ZairaChem enhances drug discovery in low-resource settings by leveraging in-house data, reducing attrition rates, and accelerating candidate identification for malaria and tuberculosis, ensuring robust performance across tasks.",
+    "limitations": "The reliance on in-house data may limit model generalizability to other chemical spaces. The focus on binary classification excludes regression tasks, and some expertise is needed for optimal implementation.",
+    "overall_relevance": "The publication's relevance is high due to its pioneering AI/ML implementation in African drug discovery, addressing major pipeline challenges for diseases common in lower-resource regions."
+}

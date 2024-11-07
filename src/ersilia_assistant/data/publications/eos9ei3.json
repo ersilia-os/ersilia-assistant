@@ -1,0 +1,25 @@
+{
+    "title": "Estimation of Synthetic Accessibility Score of Drug-like Molecules Based on Molecular Complexity and Fragment Contributions",
+    "authors": "P. Ertl, A. Schuffenhauer",
+    "journal": "Journal of Cheminformatics",
+    "year": 2009,
+    "suggested_slug": "synthetic-accessibility-score",
+    "suggested_computational_title": "SAscore, estimating molecular synthetic accessibility",
+    "tldr": "A method estimating synthetic accessibility of drug-like molecules using molecular complexity and fragment contributions was developed and validated.",
+    "summary": "The publication introduces the SAscore, a method to estimate the synthetic accessibility of drug-like molecules by integrating fragment contributions from a large PubChem dataset with a complexity penalty score based on structural features like rings and stereochemistry. Fragment contributions are derived from analyzing one million molecules, encapsulating historical synthetic knowledge. Validation against chemists' ease-of-synthesis ratings for 40 molecules demonstrated good agreement, with an r2 of 0.89. Designed to aid drug discovery, the SAscore ranks molecules by synthetic accessibility, facilitating tasks like screening sample purchase and selecting hits from high-throughput screenings.",
+    "relevance_to_biomedical_research": "The publication is significant for drug discovery, offering a tool to assess the synthetic accessibility of drug-like molecules. This is critical in lead optimization and high-throughput screening, allowing prioritization of compounds more feasible for synthesis, which optimizes resources and time.",
+    "computational_methods": "SAscore combines fragment contributions and complexity penalties. Fragment contributions are based on substructure frequency analysis in a one-million-molecule PubChem dataset, reflecting synthetic knowledge. Complexity penalties consider ring systems, stereocenters, and macrocycles. Validated with an r2 of 0.89 against chemists' ratings, SAscore is implemented in Pipeline Pilot, efficiently calculating SAscores for 100,000 molecules in three minutes.",
+    "biomedical_keywords": [
+        "Drug discovery",
+        "Synthetic accessibility",
+        "Medicinal chemistry"
+    ],
+    "computational_keywords": [
+        "Molecular complexity",
+        "Fragment contributions",
+        "PubChem analysis"
+    ],
+    "strengths": "The publication's strength lies in its reliable, rapid estimation of synthetic accessibility for large drug-like molecule collections, capturing historical synthetic knowledge with high correlation to chemist evaluations. It's computationally efficient and integrates well into drug discovery workflows.",
+    "limitations": "The method relies on historical data, possibly missing recent synthetic techniques and reagents. It lacks detailed retrosynthetic analysis and doesn't fully capture chemical diversity with its 40-molecule validation set. It also doesn't consider molecular symmetry affecting synthetic accessibility.",
+    "overall_relevance": "The publication is of medium to high relevance in cheminformatics and drug discovery, offering a novel, efficient approach to estimating synthetic accessibility. While not as detailed as retrosynthetic analyses, it complements traditional methods. Its reliance on historical data and limited validation slightly reduce its relevance compared to comprehensive approaches."
+}

@@ -1,0 +1,25 @@
+{
+    "title": "BayeshERG: a robust, reliable and interpretable deep learning model for predicting hERG channel blockers",
+    "authors": "H. Kim, M. Park, I. Lee, H. Nam",
+    "journal": "Briefings in Bioinformatics",
+    "year": 2022,
+    "suggested_slug": "bayesherg-herg-channel-blockers",
+    "suggested_computational_title": "BayeshERG, Bayesian deep learning model for hERG channel blocker prediction",
+    "tldr": "BayeshERG is a graph-based Bayesian deep learning model for predicting hERG channel blockers, offering improved robustness, reliability, and interpretability through transfer learning and attention mechanisms.",
+    "summary": "Unintended inhibition of the hERG ion channel can lead to severe cardiotoxicity, a critical concern in drug development. BayeshERG is a novel graph-based Bayesian deep learning model designed to predict hERG channel blockers with enhanced robustness, reliability, and interpretability. The model employs transfer learning on a large dataset of 300,000 molecules for initial pre-training, followed by a Bayesian neural network with Monte Carlo dropout to measure prediction uncertainty. Additionally, global multihead attentive pooling is used to improve structural interpretability. Both internal and external validations demonstrate that BayeshERG outperforms existing models in predictive and uncertainty calibration performance. The model also focuses on essential substructures of hERG channel blockers through its attention mechanism. In vitro experiments validated the model's predictions, confirming its high reliability, making BayeshERG a valuable tool for drug discovery.",
+    "relevance_to_biomedical_research": "BayeshERG is highly relevant to pharmaceutical research as it addresses the critical issue of hERG channel blockage, a major cause of cardiotoxicity in drug candidates. It can be employed early in drug discovery to assess potential cardiotoxicity, reducing the risk of late-stage drug failure.",
+    "computational_methods": "The BayeshERG model uses a graph neural network (GNN) architecture combined with Bayesian deep learning techniques. It employs a Directed Message Passing Neural Network (D-MPNN) for embedding molecular graphs and utilizes global multihead attentive pooling (GMHAP) for improved interpretability. Transfer learning is applied with a large dataset of over 300,000 molecules to enhance predictive performance. Monte Carlo dropout is used to estimate uncertainty by enabling Bayesian neural network capabilities, allowing the model to provide calibrated predictions.",
+    "biomedical_keywords": [
+        "hERG channel blockage",
+        "Cardiotoxicity",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Bayesian deep learning",
+        "Graph neural network",
+        "Transfer learning"
+    ],
+    "strengths": "BayeshERG demonstrates significant strengths in its robust predictive performance and the incorporation of uncertainty estimation, enhancing its reliability in real-world applications. The use of a large pre-training dataset allows the model to learn diverse chemical spaces, resulting in improved generalization.",
+    "limitations": "Despite its strengths, BayeshERG relies heavily on the quality and diversity of the pre-training dataset, which might not cover all potential chemical spaces relevant to hERG blockage. Bayesian techniques may introduce computational complexity and require careful tuning of dropout rates.",
+    "overall_relevance": "BayeshERG is of high relevance to drug discovery, particularly in cardiotoxicity prediction. Its integration of Bayesian inference with graph neural networks provides a reliable and interpretable approach to hERG channel blocker prediction, addressing key limitations of existing models."
+}

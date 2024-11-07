@@ -1,0 +1,25 @@
+{
+    "title": "Natural Product Scores and Fingerprints Extracted from Artificial Neural Networks",
+    "authors": "J. Menke, J. Massa, O. Koch",
+    "journal": "Computational and Structural Biotechnology Journal",
+    "year": 2021,
+    "suggested_slug": "neural-fingerprints-for-natural-products",
+    "suggested_computational_title": "Neural Fingerprint Extraction for Natural Product Screening",
+    "tldr": "Neural networks were used to extract fingerprints tailored for natural products, outperforming traditional fingerprints in virtual screening tasks.",
+    "summary": "The publication explores the use of neural networks to generate fingerprints better suited for analyzing natural products, distinct from synthetic compounds. Traditional cheminformatics often struggle with natural products due to their complexity. A curated dataset of natural products and synthetic decoys was used to train a multi-layer perceptron and an autoencoder-like network. These networks successfully extracted natural product-specific fingerprints that outperformed traditional and other specific fingerprints in virtual screening tasks. The study introduced a novel natural product likeness score derived from network outputs, providing reasonable assessments of natural product characteristics, available with datasets and code for generating these fingerprints.",
+    "relevance_to_biomedical_research": "Natural products are a critical source of novel drug candidates in medicinal chemistry, making this work highly relevant to drug discovery. The neural fingerprints offer a solution to limitations faced by traditional methods with natural products, improving virtual screening accuracy and contributing to early-stage drug discovery efforts.",
+    "computational_methods": "The study employed multi-layer perceptron and autoencoder-like neural networks to generate fingerprints for natural products. A curated dataset from the Coconut database, containing over 400,000 natural products, was used for training. The networks were trained to differentiate between natural and synthetic compounds, with the output layer providing a natural product likeness score. Fingerprints were extracted from the last hidden layer of the network. The performance of these fingerprints was validated using external datasets and evaluated using area under the curve (AUC) and enrichment factors. Results indicated that the neural fingerprints outperformed traditional methods in identifying active natural products.",
+    "biomedical_keywords": [
+        "Natural products",
+        "Virtual screening",
+        "Medicinal chemistry"
+    ],
+    "computational_keywords": [
+        "Neural networks",
+        "Fingerprints",
+        "Autoencoder"
+    ],
+    "strengths": "The publication demonstrates the ability of neural networks to generate highly effective fingerprints for natural products, outperforming traditional methods in virtual screening tasks. The work leverages a large, curated dataset and provides a novel approach to evaluating natural product likeness. The availability of the code and datasets enhances reproducibility and potential application in drug discovery.",
+    "limitations": "The study's reliance on a curated dataset and the need for sufficient training data may limit the method's applicability when data is scarce. While the neural fingerprints showed improved performance, the networks used relatively simple architectures, and further optimization could enhance results. Additionally, the binary nature of the training task might limit the granularity of the natural product likeness score.",
+    "overall_relevance": "The publication is highly relevant in computational drug discovery for its innovative approach to generating natural product-specific fingerprints. The use of neural networks to improve virtual screening performance is novel, offering significant potential for identifying new drug candidates. The work is published in a reputable journal, indicating a solid contribution to the field, although further validation and optimization could enhance its impact."
+}

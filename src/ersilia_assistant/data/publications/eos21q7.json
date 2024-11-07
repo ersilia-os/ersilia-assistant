@@ -1,0 +1,25 @@
+{
+    "title": "InterDILI: interpretable prediction of drug-induced liver injury through permutation feature importance and attention mechanism",
+    "authors": "S. Lee, S. Yoo",
+    "journal": "Journal of Cheminformatics",
+    "year": 2024,
+    "suggested_slug": "interdili-drug-liver-injury-prediction",
+    "suggested_computational_title": "InterDILI, interpretable drug-induced liver injury prediction using feature importance and attention mechanisms",
+    "tldr": "InterDILI predicts drug-induced liver injury using machine learning, focusing on feature importance and specific molecular substructures for better interpretability.",
+    "summary": "The study introduces InterDILI, a machine learning model that predicts drug-induced liver injury (DILI) by analyzing feature importance and molecular substructures. The model uses five publicly available datasets to train and test its predictions, employing substructure and physicochemical descriptors as inputs. Various machine learning methods, including random forest, light gradient boosting machine, logistic regression, and neural networks with attention mechanisms, were applied. The model achieved AUROC values between 0.88 and 0.97 and AUPRC values between 0.81 and 0.95. The study highlights the significance of specific molecular substructures and physicochemical properties in DILI prediction, suggesting that these models can identify potential DILI risks in drug candidates early in the drug development process. This interpretable approach offers valuable insights for improving drug safety and understanding the underlying causes of DILI.",
+    "relevance_to_biomedical_research": "This publication is highly relevant to biomedicine and drug discovery as it addresses the significant challenge of predicting DILI, a major cause of drug withdrawal and disapproval. By providing an interpretable model, the study aids in early identification of potential DILI risks in drug candidates, enhancing drug safety and efficacy.",
+    "computational_methods": "The publication employs machine learning models such as random forest, light gradient boosting machine, logistic regression, and neural networks with attention mechanisms to predict DILI. Input features include molecular substructures and physicochemical descriptors, while the output is a DILI label. The model's interpretability is enhanced through permutation feature importance and self-attention mechanisms, identifying important features and specific molecular substructures related to DILI predictions.",
+    "biomedical_keywords": [
+        "Drug-induced liver injury",
+        "Hepatotoxicity",
+        "In silico prediction"
+    ],
+    "computational_keywords": [
+        "Feature importance",
+        "Attention mechanism",
+        "Neural networks"
+    ],
+    "strengths": "The publication presents a robust and interpretable model for predicting drug-induced liver injury, achieving high accuracy and AUROC values. The use of attention mechanisms and feature importance analysis provides insights into the structural and physicochemical factors contributing to DILI.",
+    "limitations": "The study's limitations include potential ambiguities in feature assignment due to the hash function used in molecular fingerprinting, leading to feature collisions. The model does not account for dose-dependent DILI, which is crucial in liver injury prediction.",
+    "overall_relevance": "The publication holds medium to high relevance in DILI prediction due to its novel approach to model interpretability and use of multiple datasets. While the methods aren't entirely new, the study's application to DILI prediction adds valuable contributions."
+}

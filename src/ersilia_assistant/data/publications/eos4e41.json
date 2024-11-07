@@ -1,0 +1,25 @@
+{
+    "title": "A Deep Learning Approach to Antibiotic Discovery",
+    "authors": "J. M. Stokes, K. Yang, K. Swanson, W. Jin, A. Cubillos-Ruiz, N. M. Donghia, C. R. MacNair, S. French, L. A. Carfrae, Z. Bloom-Ackerman, V. M. Tran, A. Chiappino-Pepe, A. H. Badran, I. W. Andrews, E. J. Chory, G. M. Church, E. D. Brown, T. S. Jaakkola, R. Barzilay, J. J. Collins",
+    "journal": "Cell",
+    "year": 2020,
+    "suggested_slug": "deep-learning-antibiotic-discovery",
+    "suggested_computational_title": "Chemprop, a deep neural network for antibiotic prediction",
+    "tldr": "Deep learning identified halicin, a new antibiotic with broad activity against resistant bacteria, including Mycobacterium tuberculosis.",
+    "summary": "The publication tackles the urgent need for novel antibiotics amid rising resistance. A deep neural network was developed to predict antibacterial activity from chemical structures, trained on 2,335 molecules. It evaluated over 107 million compounds from large libraries like the Drug Repurposing Hub and ZINC15, discovering halicin, a unique molecule with broad-spectrum activity against pathogens, including Mycobacterium tuberculosis. Eight additional compounds were identified from ZINC15. This work illustrates deep learning's potential to expedite antibiotic discovery by identifying structurally distinct, potent antibacterial molecules.",
+    "relevance_to_biomedical_research": "This work is highly relevant to biomedical research, especially in addressing antibiotic-resistant bacteria, a critical health issue. It aids early drug discovery stages by identifying novel antibiotics computationally, addressing urgent needs for new classes to treat resistant infections.",
+    "computational_methods": "The study employed a directed-message passing deep neural network, Chemprop, to predict antibacterial activity. Trained on 2,335 molecules, it classified compounds as E. coli growth inhibitors. The model was optimized through hyperparameter tuning and ensembling, achieving a ROC-AUC of 0.896. Predictions from large libraries led to discovering halicin, with probability scores guiding empirical validation.",
+    "biomedical_keywords": [
+        "Antibiotic resistance",
+        "Antibacterial discovery",
+        "Halicin"
+    ],
+    "computational_keywords": [
+        "Directed-message passing neural network",
+        "Molecular property prediction",
+        "Chemprop"
+    ],
+    "strengths": "The study showcases deep learning's efficacy in drug discovery, identifying novel antibiotics from extensive chemical spaces. The model's generalization from a small dataset to vast libraries is notable, leading to halicin's discovery and highlighting computational approaches' efficiency.",
+    "limitations": "The novelty of computational methods is limited, as neural networks for molecular predictions are established. Reliance on in silico predictions necessitates empirical validation, which may not always succeed. The dataset size may not fully capture relevant chemical spaces, limiting generalizability.",
+    "overall_relevance": "The publication is of medium to high relevance in antibiotic discovery, applying deep learning to identify candidates. Published in Cell, it marks a significant computational advance against antibiotic resistance, though empirical validation remains crucial for practical drug discovery."
+}

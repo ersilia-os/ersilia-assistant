@@ -1,0 +1,25 @@
+{
+    "title": "Neural Scaling of Deep Chemical Models",
+    "authors": "N. C. Frey, R. Soklaski, S. Axelrod, S. Samsi, R. G\u00f3mez-Bombarelli, C. W. Coley, V. Gadepally",
+    "journal": "Not mentioned",
+    "year": 2023,
+    "suggested_slug": "neural-scaling-chemical-models",
+    "suggested_computational_title": "Neural scaling and optimization in deep chemical models",
+    "tldr": "The paper explores neural scaling in deep chemical models, developing the Training Performance Estimation framework to optimize model size and dataset scale efficiently.",
+    "summary": "The publication investigates neural scaling behavior in large chemical models by varying model and dataset sizes over multiple orders of magnitude. The study employs models with over one billion parameters, pre-trained on datasets of up to ten million datapoints. By examining large language models for generative chemistry and graph neural networks for interatomic potentials, the authors introduce the Training Performance Estimation (TPE) framework to reduce the cost of scalable hyperparameter optimization significantly. This framework enables the researchers to discover empirical neural scaling relations and assess the interplay between physical priors and scale. The findings suggest that larger, pre-trained models present potential applications in prompt engineering and unsupervised representation learning. The study provides practical guidance for scaling studies in scientific deep learning and highlights new research directions at the intersection of massive scale and physics-informed deep learning.",
+    "relevance_to_biomedical_research": "This publication is relevant to biomedicine as it focuses on deep chemical models, crucial for drug discovery. The exploration of neural scaling can improve computational efficiency and performance in predicting molecular interactions and properties.",
+    "computational_methods": "The publication employs large language models and graph neural networks to study neural scaling in deep chemical models. The authors use the Training Performance Estimation (TPE) framework to optimize hyperparameters, reducing the cost of scalable optimization by up to 90%. The study trains models with up to one billion parameters, using datasets of varying sizes to assess loss as a function of scale. Power-law scaling behavior is observed, and the TPE framework predicts converged loss from early training epochs, identifying optimal model configurations efficiently.",
+    "biomedical_keywords": [
+        "Chemistry",
+        "Molecular modeling",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Neural scaling",
+        "Hyperparameter optimization",
+        "Graph neural networks"
+    ],
+    "strengths": "The study presents a novel framework, TPE, that significantly reduces computational costs associated with hyperparameter optimization in large-scale deep learning models. The research demonstrates the potential of neural scaling to enhance model performance, offering practical insights into efficient allocation of resources.",
+    "limitations": "The publication primarily focuses on the scaling behavior of models without extensive validation on real-world biomedical datasets. The reliance on pre-trained models and large computational resources may limit accessibility for smaller research groups.",
+    "overall_relevance": "The relevance of this publication is medium-high, given its contributions to understanding the scaling of deep chemical models. The methods proposed can significantly impact model efficiency and performance, though the need for extensive resources may limit short-term adoption."
+}

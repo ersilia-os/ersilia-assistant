@@ -1,0 +1,25 @@
+{
+    "title": "Deep SMILES: An Adaptation of SMILES for Use in Machine-Learning of Chemical Structures",
+    "authors": "N. M. O\u2019Boyle, A. Dalke",
+    "journal": "Not specified",
+    "year": 2023,
+    "suggested_slug": "deep-smiles-chemical-structures",
+    "suggested_computational_title": "DeepSMILES: Encoding for Machine Learning of Chemical Structures",
+    "tldr": "DeepSMILES is a new syntax for SMILES that simplifies ring closure and parenthesis notation, enhancing machine learning of chemical structures.",
+    "summary": "DeepSMILES is a proposed syntax for representing chemical structures that addresses common issues with SMILES (Simplified Molecular Input Line Entry System) in machine learning applications. The syntax simplifies the representation of ring closures and branches, reducing syntactical errors often encountered during the generation of chemical structures. DeepSMILES employs a single ring closure digit and postfix notation for branches, eliminating unmatched ring closure symbols and unbalanced parentheses. The transformation between SMILES and DeepSMILES requires only string processing, preserving all chemical information. The authors tested DeepSMILES using canonical SMILES from various cheminformatics tools and demonstrated accurate roundtripping without information loss. This new syntax aims to facilitate more efficient and accurate machine learning models for molecular generation and could be beneficial beyond deep learning applications, including genetic algorithms and other computational methods.",
+    "relevance_to_biomedical_research": "DeepSMILES enhances the computational representation of chemical structures, crucial for drug discovery and molecular design. By reducing syntax errors in SMILES, it aids the training of machine learning models used for designing molecules with desired properties, potentially impacting early-stage drug discovery.",
+    "computational_methods": "DeepSMILES modifies the standard SMILES syntax to improve its suitability for machine learning methods. It simplifies the representation of chemical structures by using a single ring closure digit instead of pairs and adopts postfix notation for branches, which reduces the likelihood of syntax errors in generated SMILES strings. The transformation process involves string processing and does not require chemical interpretation. The authors validated DeepSMILES using canonical SMILES from the ChEMBL 23 database, confirming accurate roundtripping without information loss.",
+    "biomedical_keywords": [
+        "Chemical structure",
+        "Molecular design",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "SMILES encoding",
+        "Generative models",
+        "Syntax transformation"
+    ],
+    "strengths": "DeepSMILES offers a robust solution to common syntactical issues in SMILES, making it easier for machine learning models to generate valid chemical structures. Its compatibility with existing cheminformatics tools and potential applicability across various machine learning methods extend its utility.",
+    "limitations": "While DeepSMILES addresses syntax errors, it does not eliminate all possibilities of invalid strings. The method's reliance on depth-first traversal for transformation could limit its applicability to non-standard SMILES representations.",
+    "overall_relevance": "The introduction of DeepSMILES presents a medium level of relevance in computational chemistry, primarily due to its potential to streamline machine learning processes for chemical structure generation. Further research is needed to establish its broader applicability and effectiveness."
+}

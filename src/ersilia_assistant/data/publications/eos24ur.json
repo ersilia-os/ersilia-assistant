@@ -1,0 +1,25 @@
+{
+    "title": "Scaffold hopping from natural products to synthetic mimetics by holistic molecular similarity",
+    "authors": "F. Grisoni, D. Merk, V. Consonni, J. A. Hiss, S. G. Tagliabue, R. Todeschini, G. Schneider",
+    "journal": "Communications Chemistry",
+    "year": 2018,
+    "suggested_slug": "scaffold-hopping-with-whales",
+    "suggested_computational_title": "WHALES, holistic molecular similarity for scaffold hopping",
+    "tldr": "A new holistic molecular representation called WHALES facilitates scaffold hopping from natural products to synthetic compounds, aiding drug discovery.",
+    "summary": "The study introduces WHALES, a holistic molecular representation that incorporates pharmacophore and shape patterns to enhance scaffold hopping from natural products to synthetic mimetics. This novel approach captures partial charge, atom distributions, and molecular shape simultaneously, allowing for better design of isofunctional synthetic compounds inspired by natural products. The method was tested using natural cannabinoids as queries in a chemical database search, leading to the identification of synthetic compounds that modulate human cannabinoid receptors. Of these compounds, 35% were confirmed as active, showcasing their lower structural complexity compared to the natural templates. WHALES descriptors provide a more comprehensive molecular representation, which proves effective in bridging the chemical space between natural products and synthetics, facilitating the discovery of new active compounds and scaffolds.",
+    "relevance_to_biomedical_research": "The publication is relevant to drug discovery as it introduces a method for scaffold hopping that can lead to the identification of new synthetic compounds with potential therapeutic applications. By leveraging natural products as starting points, the WHALES approach can facilitate the discovery of novel drug candidates, particularly for modulating complex targets like cannabinoid receptors.",
+    "computational_methods": "The WHALES method uses holistic molecular descriptors that encode geometric interatomic distances, molecular shape, and partial charge distributions. These descriptors are calculated using a weighted atom-centered covariance matrix, capturing local and global structural information. The method employs atom-centered Mahalanobis distance and calculates indices like remoteness and isolation degree to represent molecules. WHALES descriptors are computed from energy-minimized structures and partial charges, providing a fixed-length molecular representation.",
+    "biomedical_keywords": [
+        "Natural products",
+        "Cannabinoid receptors",
+        "Scaffold hopping"
+    ],
+    "computational_keywords": [
+        "WHALES descriptors",
+        "Molecular similarity",
+        "Pharmacophore modeling"
+    ],
+    "strengths": "The publication presents a novel computational method that effectively integrates multiple molecular properties into a single representation, enhancing scaffold hopping capabilities. The WHALES descriptors demonstrate a higher potential for identifying bioactive synthetic compounds compared to traditional methods.",
+    "limitations": "While the WHALES method shows promise, its application is limited to the structural data and partial charges used in the study. The performance of WHALES in other chemical spaces or with different types of molecular data remains to be confirmed.",
+    "overall_relevance": "The publication has medium to high relevance in the field of drug discovery, particularly due to its innovative approach to scaffold hopping. The WHALES method offers a novel perspective on holistic molecular representation, significantly impacting the identification of new drug candidates."
+}

@@ -1,0 +1,25 @@
+{
+    "title": "MRlogP: Transfer Learning Enables Accurate logP Prediction Using Small Experimental Training Datasets",
+    "authors": "Y.-K. Chen, S. Shave, M. Auer",
+    "journal": "Processes",
+    "year": 2021,
+    "suggested_slug": "mrlogp-accurate-logp-prediction",
+    "suggested_computational_title": "mrlogp-accurate-logp-prediction",
+    "tldr": "MRlogP uses transfer learning to enhance logP predictions for druglike molecules, outperforming existing methods with a small high-quality dataset.",
+    "summary": "MRlogP is a neural network-based predictor designed to accurately estimate the lipophilicity (logP) of druglike small molecules. The model leverages transfer learning, initially training on a large dataset of predicted logP values and subsequently fine-tuning with a smaller, high-quality dataset of 244 experimentally determined logP values. This approach addresses the scarcity of high-quality training data by utilizing predictions from multiple logP models to create a consensus before applying transfer learning corrections. MRlogP demonstrates superior performance against state-of-the-art logP prediction methods, achieving lower root mean squared errors of 0.988 and 0.715 on test sets from Reaxys and PHYSPROP. The trained model and associated code are openly accessible, facilitating integration into drug discovery pipelines and use via a web interface.",
+    "relevance_to_biomedical_research": "Accurate prediction of lipophilicity, expressed as logP, is crucial in medicinal chemistry for assessing drug absorption, distribution, and permeability. MRlogP aids in prioritization of drug candidates and optimization of their properties, streamlining drug discovery.",
+    "computational_methods": "MRlogP employs a transfer learning approach within a fully connected artificial neural network (ANN) framework. Initially, the model is trained on a large dataset of 500,000 druglike molecules with predicted logP values from consensus logP models. Features include molecular descriptors such as Morgan fingerprints and USRCAT descriptors. The final predictor, MRlogP, is refined using a small set of 244 experimentally measured logP values through transfer learning, updating the weights of the neural network to enhance prediction accuracy. The model achieves notable performance improvements with RMSE values of 0.988 and 0.715 on external test sets, showcasing the effectiveness of combining consensus predictions with high-quality experimental data.",
+    "biomedical_keywords": [
+        "Lipophilicity",
+        "Drug discovery",
+        "logP prediction"
+    ],
+    "computational_keywords": [
+        "Transfer learning",
+        "Artificial neural networks",
+        "Molecular descriptors"
+    ],
+    "strengths": "MRlogP effectively combines large-scale dataset predictions with small high-quality experimental data, leveraging transfer learning to improve accuracy in logP prediction. The open availability of the model and code supports its integration into drug discovery pipelines.",
+    "limitations": "The model's accuracy is dependent on the quality and diversity of the training data, with performance diminishing at the extremes of the logP range due to limited data. The reliance on predicted logP values as initial training data may introduce biases.",
+    "overall_relevance": "MRlogP represents a significant advancement in the field of lipophilicity prediction, particularly for druglike molecules. The use of transfer learning enhances logP estimations, marking a novel approach with potential impact on drug discovery workflows."
+}

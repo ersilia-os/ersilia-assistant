@@ -1,0 +1,25 @@
+{
+    "title": "Chemical toxicity prediction based on semi-supervised learning and graph convolutional neural network",
+    "authors": "J. Chen, Y. W. Si, C. W. Un, S. W. I. Siu",
+    "journal": "Journal of Cheminformatics",
+    "year": 2021,
+    "suggested_slug": "chemical-toxicity-prediction-gcn",
+    "suggested_computational_title": "Semi-supervised learning for chemical toxicity prediction",
+    "tldr": "A Graph Convolutional Neural Network combined with semi-supervised learning enhances chemical toxicity prediction using the Tox21 dataset.",
+    "summary": "This study tackles the challenge of predicting chemical toxicity, a key aspect of drug discovery, using a semi-supervised learning approach combined with a Graph Convolutional Neural Network (GCN). The authors utilized the Tox21 dataset to develop models for twelve toxicological endpoints, achieving an average ROC-AUC score of 0.757, which is a 6% improvement over traditional GCN models trained with supervised learning. The semi-supervised learning technique employed unannotated data to enhance model performance, with an optimal ratio of unannotated to annotated data ranging from 1:1 to 4:1. The study highlights the potential of semi-supervised learning to expand predictive model capabilities by leveraging large chemical databases. The research suggests that SSL-GCN models can outperform existing methods, indicating broader applicability to other chemical property prediction tasks.",
+    "relevance_to_biomedical_research": "This publication is significant for the drug discovery pipeline, particularly in the toxicity assessment stage, which is crucial for ensuring drug safety before clinical trials. By enhancing chemical toxicity prediction, the study offers a computational alternative to traditional in vitro and in vivo methods, which are costly and time-consuming, and could potentially reduce reliance on animal testing.",
+    "computational_methods": "The study employs a Graph Convolutional Neural Network (GCN) combined with the Mean Teacher semi-supervised learning algorithm to predict chemical toxicity. The GCN processes molecules as graphs, where atoms are nodes and bonds are edges, extracting features for prediction. The Mean Teacher approach uses two models\u2014student and teacher\u2014to learn from both labeled and unlabeled data. The model was trained using the Tox21 dataset, containing 7831 compounds with 12 endpoints, and augmented by unlabeled data from other sources. The ROC-AUC score improved by up to 13% with unlabeled data, demonstrating enhanced predictive capability.",
+    "biomedical_keywords": [
+        "Chemical toxicity",
+        "ADMET",
+        "Toxicology"
+    ],
+    "computational_keywords": [
+        "Graph convolutional neural network",
+        "Semi-supervised learning",
+        "Mean teacher algorithm"
+    ],
+    "strengths": "The study shows significant improvement in chemical toxicity prediction by integrating semi-supervised learning with a graph convolutional neural network, effectively utilizing both labeled and unlabeled data. This approach enhances model performance beyond traditional methods and can generalize to other chemical property predictions.",
+    "limitations": "The main limitations include the complexity and computational expense of the GCN model compared to conventional methods. Additionally, reliance on the Mean Teacher algorithm does not fully address interpretability, and dataset imbalance and activity cliffs pose challenges.",
+    "overall_relevance": "The publication holds medium to high relevance in cheminformatics and drug discovery, offering a novel approach to chemical toxicity prediction. While the use of semi-supervised learning with GCN is not entirely new, the study effectively applies it to the Tox21 dataset, demonstrating improvements over existing methods."
+}

@@ -1,0 +1,25 @@
+{
+    "title": "In Silico Prediction of PAMPA Effective Permeability Using a Two-QSAR Approach",
+    "authors": "C.-T. Chi, M.-H. Lee, C.-F. Weng, M. K. Leong",
+    "journal": "International Journal of Molecular Sciences",
+    "year": 2019,
+    "suggested_slug": "pampa-permeability-prediction",
+    "suggested_computational_title": "Two-QSAR Approach for Predicting PAMPA Effective Permeability",
+    "tldr": "A two-QSAR method combining PLS and HSVR is developed to predict PAMPA effective permeability, aiding drug discovery by assessing passive diffusion predictively.",
+    "summary": "The study presents a two-QSAR approach for predicting PAMPA effective permeability, crucial for evaluating drug absorption in early drug discovery stages. It utilizes both a classical QSAR model employing partial least square (PLS) and a machine learning-based model using hierarchical support vector regression (HSVR). The HSVR model demonstrated superior predictive performance over PLS across training, test, and outlier datasets, highlighting its robustness and accuracy. The research emphasizes a synergistic application of HSVR for high predictivity and PLS for interpretability, facilitating the elucidation of passive diffusion mechanisms. These findings can significantly impact drug development by accurately predicting the permeability of compounds, thereby optimizing ADME profiling and reducing late-stage failures.",
+    "relevance_to_biomedical_research": "This publication is relevant to drug discovery and development as it addresses the prediction of drug permeability, a critical factor in ADME profiling. By predicting PAMPA effective permeability, it offers a tool for early-stage screening of drug candidates, potentially improving the success rates of orally administered drugs by ensuring adequate absorption.",
+    "computational_methods": "This study employs a two-QSAR approach combining partial least square (PLS) and hierarchical support vector regression (HSVR) to predict PAMPA effective permeability. The PLS model provides an interpretable relationship between molecular descriptors and permeability, while the HSVR serves as a robust predictive model. Input data included molecular descriptors such as logP, logD, PSA, FPSA, and dipole moment, derived from a dataset of 182 compounds. The HSVR model outperformed PLS with higher predictivity and lower error rates, as evidenced by statistical metrics such as r2, q2, and RMSE.",
+    "biomedical_keywords": [
+        "Drug absorption",
+        "PAMPA permeability",
+        "Pharmacokinetics"
+    ],
+    "computational_keywords": [
+        "Hierarchical support vector regression",
+        "Partial least square",
+        "QSAR modeling"
+    ],
+    "strengths": "The publication demonstrates a robust and predictive model for drug permeability, crucial for ADME profiling in drug discovery. The combination of HSVR and PLS leverages both predictive accuracy and interpretability. The HSVR model's superior performance across various datasets indicates its robustness and potential for real-world applications.",
+    "limitations": "The study's reliance on a specific dataset may limit the generalizability of the models to other chemical spaces or assay conditions. While HSVR outperforms PLS, the lack of interpretability remains a challenge, typical of machine learning models.",
+    "overall_relevance": "The publication holds medium to high relevance due to its contribution to the predictive modeling of drug permeability, a critical aspect of drug development. It offers insights into passive diffusion mechanisms and provides a significant step towards improving early-stage drug candidate screening."
+}

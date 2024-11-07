@@ -1,0 +1,25 @@
+{
+    "title": "Coloring Molecules with Explainable Artificial Intelligence for Preclinical Relevance Assessment",
+    "authors": "J. Jim\u00e9nez-Luna, M. Skalic, N. Weskamp, G. Schneider",
+    "journal": "Journal of Chemical Information and Modeling",
+    "year": 2021,
+    "suggested_slug": "coloring-molecules-with-xai",
+    "suggested_computational_title": "Integrated gradients for molecular property prediction",
+    "tldr": "The study uses integrated gradients explainable AI to improve interpretability of graph neural networks in predicting pharmacological properties, offering insights into molecular features affecting drug interactions.",
+    "summary": "The publication explores the use of integrated gradients, an explainable AI technique, to enhance the transparency of graph neural network (GNN) models in drug discovery. These models were used to predict plasma protein binding, hERG channel inhibition, passive permeability, and cytochrome P450 inhibition. The methodology highlighted molecular features and structural elements consistent with known pharmacophore motifs, identified property cliffs, and provided insights into unspecific ligand-target interactions. The study also introduces the first open-source implementation of this XAI approach combined with message-passing neural networks for chemical property prediction, allowing other researchers to train new models on clinically relevant endpoints. The study emphasizes the potential of GNNs in replacing traditional molecular fingerprint representations, although their practical utility remains limited due to interpretability challenges.",
+    "relevance_to_biomedical_research": "This publication is significant as it addresses the challenge of interpretability in AI models used in drug discovery. By applying explainable AI to predict pharmacological properties, it aids in understanding molecular interactions critical for drug development, particularly in optimizing ADME properties.",
+    "computational_methods": "The study employs graph neural networks (GNNs) with a focus on the integrated gradients technique to provide explainability. The models predict properties like plasma protein binding and hERG inhibition using large datasets of molecular graphs. Inputs include atom and bond features, while outputs are property predictions. The integrated gradients method computes importance scores for features, aiding interpretation. The model was trained on datasets of up to 9120 compounds, using k=10 cross-validation to ensure performance.",
+    "biomedical_keywords": [
+        "Plasma protein binding",
+        "hERG inhibition",
+        "Cytochrome P450"
+    ],
+    "computational_keywords": [
+        "Graph neural networks",
+        "Integrated gradients",
+        "Feature attribution"
+    ],
+    "strengths": "The publication introduces an innovative approach to improve the interpretability of GNNs in drug discovery, providing a valuable tool for rational molecular design. The open-source implementation allows for reproducibility and adaptation by the wider research community.",
+    "limitations": "The study's limitations include potential attribution instability between similar compounds and challenges in accurately capturing structure-property relationships. The multicollinearity of features may affect the assignment of importance values.",
+    "overall_relevance": "The publication holds medium relevance in the field of drug discovery, particularly in improving AI model interpretability. It contributes to efforts to bridge the gap between AI predictions and chemical understanding, though challenges in model accuracy remain."
+}

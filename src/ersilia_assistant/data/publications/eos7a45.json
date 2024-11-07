@@ -1,0 +1,25 @@
+{
+    "title": "CoPriNet: Graph Neural Networks Provide Accurate and Rapid Compound Price Prediction for Molecule Prioritization",
+    "authors": "R. Sanchez-Garcia, D. Havasi, G. Takacs, M.C. Robinson, A. Lee, F. von Delft, C.M. Deane",
+    "journal": "Digital Discovery",
+    "year": 2023,
+    "suggested_slug": "coprinet-compound-price-prediction",
+    "suggested_computational_title": "CoPriNet, compound price prediction using graph neural networks",
+    "tldr": "CoPriNet is a graph neural network model that predicts compound prices more accurately than synthetic accessibility scores, facilitating high-throughput molecule prioritization.",
+    "summary": "CoPriNet is a deep learning model designed to predict compound prices using graph neural networks. This method is retrosynthesis-free and leverages 2D graph representations of molecules from the Mcule catalogue, a proprietary dataset with over 6 million molecule-price pairs. CoPriNet demonstrates a superior correlation with actual compound prices compared to traditional synthetic accessibility scores, which have been used as proxies for compound availability. The model is trained on a dataset of purchasable compounds, allowing it to provide rapid price predictions suitable for high-throughput applications such as virtual screening and de novo compound generation. The CoPriNet source code and test dataset are publicly available, offering a valuable tool for improving molecule prioritization in drug discovery pipelines based on budget considerations.",
+    "relevance_to_biomedical_research": "The publication is highly relevant to drug discovery, particularly in the early stages where compound availability and cost are crucial. By providing accurate price predictions, CoPriNet assists researchers in prioritizing compounds that are cost-effective. This supports efficient decision-making in drug development pipelines.",
+    "computational_methods": "CoPriNet utilizes graph neural networks (GNNs) to predict compound prices from 2D molecular graphs. The GNN is trained on a dataset from the Mcule catalogue, including over 6 million molecules and their prices. Inputs include atomic and bond features, processed through multiple layers to generate a graph embedding. The model outputs a predicted price for each compound, evaluated using Pearson and Spearman correlation coefficients, achieving strong correlations with actual prices. CoPriNet processes up to 1000 molecules per second, suitable for high-throughput screenings.",
+    "biomedical_keywords": [
+        "Drug discovery",
+        "Compound availability",
+        "Molecular prioritization"
+    ],
+    "computational_keywords": [
+        "Graph neural networks",
+        "Price prediction",
+        "Retrosynthesis-free"
+    ],
+    "strengths": "CoPriNet offers a rapid and accurate method for predicting compound prices, outperforming synthetic accessibility scores. Its high throughput makes it ideal for high-throughput screenings, providing a tool for budget-conscious decision-making in drug discovery.",
+    "limitations": "One limitation is its reliance on a proprietary dataset, restricting applicability to compounds outside this dataset. While showing strong correlations, it may not account for market fluctuations or vendor-specific pricing strategies. Its generalizability is yet to be fully validated.",
+    "overall_relevance": "The publication is of medium to high relevance in drug discovery, addressing cost considerations in compound prioritization. CoPriNet's novel approach and performance make it valuable for optimizing compound selection strategies, as highlighted in Digital Discovery."
+}

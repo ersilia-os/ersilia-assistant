@@ -1,0 +1,25 @@
+{
+    "title": "Insights into Drug Cardiotoxicity from Biological and Chemical Data: The First Public Classifiers for FDA Drug-Induced Cardiotoxicity Rank",
+    "authors": "S. Seal, O. Spjuth, L. Hosseini-Gerami, M. Garc\u00eda-Orteg\u00f3n, S. Singh, A. Bender, A.E. Carpenter",
+    "journal": "Journal of Chemical Information and Modeling",
+    "year": 2024,
+    "suggested_slug": "cardiotoxicity-classifiers-fda",
+    "suggested_computational_title": "Cardiotoxicity Prediction Using FDA DICTrank Dataset",
+    "tldr": "Public classifiers were developed using chemical and biological data to predict FDA drug-induced cardiotoxicity, enhancing drug development safety.",
+    "summary": "The study addresses drug-induced cardiotoxicity (DICT), a significant concern in drug development. Utilizing the FDA-released DICTrank dataset, researchers explored chemical and biological data to predict cardiotoxicity. Key data included protein targets such as hERG, physicochemical properties, and peak plasma concentration, demonstrating strong predictive capabilities. Models incorporating these features showed substantial predictive accuracy, with an AUC-PR of 0.93. The study highlights the potential of omics data to enhance predictability and offer mechanistic insights, promoting safer drug development. Additionally, it provides the first public classifiers for DICT, offering a valuable resource for future research and application in drug safety assessment.",
+    "relevance_to_biomedical_research": "Drug-induced cardiotoxicity is a major cause of drug withdrawal during postmarket surveillance, impacting drug safety and patient health. This study provides classifiers for predicting cardiotoxicity using FDA data, contributing to the drug discovery pipeline by enabling early identification of cardiotoxic risks.",
+    "computational_methods": "The study utilized machine learning models, particularly Random Forest classifiers, to predict cardiotoxicity using the DICTrank dataset. Input data comprised chemical structures, physicochemical properties, and biological data such as Cell Painting and gene expression features. Models were trained on over 1300 drugs categorized by cardiotoxic risk, achieving high predictive accuracy with an AUC-PR of 0.93. Outputs are interpreted as probabilities of cardiotoxic risk, aiding in safety profiling.",
+    "biomedical_keywords": [
+        "Cardiotoxicity",
+        "Drug safety",
+        "FDA drug evaluation"
+    ],
+    "computational_keywords": [
+        "Random Forest classifier",
+        "Predictive modeling",
+        "DICTrank dataset"
+    ],
+    "strengths": "The publication presents the first public classifiers for predicting drug-induced cardiotoxicity using FDA data, offering significant implications for safer drug development. The integration of chemical and biological data enhances the prediction accuracy, with a notable AUC-PR of 0.93.",
+    "limitations": "The study's limitations include reliance on available data, which may not encompass all mechanisms of cardiotoxicity. The omics data used were broad and not specifically targeted to cardiac function, potentially limiting their predictive power.",
+    "overall_relevance": "The publication holds high relevance in the context of drug safety and cardiotoxicity prediction. By providing public classifiers based on comprehensive FDA data, it addresses a critical issue in drug development."
+}

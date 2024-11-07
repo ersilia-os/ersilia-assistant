@@ -1,0 +1,25 @@
+{
+    "title": "QupKake: Integrating Machine Learning and Quantum Chemistry for Micro-pKa Predictions",
+    "authors": "O. D. Abarbanel, G. R. Hutchison",
+    "journal": "Journal of Chemical Theory and Computation",
+    "year": 2024,
+    "suggested_slug": "qupkake-micro-pka-predictions",
+    "suggested_computational_title": "QupKake, micro-pKa prediction using GNNs and QM features",
+    "tldr": "QupKake integrates graph neural networks and quantum mechanical features to achieve high accuracy in micro-pKa predictions, outperforming existing models.",
+    "summary": "QupKake is a novel computational method that combines graph neural networks (GNNs) with semiempirical quantum mechanical (QM) features to predict micro-pKa values of small organic molecules. By leveraging the strengths of both machine learning and quantum chemistry, QupKake achieves state-of-the-art accuracy with root-mean-square errors (RMSEs) between 0.5 and 0.8 pKa units on various benchmark datasets. The method includes a three-step workflow: tautomer search, reaction site enumeration, and micro-pKa prediction. The integration of GNNs allows for efficient prediction of protonation and deprotonation sites, while QM features from the GFN2-xTB method enhance model performance. QupKake's open-source nature facilitates further research and application in chemistry.",
+    "relevance_to_biomedical_research": "Accurate micro-pKa predictions are vital for understanding the acidity and basicity of drug-like molecules, impacting drug solubility, permeability, and binding affinity. QupKake's ability to predict micro-pKa values aids in the design of molecules with optimal properties, enhancing drug discovery efforts.",
+    "computational_methods": "QupKake utilizes graph neural networks (GNNs) in combination with quantum mechanical features from the GFN2-xTB method to predict micro-pKa values. The workflow involves a QM-based tautomer search to identify the most stable form, followed by reaction site enumeration using QM insights and GNNs. The final prediction model uses a GNN-based approach for micro-pKa prediction. The model was trained on a dataset of approximately 1.85 million molecules from the ChEMBL database, augmented with enantiomers, and fine-tuned using transfer learning on 5637 experimental micro-pKa values. QupKake achieves RMSEs between 0.5 and 0.8 pKa units on test sets, significantly outperforming existing models.",
+    "biomedical_keywords": [
+        "Micro-pKa prediction",
+        "Drug discovery",
+        "Medicinal chemistry"
+    ],
+    "computational_keywords": [
+        "Graph neural networks",
+        "Quantum mechanical features",
+        "Tautomer search"
+    ],
+    "strengths": "QupKake's integration of GNNs with QM features results in exceptional accuracy for micro-pKa predictions, outperforming existing models. The use of a large dataset and transfer learning enhances model generalization. Its open-source availability promotes further research and application.",
+    "limitations": "The main limitation of QupKake is the computational expense associated with QM calculations, particularly the GFN2-xTB method, which can be time-consuming. Reliance on a single pKa value per compound may limit confidence in predictions for multiprotic acids.",
+    "overall_relevance": "QupKake represents a significant advancement in computational chemistry, offering a highly accurate tool for micro-pKa prediction. Its integration of GNNs and QM features sets it apart from existing models, with high potential impact in drug discovery and materials science."
+}

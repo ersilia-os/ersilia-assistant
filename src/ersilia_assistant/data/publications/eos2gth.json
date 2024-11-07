@@ -1,0 +1,25 @@
+{
+    "title": "MAIP: a web service for predicting blood-stage malaria inhibitors",
+    "authors": "N. Bosc, E. Felix, R. Arcila, D. Mendez, M. R. Saunders, D. V. S. Green, J. Ochoada, A. A. Shelat, E. J. Martin, P. Iyer, O. Engkvist, A. Verras, J. Duffy, J. Burrows, J. M. F. Gardner, A. R. Leach",
+    "journal": "Journal of Cheminformatics",
+    "year": 2021,
+    "suggested_slug": "maip-malaria-inhibitors",
+    "suggested_computational_title": "MAIP, blood-stage malaria inhibitor prediction platform",
+    "tldr": "MAIP is an open-access web service using machine learning models to predict compounds with potential blood-stage malaria inhibitory activity.",
+    "summary": "The publication introduces MAIP, a web service designed to predict blood-stage malaria inhibitors using a consensus machine learning model. The model builds on prior efforts to develop computational tools for antimalarial drug discovery, overcoming the challenge of integrating proprietary data by sharing QSAR models. Training was conducted using eleven datasets from various partners, including new datasets from MMV and Novartis. The models were developed using open-source tools like RDKit and Na\u00efve Bayes methods, ensuring reproducibility and accessibility. The consensus model showed improved predictive performance and is implemented on a user-friendly web platform available to the scientific community. This initiative aims to facilitate antimalarial drug discovery by providing a reliable computational tool for large-scale predictions.",
+    "relevance_to_biomedical_research": "This publication is highly relevant to antimalarial drug discovery, addressing the urgent need for new therapies to combat rising drug resistance. MAIP provides a tool to identify potential inhibitors, streamlining early-stage discovery.",
+    "computational_methods": "The publication presents a consensus machine learning model for predicting blood-stage malaria inhibitors. Models were trained using Na\u00efve Bayes classifiers on eleven datasets, including over 6.5 million bioactivity measurements. Descriptor calculation employed RDKit, with molecules standardized using a Python-based standardizer. The consensus model combines predictions from multiple individual models to enhance performance. Validation used three datasets, and performance was assessed using ROC AUC and enrichment factors. The MAIP platform allows users to input SMILES strings for prediction, providing a web-accessible interface for antimalarial activity prediction. The model's performance was shown to be robust across various validation datasets.",
+    "biomedical_keywords": [
+        "Malaria",
+        "Antimalarial drug discovery",
+        "Blood-stage malaria inhibitors"
+    ],
+    "computational_keywords": [
+        "QSAR models",
+        "Na\u00efve Bayes",
+        "Consensus modeling"
+    ],
+    "strengths": "The publication highlights the successful integration of multiple datasets into a consensus model, enhancing predictive accuracy for malaria inhibitors. The use of open-source tools ensures reproducibility and accessibility, promoting collaboration.",
+    "limitations": "The publication's reliance on proprietary datasets may limit transparency and independent validation. Although the consensus approach improves predictivity, the novelty of the computational methods is limited as they build on existing models.",
+    "overall_relevance": "The publication has medium to high relevance in antimalarial drug discovery, providing a valuable tool for predicting blood-stage malaria inhibitors. Its open-access nature and robust validation enhance its potential utility."
+}

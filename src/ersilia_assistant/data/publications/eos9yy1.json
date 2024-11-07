@@ -1,0 +1,25 @@
+{
+    "title": "Predicting Liver Cytosol Stability of Small Molecules",
+    "authors": "P. Shah, V.B. Siramshetty, A.V. Zakharov, N.T. Southall, X. Xu, D.-T. Nguyen",
+    "journal": "Journal of Cheminformatics",
+    "year": 2020,
+    "suggested_slug": "predicting-liver-cytosol-stability",
+    "suggested_computational_title": "Liver Cytosol Stability Prediction Using QSAR Models",
+    "tldr": "This study develops QSAR models to predict liver cytosol stability, aiding in drug discovery by addressing cytosolic enzyme-mediated liabilities.",
+    "summary": "The publication addresses the lack of reliable tools for predicting liver cytosol-mediated metabolism, which can be overlooked in drug discovery. The study screened 1450 compounds for liver cytosol stability using in vitro half-life data from mouse and human cytosol fractions. Through matched molecular pairs analysis and qualitative structure-activity relationship modeling, the authors identified transformation rules to optimize compounds for cytosolic stability. These rules were validated on a diverse chemical library. The study also developed in silico classification models using molecular descriptors and machine learning methods to predict cytosol-mediated liabilities. This research represents the first systematic in silico effort to address cytosolic enzyme-mediated liabilities, providing valuable guidelines for medicinal chemists to modulate compounds against these liabilities.",
+    "relevance_to_biomedical_research": "This publication is relevant to drug discovery as it provides tools to predict and optimize liver cytosol stability, a critical factor in drug metabolism, aiding in the development of drug candidates with improved pharmacokinetic properties.",
+    "computational_methods": "The study employs matched molecular pairs analysis and qualitative structure-activity relationship modeling to derive transformation rules for cytosolic stability. QSAR models were developed using Random Forests, Support Vector Machines, and BayesNet algorithms, utilizing molecular descriptors from MOE, RDKit, and QNA. The models predict cytosolic stability by classifying compounds as stable or unstable based on in vitro half-life data.",
+    "biomedical_keywords": [
+        "Liver cytosol stability",
+        "Metabolic stability",
+        "Drug metabolism"
+    ],
+    "computational_keywords": [
+        "QSAR models",
+        "Matched molecular pairs",
+        "Support Vector Machines"
+    ],
+    "strengths": "The publication provides a novel approach to address cytosolic enzyme-mediated liabilities using a large dataset and robust computational models. It offers practical guidelines for medicinal chemists and presents the first QSAR models for predicting cytosolic stability.",
+    "limitations": "The study's dataset is skewed towards stable compounds, which may limit the generalizability of the models. The external validation showed poor performance, indicating that the training set's chemical space might not represent diverse chemotypes.",
+    "overall_relevance": "The publication holds medium relevance in drug metabolism and pharmacokinetics. While it introduces novel QSAR models for predicting cytosolic stability, the skewness of the dataset and limited external validation impact its robustness."
+}

@@ -1,0 +1,25 @@
+{
+    "title": "CardioTox net: a robust predictor for hERG channel blockade based on deep learning meta-feature ensembles",
+    "authors": "A. Karim, M. Lee, T. Balle, A. Sattar",
+    "journal": "Journal of Cheminformatics",
+    "year": 2021,
+    "suggested_slug": "cardiotox-net-ensemble-prediction",
+    "suggested_computational_title": "CardioTox Net, enhanced hERG blockade prediction using meta-feature ensembles",
+    "tldr": "CardioTox net is a deep learning framework predicting hERG channel blocking using model ensembles to enhance prediction accuracy across metrics.",
+    "summary": "CardioTox net is a deep learning framework designed to predict the blocking activity of hERG channels by small molecules, which is crucial due to the potential cardiotoxicity risk it poses in drug development. The framework employs a step-wise training approach with five individual base models, each using distinct chemical representations, and an additional neural network to integrate their outputs. This method effectively aggregates chemical information for improved hERG activity prediction across a range of metrics. The model was validated using three external test sets, achieving superior performance compared to existing methods like DeepHIT, particularly in metrics such as the Matthew correlation coefficient, accuracy, positive predictive value, and specificity. CardioTox net is proposed as a robust tool for screening small molecules for hERG channel blockade in drug discovery pipelines.",
+    "relevance_to_biomedical_research": "The publication is highly relevant to biomedical research and drug discovery, particularly in predicting cardiotoxicity due to hERG channel blockade. This critical aspect of drug development helps prioritize safe molecules, reducing late-stage failures and ensuring safer therapeutic options.",
+    "computational_methods": "CardioTox net utilizes a deep learning framework that combines multiple base models with different chemical representations. It involves a step-wise training process using featurization techniques like molecular descriptors, graph features, and fingerprints. Each model outputs a probability of a molecule being a hERG blocker, integrated by a meta ensemble neural network. Evaluated on three external test sets, it showed improved performance across multiple metrics, indicating robust predictive capabilities. The model's outputs are probabilities that can be interpreted for classification decisions.",
+    "biomedical_keywords": [
+        "Cardiotoxicity",
+        "hERG channel",
+        "Drug safety"
+    ],
+    "computational_keywords": [
+        "Deep learning ensembles",
+        "Meta-feature aggregation",
+        "Neural networks"
+    ],
+    "strengths": "The strengths lie in the innovative use of meta-feature ensembles to improve prediction accuracy. Combining multiple base models enhances performance compared to existing methods. The use of a diverse dataset strengthens prediction reliability, with the model outperforming previous ones.",
+    "limitations": "Limitations include potential challenges in scalability to broader chemical spaces. While performance is improved, it relies on high-quality training data. The computational methods, though robust, may not be novel and could increase complexity and resource needs, limiting accessibility.",
+    "overall_relevance": "The publication is of medium to high relevance in cardiotoxicity prediction within drug discovery. It applies deep learning ensembles to enhance accuracy, offering a significant contribution to early detection of cardiotoxic drugs, though its novelty is limited by existing techniques."
+}
