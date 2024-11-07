@@ -1,11 +1,43 @@
-# Script to locally set up Ersilia Assistant
 #!/bin/bash
+set -e
 
-set -ex
-
+# Script to locally set up Ersilia Assistant
 # The directory where the script is run
 # This is in the ersilia-assistant repository at ersilia-assistant/bin
 WORKDIR=$(pwd)
+
+usage="$(basename "$0") [-h|--help|--start|--stop]
+Locally setup Ersilia Assistant
+
+where:
+    -h, --help  Show this help text and exit
+    --start     Start the Ersilia Assistant
+    --stop      Stop the Ersilia Assistant"
+
+if [[ $# -eq 0 ]] || [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
+    echo "$usage"
+    exit 0
+fi
+
+while getopts ':hs:' option; do
+    case "$option" in
+        h) echo "$usage"
+            exit 0
+            ;;
+    esac
+done
+
+if [ "$1" == "--start" ]; then
+    echo "Starting the Ersilia Assistant"
+elif [ "$1" == "--stop" ]; then
+    echo "Stopping the Ersilia Assistant"
+    pkill -f "streamlit run streamlit/app.py"
+    pkill -f "$llamafile"
+    exit 0
+else
+    echo "$usage"
+    exit 1
+fi
 
 # Directory for storing all the artifacts for this project
 assistant_dir="$HOME/.ersilia-assistant"
@@ -59,6 +91,21 @@ fi
 echo "Ersilia Assistant setup complete"
 echo "Starting the assistant now!"
 
+# Check if the nohup command is available, and if not, try to install it
+if ! command -v nohup &> /dev/null; then
+    echo "nohup command could not be found"
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        echo "Trying to install nohup"
+        sudo apt-get install nohup
+    elif [[ "$OSTYPE" == "darwin"* ]]; then
+        echo "Trying to install nohup"
+        brew install nohup
+    else
+        echo "nohup command could not be installed"
+        exit 1
+    fi
+fi
+
 # Run the llamafile server at port 8080 in a sub shell
 # The llamafile server is a simple HTTP server that serves the llamafile
 (
@@ -86,7 +133,7 @@ echo "Starting the assistant now!"
 (
     source "$assistant_dir/venv/bin/activate"
     cd "$WORKDIR/.."
-    streamlit run streamlit/app.py
+    nohup streamlit run streamlit/app.py &
 
     # Check if the assistant is already running
     if [ $? -eq 0 ]; then
