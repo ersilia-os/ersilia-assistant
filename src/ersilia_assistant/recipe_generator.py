@@ -27,9 +27,12 @@ class RecipeGenerator:
         """
         return set(re.findall(r"eos[a-zA-Z0-9]+", text))
 
-    def generate(self, text: str) -> Generator[str, None, None]:
-        models = self.get_models(text)
-
+    def generate(self, input) -> Generator[str, None, None]:
+        if isinstance(input, str):
+            text = input
+            models = self.get_models(text)
+        elif isinstance(input, list):
+            models = input
         final_recipe = self.init_string
         for mdl in models:
             single_model_recipe = "\n```bash\n"

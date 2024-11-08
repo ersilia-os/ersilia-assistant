@@ -1,13 +1,15 @@
 import streamlit as st
 
-from ersilia_assistant import Summarizer, ModelSelector, RecipeGenerator
+from ersilia_assistant import ErsiliaAssistant
 
+# Welcome page
 st.title("Ersilia Assistant")
 
+# Display a sidebar with information about the Ersilia Open Source Initiative
 st.sidebar.title("About the Ersilia Open Source Initiative")
 
 st.sidebar.warning(
-    "This is an AI-based assistant and is intended for research use only."
+    "This is an AI-based assistant and is intended for research use only. Please do not use this for clinical or commercial purposes."
 )
 
 # History storage for storing all user inputs
@@ -15,9 +17,10 @@ st.sidebar.warning(
 if "messages" not in st.session_state:
     st.session_state.messages = []  # List of dict and not a dict of lists
 
-summarizer = Summarizer()
-model_selector = ModelSelector()
-recipe_generator = RecipeGenerator()
+
+# Initialize the assistant
+assistant = ErsiliaAssistant()
+
 # Display messages from history on app rerun
 # This might be useful for troubleshooting
 # However this won't persist if the app is restarted
@@ -37,15 +40,8 @@ if prompt := st.chat_input(
 
     # Display assistant message in chat message container
     with st.chat_message("assistant"):
-        summary_stream = summarizer.summarize(prompt)
-        summary_response = st.write_stream(summary_stream)
-
-        modelselection_stream = model_selector.select_models(prompt)
-        modelselection_response = st.write_stream(modelselection_stream)
-
-        recipe_stream = recipe_generator.generate(modelselection_response)
-        recipe_response = st.write_stream(recipe_stream)
+        bot_stream = assistant.run(prompt)
+        response = st.write_stream(bot_stream)
 
     # Add assistant message to chat history
-    response = summary_response + modelselection_response + recipe_response
     st.session_state.messages.append({"role": "assistant", "content": response})

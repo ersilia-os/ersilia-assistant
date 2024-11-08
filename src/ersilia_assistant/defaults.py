@@ -13,3 +13,11 @@ REWRITE = "Rewrite"
 
 STOP_TOKENS = [EOF_TOKEN]  # OpenAI Chat API only allows for upto four such tokens
 FILTER_TOKENS = [EOF_TOKEN, REWRITE]
+
+QUERY_REJECTION_TEXT = """I am sorry, I can only help with queries related to navigating the Ersilia Model Hub.
+Please provide a query that is relevant to drug discovery experiments, for example:
+
+- How to calculate molecular weight of aspirin?
+- How can I predict the solubility of a compound?
+"""
+
