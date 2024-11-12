@@ -5,13 +5,13 @@ from llama_index.core.llms import ChatMessage, MessageRole
 from llama_index.core import PromptTemplate
 from llama_index.llms.llamafile import Llamafile
 
-from .defaults import BASE_URL, STOP_TOKENS, REQUEST_TIMEOUT
+from .defaults import LLAMA_SERVER, STOP_TOKENS, REQUEST_TIMEOUT
 
 
 class Summarizer:
     def __init__(self) -> None:
 
-        self.llm = Llamafile(base_url=BASE_URL, request_timeout=REQUEST_TIMEOUT)
+        self.llm = Llamafile(base_url=LLAMA_SERVER, request_timeout=REQUEST_TIMEOUT)
         self.response_header = """
         This is my understanding of your query:
         """

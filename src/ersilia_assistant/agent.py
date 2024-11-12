@@ -3,8 +3,9 @@ from pydantic import BaseModel
 from .model_selector import ModelSelector
 from .recipe_generator import RecipeGenerator
 from .summarizer_engine import Summarizer
-from .util import query_filter
-from .defaults import QUERY_REJECTION_TEXT
+from .util import llm_filter
+from .defaults import QUERY_REJECTION_TEXT, LINE_BREAK
+
 
 class ErsiliaAssistant:
     def __init__(self) -> None:
@@ -18,19 +19,22 @@ class ErsiliaAssistant:
         for token in self.summarizer.summarize(query):
             yield token
 
-        # Get models
-        nodes, ids = self.model_selector.get_models(query)
+        yield LINE_BREAK
 
-        # Stream model response
-        for token in self.model_selector.select_models(nodes, ids):
+        # Stream model selection response
+        for token in self.model_selector.select_models(query):
             yield token
 
+        yield LINE_BREAK
+
         # Stream recipe response
-        for token in self.recipe_generator.generate(ids):
+        for token in self.recipe_generator.generate(
+            self.model_selector.selected_models
+        ):
             yield token
 
     def run(self, query: str):
-        relevant_query = query_filter(query)
+        relevant_query = llm_filter(query)
         if not relevant_query:
             for word in QUERY_REJECTION_TEXT.split(sep=" "):
                 yield word + " "

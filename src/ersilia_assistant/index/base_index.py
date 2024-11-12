@@ -7,13 +7,13 @@ from llama_index.core import (
     load_index_from_storage,
 )
 from llama_index.llms.llamafile import Llamafile
-from ..defaults import EMBEDDING, BASE_URL, REQUEST_TIMEOUT
+from ..defaults import EMBEDDING, LLAMA_SERVER, REQUEST_TIMEOUT
 
 
 class BaseErsiliaIndex:
 
     def __init__(self, data_dir: str) -> None:
-        self.llm = Llamafile(base_url=BASE_URL, request_timeout=REQUEST_TIMEOUT)
+        self.llm = Llamafile(base_url=LLAMA_SERVER, request_timeout=REQUEST_TIMEOUT)
         self.store_path = f"{data_dir}/store"
         self.data_dir = data_dir
 
