@@ -1,0 +1,7 @@
+# Not sure why this won't effin work
+*/.streamlit/*
+*/streamlit/*
+*/assets/*
+*/bin/*
+*/experiments/*
+*/llamafile-infra/*

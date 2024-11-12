@@ -3,7 +3,7 @@ import os
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 
-LLAMA_SERVER = os.environ.get("llamafile_url", "http://127.0.0.1:8080")
+LLAMA_SERVER = os.environ.get("LLAMA_SERVER", "http://127.0.0.1:8080")
 REQUEST_TIMEOUT = os.environ.get("request_timeout", 30.0)  # Default for local llamafile server
 EMBEDDING = HuggingFaceEmbedding("BAAI/bge-base-en-v1.5")
 
