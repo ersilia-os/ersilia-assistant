@@ -1,1 +1,2 @@
 streamlit==1.39.0
+httpx==0.27.2
