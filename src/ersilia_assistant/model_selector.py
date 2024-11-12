@@ -16,9 +16,15 @@ class ModelSelector:
     def __init__(self) -> None:
         self.index = ErsiliaModelMetadataIndex()
         self.query_engine = self.index.query_engine(streaming=True)
-        self.prepend_text_multiple = "For your query, I have selected the following models:"
-        self.prepend_text_singular = "For your query, I have selected the following model:"
-        self.prepend_text_none = "I could not find any models that are relevant to your query."
+        self.prepend_text_multiple = (
+            "For your query, I have selected the following models:"
+        )
+        self.prepend_text_singular = (
+            "For your query, I have selected the following model:"
+        )
+        self.prepend_text_none = (
+            "I could not find any models that are relevant to your query."
+        )
         self.model_filter_prompt = """
         You are a helpful assistant who is an expert in biomedicine.
         Given a query, and a context you can determine if the context is relevant to the query.
@@ -114,8 +120,14 @@ class ModelSelector:
         self._select_models(query)
 
         # TODO: Sorry this is very ugly, and we should do away with hardcoding this.
-        beginning_text = self.prepend_text_multiple if len(self.selected_models) > 1 else (
-            self.prepend_text_singular if len(self.selected_models) == 1 else self.prepend_text_none
+        beginning_text = (
+            self.prepend_text_multiple
+            if len(self.selected_models) > 1
+            else (
+                self.prepend_text_singular
+                if len(self.selected_models) == 1
+                else self.prepend_text_none
+            )
         )
         for word in beginning_text.split(sep=" "):
             yield word + " "
@@ -133,7 +145,7 @@ class ModelSelector:
             for token in self._get_model_reason(query, summary):
                 if token:
                     yield token + " "
-            yield LINE_BREAK*2
+            yield LINE_BREAK * 2
 
     def query_llm_for_models(self, query: str) -> Generator[str, None, None]:
         response = self.query_engine.query(query)

@@ -1,6 +1,18 @@
+import os
+import httpx
 import streamlit as st
 
-from ersilia_assistant import ErsiliaAssistant
+
+ASSISTANT_URL = os.environ.get("ASSISTANT_URL", "http://localhost:8000")
+
+def run(query: str):
+    query = query.strip() # Remove leading and trailing whitespaces
+    url = f"{ASSISTANT_URL}/run?query={query}"
+    with httpx.stream("GET", url, timeout=600.0) as r:
+        for word in r.iter_text():
+            yield word
+        # for line in r.iter_lines():
+        #     yield line
 
 # Welcome page
 st.title("Ersilia Assistant")
@@ -19,7 +31,6 @@ if "messages" not in st.session_state:
 
 
 # Initialize the assistant
-assistant = ErsiliaAssistant()
 
 # Display messages from history on app rerun
 # This might be useful for troubleshooting
@@ -40,8 +51,8 @@ if prompt := st.chat_input(
 
     # Display assistant message in chat message container
     with st.chat_message("assistant"):
-        bot_stream = assistant.run(prompt)
-        response = st.write_stream(bot_stream)
+        # Call the assistant API
+        response = st.write_stream(run(prompt))
 
     # Add assistant message to chat history
     st.session_state.messages.append({"role": "assistant", "content": response})

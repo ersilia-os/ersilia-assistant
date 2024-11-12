@@ -33,6 +33,10 @@ class ErsiliaAssistant:
         ):
             yield token
 
+        # TODO Also very hacky. Need a better way to clear state/instantiate the assistant
+        del self.model_selector.selected_models
+        del self.model_selector.selected_nodes
+
     def run(self, query: str):
         relevant_query = llm_filter(query)
         if not relevant_query:
