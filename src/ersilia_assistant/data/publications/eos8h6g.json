@@ -1,0 +1,25 @@
+{
+    "title": "QSAR: How Good Is It in Practice? Comparison of Descriptor Sets on an Unbiased Cross Section of Corporate Data Sets",
+    "authors": "P. Gedeck, B. Rohde, C. Bartels",
+    "journal": "Journal of Chemical Information and Modeling",
+    "year": 2006,
+    "suggested_slug": "qsar-descriptors-comparison",
+    "suggested_computational_title": "Descriptor set comparison for QSAR model quality assessment",
+    "tldr": "The study evaluates QSAR prediction quality using various descriptor sets and data characteristics with partial least squares modeling.",
+    "summary": "The publication examines the quality of QSAR (Quantitative Structure-Activity Relationship) predictions, focusing on the influence of data sets and descriptor types. The study uses partial least squares (PLS) as the statistical modeling method, analyzing nearly 1000 data sets from Novartis's corporate data warehouse. These data sets cover a wide range of biological activities and sizes. Nine different QSAR descriptor sets were utilized to build models, with predictive power assessed using training and independent test sets. The study concludes that QSAR prediction quality depends on both data set size and descriptors, with larger data sets and diverse biological activities generally yielding better predictions. No single descriptor consistently outperformed others across all data sets, highlighting the need for case-by-case evaluation. Generally, 2D fragment-based descriptors were more effective than simpler descriptors.",
+    "relevance_to_biomedical_research": "The publication is relevant to biomedicine and drug discovery as it examines QSAR models' efficacy, crucial for predicting biological activities of compounds in drug development. The study's insights into descriptor sets and data characteristics can enhance the QSAR models' predictive accuracy, benefiting the drug discovery pipeline.",
+    "computational_methods": "The study employs partial least squares (PLS) modeling to evaluate QSAR prediction accuracy across various descriptor sets. Nine descriptor types were assessed, ranging from 2D atom-based fingerprints to 3D alignment-free descriptors. Data sets were divided into training and test sets using interpolation and extrapolation approaches. Predictive quality was measured using r_pred^2, r_corr^2, and RMSE. Over 944 data sets and 17,000 QSAR models were analyzed, showing varied descriptor performance and emphasizing the need for tailored model selection based on data set characteristics.",
+    "biomedical_keywords": [
+        "QSAR",
+        "Drug discovery",
+        "Biological activity"
+    ],
+    "computational_keywords": [
+        "Partial least squares",
+        "Descriptor sets",
+        "Predictive modeling"
+    ],
+    "strengths": "The study provides a thorough evaluation of QSAR descriptor sets across diverse data sets, offering insights into factors affecting predictive accuracy. The use of multiple descriptor types and modeling strategies enhances robustness and practical guidance for optimizing QSAR models in drug discovery.",
+    "limitations": "The study uses a single statistical method (PLS), which may not capture nonlinear relationships. Reliance on automatically selected molecular conformations for 3D descriptors might have impacted performance. More diverse or external data sources could further validate findings.",
+    "overall_relevance": "The publication is of medium to high relevance in QSAR modeling and drug discovery. Its systematic comparison of descriptor sets provides insights into model quality optimization. However, reliance on a single modeling approach and limited nonlinear method exploration may limit impact."
+}

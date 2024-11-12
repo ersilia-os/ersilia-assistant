@@ -1,0 +1,25 @@
+{
+    "title": "Artificial intelligence uncovers carcinogenic human metabolites",
+    "authors": "A. Mittal, S. K. Mohanty, V. Gautam, S. Arora, S. Saproo, R. Gupta, R. Sivakumar, P. Garg, A. Aggarwal, P. Raghavachary, N. K. Dixit, V. P. Singh, A. Mehta, J. Tayal, S. Naidu, D. Sengupta, G. Ahuja",
+    "journal": "Nature Chemical Biology",
+    "year": 2022,
+    "suggested_slug": "metabokiller-carcinogen-prediction",
+    "suggested_computational_title": "Metabokiller, ensemble classifier for carcinogenicity prediction",
+    "tldr": "Metabokiller is an AI tool predicting carcinogenic human metabolites by assessing biochemical properties, outperforming methods, and confirming with experimental validation.",
+    "summary": "The study introduces Metabokiller, an ensemble classifier designed to predict carcinogenic human metabolites by evaluating six biochemical properties: electrophilicity, proliferation induction, oxidative stress response, genomic instability, epigenetic alterations, and anti-apoptotic response. The tool uses a combination of machine learning models including random forest, support vector machine, and multilayer perceptrons. Metabokiller demonstrated superior performance compared to existing QSAR models by accurately predicting carcinogenic potential in a diverse set of compounds. The model's predictions were validated using functional assays and RNA sequencing in yeast and human cells, confirming the carcinogenic properties of metabolites like 4-nitrocatechol and 3,4-dihydroxyphenylacetic acid. The study underscores the importance of integrating biochemical properties for improved carcinogenicity prediction and provides insights into potential endogenous metabolic threats.",
+    "relevance_to_biomedical_research": "The publication is highly relevant to biomedical research, particularly in cancer prevention and drug safety evaluation. Carcinogenicity prediction is crucial in identifying harmful compounds that could lead to cancer, thus reducing potential health risks.",
+    "computational_methods": "Metabokiller employs an ensemble classification approach integrating six independent models based on distinct biochemical properties linked to carcinogenicity. These models use various machine learning techniques, including random forest, support vector machine, and multilayer perceptron, with features derived from chemical descriptors and graph-based representations.",
+    "biomedical_keywords": [
+        "Carcinogenicity",
+        "Metabolites",
+        "Cancer prevention"
+    ],
+    "computational_keywords": [
+        "Ensemble classifier",
+        "Biochemical properties",
+        "Machine learning models"
+    ],
+    "strengths": "The publication presents a novel, interpretable AI-based model, Metabokiller, that predicts carcinogenicity with high precision and recall by integrating multiple biochemical properties. It outperforms existing methods by addressing the limitations of relying solely on genotoxicity.",
+    "limitations": "The study does not account for dosage-dependent carcinogenicity or potential carcinogenic transformation by cellular enzymes. The model does not incorporate properties like chronic inflammation or tissue specificity.",
+    "overall_relevance": "The publication is of high relevance, offering a significant advancement in carcinogenicity prediction. The integration of diverse biochemical properties and the development of an interpretable AI model represent a novel approach in the field."
+}

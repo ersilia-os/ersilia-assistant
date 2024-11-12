@@ -1,0 +1,25 @@
+{
+    "title": "Early Antischistosomal Leads Identified from In Vitro and In Vivo Screening of the Medicines for Malaria Venture Pathogen Box",
+    "authors": "V. Pasche, B. Laleu, J. Keiser",
+    "journal": "ACS Infectious Diseases",
+    "year": 2018,
+    "suggested_slug": "antischistosomal-leads-pathogen-box",
+    "suggested_computational_title": "Pathogen Box screening for antischistosomal drug discovery",
+    "tldr": "Screening of the Medicines for Malaria Venture Pathogen Box revealed new potential antischistosomal leads, providing a basis for alternative treatments to praziquantel.",
+    "summary": "The study aimed to identify new antischistosomal drug leads from the Medicines for Malaria Venture Pathogen Box, comprising 400 drug-like molecules. Initial screening was performed in vitro on the larval stage of Schistosoma mansoni, identifying 43 active compounds. These were further tested on adult worms, leading to the identification of 11 leads. Structure-activity relationship analysis of 112 analogues of three leads yielded 30 additional compounds with activity against both larval and adult stages. Selected leads were evaluated in vivo in mice with chronic S. mansoni infections, with MMV022029 and MMV022478 showing the highest worm burden reductions. The study provides new scaffolds for the development of alternative treatments to praziquantel, the sole drug currently used in schistosomiasis control programs.",
+    "relevance_to_biomedical_research": "This publication is relevant as it addresses the need for new antischistosomal drugs, given the potential resistance to praziquantel. The new leads identified could enhance the drug discovery pipeline for this neglected tropical disease.",
+    "computational_methods": "The study utilized high-throughput screening of the Pathogen Box, a library of 400 drug-like molecules, using in vitro assays on Schistosoma mansoni larvae and adult worms. The screening identified active compounds, which underwent structure-activity relationship analysis to explore chemical modifications enhancing antischistosomal activity. No specific AI or ML methods were used, but the results provide a foundation for further drug optimization.",
+    "biomedical_keywords": [
+        "Schistosomiasis",
+        "Anthelminthics",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "High-throughput screening",
+        "Structure-activity relationship",
+        "Pathogen Box"
+    ],
+    "strengths": "The strength lies in identifying new antischistosomal leads using the Pathogen Box. The combination of in vitro and in vivo assays and structure-activity relationship studies offers promising alternatives to praziquantel.",
+    "limitations": "A limitation is the moderate in vivo efficacy of the identified leads, indicating a need for further optimization. The study does not provide detailed mechanistic insights into the compounds' modes of action.",
+    "overall_relevance": "The publication holds medium relevance as it addresses a gap in drug discovery for schistosomiasis. While not novel, the identification of new leads is valuable, and further optimization could enhance its impact."
+}

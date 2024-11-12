@@ -1,0 +1,25 @@
+{
+    "title": "Minimal-uncertainty prediction of general drug-likeness based on Bayesian neural networks",
+    "authors": "W. Beker, A. Wo\u0142os, S. Szymku\u0107, B.A. Grzybowski",
+    "journal": "Nature Machine Intelligence",
+    "year": 2020,
+    "suggested_slug": "bayesian-drug-likeness-prediction",
+    "suggested_computational_title": "Bayesian neural networks for drug-likeness prediction",
+    "tldr": "A Bayesian neural network model predicts drug-likeness with up to 93% accuracy, outperforming traditional methods and highlighting the influence of dataset composition on model efficacy.",
+    "summary": "The publication explores the application of various AI models, including multilayer perceptrons, graph convolutional neural networks, and autoencoders, for the prediction of drug-likeness. The study assesses these models using different molecular descriptors and highlights the limitations of traditional metrics like QED. The research demonstrates that a Bayesian approach, by addressing prediction errors, can combine multiple classifiers to achieve a drug-likeness prediction accuracy of up to 93%. The study uses FDA-approved drugs as the positive dataset and various sources for non-drug molecules as the negative dataset, balancing them for effective model training. A significant finding is that the choice of negative dataset impacts model accuracy, suggesting the use of ZINC as a reliable source of non-drug-like molecules. Despite the advancements, the study acknowledges challenges such as the need for a standardized negative dataset and the potential for nonsensical predictions when training data is sparse.",
+    "relevance_to_biomedical_research": "This publication is crucial for drug discovery as it addresses the challenge of predicting drug-likeness, a key step in triaging potential therapeutic compounds early in the drug development pipeline.",
+    "computational_methods": "The study employs AI models like multilayer perceptrons, graph convolutional neural networks, and autoencoders, using descriptors like RDKit, Mold2, ECFP4 fingerprints, and maximum common substructures. A Bayesian neural network approach is used to quantify prediction uncertainties, separating aleatoric and epistemic errors.",
+    "biomedical_keywords": [
+        "Drug-likeness",
+        "Medicinal chemistry",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Bayesian neural networks",
+        "Graph convolutional networks",
+        "Autoencoders"
+    ],
+    "strengths": "The publication effectively demonstrates the superiority of AI models, specifically Bayesian neural networks, over traditional drug-likeness metrics like QED.",
+    "limitations": "The study acknowledges the limitations in choosing negative datasets, which significantly impact prediction accuracy. The reliance on existing drug datasets and potential for nonsensical predictions due to sparse data are highlighted as concerns.",
+    "overall_relevance": "The publication is of medium to high relevance in the field of drug discovery, offering an improved computational approach to predict drug-likeness."
+}

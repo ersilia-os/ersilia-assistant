@@ -1,0 +1,25 @@
+{
+    "title": "Out-of-the-box deep learning prediction of pharmaceutical properties by broadly learned knowledge-based molecular representations",
+    "authors": "W. X. Shen, X. Zeng, F. Zhu, Y. L. Wang, C. Qin, Y. Tan, Y. Y. Jiang, Y. Z. Chen",
+    "journal": "Nature Machine Intelligence",
+    "year": 2021,
+    "suggested_slug": "molmap-pharmaceutical-prediction",
+    "suggested_computational_title": "MolMapNet, automated deep learning for pharmaceutical properties",
+    "tldr": "MolMapNet utilizes MolMap to map molecular descriptors into 2D feature maps, improving predictions of pharmaceutical properties across datasets.",
+    "summary": "The publication presents MolMap, a feature-generation method that translates molecular descriptors and fingerprints into two-dimensional feature maps for deep learning applications. MolMap was trained on a vast dataset of over 8.5 million molecules, using 1,456 molecular descriptors and 16,204 fingerprint features. The authors developed MolMapNet, a convolutional neural network (CNN) architecture for out-of-the-box (OOTB) deep learning of pharmaceutical properties. MolMapNet was evaluated on 26 public benchmark datasets, covering pharmaceutical and physicochemical properties, and outperformed state-of-the-art models on many datasets. The approach leverages human expert knowledge to create robust molecular representations, enabling more efficient and effective learning of pharmaceutical properties. The MolMap and MolMapNet libraries are available as open-source tools, facilitating broader use and adoption in the field.",
+    "relevance_to_biomedical_research": "This publication is relevant to biomedicine as it enhances the prediction of pharmaceutical properties, a critical aspect of drug discovery. By integrating expert knowledge with deep learning, MolMapNet can improve predictions in various stages of drug development.",
+    "computational_methods": "MolMapNet uses MolMap to convert molecular descriptors and fingerprint features into 2D feature maps, which are processed by a CNN architecture. The CNN is designed for OOTB learning, requiring no user-specific tuning. Input features are broadly learned from a dataset of over 8.5 million molecules. Performance is measured using standard metrics like RMSE for regression and ROC-AUC for classification.",
+    "biomedical_keywords": [
+        "Pharmaceutical properties",
+        "Drug discovery",
+        "Molecular descriptors"
+    ],
+    "computational_keywords": [
+        "MolMap",
+        "Convolutional neural network",
+        "Feature maps"
+    ],
+    "strengths": "The main strength is the development of MolMap, which translates molecular descriptors into 2D feature maps, enhancing deep learning models like MolMapNet. Its OOTB design simplifies learning, making it accessible to diverse prediction tasks.",
+    "limitations": "A limitation is MolMapNet's underperformance on physicochemical datasets compared to graph-based models, due to intrinsic errors in descriptors. Reliance on human knowledge may limit novel feature discovery.",
+    "overall_relevance": "The publication holds medium to high relevance in computational drug discovery. MolMapNet offers improvements over existing models, especially on pharmaceutical datasets, although reliance on human-derived features slightly reduces impact."
+}

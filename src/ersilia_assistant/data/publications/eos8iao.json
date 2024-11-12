@@ -1,0 +1,25 @@
+{
+    "title": "Natural Product-likeness Score and Its Application for Prioritization of Compound Libraries",
+    "authors": "P. Ertl, S. Roggo, A. Schuffenhauer",
+    "journal": "Journal of Chemical Information and Modeling",
+    "year": 2008,
+    "suggested_slug": "natural-product-likeness-score",
+    "suggested_computational_title": "Natural product-likeness score for compound prioritization",
+    "tldr": "A Bayesian measure, the natural product-likeness score, is introduced to assess how molecules resemble natural products, aiding in compound library prioritization and virtual screening.",
+    "summary": "The publication presents a method to calculate a natural product-likeness score, which quantifies the similarity of molecules to natural products (NPs). This score leverages Bayesian statistics to effectively distinguish NPs from synthetic molecules based on structural features. The development process involved analyzing a large dataset of NPs to identify unique substructures distinguishing them from synthetic compounds. The score is shown to efficiently prioritize compound libraries for NP-likeness, aiding in virtual screening and the design of NP-like combinatorial libraries. Validation through cross-validation experiments demonstrated high predictivity, with an area under the ROC curve of 0.977. Potential applications include the automatic design of NP-like molecules and prioritization in high-throughput screening.",
+    "relevance_to_biomedical_research": "Natural products play a crucial role in drug discovery due to their bioactivity and structural diversity. The natural product-likeness score aids in identifying synthetic molecules that resemble these bioactive NPs, thus enhancing the discovery of novel therapeutics.",
+    "computational_methods": "The study employs a Bayesian measure for calculating the natural product-likeness score, focusing on atom-centered fragments to characterize molecular structures. The input consists of molecular structural features, while the output is a score indicating the probability of a molecule being NP-like. The method uses a large reference dataset from the CRC Dictionary of Natural Products and synthetic molecules from an in-house collection. Cross-validation results show excellent prediction accuracy, with an area under the ROC curve of 0.977.",
+    "biomedical_keywords": [
+        "Natural products",
+        "Drug discovery",
+        "Compound libraries"
+    ],
+    "computational_keywords": [
+        "Bayesian measure",
+        "Structural analysis",
+        "Atom-centered fragments"
+    ],
+    "strengths": "The publication introduces a robust Bayesian method for assessing NP-likeness, demonstrating high accuracy in distinguishing natural products from synthetic molecules. The use of a large reference dataset and cross-validation ensures reliability.",
+    "limitations": "The method relies on the structural features present in the NP dataset, potentially limiting its applicability to novel scaffolds not represented in the training data. The score does not directly predict bioactivity, requiring further validation for specific targets.",
+    "overall_relevance": "The publication holds medium to high relevance due to its novel approach to assessing NP-likeness, which is crucial for drug discovery. The method's high accuracy and practical applications enhance its impact."
+}

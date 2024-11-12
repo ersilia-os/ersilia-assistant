@@ -1,0 +1,25 @@
+{
+    "title": "Extended-Connectivity Fingerprints",
+    "authors": "D. Rogers, M. Hahn",
+    "journal": "Journal of Chemical Information and Modeling",
+    "year": 2010,
+    "suggested_slug": "extended-connectivity-fingerprints",
+    "suggested_computational_title": "ecfps-for-molecular-characterization",
+    "tldr": "ECFPs are topological fingerprints for molecular activity modeling, providing rapid calculation and infinite molecular feature representation.",
+    "summary": "Extended-Connectivity Fingerprints (ECFPs) are a novel class of molecular fingerprints developed to enhance structure-activity modeling. Unlike traditional topological fingerprints, ECFPs are not predefined and can represent a vast array of molecular features, including stereochemistry, through a circular fingerprint format. These fingerprints are generated using a modified version of the Morgan algorithm, which assigns unique numeric identifiers to atoms based on their connectivity and environment. The ECFP algorithm iterates a set number of times, collecting all identifiers into a fingerprint set rather than achieving complete uniqueness. This method allows ECFPs to capture detailed molecular substructures, making them suitable for various applications like similarity searching, clustering, and virtual screening. ECFPs have been widely adopted and validated for drug discovery and are particularly useful in analyzing molecular activity by identifying both present and absent structural features.",
+    "relevance_to_biomedical_research": "ECFPs are highly relevant to drug discovery, offering robust molecular characterization and activity prediction. They aid in lead optimization, virtual screening, and structure-activity modeling, crucial for discovering new therapeutics.",
+    "computational_methods": "ECFPs utilize a variant of the Morgan algorithm to generate molecular fingerprints. The process involves assigning numeric identifiers to atoms, updating these iteratively based on neighboring atoms, and compiling results into a fingerprint set. Unlike methods seeking complete uniqueness, ECFPs terminate after a set number of iterations, allowing flexibility and faster computation. The fingerprints, represented as hashed identifiers, capture intricate substructural information, enabling molecular feature analysis relevant to activity. ECFPs are effective in high-dimensional data environments, offering a rich feature set for molecular activity prediction.",
+    "biomedical_keywords": [
+        "Molecular activity modeling",
+        "Drug discovery",
+        "Structure-activity relationship"
+    ],
+    "computational_keywords": [
+        "Extended-Connectivity Fingerprints",
+        "Morgan algorithm",
+        "Substructure identification"
+    ],
+    "strengths": "ECFPs offer a flexible, rapid method for generating molecular fingerprints, capturing a range of structural features without predefined keys. Their adaptability enhances utility in virtual screening and clustering, aiding early drug discovery.",
+    "limitations": "ECFPs might face challenges with structural disambiguation due to iteration limits, potentially causing information loss. Hashing may result in identifier collisions, affecting accuracy, and they lack direct 3D structural representation.",
+    "overall_relevance": "The publication on ECFPs holds medium to high relevance in computational chemistry and drug discovery, offering advancements over traditional methods. However, their lack of direct 3D representation may limit their application scope."
+}

@@ -1,0 +1,25 @@
+{
+    "title": "Medicinal Chemistry Aware Database GDBMedChem",
+    "authors": "M. Awale, F. Sirockin, N. Stiefl, J.L. Reymond",
+    "journal": "Molecular Informatics",
+    "year": 2019,
+    "suggested_slug": "gdbmedchem-chemistry-database",
+    "suggested_computational_title": "GDBMedChem, a medicinal chemistry-focused molecular database",
+    "tldr": "A medicinal chemistry-focused subset of 10 million molecules, GDBMedChem, was developed from GDB17, enhancing synthetic accessibility and structural diversity for drug design.",
+    "summary": "GDBMedChem is a newly curated database of 10 million small molecules, derived from the larger GDB17 database, which originally contained 166.4 billion possible molecules. The selection process for GDBMedChem involved applying medicinal chemistry criteria to exclude problematic functional groups and complex structures, thus enhancing synthetic feasibility. The database was uniformly sampled across molecular size, stereochemistry, and polarity to create a diverse collection that retains higher sp3-carbon fractions and natural product likeness compared to known drugs. GDBMedChem is positioned as a valuable resource for drug design, offering unprecedented diversity and distinct substructures compared to existing molecular databases. The database is accessible for 3D-visualization, similarity searching, and download, providing a comprehensive tool for medicinal chemists to explore novel chemical spaces.",
+    "relevance_to_biomedical_research": "GDBMedChem is highly relevant to drug discovery as it offers a unique set of 10 million drug-like molecules curated with medicinal chemistry criteria. This database provides a valuable resource for designing new drugs, particularly in early-stage drug discovery, by offering structurally diverse and synthetically accessible molecules.",
+    "computational_methods": "The development of GDBMedChem involved filtering GDB17 using medicinal chemistry-inspired rules to exclude undesirable functional groups and complex molecular structures. This process reduced GDB17 by 86%, resulting in 17.8 billion molecules, before sampling down to 10 million. The database was sampled uniformly across size, stereochemistry, and polarity using PySpark for efficient data handling. Structural descriptors such as heavy atom count, stereocenters, and heteroatoms were used for binning molecules. The resulting dataset provides molecules in SMILES format, ready for various applications including similarity searches.",
+    "biomedical_keywords": [
+        "Drug design",
+        "Medicinal chemistry",
+        "Small molecules"
+    ],
+    "computational_keywords": [
+        "Molecular database",
+        "Structural diversity",
+        "Synthetic accessibility"
+    ],
+    "strengths": "The strength of this publication lies in its systematic approach to creating a medicinal chemistry-focused database from a vast chemical space. GDBMedChem offers enhanced synthetic accessibility and medicinal relevance, making it a valuable resource for drug discovery.",
+    "limitations": "One limitation is that while GDBMedChem increases synthetic feasibility, the database still includes many molecules that are not yet experimentally validated. The filtering and sampling process may exclude interesting molecules due to rigid criteria.",
+    "overall_relevance": "GDBMedChem is of high relevance to the field of drug discovery due to its comprehensive approach to curating a large set of structurally diverse, drug-like molecules. The novelty lies in the application of medicinal chemistry criteria, providing a unique resource for early-stage drug development."
+}

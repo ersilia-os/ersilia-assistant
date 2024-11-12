@@ -1,0 +1,25 @@
+{
+    "title": "Medicinal Chemistry Aware Database GDBMedChem",
+    "authors": "M. Awale, F. Sirockin, N. Stiefl, J.-L. Reymond",
+    "journal": "Molecular Informatics",
+    "year": 2019,
+    "suggested_slug": "gdbmedchem-database",
+    "suggested_computational_title": "GDBMedChem, a diverse small molecule database",
+    "tldr": "GDBMedChem is a curated database of 10 million small molecules optimized for medicinal chemistry, offering a diverse source for drug design.",
+    "summary": "The publication introduces GDBMedChem, a database derived from the GDB17 collection, which enumerates 166.4 billion possible molecules. GDBMedChem comprises 10 million small molecules selected for their suitability in medicinal chemistry by filtering out problematic functional groups and complex structures from GDB17. This database retains a high sp3-carbon fraction and natural product likeness compared to known drugs. It offers a novel and diverse source of molecular structures for drug design, featuring molecules that are more diverse than those in existing chemical databases. GDBMedChem is accessible for 3D visualization, similarity searching, and download, providing researchers with a valuable resource to explore new chemical spaces in drug discovery.",
+    "relevance_to_biomedical_research": "GDBMedChem is highly relevant to biomedical research as it provides a vast and diverse chemical space for drug discovery. The database focuses on molecules with structural features favorable for medicinal chemistry, enhancing the potential for identifying novel drug candidates.",
+    "computational_methods": "The development of GDBMedChem involved computational filtering of GDB17 using structural rules inspired by medicinal chemistry. These filters removed undesirable functional groups and reduced structural complexity, resulting in a subset emphasizing drug-like properties. The database was uniformly sampled across molecular size, stereochemistry, and polarity to ensure diversity.",
+    "biomedical_keywords": [
+        "Medicinal Chemistry",
+        "Drug Design",
+        "Small Molecules"
+    ],
+    "computational_keywords": [
+        "Database Filtering",
+        "Molecular Diversity",
+        "Chemical Space Exploration"
+    ],
+    "strengths": "GDBMedChem's strength lies in its meticulous curation to suit medicinal chemistry needs, providing a rich source of diverse and novel molecular structures. The database's focus on drug-like properties, while retaining structural diversity, makes it an invaluable resource.",
+    "limitations": "A limitation of GDBMedChem is that while it excludes problematic functional groups, the synthetic accessibility of its molecules is still lower compared to known compounds. The database's reliance on computational filters may overlook subtle chemical properties.",
+    "overall_relevance": "GDBMedChem holds medium to high relevance in the field due to its novel approach to database curation, aligning with medicinal chemistry principles. The publication contributes significantly to expanding the chemical space available for drug discovery."
+}

@@ -1,0 +1,25 @@
+{
+    "title": "Coloring Molecules with Explainable Artificial Intelligence for Preclinical Relevance Assessment",
+    "authors": "J. Jim\u00e9nez-Luna, M. Skalic, N. Weskamp, G. Schneider",
+    "journal": "Journal of Chemical Information and Modeling",
+    "year": 2021,
+    "suggested_slug": "coloring-molecules-with-xai",
+    "suggested_computational_title": "Explainable AI in drug discovery using integrated gradients",
+    "tldr": "The study applies integrated gradients explainable AI to graph neural networks for drug discovery, highlighting molecular features and improving model interpretability.",
+    "summary": "This publication explores the use of integrated gradients, an explainable artificial intelligence (XAI) method, applied to graph neural networks (GNNs) for drug discovery tasks such as molecular property prediction. The study focuses on improving the interpretability of these models, which are often seen as black boxes. The authors trained models on datasets to predict plasma protein binding, hERG channel inhibition, passive permeability, and cytochrome P450 inhibition. The XAI approach successfully highlighted molecular features aligning with known pharmacophore motifs, identified property cliffs, and provided insights into non-specific ligand-target interactions. The methodology is open-sourced, allowing practitioners to train new models on additional clinically relevant endpoints. By enhancing model transparency, this work aims to facilitate rational molecular design and improve decision-making in drug discovery processes.",
+    "relevance_to_biomedical_research": "The publication is highly relevant to drug discovery, addressing the challenge of model interpretability in machine learning for predicting pharmacological endpoints. By utilizing explainable AI, it enhances the drug development pipeline.",
+    "computational_methods": "The study employs graph neural networks (GNNs) enhanced with integrated gradients, an explainable AI framework, to improve model interpretability in predicting drug properties. Models were trained on datasets for various pharmacological properties, with feature attribution identifying important molecular substructures. Evaluation was through cross-validation, with correlation coefficients and error rates indicating reasonable accuracy.",
+    "biomedical_keywords": [
+        "Plasma protein binding",
+        "hERG channel inhibition",
+        "Cytochrome P450 inhibition"
+    ],
+    "computational_keywords": [
+        "Graph neural networks",
+        "Integrated gradients",
+        "Explainable AI"
+    ],
+    "strengths": "The publication introduces integrated gradients to improve GNN interpretability in drug discovery. Its open-source nature enhances accessibility and reproducibility, allowing adaptation for specific needs.",
+    "limitations": "The study faces limitations such as multicollinearity affecting feature attribution accuracy and dataset size and diversity limiting molecular pattern capture. Lack of quantitative benchmarks for XAI evaluation in chemistry poses challenges.",
+    "overall_relevance": "The publication is of medium to high relevance, offering a novel perspective on model interpretability using XAI in drug discovery. It addresses a crucial gap in understanding ML models, enhancing acceptance and utility in real-world settings."
+}

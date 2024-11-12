@@ -1,0 +1,25 @@
+{
+    "title": "IDL-PPBopt: A Strategy for Prediction and Optimization of Human Plasma Protein Binding of Compounds via an Interpretable Deep Learning Method",
+    "authors": "C. Lou, H. Yang, J. Wang, M. Huang, W. Li, G. Liu, P. W. Lee, Y. Tang",
+    "journal": "Journal of Chemical Information and Modeling",
+    "year": 2022,
+    "suggested_slug": "idl-ppbopt-plasma-protein-binding",
+    "suggested_computational_title": "IDL-PPBopt, plasma protein binding optimization using interpretable deep learning",
+    "tldr": "IDL-PPBopt uses interpretable deep learning to predict and optimize plasma protein binding of compounds, aiding in lead optimization.",
+    "summary": "The paper introduces IDL-PPBopt, a computational approach using interpretable deep learning to predict and optimize plasma protein binding (PPB) properties of drug compounds. Traditional methods rely on empirical rules, which are less feasible due to increasing data complexity. IDL-PPBopt constructs a deep learning model using a curated PPB dataset, achieving a root mean squared error of 0.112 on the test set. The model identifies privileged substructures related to PPB and derives chemical rules to guide structural modifications for optimizing PPB. This approach has potential for broader lead optimization in drug discovery by offering specific structural modification schemes, overcoming limitations of traditional QSAR models and matched molecular pair analysis.",
+    "relevance_to_biomedical_research": "The publication is relevant to biomedicine as it addresses plasma protein binding, a crucial pharmacokinetic property affecting drug absorption, distribution, metabolism, and excretion (ADME). Optimizing PPB can improve drug efficacy and safety.",
+    "computational_methods": "The study employs an interpretable deep learning method, utilizing the Attentive FP algorithm, a graph neural network with attention mechanisms. The input comprises molecular structures, and the output predicts PPB fractions with high accuracy (RMSE of 0.112). The model identifies privileged substructures critical for PPB, using a detection protocol based on the Wilcoxon test. The training dataset consists of 3136 compounds, with validation and test sets containing 392 and 393 compounds, respectively.",
+    "biomedical_keywords": [
+        "Plasma Protein Binding",
+        "Pharmacokinetics",
+        "Drug Discovery"
+    ],
+    "computational_keywords": [
+        "Interpretable Deep Learning",
+        "Graph Neural Network",
+        "Structure Optimization"
+    ],
+    "strengths": "The publication's strength lies in its novel use of interpretable deep learning to predict and optimize plasma protein binding. It provides actionable insights for structural modifications, enhancing lead optimization efficiency.",
+    "limitations": "The study's limitations include its focus on interactions between two substructures, which may not capture full chemical complexity. The reliance on a single dataset may limit generalizability across diverse chemical spaces.",
+    "overall_relevance": "The publication holds medium to high relevance due to its innovative application in pharmacokinetics. Its novelty and potential to streamline lead optimization contribute to its impact, although broader validation is needed."
+}

@@ -1,0 +1,25 @@
+{
+    "title": "Out-of-the-box deep learning prediction of pharmaceutical properties by broadly learned knowledge-based molecular representations",
+    "authors": "W. X. Shen, X. Zeng, F. Zhu, Y. L. Wang, C. Qin, Y. Tan, Y. Y. Jiang, Y. Z. Chen",
+    "journal": "Nature Machine Intelligence",
+    "year": 2021,
+    "suggested_slug": "molmap-pharmaceutical-prediction",
+    "suggested_computational_title": "MolMap, molecular feature generation for pharmaceutical property prediction",
+    "tldr": "MolMap is a feature-generation method using 2D clustered feature maps for deep learning of pharmaceutical properties, outperforming graph-based models.",
+    "summary": "The paper introduces MolMap, a novel molecular feature-generation method that converts molecular descriptors and fingerprint features into robust two-dimensional feature maps (Fmaps) for deep learning applications in pharmaceuticals. MolMap leverages a large dataset of 8,506,205 molecules, with 1,456 molecular descriptors and 16,204 fingerprint features to create these feature maps. A convolutional neural network architecture, MolMapNet, is developed to facilitate out-of-the-box deep learning of various pharmaceutical and physicochemical properties across 26 benchmark datasets. MolMapNet demonstrates superior performance compared to state-of-the-art graph-based models in predicting pharmaceutical properties, although it underperforms in physicochemical tasks. The research highlights the significance of human-knowledge-based molecular representations in enhancing deep learning models for pharmaceutical property prediction.",
+    "relevance_to_biomedical_research": "This publication is relevant as it provides a novel approach to predicting pharmaceutical properties using deep learning, which is crucial for drug discovery. By enhancing the understanding of molecular representations, MolMap can aid in the prediction of bioactivity, toxicity, and pharmacokinetic properties, which are essential stages in the drug discovery pipeline.",
+    "computational_methods": "MolMap employs a method to convert molecular descriptors and fingerprint features into two-dimensional feature maps, which are then used as input for convolutional neural networks (CNNs) in MolMapNet. The input consists of 1,456 molecular descriptors and 16,204 fingerprint features from a dataset of over 8.5 million molecules. The CNN architecture enables automated learning without manual intervention, achieving competitive results in pharmaceutical property prediction but less so in physicochemical tasks.",
+    "biomedical_keywords": [
+        "Pharmaceutical properties",
+        "Drug discovery",
+        "Bioactivity"
+    ],
+    "computational_keywords": [
+        "MolMap",
+        "Convolutional neural networks",
+        "Feature generation"
+    ],
+    "strengths": "MolMap's integration of extensive human-knowledge-based molecular descriptors and fingerprint features into a deep learning framework represents a significant advancement in pharmaceutical property prediction. The method's ability to outperform existing graph-based models on pharmaceutical datasets demonstrates its potential for enhancing drug discovery processes.",
+    "limitations": "The publication's limitations include its underperformance in predicting physicochemical properties compared to graph-based models. This may be due to intrinsic errors in computed molecular descriptors used by MolMapNet.",
+    "overall_relevance": "The publication holds medium to high relevance in the field of pharmaceutical data science due to its novel approach to feature generation and its competitive performance against established models. The contribution of MolMap to the understanding and application of molecular representations in deep learning is a valuable addition to the field."
+}

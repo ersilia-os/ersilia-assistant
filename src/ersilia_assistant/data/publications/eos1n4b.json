@@ -1,0 +1,25 @@
+{
+    "title": "HDAC3i-Finder: A Machine Learning-based Computational Tool to Screen for HDAC3 Inhibitors",
+    "authors": "S. Li, Y. Ding, M. Chen, Y. Chen, J. Kirchmair, Z. Zhu, S. Wu, J. Xia",
+    "journal": "Molecular Informatics",
+    "year": 2023,
+    "suggested_slug": "hdac3i-finder-hdac3-inhibitors",
+    "suggested_computational_title": "HDAC3i-Finder, HDAC3 inhibitor identification using ML",
+    "tldr": "HDAC3i-Finder is a machine learning tool developed to screen compounds for HDAC3 inhibitors with high accuracy using ChEMBL data and molecular descriptors.",
+    "summary": "The publication introduces HDAC3i-Finder, a tool employing machine learning to identify Histone deacetylase 3 (HDAC3) inhibitors, crucial in treating cancer and neurodegenerative disorders. Utilizing a 1098-compound dataset from ChEMBL, three feature sets\u2014Mordred descriptors, MACCS keys, and Morgan2 fingerprints\u2014were calculated. Five classifiers were evaluated, with XGBoost using Morgan2 fingerprints performing best. It achieved high early ROC enrichment, identifying novel inhibitors with minimal compound screening. A Python GUI application was developed for prospective screening, and the source code is available on GitHub, facilitating drug discovery.",
+    "relevance_to_biomedical_research": "This tool aids drug discovery by identifying HDAC3 inhibitors, vital for diseases like cancer and diabetes. It offers a high-throughput computational method to speed up early-stage drug discovery and identify potential therapeutic compounds efficiently.",
+    "computational_methods": "Machine learning algorithms like k-Nearest Neighbour, Support Vector Machine, Random Forest, XGBoost, and Deep Neural Network were used to classify HDAC3 inhibitors. Features included Mordred descriptors, MACCS keys, and Morgan2 fingerprints. XGBoost with Morgan2 fingerprints excelled in accuracy and early ROC enrichment. The 1098-compound dataset was split for training, testing, and external validation. Y-randomization tests and similarity maps validated results, showing significant enrichment and novel inhibitor identification with reduced screening.",
+    "biomedical_keywords": [
+        "HDAC3 inhibitors",
+        "Cancer",
+        "Neurodegenerative diseases"
+    ],
+    "computational_keywords": [
+        "XGBoost",
+        "ROC enrichment",
+        "Molecular fingerprints"
+    ],
+    "strengths": "The tool's strength lies in its validated, machine learning-driven approach to drug discovery, offering high predictive accuracy and early enrichment. It reduces experimental assay costs and time, proving valuable for large chemical library screening.",
+    "limitations": "The study's limitations include dataset size and potential training data bias. The model's applicability might be restricted to compounds similar to the training set, with decreased performance for structurally diverse compounds. Experimental validation is required for computational predictions.",
+    "overall_relevance": "The tool is of medium to high relevance, offering a novel cheminformatics approach to drug discovery. Its machine learning application for HDAC3 inhibitor identification is significant, though dataset limitations and reliance on computational predictions moderate its impact."
+}

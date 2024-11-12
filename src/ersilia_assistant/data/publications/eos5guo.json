@@ -1,0 +1,25 @@
+{
+    "title": "ErG: 2D Pharmacophore Descriptions for Scaffold Hopping",
+    "authors": "N. Stiefl, I. A. Watson, K. Baumann, A. Zaliani",
+    "journal": "Journal of Chemical Information and Modeling",
+    "year": 2006,
+    "suggested_slug": "erg-2d-pharmacophore-descriptions",
+    "suggested_computational_title": "ErG, scaffold hopping using 2D pharmacophore descriptions",
+    "tldr": "ErG uses pharmacophore-type node descriptions for scaffold hopping, outperforming traditional methods in identifying diverse actives.",
+    "summary": "The publication introduces an extended reduced graph (ErG) approach for scaffold hopping by using pharmacophore-type node descriptions to encode relevant molecular properties. This method is a hybrid of reduced graphs and binding property pairs, with specific modifications to accurately represent pharmacophoric properties, size, and shape of molecules. It demonstrates superior performance compared to traditional DAYLIGHT fingerprints, particularly in identifying structurally diverse actives across 11 activity classes from the MDL Drug Data Report database. The ability of ErG to switch between chemotypes is highlighted, underscoring its effectiveness in scaffold hopping. The paper also addresses potential pitfalls of reduced graph approaches, offering solutions with example structures. The ErG method is shown to be a low-dimensional descriptor vector that allows for fast similarity searches, making it a robust tool for identifying diverse active compounds in large databases.",
+    "relevance_to_biomedical_research": "ErG enhances scaffold hopping, aiding in drug discovery by identifying novel compounds with similar biological activities, potentially speeding up the drug discovery pipeline.",
+    "computational_methods": "The ErG method utilizes a hybrid approach combining reduced graphs and binding property pairs to create a chemically intuitive 2D representation of molecules. It involves the abstraction of molecular features into pharmacophore-type nodes, focusing on H-bonding, hydrophobic endcaps, and aromatic or aliphatic ring systems. The input for ErG is a chemical structure, and the output is a descriptor vector encoding the topological inter-feature distances. The descriptor is small, with 315 entries, and is compared using an algebraic Tanimoto similarity coefficient. The approach was tested on the MDL Drug Data Report database, demonstrating that ErG outperforms DAYLIGHT fingerprints in 10 out of 11 activity classes for scaffold hopping.",
+    "biomedical_keywords": [
+        "Scaffold hopping",
+        "Pharmacophore",
+        "Drug discovery"
+    ],
+    "computational_keywords": [
+        "Reduced graph",
+        "Pharmacophore node",
+        "Similarity search"
+    ],
+    "strengths": "ErG effectively performs scaffold hopping, identifying structurally diverse actives. It combines pharmacophore-type descriptions with reduced graph approaches, resulting in a computationally efficient descriptor.",
+    "limitations": "ErG depends on correct pharmacophoric feature assignment, which may lead to inconsistencies for simple molecules and struggles with peptidic compounds due to linker atoms.",
+    "overall_relevance": "The publication is of medium to high relevance due to its novel approach to scaffold hopping, impacting drug discovery by identifying diverse chemotypes efficiently."
+}

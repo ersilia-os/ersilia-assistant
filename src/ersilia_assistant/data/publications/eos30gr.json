@@ -1,0 +1,25 @@
+{
+    "title": "Deep Learning-Based Prediction of Drug-Induced Cardiotoxicity",
+    "authors": "C. Cai, P. Guo, Y. Zhou, J. Zhou, Q. Wang, F. Zhang, J. Fang, F. Cheng",
+    "journal": "Journal of Chemical Information and Modeling",
+    "year": 2019,
+    "suggested_slug": "deepherg-cardiotoxicity-prediction",
+    "suggested_computational_title": "deephERG, predicting hERG blockers using deep learning",
+    "tldr": "A deep learning model, deephERG, predicts hERG blockers to assess cardiotoxicity risk, outperforming traditional methods and aiding in drug discovery.",
+    "summary": "The study introduces a deep learning model, deephERG, designed to predict the blocking of the human ether-a-go-go-related gene (hERG) channel by small molecules, a key factor in drug-induced cardiotoxicity. The model was trained using a dataset of 7,889 compounds with well-defined hERG blockade activities and diverse chemical structures. Multitask deep neural network models outperformed single-task models and other machine learning methods, achieving an AUC of 0.967 on the validation set. The model identified 29.6% of 1,824 FDA-approved drugs as potential hERG blockers, emphasizing the importance of early risk assessment in drug discovery. The study highlights the utility of deephERG in predicting cardiotoxicity during drug development and postmarketing surveillance, showcasing its application through several case studies validated by clinical reports and experimental evidence.",
+    "relevance_to_biomedical_research": "This publication is highly relevant to biomedicine as it addresses drug-induced cardiotoxicity, a major concern in drug development. The hERG channel blockade is a critical factor in long-QT syndrome and related cardiac risks, leading to the withdrawal of several drugs. Early prediction of hERG blockers is crucial in the drug discovery pipeline to mitigate these risks. The development of deephERG provides an advanced tool for evaluating cardiotoxic potential, enhancing the safety and efficacy of new therapeutic agents.",
+    "computational_methods": "The deephERG model uses a multitask deep neural network approach with three hidden layers to predict hERG channel blockers. The input features are derived from Molecular Operating Environment (MOE) descriptors and Mol2vec descriptors, representing chemical structures and properties. The model is trained on a dataset of 7,889 compounds, with multitask learning allowing for the sharing of information across different tasks to improve generalization. The model achieved an AUC of 0.967 on the validation set, surpassing traditional machine learning methods like SVM, NB, and RF. The output is a probability indicating the likelihood of a compound being a hERG blocker, with an IC50 threshold of 10 \u03bcM used to define blockers.",
+    "biomedical_keywords": [
+        "Cardiotoxicity",
+        "hERG channel",
+        "Drug safety"
+    ],
+    "computational_keywords": [
+        "Multitask deep neural network",
+        "Mol2vec descriptors",
+        "hERG blocker prediction"
+    ],
+    "strengths": "The publication presents a robust deep learning model that significantly improves the prediction of hERG blockers, which are crucial in assessing drug-induced cardiotoxicity. The large and diverse dataset enhances the model\u2019s applicability across different chemical spaces. The multitask DNN approach provides superior performance compared to traditional methods, demonstrating high predictive power and generalization ability. The successful validation of predictions against known data underscores its practical utility in drug discovery.",
+    "limitations": "One limitation is the reliance on a dataset that, despite being large, may still lack comprehensive negative samples, potentially affecting model accuracy. The use of Mol2vec descriptors, although beneficial, might include redundant features. Hyperparameter tuning for deep neural networks is complex, and alternative strategies might improve the model further. Additionally, while the predictions align with existing data, novel predictions still require experimental validation to confirm their accuracy.",
+    "overall_relevance": "The publication holds high relevance due to its novel application of deep learning to predict hERG blockers, addressing a critical aspect of drug safety. The model's high accuracy and superior performance over existing methods mark a significant advancement in computational drug discovery. Published in a reputable journal, it contributes valuable insights into cardiotoxicity prediction, although ongoing validation and improvements are necessary to fully realize its potential impact."
+}

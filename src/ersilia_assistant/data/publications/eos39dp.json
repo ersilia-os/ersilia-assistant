@@ -1,0 +1,25 @@
+{
+    "title": "Pharmacokinetics Profiler (PhaKinPro): Model Development, Validation, and Implementation as a Web Tool for Triaging Compounds with Undesired Pharmacokinetics Profiles",
+    "authors": "M. Rath, J. Wellnitz, H.-J. Martin, C. Melo-Filho, J. E. Hochuli, G. Martins Silva, J.-M. Beasley, M. Travis, Z. L. Sessions, K. I. Popov, A. V. Zakharov, A. Cherkasov, V. Alves, E. N. Muratov, A. Tropsha",
+    "journal": "Journal of Medicinal Chemistry",
+    "year": 2024,
+    "suggested_slug": "phakinpro-pharmacokinetics-web-tool",
+    "suggested_computational_title": "PhaKinPro, pharmacokinetics prediction based on QSAR models",
+    "tldr": "PhaKinPro is a web tool utilizing QSAR models to predict pharmacokinetic properties, aiding in drug candidate prioritization with optimal profiles.",
+    "summary": "The publication introduces PhaKinPro, a computational tool developed to predict pharmacokinetic properties, crucial for drug discovery. Utilizing QSAR models, the tool assesses compounds for 12 major pharmacokinetic endpoints, based on a curated database of over 10,000 unique molecules. The models achieve a correct classification rate above 0.60 and a positive predictive value above 0.50. PhaKinPro is designed to predict pharmacokinetic properties of compounds in DrugBank and the NCATS Inxight Drugs database, helping to deprioritize drug candidates with undesirable profiles early in the drug discovery process. The tool is publicly accessible via a web portal, offering a comprehensive suite of models for pharmacokinetic prediction.",
+    "relevance_to_biomedical_research": "Accurate prediction of pharmacokinetic properties is vital for drug discovery, as inadequate profiles lead to failures in clinical trials. PhaKinPro offers an insilico tool to predict pharmacokinetics early in development, saving time and resources by identifying candidates with unfavorable profiles before experimental testing.",
+    "computational_methods": "The study develops and validates QSAR models for pharmacokinetic endpoints using a database of over 10,000 compounds, achieving a correct classification rate above 0.60 and a positive predictive value above 0.50. Random forest algorithms were used, with models validated through 5-fold cross-validation, predicting properties like plasma half-life and protein binding.",
+    "biomedical_keywords": [
+        "Pharmacokinetics",
+        "Drug discovery",
+        "ADME"
+    ],
+    "computational_keywords": [
+        "QSAR models",
+        "Random forest",
+        "Web tool"
+    ],
+    "strengths": "PhaKinPro provides a suite of validated QSAR models for pharmacokinetics, based on a large dataset. Its user-friendly web tool is accessible for researchers, contributing significantly to compound prioritization in drug discovery.",
+    "limitations": "The robustness of models may be affected by datasets with lower modelability indices, impacting prediction accuracy for certain endpoints. Dependence on public datasets might limit prediction scope, with some models underperforming due to insufficient data.",
+    "overall_relevance": "The publication holds medium to high relevance in pharmacokinetics prediction due to its comprehensive models and accessible web tool. Its impact is enhanced by rigorous data curation and validation, valuable for early-stage drug discovery despite dataset and model accuracy limitations."
+}
