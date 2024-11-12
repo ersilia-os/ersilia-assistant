@@ -1,0 +1,201 @@
+model_ids	query
+eos5smc;eos7pw8;eos7kpb	How can I predict the IC50 for Mycobacterium tuberculosis and Plasmodium falciparum and assess the toxicity and synthetic accessibility of my compounds?
+eos9zw0;eos9f6t;eos4u6p;eos5ecc;eos5axz	How do I identify potential inhibitors of the SARS-3CLpro protease among my compound library using bioactivity signatures and molecular fingerprints?
+eos5505;eos46ev;eos7pw8;eos7yti;eos2fy6	How can I predict the inhibitory activity against Mycobacterium tuberculosis for my compounds while ensuring they exhibit favorable hepatic metabolic stability?
+eos30gr;eos4se9;eos96ia;eos3804;eos1mxi	I want to identify compounds that inhibit A. baumannii growth and ensure they do not block hERG channels.
+eos69e6;eos2hzy;eos7d58;eos2fg2;eos2lqb	How can I generate new molecules based on a pharmacophore and then assess their ADMET properties and human oral bioavailability?
+eos31ve;eos85a3;eos8d8a;eos44zp;eos4rta	I want to predict the antimalarial activity of my compounds and also assess their membrane permeability in Mycobacterium tuberculosis to understand their potential as dual-target drugs.
+eos9yy1	I want to evaluate the cytosolic stability of my drug candidates in human liver cells to ensure they have optimal stability profiles for effective delivery to the target site without toxicity.
+eos1noy	I want to find similar molecules in the ChEMBL database for my lead compound to explore potential analogs for drug development.
+eos24jm;eos30gr;eos9ym3;eos2lm8	How can I predict the inhibition of QcrB in M. tuberculosis and ensure the candidate compounds are not hERG blockers while assessing their lipophilicity for drug-like properties?
+eos2lqb;eos9ym3;eos46ev	How can I identify compounds with potential activity against Mycobacterium tuberculosis and ensure they have favorable oral bioavailability and lipophilicity properties for drug development?
+eos93h2;eos9zw0;eos9tyg;eos7pw8	How can I predict the bioactivity of GPCR ligands and their permeability across membranes, while ensuring they are easy to synthesize?
+eos9c7k;eos3nl8	How can I identify potential COVID-19 repurposable drugs from existing FDA-approved compounds and find similar molecules in ChEMBL, DrugBank, and UNPD databases?
+eos1086;eos9ym3;eos5smc;eos7pw8	How can I predict the toxicity of my compounds across the Tox21 panel while also assessing their synthetic accessibility?
+eos157v;eos80ch	Can I predict the antimalarial activity of small molecules at different stages of the parasite and also understand their hydration free energy for better binding interactions?
+eos1n4b;eos2lqb;eos9ym3	How do I identify potential HDAC3 inhibitors with good oral bioavailability and optimal lipophilicity for drug development?
+eos5ecc;eos1mxi;eos3ae6;eos8fth;eos694w	I want to predict the antiviral activity against SARS-CoV-2 for a set of compounds, and utilize scaffold hopping to design new molecules with similar activity and improved properties.
+eos22io;eos3ev6;eos1d7r;eos2ta5	How do I assess the metabolic stability of my compounds in relation to CYP3A4 and evaluate their potential to bind to human plasma proteins?
+eos57bx;eos2401	I would like to generate and optimize new molecular structures based on existing scaffolds using advanced fragment-based techniques to enhance chemical diversity and improve molecular design outcomes.
+eos8bhe;eos3ae6;eos6aun	I am interested in exploring scaffold morphing techniques using advanced representations like SAFE and WHALES for molecular design and scaffold hopping. How can we use RXNFP to analyze reaction fingerprints in these generated structures?
+eos6pbf;eos92sw;eos7e3s;eos2hbd	How can I predict the synthetic accessibility and toxicity of my drug candidates, while also evaluating their potential for drug-induced liver injury?
+eos1d7r;eos9be7;eos3b5e	I want to search for small molecule substructures in the ZINC database and evaluate their chemical validity and diversity using the Fréchet ChemNet Distance.
+eos2mrz;eos7kpb	How can I leverage the H3D virtual screening cascade to predict IC50 values for Mycobacterium tuberculosis and Plasmodium falciparum, while ensuring compounds are drug-like, and utilize DeepSMILES for accurate molecular representation?
+eos9ueu;eos7yti;eos6ao8	How do I predict the antimalarial activity of compounds and assess their plasma protein binding properties?
+eos2lqb;eos4x30;eos4avb;eos9sa2	How can I identify drug-like compounds with good oral bioavailability using advanced molecular representations and pharmacophore mapping?
+eos7asg	I want to calculate molecular descriptors and fingerprints for my small molecules to enhance their representation in cheminformatics studies.
+eos80ch	I want to evaluate the antimalarial activity of my small molecules against both the asexual and gametocyte stages of the parasite.
+eos8aox;eos2gth;eos7nno;eos69p9;eos5jz9	I want to predict the antimalarial potential of my compounds and assess their metabolic stability with CYP2D6 and CYP2C9, along with evaluating toxicity across the Tox21 panel.
+eos59rr;eos6tg8;eos1xje;eos22io;eos3ae6	I want to optimize scaffold hopping from natural products to synthetic compounds using holistic molecular descriptors and predict their plasma protein binding affinity.
+eos97yu	I need to predict the effective permeability of new compounds using PAMPA assay data to assess their potential for oral absorption.
+eos8lok;eos9c7k;eos2hbd	How can I identify HBV inhibitors from my compound library and assess their passive permeability across lipid bilayers?
+eos92sw;eos5505;eos1af5	How can I predict the toxicity and synthetic accessibility of compounds while assessing their stability in rat liver microsomes?
+eos57bx;eos1noy;eos9ivc	I am investigating the antituberculosis activity of my compounds and want to generate new molecules with similar properties for further testing.
+eos78ao;eos8h6g;eos69e6	How can I use pharmacophore-guided molecular generation to design novel compounds with desired properties, and evaluate them using chemical descriptors and Avalon fingerprints for structural insights?
+eos3b5e;eos3ae7;eos4rta;eos2lqb;eos43at	I am investigating new small molecules for their antimalarial activity and would like to predict their oral bioavailability and cardiotoxicity risk associated with hERG blockade for safer drug development.
+eos2zmb;eos2mrz;eos7a45	How can I predict the inhibition of HDAC1 to revert HIV latency using my compounds?
+eos2l0q;eos1amr;eos5cl7	How can I predict the activity of compounds against schistosoma parasites, and assess their potential to penetrate the blood-brain barrier?
+eos9yy1;eos6o0z;eos9ei3	How can I assess the human liver cytosolic stability of my drug candidates and evaluate their synthetic accessibility for efficient early drug discovery?
+eos85a3;eos3b5e;eos24jm	I want to identify compounds with strong QcrB inhibition activity against M. tuberculosis and also assess their lipophilicity and molecular weight for potential drug development.
+eos1xje;eos2mrz;eos3804;eos2rd8	I want to identify and generate novel molecules that inhibit A. baumannii growth, and describe their characteristics using natural language for better understanding of their antibacterial properties.
+eos9taz;eos2zmb;eos21q7;eos1xje	How can I design new molecules using scaffold extension and ensure they are safe from drug-induced liver injury?
+eos30gr;eos7asg	I am looking to classify the hERG blocking potential of my compounds and need detailed molecular descriptors for better analysis.
+eos69p9;eos2r5a;eos7yti;eos8aox	I want to predict the antimalarial activity of my compounds and ensure they are non-toxic based on the Tox21 panel.
+eos46ev;eos8fth;eos3kcw;eos1n4b;eos3cf4	I want to identify active inhibitors against Mycobacterium tuberculosis and assess their antiviral potential against SARS-CoV-2.
+eos2401	How can I utilize the SAFE system to improve molecular design and optimize new compounds?
+eos9ueu	I would like to explore diverse chemical structures similar to my lead compound using the Enamine REAL map to identify potential analogs for drug development.
+eos6pbf;eos1d7r;eos4q1a;eos2a9n;eos9yy1	How can I generate diverse and stable drug-like molecules using SELFIES and CReM, and assess their cytosolic stability in the human liver?
+eos4e40;eos2hbd;eos4u6p	Can I identify compounds with broad-spectrum antibiotic activity and predict their permeability across lipid bilayers?
+eos21q7;eos7w6n;eos93h2;eos7nno	I want to predict the risk of drug-induced liver injury for my compounds and ensure they are metabolized by CYP2D6, considering GPCR bioactivity for potential therapeutic targets.
+eos2lqb;eos4tcc	How can I predict the oral bioavailability and hERG channel blockade potential of my small molecule drug candidates to ensure both efficacy and cardiac safety?
+eos92sw;eos2v11;eos4b8j;eos8lok	How can I predict the inhibition of Hepatitis B virus for my compounds, while ensuring they are neither toxic to humans nor difficult to synthesize?
+eos5ecc;eos4u6p;eos9yui;eos2mrz	How can I use the Chemical Checker signatures to analyze the bioactivity properties of my compounds, and assess their natural product likeness score for potential drug discovery applications?
+eos8fma;eos4e40;eos633t;eos3xip;eos8c0o	How do I identify broad-spectrum antibiotic activity in my compounds and optimize their molecular scaffolds using building blocks for enhanced efficacy?
+eos7d58;eos5axz;eos30f3	Can you predict the ADMET properties of my compounds and assess their potential hERG channel blocking activity to ensure cardiotoxicity risk is minimized?
+eos3cf4;eos7e3s	I want to generate novel compounds and assess their potential to cause drug-induced liver injury.
+eos2re5	I want to evaluate the ADMET properties of my drug candidates, including bioavailability, toxicity, metabolic stability, and brain penetration.
+eos4zfy;eos5xng;eos4wt0;eos5smc	I am investigating the antimalarial potential of small molecules and also need to ensure they are not toxic according to the Tox21 panel. How do I predict these properties for my compounds?
+eos8ioa;eos8vud;eos44zp	How can I identify natural product-like compounds and assess their CYP450 metabolic stability while considering their 3D shape for ligand-based drug design?
+eos5gge;eos9sa2;eos69e6;eos4f95	How can I identify potential drug-like compounds that inhibit the growth of M. mycetomatis and ensure they do not cause drug-induced liver injury in humans?
+eos3zur;eos30f3;eos24ci;eos1noy;eos4avb	I am interested in predicting hERG channel blocking potential of my compounds and understanding their molecular descriptors and representation for drug safety profiling.
+eos42ez;eos8d8a	How can I assess the cytotoxicity of my antibiotic compounds in human cells while ensuring they have good membrane permeability against Mycobacterium tuberculosis?
+eos30f3;eos7jlv;eos9c7k;eos7a45	Can I predict hERG channel blocking potential and also determine the availability and price of compounds similar to mine from the Mcule catalog?
+eos8aox;eos694w;eos2l0q;eos3b5e;eos4tcc	How can I predict the anti-schistosomiasis activity of compounds while ensuring they do not block the hERG ion channel?
+eos4se9;eos526j	Can I translate SMILES strings to IUPAC names for my compound library and then plan retrosynthesis for a specific target molecule using these names?
+eos9taz;eos9zw0;eos2r5a;eos5gge;eos9ueu	I want to optimize and extend molecular scaffolds using fragment-based generative techniques, ensuring synthetic accessibility and predicting potential drug-induced liver injury for safe drug development.
+eos6m4j;eos4u6p	I want to generate molecular representations and bioactivity signatures for my compounds to prepare them for predictive modeling in drug discovery.
+eos9ivc;eos21q7;eos5axz;eos7yti	I am looking to predict the antituberculosis activity of compounds and assess their potential for drug-induced liver injury.
+eos3xip;eos8lok;eos43at	How can I identify compounds with potent HBV inhibitory activity while ensuring minimal hERG blockade cardiotoxicity risk?
+eos3ae6;eos7qga;eos2v11;eos4x30	I am investigating scaffold hopping from natural products to synthetic compounds and need to understand their ADME properties. How can I predict the relevant properties for effective drug-like compounds?
+eos31ve;eos18ie;eos3xip	I want to identify potential antibiotics with low cytotoxicity and assess their metabolic stability in human liver microsomes.
+eos935d;eos2mhp;eos8fth	I want to identify compounds with potential BACE-1 inhibition for Alzheimer's treatment and evaluate their human metabolites to ensure safety and efficacy.
+eos1mxi	How can I use SMILES Pair Encoding to improve the generative modeling of potential drug compounds?
+eos1mxi;eos78ao;eos24ur;eos2fg2;eos6aun	I am looking to optimize chemical reactions using reaction fingerprints and need to understand the molecular descriptors of compounds involved, as well as tokenize SMILES for QSAR analysis.
+eos1noy;eos7a45	How can I identify similar molecules in the ChEMBL database and estimate their prices for better understanding of their availability in the market?
+eos6pbf	How do I generate a diverse set of valid molecular structures for drug discovery using a robust string representation?
+eos81ew	Can I estimate the permeability of my drug compounds using in vitro surrogate data to predict their ability to cross cellular membranes at pH 5?
+eos6o0z;eos2l0q	How can I predict the anti-schistosomiasis activity of small molecules for my drug discovery project?
+eos4zfy;eos46ev	How do I predict the antimalarial activity and Mycobacterium tuberculosis inhibitory potential of a set of small molecules to identify dual-acting compounds?
+eos6m4j;eos6hy3;eos8fma;eos5smc;eos4f95	I want to predict the inhibition of HIV using small molecules, and also explore their potential activity against the Tox21 toxicity panel pathways.
+eos2re5;eos5505	How do I evaluate the ADMET properties of my drug candidates and assess their rat liver microsomal stability to ensure they maintain desired concentrations in the body?
+eos80ch;eos4avb;eos1vms;eos2gw4;eos8fth	I want to predict the antimalarial activity of compounds across both asexual and sexual stages and also assess their potential SARS-CoV-2 antiviral activity.
+eos3cf4;eos8bhe;eos3ev6	How can I generate new molecular structures that optimize for metabolic stability and minimize CYP3A4 interaction using advanced molecular design techniques?
+eos8a5g;eos935d;eos4avb;eos8bhe;eos6fza	I am interested in predicting the human metabolites of small molecules and ensuring their safety by identifying potential toxicity issues at the clinical trial stage. Can you assist with this drug development process?
+eos24ur;eos3b5e;eos1d7r;eos2gw4;eos2hzy	I am interested in exploring scaffold hopping for natural products using WHALES descriptors and finding similar compounds in PubChem for potential bioactivity insights.
+eos6fza;eos9be7	How do I predict the likelihood of my compounds failing in clinical trials due to toxicity?
+eos92sw	Can I predict the toxicity of my compounds while also assessing their synthetic accessibility to prioritize candidates for drug development?
+eos4q1a;eos4b8j;eos935d;eos2fy6	I am investigating ways to optimize the structure of my lead compound using fragment-based generation to enhance its activity and synthetic accessibility, while also assessing its potential human metabolites and HepG2 toxicity.
+eos9f6t	I want to identify small molecules that inhibit SARS-3CLpro-mediated peptide cleavage for potential COVID-19 treatments.
+eos5jz9;eos3le9;eos81ew;eos57bx;eos69e6	Can I assess the metabolism of my compounds by CYP2C9 and predict their HepG2 toxicity while ensuring they have good membrane permeability and generate new molecules based on pharmacophores?
+eos7jio;eos6fza;eos42ez;eos8vud	How can I predict the likelihood of a compound's failure in clinical trials due to toxicity while considering its potential cytotoxicity against human cell lines?
+eos93h2;eos7jlv	Can I predict the bioactivity of my compounds on GPCR targets and find similar molecules in the GDBMedChem database for potential drug design?
+eos3804;eos4u6p;eos9sa2;eos7kpb	How can I identify compounds that inhibit A. baumannii growth while ensuring they are drug-like and have favorable ADME properties?
+eos57bx;eos4se9;eos6tg8	I want to generate new molecules similar to my natural product compounds and then convert their SMILES to IUPAC names for further analysis.
+eos2b6f;eos8ioa;eos9c7k	I want to predict the microstate pKa values of my natural product-like compounds and find their nearest neighbors in ChEMBL, DrugBank, and UNPD databases for further analysis.
+eos1d7r;eos1amr	I want to find potential drug candidates from the ZINC database that can penetrate the blood-brain barrier.
+eos22io;eos5xng;eos4e41	How can I predict the antimicrobial potential of my compounds against Burkholderia cenocepacia and ensure they exhibit strong plasma protein binding properties?
+eos8a5g;eos2ta5;eos3xip	How can I identify purchasable molecules from ZINC20 that do not block the hERG channel for my drug discovery pipeline?
+eos8bhe;eos3ae6;eos57bx	I am investigating scaffold morphing strategies for molecular design and want to explore scaffold hopping from natural products to synthetic compounds while generating novel molecules similar to my input data.
+eos4wt0	I am interested in generating molecular fingerprints for my compounds to assist in similarity searches and predictive modeling.
+eos7jlv;eos8h6g;eos3ae7	I am looking to generate novel small molecules with high natural product likeness and synthetic accessibility, and I need to identify structurally similar compounds and assess their chemical properties.
+eos5xng;eos7e3s;eos3b5e	How can I predict the inhibition of Burkholderia cenocepacia with my compounds while ensuring they do not induce liver injury?
+eos2lqb;eos9ivc;eos2l0q;eos8vud;eos22io	I want to predict the antituberculosis activity of my compounds and ensure they have favorable oral bioavailability for human administration.
+eos30f3	I want to predict the potential cardiotoxicity of my compounds by assessing their likelihood of blocking the hERG channel.
+eos5gge;eos8c0o;eos6fza;eos8ioa	I need to assess the risk of drug-induced liver injury and clinical trial toxicity for my BACE-1 inhibitors, and determine if they are natural product-like.
+eos7w6n;eos30gr;eos24jm;eos6oli	I want to identify compounds that inhibit the QcrB target in M. tuberculosis and check their aqueous solubility for further drug development considerations.
+eos8vud;eos6aun;eos5cl7;eos7asg;eos4rta	How can I predict the antimalarial activity of my compounds and also evaluate their potential as growth inhibitors of Neisseria gonorrhoeae?
+eos5gge;eos7qga	How can I predict drug-induced liver injury risk for my compounds, and convert their SMILES to Canonical, SELFIES, InChI, and InChIKey formats for comprehensive analysis?
+eos69e6;eos7pw8	How can I generate new molecules based on a pharmacophore model and ensure that these molecules are easy to synthesize?
+eos8aox;eos5guo	How can I leverage stereochemically-aware signaturizers along with ErG 2D descriptors for scaffold hopping to optimize the bioactivity profiles of my compound library?
+eos6hy3;eos5xng;eos8fma;eos4tcc;eos30f3	How can I predict the inhibition activity of compounds against HIV and ensure they do not block the hERG ion channel?
+eos1579	I want to assess the carcinogenic potential of my small molecule compounds by evaluating their ability to induce cellular proliferation, genomic instability, and other carcinogenic processes.
+eos9yui;eos8lok	I want to identify natural product-like compounds in my dataset and determine their potential to inhibit Hepatitis B virus.
+eos1vms;eos7jlv	How can I predict the protein targets of my compounds using ChEMBL data and find structurally similar molecules in the GDBMedChem database for potential drug design?
+eos30f3	How do I predict the potential cardiotoxicity of compounds by assessing their hERG channel blocking activity?
+eos97yu;eos8aox;eos8451	How can I predict the effective permeability and water solubility of my small molecules to assess their potential as drug candidates?
+eos31ve	How do I assess the metabolic stability of my compounds using human liver microsomal data?
+eos2gth	How can I predict the antimalarial potential of small molecules in my compound library using a data-driven approach?
+eos69e6	Can you generate novel molecules based on a specific pharmacophore to potentially discover new drug candidates?
+eos7kpb	I want to identify compounds with potent activity against Mycobacterium tuberculosis and Plasmodium falciparum, while also considering their ADME profiles, cytotoxicity, and solubility properties.
+eos3zur;eos2ta5;eos4e41;eos3kcw;eos1vms	I want to assess the broad spectrum antibiotic potential of my compounds while ensuring they do not block the hERG channel.
+eos4x30;eos93h2	I would like to identify common 3D pharmacophores for GPCR ligands and predict their bioactivity.
+eos8a5g;eos5ecc	I want to find out which of my compounds are purchasable from the ZINC20 database.
+eos1noy;eos31ve;eos3ae6	I want to find similar molecules to my lead compound using ChEMBL and assess their human liver microsomal stability.
+eos4se9;eos633t;eos4e40;eos96ia	I need to identify compounds with broad-spectrum antibiotic activity and verify their interaction with CYP3A4 to ensure safety, while also ensuring the scaffold can be extended and translated to IUPAC names.
+eos4x30;eos9ueu	How can I identify common 3D pharmacophores in my set of active compounds and use them to explore similar chemical structures in the Enamine REAL chemical space?
+eos526j;eos1ut3;eos5ecc;eos9tyg;eos5xng	How do I identify compounds that inhibit Burkholderia cenocepacia and ensure they have high membrane permeability?
+eos2thm;eos5guo	How can I use molecular representations and pharmacophore node descriptions to optimize scaffold hopping in my drug discovery project?
+eos2fy6;eos2v11;eos7pw8	I want to identify compounds with low HepG2 toxicity and favorable ADMET properties that are also easy to synthesize for my drug development project.
+eos9ivc;eos5jz9;eos4tcc;eos3le9;eos77w8	How can I predict the antituberculosis activity of my compounds while ensuring they are not metabolized by CYP2C9 and have minimal hERG channel blockade?
+eos81ew;eos4zfy;eos2thm	I want to predict the antimalarial activity of my compounds and assess their membrane permeability at pH 5 for potential drug development.
+eos1d7r;eos2fg2	How do I search for molecular substructures similar to my compounds in the Small World Zinc chemical space?
+eos9tyg	I want to assess the permeability of my drug candidates using PAMPA at pH 7.4 to determine if they exhibit high permeability suitable for further development.
+eos92sw	I want to evaluate the synthetic accessibility and toxicity of my compound library to ensure they are easy to synthesize and safe for human use.
+eos9f6t;eos8lok;eos2lqb;eos8fth	I am interested in identifying small molecules that inhibit SARS-CoV-2 and predicting their oral bioavailability to assess their potential as orally administered antiviral drugs.
+eos65rt;eos93h2;eos6m4j	I want to predict the permeability and LogP of fluorescent probes and analyze their bioactivity, metabolism, or toxicity related to GPCRs using molecular maps and image-based deep learning.
+eos92sw	How do I evaluate the synthetic accessibility and toxicity of my compound library to guide my selection of candidate molecules for drug development?
+eos2fy6;eos8fth;eos2v11;eos2lm8	How do I predict the antiviral efficacy of my compounds against SARS-CoV-2 while ensuring they are non-toxic to HepG2 cells and have favorable ADMET properties?
+eos1mxi;eos2fy6;eos1af5	I want to identify compounds that are not toxic to HepG2 cells and have high permeability across Caco-2 cell membranes.
+eos59rr;eos8d8a;eos7w6n	Can I predict the permeability of my compounds in Mycobacterium tuberculosis using molecular fingerprint maps for deep learning analysis?
+eos3b5e	How do I calculate the molecular weight of a compound using its SMILES representation?
+eos9sa2	I want to assess the drug-likeness of my compound library using advanced neural network techniques.
+eos8c0o	I am looking to predict the BACE-1 inhibitory activity of my compounds to identify potential Alzheimer’s disease therapeutics.
+eos2mhp;eos2mrz;eos30gr;eos77w8	I want to predict BACE-1 inhibition for Alzheimer's drug candidates and assess their potential as hERG blockers and ADR profiles.
+eos2r5a;eos30gr	How do I assess the synthetic accessibility of my compounds and predict their potential to block hERG channels?
+eos1xje;eos5axz	I am investigating the relationships between chemical structures and bioassay outcomes. How can I use text embeddings and molecular fingerprints to enhance my analysis and predictions?
+eos8ioa;eos9taz;eos18ie;eos1ut3;eos8vud	How can I identify potential antibiotics with low cytotoxicity against MRSA using substructure-based search, and then evaluate the natural product likeness of these candidates?
+eos1d7r;eos8d8a;eos8ioa	How do I identify natural product-like compounds that can permeate the Mycobacterium tuberculosis cell membrane from a subset of molecules in the ZINC database?
+eos4u6p;eos9ueu;eos6o0z;eos7a04	I want to explore the bioactivity profiles of my compounds using Chemical Checker signatures and identify similar compounds in the Enamine REAL database.
+eos4se9	How can I convert SMILES strings to their corresponding IUPAC names for my compound database?
+eos8451;eos7w6n	How would you predict the water solubility of small organic molecules using large-scale graph transformer models for enhanced accuracy?
+eos5qfo;eos3ae7;eos2b6f;eos4x30	How can I predict the outcome of an organic reaction and generate new small molecules with desirable chemical properties?
+eos31ve;eos4e40;eos6aun;eos1af5	I want to identify broad-spectrum antibiotic compounds and assess their liver microsomal stability and Caco-2 cell permeability to ensure their potential as safe and effective drugs.
+eos8aox;eos1n4b;eos7w6n	How can I predict the inhibitory potential of my compounds against HDAC3 and understand their bioactivity properties using stereochemically-aware signatures?
+eos7a04;eos8fth;eos9yui;eos3804	I want to identify compounds with antiviral activity against SARS-CoV-2 and assess their natural product likeness.
+eos59rr	I want to visualize and analyze the molecular fingerprints of my compounds using image-based methods for better representation in deep learning models.
+eos2fg2;eos9taz;eos7yti	How can I design new molecular scaffolds with fragments that have antimalarial activity below 1 uM?
+eos80ch	How do I predict the antimalarial activity of my compounds against both asexual and sexual stages of the parasite using molecular fingerprints?
+eos30gr;eos1n4b	I want to identify compounds that are both hERG non-blockers and potential HDAC3 inhibitors for safer cancer therapeutics.
+eos8h6g;eos2hzy;eos74bo;eos1579;eos7a45	How do I identify molecules with low carcinogenic potential and good solubility for my drug discovery project?
+eos7kpb;eos2a9n;eos7w6n;eos7e3s;eos5jz9	How do I screen for compounds with antitubercular or antiplasmodial activity that are metabolically stable and non-hepatotoxic?
+eos6pbf;eos7qga;eos1086;eos1d7r;eos2fg2	How can I convert SMILES strings into multiple formats and search for similar structures in the ZINC database to identify diverse and valid molecules for drug discovery?
+eos24ci;eos4u6p;eos6o0z;eos8fth;eos6tg8	How do I predict the antiviral activity against SARS-CoV-2 of my compounds, and can I classify them based on their taxonomy or natural product fingerprints for further analysis?
+eos481p;eos8bhe;eos6hy3	How do I predict the inhibition of HIV for my compounds and assess their toxicity using the ToxCast panel?
+eos24ci;eos7asg;eos2fg2;eos8ioa;eos77w8	I want to classify my compounds by their taxonomy and assess if they are natural or synthetic, then predict any potential adverse drug reactions they might cause.
+eos57bx	Can you generate a set of new molecules that are structurally similar to my lead compound for further optimization in drug discovery?
+eos6aun;eos3cf4;eos5gge	I want to generate new molecular structures using a transformer model and evaluate their potential for drug-induced liver injury early in the development process.
+eos4tcc;eos6oli;eos5smc;eos6aun;eos4cxk	How can I predict the hERG channel blockade risk of potential antiviral compounds for SARS-CoV-2, while also assessing their aqueous solubility and toxicity profile using the Tox21 panel?
+eos7pw8	I want to evaluate the synthetic accessibility of my compound library to identify molecules that are easy to synthesize for further development.
+eos74bo;eos7yti	I want to predict the antimalarial activity of compounds and assess their aqueous kinetic solubility to determine their suitability for further drug development.
+eos9ueu	How can I explore and identify structurally similar compounds using the Small World index for a targeted search within the Enamine REAL chemical space?
+eos9tyg;eos2lm8	I want to predict the permeability of my compounds across cellular membranes using PAMPA data and transform their SMILES into molecular fingerprints for better insights in low-data drug discovery scenarios.
+eos5xng;eos2ta5	How do I predict the antimicrobial activity of my compounds against Burkholderia cenocepacia, ensuring they do not block the hERG channel?
+eos5xng;eos93h2	I want to identify compounds with inhibitory activity against Burkholderia cenocepacia, and then assess their bioactivity on GPCR targets to ensure potential therapeutic benefits.
+eos2fg2	This model information is incomplete. Please provide a specific model title and description for an appropriate query.
+eos4e40;eos57bx	I want to identify broad-spectrum antibiotic activity in novel compounds and generate similar molecules for further exploration in antibiotic development.
+eos8a5g	I want to check if the molecules in my compound library are available for purchase in the ZINC20 database.
+eos1mxi;eos8fth;eos5jz9	I want to predict the antiviral activity against SARS-CoV-2 of my compounds while ensuring they are metabolically stable and not CYP2C9 substrates.
+eos2lqb;eos43at;eos9tyg;eos46ev	How can I identify active inhibitors against Mycobacterium tuberculosis while ensuring they have optimal oral bioavailability and low hERG-related cardiotoxicity?
+eos3b5e	I want to calculate the molecular weight of my chemical compounds to assess their suitability for drug development.
+eos5smc;eos9ym3;eos8a5g;eos4b8j;eos6tg8	How can I predict the toxicity pathway activity of my compounds while also assessing their lipophilicity and purchasability?
+eos1xje;eos238c;eos7jlv	I want to identify potential therapeutic uses for my compounds based on their chemical structure and find similar molecules in the GDBMedChem database to aid in drug design.
+eos31ve;eos9ym3;eos2mrz	I am evaluating the metabolic stability and lipophilicity of my drug-like compounds in human liver microsomes, and I want to use DeepSMILES representation to enhance my predictive models.
+eos157v	I want to estimate the hydration free energy of small molecules to understand their binding interactions in a solution.
+eos7qga	I need to convert a list of SMILES into Canonical SMILES, SELFIES, InChI, and InChIKey for molecular standardization and database integration.
+eos5guo;eos6hy3;eos5qfo	How can I predict the inhibition activity against HIV of a set of compounds, using pharmacophoric descriptions for potential scaffold hopping to guide the selection of diverse candidates?
+eos74bo;eos24ci;eos3le9;eos4cxk;eos1amr	I want to predict the solubility of my compounds, classify them by taxonomy, and evaluate their potential toxicity in HepG2 cells. Additionally, I need to assess their ability to penetrate the blood-brain barrier.
+eos7d58	I want to quickly assess the ADMET properties of my compound library to prioritize potential drug candidates.
+eos8a4x;eos1mxi;eos6o0z	I want to understand the physicochemical properties of my compounds using a set of descriptors and tokenize their SMILES for QSAR modeling.
+eos4zfy	Can I predict the antimalarial activity of a new set of small molecules using the available model?
+eos4q1a;eos8a4x	I want to generate diverse molecular structures from my compound and evaluate their physicochemical properties to identify potential drug candidates.
+eos6hy3;eos80ch;eos2thm	I want to predict the antimalarial potential of compounds across different stages and evaluate their inhibitory effects against HIV.
+eos2thm;eos1noy;eos7jio;eos6tg8	I want to generate molecular fingerprints for natural products and identify similar compounds using ChEMBL data for potential QSAR analysis.
+eos4qda;eos5505;eos9ym3;eos5qfo	I am interested in generating novel compounds with FasmiFra and assessing their metabolic stability using rat liver microsomes, followed by predicting their lipophilicity to ensure optimal drug-like properties.
+eos2rd8;eos7qga;eos3le9	How do I predict the HepG2 cell toxicity of my compounds, and can I generate a molecular description for those with low toxicity?
+eos9ym3	I want to predict the lipophilicity (LogP) of my druglike small molecules to assess their potential for drug development.
+eos8lok;eos2ta5;eos44zp	How can I identify potential HBV inhibitors that have minimal hERG blockade and favorable CYP450 metabolism profiles?
+eos2401;eos1579;eos97yu;eos3zur	I want to assess the carcinogenic potential of small molecules while also evaluating their permeability properties for early-stage drug development.
+eos1d7r	How do I identify similar compounds in the ZINC database using molecular substructures from a given query molecule?
+eos4q1a	How can I generate diverse chemical structures from a starting molecule using fragment-based mutations and growth?
+eos8fma;eos21q7;eos2fy6	How do I generate new molecules in the chemical space, ensuring they are non-toxic to HepG2 cells and do not cause drug-induced liver injury?
+eos2mrz	I am investigating how to improve the accuracy of generative models in drug discovery by using alternate SMILES representations to generate and decode new molecules.
