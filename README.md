@@ -23,7 +23,9 @@ cd ersilia-assistant
 pip install -e .
 ```
 
-Make sure you have installed a llamafile of your choice, for example, [Llama 3.1 8B-Instruct](https://huggingface.co/Mozilla/Meta-Llama-3.1-8B-Instruct-llamafile)
+Make sure you have installed a llamafile of your choice, for example, [Llama 3.1 8B-Instruct](https://huggingface.co/Mozilla/Meta-Llama-3.1-8B-Instruct-llamafile). In our experience, `Meta-Llama-3.1-8B-Instruct.Q5_K_M` performs better among the 8B versions available on HuggingFace. 
+
+TL;DR on quantization: Q5 quantization is better than Q4, but slower, similarly, M is better than S, and slower. 
 
 In a separate shell, run the following:
 
