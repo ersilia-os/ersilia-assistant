@@ -1,0 +1,172 @@
+This is my understanding of your query:
+
+    You have a set of natural products with activity against Mycobacterium tuberculosis.
+    You want to explore related chemical structures to identify derivatives.
+    The goal is to improve the solubility and ADME (Absorption, Distribution, Metabolism, and Excretion) properties of these derivatives.
+    You are looking for a strategy to identify potential lead compounds with enhanced pharmacokinetic properties.
+
+For your query, I have selected the following models:
+
+Model: eos9ivc
+
+URL: https://github.com/ersilia-os/eos9ivc
+
+Title: Antituberculosis Activity Prediction
+
+Explanation:
+
+Based on your context , I would recommend using the " M olecular Similar ity " or " Structure -Based Virtual Screening " approach . This method involves comparing the chemical structure of your initial set of natural products to a large database of compounds to identify similar structures that may exhibit improved sol ub ility and AD ME properties .
+
+A suitable model for this task would be a machine learning model trained on a dataset of molecular descriptors and properties , such as the RD Kit model . This model can predict the sol ub ility and AD ME properties of new compounds based on their molecular structure , allowing you to identify potential derivatives that improve these properties .
+
+Model: eos24jm
+
+URL: https://github.com/ersilia-os/eos24jm
+
+Title: Qcrb Inhibition (M. Tuberculosis)
+
+Explanation:
+
+Based on the context , I would suggest using the Support Vector Machine ( S VM ) classifier with E CF P 6 fingerprints , as it was identified as the most effective model for predicting Q cr B inhibition . You can use this model to explore related chemical structures and identify derivatives that improve sol ub ility and AD ME properties .
+
+Here 's a concise explanation :
+
+    Use the SVM classifier with E CF P 6 fingerprints to predict the activity of your initial set of natural products against My cob acter ium tuberculosis .
+    Explore the chemical space around the predicted active compounds to identify related structures that may improve sol ub ility and AD ME properties .
+    Util ize molecular editing tools or software to modify the chemical structure of the identified compounds to enhance their properties .
+    Validate the modified compounds using the SVM classifier to ensure they retain their activity against My cob acter ium tuberculosis .
+
+This approach can help you identify potential derivatives that improve sol ub ility and AD ME properties while maintaining their ant it ub erc ular activity .
+
+Model: eos8d8a
+
+URL: https://github.com/ersilia-os/eos8d8a
+
+Title: Membrane Permeability In Mycobacterium Tuberculosis
+
+Explanation:
+
+Based on the context , I would recommend using My c Perm Check , a tool for predicting my cob acterial perme ability . This tool can help you identify derivatives with improved sol ub ility and AD ME properties by predicting the perme ability of your initial set of natural products and their related chemical structures . By analyzing the predicted perme ability probabilities , you can select derivatives that are more likely to be effective against My cob acter ium tuberculosis while also having improved sol ub ility and AD ME properties .
+
+Model: eos7jlv
+
+URL: https://github.com/ersilia-os/eos7jlv
+
+Title: Gdbmedchem Similarity Search
+
+Explanation:
+
+Based on the context , I would recommend using the G DB Med Chem database , which is a medicinal chemistry -focused subset of 10 million molecules . This database was specifically designed to enhance synthetic accessibility and structural diversity for drug design . You can use the database to explore related chemical structures to identify derivatives that improve sol ub ility and AD ME properties .
+
+The database 's uniform sampling across molecular size , stereo chemistry , and polarity , as well as its retention of higher sp 3 -car bon fractions and natural product likeness , make it an ideal resource for identifying potential derivatives of your initial set of natural products . You can use the database 's 3 D - visualization , similarity searching , and download capabilities to explore and identify potential derivatives that meet your desired properties .
+
+Model: eos46ev
+
+URL: https://github.com/ersilia-os/eos46ev
+
+Title: Mycobacterium Tuberculosis Inhibitor Prediction
+
+Explanation:
+
+Based on the context , I would recommend using the Chem TB web server , which was developed for predicting potential My cob acter ium tuberculosis inhibitors . You can use this web server to explore related chemical structures and identify derivatives that improve sol ub ility and AD ME properties .
+
+The Chem TB web server uses machine learning models , specifically X G Boost , to predict the activity of compounds against M tb . You can upload your initial set of natural products to the web server and explore the predicted activity , sol ub ility , and AD ME properties of related chemical structures .
+
+Additionally , you can use the SH ap ley Add itive ex Plan ations ( SH AP ) method , which was used in the study , to interpret the model outputs and identify important molecular descriptors that contribute to the predicted activity . This can help you to design and syn thesize derivatives that improve sol ub ility and AD ME properties while maintaining or improving their activity against M tb .
+
+Model: eos9c7k
+
+URL: https://github.com/ersilia-os/eos9c7k
+
+Title: Similarity Search In Chembl, Drugbank And Unpd
+
+Explanation:
+
+Based on the context , I would recommend using the G DB Med Chem database . It is a curated database of 10 million small molecules optimized for medicinal chemistry , offering a diverse source for drug design . The database retains a high sp 3 -car bon fraction and natural product likeness compared to known drugs , making it an ideal resource for exploring related chemical structures .
+
+You can use G DB Med Chem to :
+
+1 . Perform similarity searching to identify molecules with similar structural features to your initial set of natural products . 2 . Explore the database 's 3 D visualization capabilities to understand the molecular structure and properties of potential derivatives . 3 . Download and analyze the molecular structures to identify potential modifications that could improve sol ub ility and AD ME properties .
+
+G DB Med Chem 's focus on drug -like properties and structural diversity makes it an invaluable resource for identifying novel derivatives with improved properties .
+
+Model: eos8451
+
+URL: https://github.com/ersilia-os/eos8451
+
+Title: Water Solubility
+
+Explanation:
+
+Based on the context , I would recommend using the G RO VER model to explore related chemical structures . G RO VER is a self -sup ervised graph transformer specifically designed for molecular data , which makes it well -su ited for tasks like molecular property prediction and structure exploration .
+
+You can use G RO VER to :
+
+1 . Pre -tr ain the model on a large -scale dataset of molecular structures , including your initial set of natural products . 2 . Fine -t une the model on a task such as predicting sol ub ility and AD ME properties . 3 . Use the pre -trained model to generate new molecular structures that are similar to your initial set , but with improved sol ub ility and AD ME properties .
+
+G RO VER 's ability to learn from large -scale unl abeled data and its self -sup ervised learning approach make it an ideal tool for this task .
+
+Model: eos7d58
+
+URL: https://github.com/ersilia-os/eos7d58
+
+Title: Admet Properties Prediction
+
+Explanation:
+
+Based on the context , I would recommend using the ADM ET -A I platform to explore related chemical structures and identify derivatives that improve sol ub ility and AD ME properties . The platform 's machine learning model , Chem prop -R D Kit , can predict ADM ET properties of small molecules , including sol ub ility and AD ME characteristics . By leveraging the platform 's capabilities , you can :
+
+1 . Input your initial set of natural products and explore related chemical structures using the platform 's graph neural network model . 2 . Predict the ADM ET properties of these related structures , including sol ub ility and AD ME characteristics . 3 . Identify derivatives that show improved sol ub ility and AD ME properties , which can be further optimized for drug development .
+
+AD MET -A I 's unique features , such as contextual ADM ET predictions using approved drugs from Drug Bank , can provide valuable insights into drug -li ken ess and help you identify potential lead compounds .
+
+Model: eos7kpb
+
+URL: https://github.com/ersilia-os/eos7kpb
+
+Title: H3D Virtual Screening Cascade Light
+
+Explanation:
+
+Based on the context , I would recommend using the Z aira Chem AI / ML tool for QS AR /Q SP R modeling . This tool can help you explore related chemical structures and identify derivatives that improve sol ub ility and AD ME properties . Specifically , you can use the 15 models in the virtual screening cascade to predict the ADM ET properties of your initial set of natural products and their derivatives . This will enable you to identify potential hits with improved sol ub ility and AD ME properties , stream lining the drug discovery process .
+
+Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
+
+This file should contain a column called smiles with the SMILES strings of the molecules in your dataset.
+
+ersilia fetch eos9ivc
+ersilia serve eos9ivc
+ersilia run -i input.csv -o output_eos9ivc.csv
+
+ersilia fetch eos24jm
+ersilia serve eos24jm
+ersilia run -i input.csv -o output_eos24jm.csv
+
+ersilia fetch eos8d8a
+ersilia serve eos8d8a
+ersilia run -i input.csv -o output_eos8d8a.csv
+
+ersilia fetch eos7jlv
+ersilia serve eos7jlv
+ersilia run -i input.csv -o output_eos7jlv.csv
+
+ersilia fetch eos46ev
+ersilia serve eos46ev
+ersilia run -i input.csv -o output_eos46ev.csv
+
+ersilia fetch eos9c7k
+ersilia serve eos9c7k
+ersilia run -i input.csv -o output_eos9c7k.csv
+
+ersilia fetch eos8451
+ersilia serve eos8451
+ersilia run -i input.csv -o output_eos8451.csv
+
+ersilia fetch eos7d58
+ersilia serve eos7d58
+ersilia run -i input.csv -o output_eos7d58.csv
+
+ersilia fetch eos7kpb
+ersilia serve eos7kpb
+ersilia run -i input.csv -o output_eos7kpb.csv
+
