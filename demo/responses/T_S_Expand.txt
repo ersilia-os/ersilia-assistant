@@ -15,13 +15,13 @@ Title: Antituberculosis Activity Prediction
 
 Explanation:
 
-Based on the context , I would suggest using the " Comput ational Methods " section to guide your approach . Specifically , you can utilize :
+Based on the context, I would suggest using the "Computational Methods" section to guide your approach. Specifically, you can utilize:
 
-    ** M olecular docking **: to predict the binding affinity of new derivatives to the target protein , such as the My cob acter ium tuberculosis enzyme .
-    ** Quant um mechanics **: to optimize the molecular structure of the derivatives and predict their pharmac okin etic properties .
-    ** Machine learning **: to identify patterns in the structure - activity relationship ( S AR ) of the synthetic hits and propose new derivatives with enhanced activity .
+    **Molecular docking**: to predict the binding affinity of new derivatives to the target protein, such as the Mycobacterium tuberculosis enzyme.
+    **Quantum mechanics**: to optimize the molecular structure of the derivatives and predict their pharmacokinetic properties.
+    **Machine learning**: to identify patterns in the structure-activity relationship (SAR) of the synthetic hits and propose new derivatives with enhanced activity.
 
-These computational methods can help you propose new derivatives that are likely to be effective against tuberculosis while maintaining good pharmac okin etics .
+These computational methods can help you propose new derivatives that are likely to be effective against tuberculosis while maintaining good pharmacokinetics.
 
 Model: eos24jm
 
@@ -31,11 +31,15 @@ Title: Qcrb Inhibition (M. Tuberculosis)
 
 Explanation:
 
-Based on the context , you can use computational methods to propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmac okin etics by :
+Based on the context, you can use computational methods to propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmacokinetics by:
 
-1 . ** Ret r aining the SVM model **: Use the same molecular features and E CF P 6 fingerprints to re train the SVM model with the new synthetic hits . 2 . ** M olecular editing **: Util ize molecular editing tools , such as RD Kit or Py bel , to modify the molecular structure of the synthetic hits while maintaining their core pharmac oph ore . 3 . ** Virtual screening **: Perform virtual screening of large compound libraries against the re trained SVM model to identify new derivatives with enhanced activity against tuberculosis . 4 . ** Ph armac okin etic prediction **: Use computational tools , such as AD ME -To x or pk CS M , to predict the pharmac okin etic properties of the new derivatives and identify those with good absorption , distribution , metabolism , and ex cretion ( AD ME ) profiles . 5 . ** In sil ico optimization **: Employ in sil ico optimization techniques , such as genetic algorithm or simulated anne aling , to iter atively modify the molecular structure of the new derivatives to enhance their activity and pharmac okin etics .
+1. **Retraining the SVM model**: Use the same molecular features and ECFP6 fingerprints to retrain the SVM model with the new synthetic hits.
+2. **Molecular editing**: Utilize molecular editing tools, such as RDKit or Pybel, to modify the molecular structure of the synthetic hits while maintaining their core pharmacophore.
+3. **Virtual screening**: Perform virtual screening of large compound libraries against the retrained SVM model to identify new derivatives with enhanced activity against tuberculosis.
+4. **Pharmacokinetic prediction**: Use computational tools, such as ADME-Tox or pkCSM, to predict the pharmacokinetic properties of the new derivatives and identify those with good absorption, distribution, metabolism, and excretion (ADME) profiles.
+5. **In silico optimization**: Employ in silico optimization techniques, such as genetic algorithm or simulated annealing, to iteratively modify the molecular structure of the new derivatives to enhance their activity and pharmacokinetics.
 
-By following these steps , you can comput ationally propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmac okin etics .
+By following these steps, you can computationally propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmacokinetics.
 
 Model: eos8d8a
 
@@ -45,11 +49,16 @@ Title: Membrane Permeability In Mycobacterium Tuberculosis
 
 Explanation:
 
-Based on the context , you can use My c Perm Check , a tool for predicting my cob acterial perme ability , to propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmac okin etics . Here 's a concise step -by -step approach :
+Based on the context, you can use MycPermCheck, a tool for predicting mycobacterial permeability, to propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmacokinetics. Here's a concise step-by-step approach:
 
-1 . ** Ident ify synthetic hits **: Use existing databases or literature to identify synthetic compounds that have shown activity against tuberculosis . 2 . ** Predict perme ability **: Use My c Perm Check to predict the perme ability of these synthetic hits across the my cob acterial cell wall . 3 . ** An alyze results **: Evaluate the predicted perme ability probabilities to identify compounds with high perme ability . 4 . ** Design new derivatives **: Use computational methods , such as molecular modeling and virtual screening , to design new derivatives of the identified synthetic hits . 5 . ** Predict pharmac okin etics **: Use computational tools , such as AD ME ( Abs orption , Distribution , Met abol ism , and Ex cretion ) prediction software , to evaluate the pharmac okin etic properties of the new derivatives . 6 . ** Opt imize and refine **: Ref ine the new derivatives based on the predicted pharmac okin etics and perme ability , and re -e valuate their activity against tuberculosis .
+1. **Identify synthetic hits**: Use existing databases or literature to identify synthetic compounds that have shown activity against tuberculosis.
+2. **Predict permeability**: Use MycPermCheck to predict the permeability of these synthetic hits across the mycobacterial cell wall.
+3. **Analyze results**: Evaluate the predicted permeability probabilities to identify compounds with high permeability.
+4. **Design new derivatives**: Use computational methods, such as molecular modeling and virtual screening, to design new derivatives of the identified synthetic hits.
+5. **Predict pharmacokinetics**: Use computational tools, such as ADME (Absorption, Distribution, Metabolism, and Excretion) prediction software, to evaluate the pharmacokinetic properties of the new derivatives.
+6. **Optimize and refine**: Refine the new derivatives based on the predicted pharmacokinetics and permeability, and re-evaluate their activity against tuberculosis.
 
-By following this approach , you can propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmac okin etics , ultimately contributing to the development of more effective treatments for this disease .
+By following this approach, you can propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmacokinetics, ultimately contributing to the development of more effective treatments for this disease.
 
 Model: eos7kpb
 
@@ -59,11 +68,16 @@ Title: H3D Virtual Screening Cascade Light
 
 Explanation:
 
-Based on the context , you can use the Z aira Chem AI / ML tool to propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmac okin etics . Here 's a concise step -by -step guide :
+Based on the context, you can use the ZairaChem AI/ML tool to propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmacokinetics. Here's a concise step-by-step guide:
 
-1 . ** Input your hit compound **: Provide the molecular structure of the synthetic hit compound to Z aira Chem . 2 . ** Run QS AR /Q SP R models **: Z aira Chem will employ AI / ML techniques to predict the activity and pharmac okin etic properties of the hit compound . 3 . ** An alyze results **: Review the predicted activity and pharmac okin etic properties to identify potential areas for improvement . 4 . ** Prop ose modifications **: Use Z aira Chem 's Auto ML algorithms to suggest modifications to the hit compound , such as changes to functional groups or molecular structure . 5 . ** Evaluate new compounds **: Run the modified compounds through Z aira Chem 's QS AR /Q SP R models to predict their activity and pharmac okin etic properties . 6 . ** Select and prioritize **: Choose the most promising new compounds for synthesis and experimental validation .
+1. **Input your hit compound**: Provide the molecular structure of the synthetic hit compound to ZairaChem.
+2. **Run QSAR/QSPR models**: ZairaChem will employ AI/ML techniques to predict the activity and pharmacokinetic properties of the hit compound.
+3. **Analyze results**: Review the predicted activity and pharmacokinetic properties to identify potential areas for improvement.
+4. **Propose modifications**: Use ZairaChem's AutoML algorithms to suggest modifications to the hit compound, such as changes to functional groups or molecular structure.
+5. **Evaluate new compounds**: Run the modified compounds through ZairaChem's QSAR/QSPR models to predict their activity and pharmacokinetic properties.
+6. **Select and prioritize**: Choose the most promising new compounds for synthesis and experimental validation.
 
-By following these steps , you can leverage Z aira Chem 's computational methods to propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmac okin etics .
+By following these steps, you can leverage ZairaChem's computational methods to propose new derivatives of synthetic hits that enhance activity against tuberculosis while maintaining good pharmacokinetics.
 
 Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
 

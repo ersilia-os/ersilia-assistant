@@ -15,7 +15,7 @@ Title: Antimalarial Activity (Abs And Sexual Stages)
 
 Explanation:
 
-Based on the context, I would recommend using the Support Vector Machines ( SVM ) model developed in the study to identify the most promising candidates from your collection of isolated compounds . The SVM model has been shown to be effective in predicting stage -specific antimalarial activity with high recall and low false positive rates. By applying this model to your compounds, you can identify the most promising candidates for further testing and optimization.
+Based on the context, I would recommend using the Support Vector Machines (SVM).
 
 Model: eos2gth
 
@@ -25,7 +25,7 @@ Title: Maip Distillation: Antimalarial Potential Prediction
 
 Explanation:
 
-Based on the context, I would recommend using the MAIP ( Malaria Inhibitor Predictor ) web service to identify the most promising candidates from your collection of isolated compounds. MAIP uses a consensus machine learning model to predict compounds with potential blood-stage malaria inhib itory activity. You can input the SM ILES strings of your compounds into the MA IP platform for prediction, and the model will provide a score indicating the likelihood of each compound being a malaria inhibitor. This will help you prioritize the most promising candidates for further testing and validation.
+Based on the context, I would recommend using the MAIP (Malaria Inhibitor Predictor) web service to identify the most promising candidates from your collection of isolated compounds. MAIP uses a consensus machine learning model to predict compounds with potential blood-stage malaria inhibitory activity. You can input the SMILES strings of your compounds into the MAIP platform for prediction, and the model will provide a score indicating the likelihood of each compound being a malaria inhibitor. This will help you prioritize the most promising candidates for further testing and validation.
 
 Model: eos7yti
 
@@ -37,9 +37,11 @@ Explanation:
 
 Based on the context, I would recommend using the open source drug discovery approach, as described in the publication "Open Source Drug Discovery: Highly Potent Antimalarial Compounds Derived from the Tres Cantos Arylpyrroles". This approach involves:
 
-1. Cheminformatics: Use public data sets like GSK's Tres Cantos Antimalarial data to select and analyze the compounds. 2. In vitro assays: Evaluate the compounds for potency, cytotoxicity, and metabolic stability using in vitro assays. 3. Open source collaboration: Share data and findings with a broad scientific community to accelerate the identification of promising compounds.
+1. Cheminformatics: Use public data sets like GSK's Tres Cantos Antimalarial data to select and analyze the compounds.
+2. In vitro assays: Evaluate the compounds for potency, cytotoxicity, and metabolic stability using in vitro assays.
+3. Open source collaboration: Share data and findings with a broad scientific community to accelerate the identification of promising compounds.
 
-This approach has been successful in identifying potent antimal arial compounds and can be adapted to your collection of isolated compounds from Cameroonian plants.
+This approach has been successful in identifying potent antimalarial compounds and can be adapted to your collection of isolated compounds from Cameroonian plants.
 
 Model: eos4rta
 
@@ -49,11 +51,11 @@ Title: Antimalarial Activity (Mmv)
 
 Explanation:
 
-To identify the most promising candidates, I recommend using a model that can analyze the IC 50 values and percentage of inhibition data. A logistic regression model would be best suited for this task.
+To identify the most promising candidates, I recommend using a model that can analyze the IC50 values and percentage of inhibition data. A logistic regression model would be best suited for this task.
 
-The logistic regression model can help identify the compounds that have a high probability of inhibiting the malaria parasite ( strain NF 54 ) at a threshold of 1 u M ( IC 50 ) and achieving a 50 % inhibition rate ( measured by LDH and Lum ). This model can also provide insights into the relationships between the compounds' structures and their antimal arial activities.
+The logistic regression model can help identify the compounds that have a high probability of inhibiting the malaria parasite (strain NF54) at a threshold of 1 µM (IC50) and achieving a 50% inhibition rate (measured by LDH and Lum). This model can also provide insights into the relationships between the compounds' structures and their antimalarial activities.
 
-The logistic regression model is a good choice because it can handle binary outcomes ( e .g ., inhibited or not inhibited ) and can provide a clear ranking of the compounds based on their predicted probabilities of success. This will allow you to identify the most promising candidates for further testing and development .
+The logistic regression model is a good choice because it can handle binary outcomes (e.g., inhibited or not inhibited) and can provide a clear ranking of the compounds based on their predicted probabilities of success. This will allow you to identify the most promising candidates for further testing and development.
 
 Model: eos4zfy
 
@@ -73,11 +75,9 @@ Title: H3D Virtual Screening Cascade Light
 
 Explanation:
 
-Based on the context, I would recommend using the Zaira Chem AI / ML tool for virtual screening. This tool is specifically designed for drug discovery, particularly for malaria and tuberculosis, and has been implemented at the H3D Centre in Africa. It lever ages AI / ML techniques for QSAR / QSPR modelling, using descriptors like physico chemical parameters and structural fingerprints to predict the activity of compounds.
+Based on the context, I would recommend using the ZairaChem AI/ML tool for virtual screening. This tool is specifically designed for drug discovery, particularly for malaria and tuberculosis, and has been implemented at the H3D Centre in Africa. It leverages AI/ML techniques for QSAR/QSPR modelling, using descriptors like physicochemical parameters and structural fingerprints to predict the activity of compounds.
 
-You can use Z aira Chem to comput ationally profile your collection of isolated compounds from Cam ero onian plants , predicting their potential activity against malaria . The tool can identify the most promising candidates based on their predicted activity , sol ub ility , and other ADM ET properties . This can help you prioritize the synthesis and testing of the most promising compounds , reducing the time and cost associated with traditional screening methods .
-
-Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
+You can use ZairaChem to computationally profile your collection of isolated compounds from Cameroonian plants, predicting their potential activity against malaria. The tool can identify the most promising candidates based on their predicted activity, solubility, and other ADMET properties. This can help you prioritize the synthesis and testing of the most promising compounds, reducing the time and cost associated with traditional screening methods.
 
 This file should contain a column called smiles with the SMILES strings of the molecules in your dataset.
 

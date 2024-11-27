@@ -15,11 +15,15 @@ Title: Sars-Cov-2 Antiviral Prediction: Redial-2020
 
 Explanation:
 
-Based on the context , you can use the following computational techniques to design new synthetic compounds that optimize binding to S ARS -Co V - 2 targets while increasing diversity in your chemical library :
+Based on the context, you can use the following computational techniques to design new synthetic compounds that optimize binding to SARS-CoV-2 targets while increasing diversity in your chemical library:
 
-1 . ** En semble learning **: Combine multiple machine learning models to predict the activity of small molecules against S ARS -Co V - 2 , as implemented in RED IAL - 202 0 . 2 . ** Ch emin form atics **: Use chemical fingerprints , phys ico chemical descriptors , and top ological pharmac oph ore descriptors to design new compounds that optimize binding to S ARS -Co V - 2 targets . 3 . ** High -through put screening **: Util ize large datasets from the NC ATS COVID - 19 portal to train and validate machine learning models , ensuring that your designed compounds are likely to be active against S ARS -Co V - 2 . 4 . ** D iversity -oriented synthesis **: Employ computational methods to generate novel compounds with diverse chemical structures , increasing the likelihood of discovering new , effective anti -S ARS -Co V - 2 agents . 5 . ** Virtual screening **: Use computational models to predict the binding affinity of new compounds to S ARS -Co V - 2 targets , allowing you to prioritize compounds for experimental testing .
+1. **Ensemble learning**: Combine multiple machine learning models to predict the activity of small molecules against SARS-CoV-2, as implemented in REDIAL-2020.
+2. **Cheminformatics**: Use chemical fingerprints, physicochemical descriptors, and topological pharmacophore descriptors to design new compounds that optimize binding to SARS-CoV-2 targets.
+3. **High-throughput screening**: Utilize large datasets from the NCATS COVID-19 portal to train and validate machine learning models, ensuring that your designed compounds are likely to be active against SARS-CoV-2.
+4. **Diversity-oriented synthesis**: Employ computational methods to generate novel compounds with diverse chemical structures, increasing the likelihood of discovering new, effective anti-SARS-CoV-2 agents.
+5. **Virtual screening**: Use computational models to predict the binding affinity of new compounds to SARS-CoV-2 targets, allowing you to prioritize compounds for experimental testing.
 
-These techniques can be integrated into a computational workflow to design and optimize new synthetic compounds that target S ARS -Co V - 2 while increasing diversity in your chemical library .
+These techniques can be integrated into a computational workflow to design and optimize new synthetic compounds that target SARS-CoV-2 while increasing diversity in your chemical library.
 
 Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
 

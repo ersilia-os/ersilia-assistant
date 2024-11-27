@@ -15,13 +15,17 @@ Title: Bayesherg: Herg Channel Blockade
 
 Explanation:
 
-To ensure that natural products in your collection are free from h ERG toxicity and safe for C YP metabolism when designing ant imal arial therapies , you can use the Bay esh ERG model . This model is specifically designed to predict h ERG channel blockers and can help you identify potential cardi otoxic ity risks associated with your natural products .
+To ensure that natural products in your collection are free from hERG toxicity and safe for CYP metabolism when designing antimalarial therapies, you can use the Bayesherg model. This model is specifically designed to predict hERG channel blockers and can help you identify potential cardiotoxicity risks associated with your natural products.
 
-Here's a step-by-step approach :
+Here's a step-by-step approach:
 
-1 . ** Pre-process your natural product dataset **: Prepare your dataset of natural products by converting their molecular structures into a format compatible with the Bay esh ERG model . 2 . ** Run the Bay esh ERG model **: Input your pre - processed dataset into the Bay esh ERG model to predict the likelihood of each natural product being a h ERG channel blocker . 3 . ** Evaluate the results **: Analy ze the output of the Bay esh ERG model to identify natural products with a high likelihood of being h ERG channel blockers . These compounds may require further testing or modification to ensure safety . 4 . ** Ass ess C YP metabolism **: Use computational tools or in vitro assays to evaluate the potential of your natural products to interact with C YP enzymes . This will help you identify potential issues with C YP metabolism . 5 . ** Validate the results **: Perform in vitro or in vivo experiments to validate the predictions made by the Bay esh ERG model and assess the safety of your natural products in the context of ant imal arial therapy .
+1. **Pre-process your natural product dataset**: Prepare your dataset of natural products by converting their molecular structures into a format compatible with the Bayesherg model.
+2. **Run the Bayesherg model**: Input your pre-processed dataset into the Bayesherg model to predict the likelihood of each natural product being a hERG channel blocker.
+3. **Evaluate the results**: Analyze the output of the Bayesherg model to identify natural products with a high likelihood of being hERG channel blockers. These compounds may require further testing or modification to ensure safety.
+4. **Assess CYP metabolism**: Use computational tools or in vitro assays to evaluate the potential of your natural products to interact with CYP enzymes. This will help you identify potential issues with CYP metabolism.
+5. **Validate the results**: Perform in vitro or in vivo experiments to validate the predictions made by the Bayesherg model and assess the safety of your natural products in the context of antimalarial therapy.
 
-By following this approach , you can effectively screen your natural product collection for potential h ERG toxicity and C YP metabolism issues , ensuring the safety and efficacy of your ant imal arial therapies .
+By following this approach, you can effectively screen your natural product collection for potential hERG toxicity and CYP metabolism issues, ensuring the safety and efficacy of your antimalarial therapies.
 
 Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
 
