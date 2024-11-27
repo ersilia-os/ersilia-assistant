@@ -1,0 +1,8 @@
+This is my understanding of your query:
+
+    You have a library of natural products.
+    You are interested in prioritizing these natural products for COVID-19 treatment.
+    You want to assess their cytotoxicity and metabolic stability in liver microsomes.
+    You are looking for natural products with low cytotoxicity and good metabolic stability.
+
+I could not find any models that are relevant to your query.

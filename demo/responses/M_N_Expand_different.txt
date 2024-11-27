@@ -1,0 +1,150 @@
+I prodded the model to pick up generative models, this is not ideal, but putting it out here for reference:
+
+Prompt: I want to use generative models, such as those that do scaffold hopping because I have an initial library of 30 compounds isolated from plants with activity against P.falciparum and want to expand it with new molecules that are easy to synthesize and retain the bioactivity.
+
+This is my understanding of your query:
+
+    You have an initial library of 30 compounds isolated from plants with activity against P.falciparum.
+    You want to use generative models, specifically scaffold hopping, to expand this library.
+    The new molecules you want to generate should be easy to synthesize.
+    The new molecules should retain the bioactivity against P.falciparum.
+
+For your query, I have selected the following models:
+
+Model: eos9taz
+
+URL: https://github.com/ersilia-os/eos9taz
+
+Title: Extending Molecular Scaffolds With Fragments
+
+Explanation:
+
+Based on your context , I would recommend using the Mo Le R model for scaffold hopping . Here 's why :
+
+Mo Le R is specifically designed for molecular scaffold extension , which is exactly what you need to expand your library of compounds . It incorporates fixed scaff olds , which is ideal for retaining the bio activity of your initial compounds . Additionally , Mo Le R out per forms existing methods in scaffold -based tasks , making it a reliable choice for your needs .
+
+The model 's ability to generate chem ically valid molecules from arbitrary scaff olds also align s with your goal of synthes izing new molecules that are easy to produce .
+
+Model: eos633t
+
+URL: https://github.com/ersilia-os/eos633t
+
+Title: Extending Molecular Scaffolds With Building Blocks
+
+Explanation:
+
+Based on your context , I would recommend using the Mo Le R model , as it is specifically designed for scaffold extension and has shown excellent results in scaffold -based molecular generation tasks . Its ability to integrate atom -by - atom and motif -based generation , while maintaining chemical validity and optimizing scaffold retention , makes it an ideal choice for expanding your initial library of compounds .
+
+Mo Le R 's graph -based approach using graph neural networks ( G NN s ) and its use of a motif vocabulary to guide the generation process will allow you to efficiently generate new molecules that are easy to syn thesize and retain the bio activity of the original compounds . Additionally , its faster training and sampling rates compared to other models will enable you to quickly explore a large chemical space and identify new potential candidates .
+
+The fact that Mo Le R out per forms existing methods in both uncon strained and scaffold -based molecular generation tasks , as demonstrated in the paper , further supports its suitability for your task .
+
+Model: eos69e6
+
+URL: https://github.com/ersilia-os/eos69e6
+
+Title: Pharmacophore-Guided Molecular Generation
+
+Explanation:
+
+Based on your context , I would recommend using a pharmac oph ore -guid ed deep learning approach , such as P GM G , to generate new molecules that retain the bio activity of your initial library . This approach is best suited for your task because :
+
+1 . ** Ph armac oph ore guidance **: P GM G uses pharmac oph ore features to guide the generation of new molecules , which is particularly useful when you have a small library of active compounds and want to expand it while retaining bio activity . 2 . ** S caffold hopping **: P GM G can generate molecules with diverse chemical structures while maintaining essential pharmac oph ore features , which is similar to scaffold hopping . 3 . ** Easy synthesis **: P GM G generates molecules that are easy to syn thesize , which is a key consideration for expanding your library . 4 . ** Bio activity retention **: P GM G 's pharmac oph ore -guid ed approach ensures that the generated molecules retain the bio activity of your initial library , which is critical for your application against P .f alc ipar um .
+
+Overall , P GM G 's unique combination of pharmac oph ore guidance , scaffold hopping , and easy synthesis makes it an ideal choice for expanding your library of active compounds against P .f alc ipar um .
+
+Model: eos3ae7
+
+URL: https://github.com/ersilia-os/eos3ae7
+
+Title: Variational Autoencoder For Small Molecule Generation
+
+Explanation:
+
+Based on your context , I would recommend using a Gener ative Ad vers arial Network ( GAN ) or a Vari ational Auto encoder ( VA E ) for scaffold hopping . These models are well -su ited for generating new molecules that are similar to the existing ones in your library , while also exploring new chemical space .
+
+The use of G AN s or V AE s for scaffold hopping is particularly appealing because they can :
+
+1 . ** Ret ain bio activity **: By learning from your initial library , these models can generate new molecules that are likely to retain the desired bio activity against P .f alc ipar um . 2 . ** Explore new chemical space **: G AN s and V AE s can generate novel molecules that are different from the existing ones in your library , increasing the chances of discovering new , potent compounds . 3 . ** Easy synthesis **: These models can be trained to generate molecules with a focus on synthes iz ability , ensuring that the generated compounds are feasible to produce . 4 . ** Sc al ability **: G AN s and V AE s can efficiently generate large numbers of new molecules , making it possible to explore a vast chemical space in a relatively short amount of time .
+
+In your case , a V AE might be a better choice due to its ability to learn a continuous representation of molecules , which can be useful for exploring new chemical space while retaining the desired properties . However , a G AN could also be a good option , especially if you want to generate molecules with specific properties or characteristics .
+
+Before choosing a model , I would recommend exploring the following :
+
+1 . ** Data preparation **: Ensure that your initial library is properly formatted and pre processed for use with G AN s or V AE s . 2 . ** Model selection **: Choose a suitable architecture and hyper parameters for your model , considering factors such as the size of your library , the desired level of novelty , and the computational resources available . 3 . ** Evaluation metrics **: Define clear evaluation metrics to assess the quality and novelty of the generated molecules , such as their bio activity , synthes iz ability , and diversity .
+
+By following these steps , you can effectively use gener ative models to expand your library of compounds and discover new , potent molecules against P .f alc ipar um .
+
+Model: eos8bhe
+
+URL: https://github.com/ersilia-os/eos8bhe
+
+Title: Scaffold Morphing
+
+Explanation:
+
+Based on the context , I would recommend using the SAFE -G PT model for scaffold hopping and molecular design . Here 's why :
+
+1 . ** Compatibility with SM ILES **: SAFE -G PT is compatible with SM ILES , which is a widely used notation for molecular structures . This ensures that your initial library of 30 compounds can be easily integrated into the model . 2 . ** Gener ative capabilities **: SAFE -G PT is a gener ative model that can create new molecules by modifying existing ones . This is particularly useful for scaffold hopping , where you want to explore new molecular structures while retaining bio activity . 3 . ** Rob ust optimization performance **: The SAFE -G PT model has demonstrated robust optimization performance in various gener ative tasks , including scaffold decoration and fragment linking . This suggests that it can efficiently explore chemical space and identify new molecules with desired properties . 4 . ** Easy synthesis **: The model 's ability to generate molecules with a focus on ease of synthesis is a significant advantage . This can help you identify new compounds that are more feasible to produce , reducing the time and cost associated with synthesis . 5 . ** Retention of bio activity **: By using a gener ative model that can modify existing molecules , you can explore new structures while retaining the bio activity of the original compounds . This increases the likelihood of discovering new molecules with desired properties .
+
+Overall , the SAFE -G PT model seems well -su ited for your needs , given its compatibility with SM ILES , gener ative capabilities , robust optimization performance , and focus on ease of synthesis .
+
+Model: eos57bx
+
+URL: https://github.com/ersilia-os/eos57bx
+
+Title: Reinvent 4 Mol2Molscaffold
+
+Explanation:
+
+Based on your context , I would recommend using RE IN VENT 4 for scaffold hopping and gener ative molecular design . Here 's why :
+
+1 . ** S caffold hopping **: RE IN VENT 4 is specifically designed for scaffold hopping , which involves modifying the core structure of a molecule while retaining its bio activity . This is exactly what you need to expand your library of compounds . 2 . ** Gener ative molecular design **: RE IN VENT 4 uses neural networks and transformer architectures to generate new molecules that are easy to syn thesize and retain bio activity . This align s with your goal of expanding your library with new compounds . 3 . ** Open -source and customizable **: RE IN VENT 4 is an open -source framework , which means you can customize it to suit your specific needs and integrate it with your existing workflows . 4 . ** Com prehensive integration of AI techniques **: RE IN VENT 4 integrates various machine learning optimization techniques , including transfer learning , reinforcement learning , and curriculum learning , which will help you generate diverse and chem ically valid molecules .
+
+Overall , RE IN VENT 4 is a robust and comprehensive tool that is well -su ited for your needs in scaffold hopping and gener ative molecular design .
+
+Model: eos2401
+
+URL: https://github.com/ersilia-os/eos2401
+
+Title: Scaffold Decoration
+
+Explanation:
+
+Based on the context , the SAFE framework and the SAFE -G PT model are best suited for your task . Here 's why :
+
+1 . ** S caffold hopping **: The SAFE framework enables efficient scaffold hopping , which is essential for generating new molecules with similar bio activity while varying their chemical structure . 2 . ** Gener ative models **: The SAFE -G PT model is a gener ative model that can produce new molecules with desired properties , such as ease of synthesis and bio activity against P .f alc ipar um . 3 . ** Compatibility with SM ILES **: The SAFE framework is compatible with SM ILES , which is a widely used notation for chemical structures . This ensures that the generated molecules can be easily analyzed and visual ized . 4 . ** Eff icient exploration of chemical space **: The SAFE framework and SAFE -G PT model can efficiently explore the chemical space , allowing you to discover new molecules with desired properties . 5 . ** Rob ust performance **: The SAFE -G PT model has demonstrated robust performance in generating valid , unique , and diverse molecules , which is essential for expanding your initial library of compounds .
+
+Overall , the SAFE framework and SAFE -G PT model are well -su ited for your task of expanding your initial library of compounds with new molecules that are easy to syn thesize and retain bio activity against P .f alc ipar um .
+
+Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
+
+This file should contain a column called smiles with the SMILES strings of the molecules in your dataset.
+
+ersilia fetch eos9taz
+ersilia serve eos9taz
+ersilia run -i input.csv -o output_eos9taz.csv
+
+ersilia fetch eos633t
+ersilia serve eos633t
+ersilia run -i input.csv -o output_eos633t.csv
+
+ersilia fetch eos69e6
+ersilia serve eos69e6
+ersilia run -i input.csv -o output_eos69e6.csv
+
+ersilia fetch eos3ae7
+ersilia serve eos3ae7
+ersilia run -i input.csv -o output_eos3ae7.csv
+
+ersilia fetch eos8bhe
+ersilia serve eos8bhe
+ersilia run -i input.csv -o output_eos8bhe.csv
+
+ersilia fetch eos57bx
+ersilia serve eos57bx
+ersilia run -i input.csv -o output_eos57bx.csv
+
+ersilia fetch eos2401
+ersilia serve eos2401
+ersilia run -i input.csv -o output_eos2401.csv

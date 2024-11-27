@@ -1,0 +1,41 @@
+This is my understanding of your query:
+
+    You have curated the scientific literature for African Natural Products with potential antituberculosis activity.
+    You want to obtain a full toxicity profile for these compounds.
+    You plan to use this toxicity profile to annotate the compounds before proceeding with further research.
+
+For your query, I have selected the following models:
+
+Model: eos9ivc
+
+URL: https://github.com/ersilia-os/eos9ivc
+
+Title: Antituberculosis Activity Prediction
+
+Explanation:
+
+Based on your context , I would recommend using a machine learning model such as Random Forest or Gradient Boost ing for predicting toxicity profiles of the compounds .
+
+This is because these models are well -su ited for handling high -dimensional data and can effectively capture complex relationships between molecular structures and biological activities . They are also robust to over fit ting and can handle missing values , which is common in compound databases . Additionally , they can provide feature importance scores , which can help identify the most relevant molecular features contributing to toxicity .
+
+Model: eos7kpb
+
+URL: https://github.com/ersilia-os/eos7kpb
+
+Title: H3D Virtual Screening Cascade Light
+
+Explanation:
+
+Based on the context , I would recommend using the Z aira Chem model for predicting the toxicity profile of the African Natural Products . This is because Z aira Chem is an AI / ML -driven pipeline that includes models for ADM ET ( Abs orption , Distribution , Met abol ism , Ex cretion , and Toxic ity ) properties , such as sol ub ility and cardi otoxic ity , which are crucial for assessing the safety of potential ant it ub erculosis compounds . The model 's ability to operate on standard computers with minimal data science expertise makes it a suitable choice for your needs .
+
+Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
+
+This file should contain a column called smiles with the SMILES strings of the molecules in your dataset.
+
+ersilia fetch eos9ivc
+ersilia serve eos9ivc
+ersilia run -i input.csv -o output_eos9ivc.csv
+
+ersilia fetch eos7kpb
+ersilia serve eos7kpb
+ersilia run -i input.csv -o output_eos7kpb.csv

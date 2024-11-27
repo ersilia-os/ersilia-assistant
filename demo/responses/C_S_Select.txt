@@ -1,0 +1,9 @@
+This is my understanding of your query:
+
+    You have a library of synthetic compounds.
+    You are interested in identifying compounds suitable for developing antivirals.
+    The target for these antivirals is the SARS-CoV-2 spike protein.
+    Bioavailability is a key factor to consider when selecting compounds.
+    You want to know which compounds in your library are the best suited for this purpose.
+
+I could not find any models that are relevant to your query.

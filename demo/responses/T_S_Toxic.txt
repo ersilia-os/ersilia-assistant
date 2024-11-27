@@ -1,0 +1,8 @@
+This is my understanding of your query:
+
+    You want to use the ChemDiv Diversity Set as a starting library for your drug discovery project.
+    You are looking for molecules in this library that are least likely to interfere with CYP3A4 metabolism.
+    You want these molecules to show selective activity against tuberculosis bacteria.
+    You are seeking to minimize the potential for drug-drug interactions and maximize the efficacy of your compounds against the target disease.
+
+I could not find any models that are relevant to your query.
