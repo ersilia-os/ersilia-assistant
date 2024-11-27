@@ -1,0 +1,43 @@
+This is my understanding of your query:
+
+    You have manually curated the literature to identify natural products that inhibit SARS-CoV-1 and/or SARS-CoV-2.
+    You would like to explore the chemical space around these identified natural products.
+    You are likely seeking to understand the structural features and potential modifications that could enhance or alter the activity of these compounds against SARS-CoV-1 and/or SARS-CoV-2.
+
+For your query, I have selected the following models:
+
+Model: eos8fth
+
+URL: https://github.com/ersilia-os/eos8fth
+
+Title: Sars-Cov-2 Antiviral Prediction: Redial-2020
+
+Explanation:
+
+Based on the context , I would recommend using the RED IAL - 202 0 model for exploring the chemical space around the natural products you 've curated . This model is specifically designed to predict the activity of small molecules against S ARS -Co V - 2 , and it has been trained on a large dataset of high -through put screening data .
+
+The model 's ensemble learning approach and use of diverse descriptor types make it well -su ited for identifying potential analog s or derivatives of the natural products you 've identified . By input ting the chemical structures of these natural products into the RED IAL - 202 0 web application , you can generate predictions of their activity against S ARS -Co V - 2 and explore the surrounding chemical space to identify potential leads for further investigation .
+
+Model: eos4cxk
+
+URL: https://github.com/ersilia-os/eos4cxk
+
+Title: Sars-Cov-2 Anti Viral Screening
+
+Explanation:
+
+Based on the context , I would recommend using the Image M ol model for exploring the chemical space around the natural products you 've curated . This is because Image M ol is a self -sup ervised deep learning framework that exc els in capturing structural information from molecular images , which is particularly useful for understanding the chemical properties and relationships of natural products .
+
+Image M ol 's ability to process large datasets and its robust ness in predicting molecular properties make it an ideal tool for exploring the chemical space around your curated natural products . Additionally , its performance in predicting drug targets , including those relevant to COVID - 19 , suggests that it could be a valuable asset in identifying potential leads for further investigation .
+
+Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
+
+This file should contain a column called smiles with the SMILES strings of the molecules in your dataset.
+
+ersilia fetch eos8fth
+ersilia serve eos8fth
+ersilia run -i input.csv -o output_eos8fth.csv
+
+ersilia fetch eos4cxk
+ersilia serve eos4cxk
+ersilia run -i input.csv -o output_eos4cxk.csv

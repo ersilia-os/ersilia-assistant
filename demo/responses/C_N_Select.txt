@@ -1,0 +1,105 @@
+This is my understanding of your query:
+
+    You have a collection of marine natural products that may inhibit SARS-CoV-2 replication.
+    You want to prioritize candidates for antiviral testing.
+    You are looking for a systematic approach to select the most promising compounds for further evaluation.
+
+For your query, I have selected the following models:
+
+Model: eos8fth
+
+URL: https://github.com/ersilia-os/eos8fth
+
+Title: Sars-Cov-2 Antiviral Prediction: Redial-2020
+
+Explanation:
+
+Based on the context , I would recommend using the RED IAL - 202 0 platform to predict the anti -S ARS -Co V - 2 activities of your marine natural products . This platform is specifically designed for virtual screening and priorit ization of compounds against S ARS -Co V - 2 , and it has been trained on high -through put screening data from the NC ATS COVID - 19 portal .
+
+You can input your marine natural products ' chemical structures ( SM ILES or Pub Chem C IDs ) into the RED IAL - 202 0 web application , and the platform will provide predictions of their anti -S ARS -Co V - 2 activities . The platform 's ensemble models will combine the predictions from multiple descriptor types , enhancing the accuracy of the predictions .
+
+By using RED IAL - 202 0 , you can quickly and efficiently prioritize your marine natural products for ant iv iral testing , focusing on those with the highest predicted anti -S ARS -Co V - 2 activities . This will help you to accelerate the discovery of potential ant iv iral compounds and reduce the number of experimental tests required .
+
+Model: eos9f6t
+
+URL: https://github.com/ersilia-os/eos9f6t
+
+Title: Sars-Cov Inhibition
+
+Explanation:
+
+Based on the context , I would recommend using the deep learning model described in the study to prioritize candidates for ant iv iral testing . The model was trained to predict antib acterial activity from molecular structures and achieved a strong predictive capability ( ROC -A UC of 0 . 896 ). It 's likely that the model could be adapted or fine -t uned to predict ant iv iral activity as well .
+
+You could use the model to screen your collection of marine natural products and identify the most promising candidates for ant iv iral testing . This would allow you to focus on the most likely candidates and reduce the number of compounds that need to be tested , saving time and resources .
+
+Additionally , the study 's use of a directed -message passing approach to convert molecular graphs into continuous vectors for property prediction may be particularly useful for marine natural products , which often have complex structures .
+
+Model: eos4cxk
+
+URL: https://github.com/ersilia-os/eos4cxk
+
+Title: Sars-Cov-2 Anti Viral Screening
+
+Explanation:
+
+Based on the context , I would recommend using the Image M ol model to prioritize candidates for ant iv iral testing . Image M ol is a self -sup ervised deep learning framework that can predict molecular properties and drug targets , including those related to S ARS -Co V - 2 replication . By processing the molecular images of your marine natural products , Image M ol can identify potential candidates with high accuracy and robust ness .
+
+Specific ally , you can use Image M ol to predict the following properties :
+
+1 . Binding affinity to S ARS -Co V - 2 targets , such as the 3 C -like prote ase . 2 . In hibition of S ARS -Co V - 2 replication . 3 . Toxic ity and drug metabolism .
+
+By priorit izing candidates based on these predictions , you can efficiently identify the most promising compounds for ant iv iral testing , reducing the need for extensive experimental screening .
+
+Model: eos9ivc
+
+URL: https://github.com/ersilia-os/eos9ivc
+
+Title: Antituberculosis Activity Prediction
+
+Explanation:
+
+Based on the context , I would recommend using a machine learning model , specifically a Random Forest or Gradient Boost ing model , to prioritize the candidates for ant iv iral testing .
+
+This is because the model can efficiently handle high -dimensional data , such as the collection of marine natural products , and identify the most relevant features that are associated with ant iv iral activity . The model can also handle missing values and non -linear relationships between the features , making it a robust choice for this task .
+
+Additionally , the model can provide a ranking of the candidates based on their predicted ant iv iral activity , allowing you to prioritize the most promising candidates for further testing .
+
+Model: eos7yti
+
+URL: https://github.com/ersilia-os/eos7yti
+
+Title: Antimalarial Activity From Osm
+
+Explanation:
+
+To prioritize candidates for ant iv iral testing , consider the following steps :
+
+1 . ** Screen for known ant iv iral compounds **: Use chem informatics tools to identify compounds with known ant iv iral activity or structural similarity to known ant iv ir als . 2 . ** Ass ess bio activity **: Use in vitro assays to evaluate the compounds ' ability to inhibit S ARS -Co V - 2 replication , such as the Cy top ath ic Effect ( C PE ) assay or the Lucifer ase Reporter Ass ay . 3 . ** Evaluate cyt otoxic ity **: Assess the compounds ' cyt otoxic ity using cell viability assays , such as the M TT or Al amar Blue assay , to ensure they are non -to xic to host cells . 4 . ** Consider the compounds ' chemical properties **: Evaluate the compounds ' sol ub ility , stability , and potential for metabolic activation or inhibition to ensure they are suitable for further testing . 5 . ** Prior itize compounds with unique scaff olds or mechanisms of action **: Focus on compounds with novel structures or mechanisms of action to increase the likelihood of discovering new ant iv iral compounds . 6 . ** Consider the compounds ' potential for synergy **: Evaluate the compounds ' potential to interact with other ant iv iral compounds or host cell factors to enhance their ant iv iral activity .
+
+By following these steps , you can prioritize the most promising marine natural products for ant iv iral testing and increase the likelihood of discovering new ant iv iral compounds .
+
+Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
+
+This file should contain a column called smiles with the SMILES strings of the molecules in your dataset.
+
+ersilia fetch eos8fth
+ersilia serve eos8fth
+ersilia run -i input.csv -o output_eos8fth.csv
+
+ersilia fetch eos9f6t
+ersilia serve eos9f6t
+ersilia run -i input.csv -o output_eos9f6t.csv
+
+ersilia fetch eos4cxk
+ersilia serve eos4cxk
+ersilia run -i input.csv -o output_eos4cxk.csv
+
+ersilia fetch eos9ivc
+ersilia serve eos9ivc
+ersilia run -i input.csv -o output_eos9ivc.csv
+
+ersilia fetch eos7yti
+ersilia serve eos7yti
+ersilia run -i input.csv -o output_eos7yti.csv
+
+What natural products in my library can be prioritized for COVID-19 treatment by assessing low cytotoxicity and good metabolic stability in liver microsomes?
