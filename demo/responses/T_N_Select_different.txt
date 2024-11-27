@@ -1,0 +1,39 @@
+prompt: I need to identify the most effective natural products for Mycobacterium tuberculosis, with the main focus being compounds with high permeability across the bacterial membrane. Help me design an experiment for this.
+
+This is my understanding of your query:
+
+    You are looking for natural products that are effective against Mycobacterium tuberculosis.
+    The main criterion for these natural products is high permeability across the bacterial membrane.
+    You need help designing an experiment to identify and evaluate these natural products.
+
+For your query, I have selected the following model:
+
+Model: eos9ivc
+
+URL: https://github.com/ersilia-os/eos9ivc
+
+Title: Antituberculosis Activity Prediction
+
+Explanation:
+
+Based on the context , I would recommend using a combination of computational and experimental approaches to identify the most effective natural products for My cob acter ium tuberculosis .
+
+** Comput ational Approach : **
+
+1 . ** Virtual screening **: Use molecular docking software ( e .g ., Auto Dock , Glide ) to screen a large database of natural products against the M . tuberculosis membrane protein targets ( e .g ., M mp L 3 , M mp L 4 ). 2 . ** Per me ability prediction **: Use machine learning models ( e .g ., random forest , neural networks ) to predict the perme ability of the top -ranked compounds across the bacterial membrane . 3 . ** Prior itize compounds **: Select the top -ranked compounds with high predicted perme ability and low predicted toxicity .
+
+** Experimental Approach : **
+
+1 . ** In vitro testing **: Test the priorit ized compounds against M . tuberculosis cultures using a standard MIC ( Minimum In hib itory Concent ration ) assay . 2 . ** Mem brane perme ability assay **: Use a fluorescent dye -based assay ( e .g ., cal ce in - AM ) to measure the perme ability of the top -per forming compounds across the bacterial membrane . 3 . ** Validate results **: Confirm the results using additional assays ( e .g ., growth inhibition , viability assays ).
+
+** Model Suit ability : **
+
+The proposed model is best suited for this task because it combines the strengths of computational predictions ( speed , scalability , and cost -effect iveness ) with experimental validation ( accuracy , reliability , and relevance ). This hybrid approach allows for the efficient identification of promising natural products and their optimization for membrane perme ability .
+
+Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
+
+This file should contain a column called smiles with the SMILES strings of the molecules in your dataset.
+
+ersilia fetch eos9ivc
+ersilia serve eos9ivc
+ersilia run -i input.csv -o output_eos9ivc.csv

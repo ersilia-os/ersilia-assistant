@@ -1,0 +1,90 @@
+prompt: How do I assess natural products for low cytotoxicity and good metabolic stability in liver microsomes from my library for COVID-19 treatment?
+
+This is my understanding of your query:
+
+    You have a library of natural products that you want to assess for potential use in COVID-19 treatment.
+    You want to evaluate these natural products for low cytotoxicity.
+    You also want to assess their metabolic stability in liver microsomes.
+    You are looking for a method to screen your library for these properties.
+
+For your query, I have selected the following models:
+
+Model: eos31ve
+
+URL: https://github.com/ersilia-os/eos31ve
+
+Title: Human Liver Microsomal Stability
+
+Explanation:
+
+Based on the provided context , I would recommend using the MMP A and QS AR models developed by Shah et al . ( 202 0 ) to assess natural products for low cyt otoxic ity and good metabolic stability in liver micro s omes . These models can help identify chemical structure transformations that influence cy tos olic stability and predict cy tos ol -mediated liabilities .
+
+Here 's a step -by -step approach :
+
+1 . ** Prepare your library **: Compile a list of natural products from your library that are potential candidates for COVID - 19 treatment . 2 . ** Calculate molecular descriptors **: Use RD Kit or Q NA to calculate molecular descriptors for each natural product in your library . 3 . ** Apply MMP A and QS AR models **: Use the MMP A and QS AR models developed by Shah et al . ( 202 0 ) to predict the metabolic stability and cyt otoxic ity of each natural product in liver micro s omes . 4 . ** Evaluate model performance **: Assess the performance of the models using cross -validation and external validation to ensure robust predictions . 5 . ** Filter and prioritize candidates **: Filter the natural products based on their predicted metabolic stability and cyt otoxic ity , and prioritize those that meet your desired criteria for COVID - 19 treatment .
+
+By following this approach , you can efficiently assess your library of natural products for low cyt otoxic ity and good metabolic stability in liver micro s omes , increasing the chances of identifying effective candidates for COVID - 19 treatment .
+
+Model: eos5505
+
+URL: https://github.com/ersilia-os/eos5505
+
+Title: Rat Liver Microsomal Stability
+
+Explanation:
+
+Based on the provided context , I would recommend using the QS AR models developed by Sir am sh etty et al . ( 202 0 ) to predict the metabolic stability of your natural products in rat liver micro s omes . These models have been trained on a dataset of ~ 24 , 000 compounds and have shown good performance in predicting metabolic stability .
+
+To assess the cyt otoxic ity of your natural products , you may consider using in vitro assays such as the M TT ( 3 -( 4 , 5 -d im ethyl th iaz ol - 2 - yl )- 2 , 5 -d ip hen yl tet raz ol ium brom ide ) assay or the LD H ( l act ate de hydro gen ase ) assay .
+
+Once you have identified compounds with good metabolic stability and low cyt otoxic ity , you can further evaluate their potential as COVID - 19 treatments using in vitro and in vivo models .
+
+It 's worth noting that the models developed by Sir am sh etty et al . ( 202 0 ) are specific to rat liver micro s omes , so you may need to consider additional factors such as human metabolism and pharmac okin etics when evaluating the potential of your natural products as COVID - 19 treatments .
+
+Model: eos8fth
+
+URL: https://github.com/ersilia-os/eos8fth
+
+Title: Sars-Cov-2 Antiviral Prediction: Redial-2020
+
+Explanation:
+
+Based on the provided context , the RED IAL - 202 0 model is best suited to assess natural products for low cyt otoxic ity and good metabolic stability in liver micro s omes . The model is designed to predict small molecule activities against S ARS -Co V - 2 , including areas such as viral entry , replication , and human cell toxicity . The model 's ensemble methods and incorporation of various descriptor types enhance prediction accuracy , making it a reliable tool for assessing natural products for COVID - 19 treatment .
+
+Model: eos2re5
+
+URL: https://github.com/ersilia-os/eos2re5
+
+Title: Admetlab Models For Evaluation Of Drug Candidates
+
+Explanation:
+
+Based on the context , I would recommend using the ADM ET lab platform for assessing natural products for low cyt otoxic ity and good metabolic stability in liver micro s omes . Here 's why :
+
+AD MET lab is a comprehensive platform that provides predictions for 31 ADM ET -related endpoints , including cyt otoxic ity and metabolic stability . It utilizes a large database of 288 , 967 entries and employs various computational methods , such as random forests and support vector machines , to generate regression and classification models .
+
+To assess natural products for low cyt otoxic ity and good metabolic stability in liver micro s omes , you can use the following steps :
+
+1 . Prepare your library of natural products in a suitable format for ADM ET lab . 2 . Use the " AD MET prediction " module in ADM ET lab to generate predictions for cyt otoxic ity and metabolic stability . 3 . Filter your results to identify natural products with low cyt otoxic ity and good metabolic stability . 4 . Use the " database /s im ilarity searching " module to identify similar compounds in the ADM ET lab database that may have similar properties .
+
+By using ADM ET lab , you can quickly and efficiently assess your library of natural products for low cyt otoxic ity and good metabolic stability in liver micro s omes , which can help identify potential candidates for COVID - 19 treatment .
+
+Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
+
+This file should contain a column called smiles with the SMILES strings of the molecules in your dataset.
+
+ersilia fetch eos31ve
+ersilia serve eos31ve
+ersilia run -i input.csv -o output_eos31ve.csv
+
+ersilia fetch eos5505
+ersilia serve eos5505
+ersilia run -i input.csv -o output_eos5505.csv
+
+ersilia fetch eos8fth
+ersilia serve eos8fth
+ersilia run -i input.csv -o output_eos8fth.csv
+
+ersilia fetch eos2re5
+ersilia serve eos2re5
+ersilia run -i input.csv -o output_eos2re5.csv
