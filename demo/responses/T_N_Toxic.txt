@@ -14,9 +14,9 @@ Title: Antituberculosis Activity Prediction
 
 Explanation:
 
-Based on your context , I would recommend using a machine learning model such as Random Forest or Gradient Boost ing for predicting toxicity profiles of the compounds .
+Based on your context, I would recommend using a machine learning model such as Random Forest or Gradient Boosting for predicting toxicity profiles of the compounds.
 
-This is because these models are well -su ited for handling high -dimensional data and can effectively capture complex relationships between molecular structures and biological activities . They are also robust to over fit ting and can handle missing values , which is common in compound databases . Additionally , they can provide feature importance scores , which can help identify the most relevant molecular features contributing to toxicity .
+This is because these models are well-suited for handling high-dimensional data and can effectively capture complex relationships between molecular structures and biological activities. They are also robust to overfitting and can handle missing values, which is common in compound databases. Additionally, they can provide feature importance scores, which can help identify the most relevant molecular features contributing to toxicity.
 
 Model: eos7kpb
 
@@ -26,7 +26,7 @@ Title: H3D Virtual Screening Cascade Light
 
 Explanation:
 
-Based on the context , I would recommend using the Z aira Chem model for predicting the toxicity profile of the African Natural Products . This is because Z aira Chem is an AI / ML -driven pipeline that includes models for ADM ET ( Abs orption , Distribution , Met abol ism , Ex cretion , and Toxic ity ) properties , such as sol ub ility and cardi otoxic ity , which are crucial for assessing the safety of potential ant it ub erculosis compounds . The model 's ability to operate on standard computers with minimal data science expertise makes it a suitable choice for your needs .
+Based on the context, I would recommend using the ZairaChem model for predicting the toxicity profile of the African Natural Products. This is because ZairaChem is an AI/ML-driven pipeline that includes models for ADMET (Absorption, Distribution, Metabolism, Excretion, and Toxicity) properties, such as solubility and cardiotoxicity, which are crucial for assessing the safety of potential antituberculosis compounds. The model's ability to operate on standard computers with minimal data science expertise makes it a suitable choice for your needs.
 
 Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
 

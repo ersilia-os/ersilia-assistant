@@ -15,29 +15,30 @@ Title: Sars-Cov-2 Antiviral Prediction: Redial-2020
 
 Explanation:
 
-Based on the context , I would recommend using the RED IAL - 202 0 platform to predict ant iv iral activity against S ARS -Co V - 2 and then filtering out compounds that are predicted to have high h ERG toxicity using a separate model or database .
+Based on the context, I would recommend using the REDIAL-2020 platform to predict antiviral activity against SARS-CoV-2 and then filtering out compounds that are predicted to have high hERG toxicity using a separate model or database.
 
-RED IAL - 202 0 provides a suite of machine learning models that can predict ant iv iral activity against S ARS -Co V - 2 , including models for viral entry , replication , and human cell toxicity . You can use these models to filter your virtual library of 1 M compounds and identify those that are predicted to have ant iv iral activity .
+REDIAL-2020 provides a suite of machine learning models that can predict antiviral activity against SARS-CoV-2, including models for viral entry, replication, and human cell toxicity. You can use these models to filter your virtual library of 1M compounds and identify those that are predicted to have antiviral activity.
 
-To filter out compounds with high h ERG toxicity , you can use a separate model or database , such as the h ERG model from the Q ik Prop software or the h ERG database from the Pub Chem database . These models and databases can predict the likelihood of a compound causing h ERG toxicity , allowing you to filter out compounds that are predicted to have high h ERG toxicity .
+To filter out compounds with high hERG toxicity, you can use a separate model or database, such as the hERG model from the QikProp software or the hERG database from the PubChem database. These models and databases can predict the likelihood of a compound causing hERG toxicity, allowing you to filter out compounds that are predicted to have high hERG toxicity.
 
-By combining the predictions from RED IAL - 202 0 and the h ERG model or database , you can identify compounds that are predicted to have ant iv iral activity against S ARS -Co V - 2 while minimizing the risk of h ERG toxicity .
+By combining the predictions from REDIAL-2020 and the hERG model or database, you can identify compounds that are predicted to have antiviral activity against SARS-CoV-2 while minimizing the risk of hERG toxicity.
 
 Model: eos4cxk
 
 URL: https://github.com/ersilia-os/eos4cxk
 
-Title: Sars-Cov-2 Anti Viral Screening
+Title: Sars-Cov-2 Antiviral Screening
 
 Explanation:
 
-Based on the context , I would recommend using the Image M ol model to filter your virtual library of 1 M compounds . Image M ol has been shown to accurately predict molecular properties and targets , including drug metabolism , brain penetration , and toxicity . Specifically , it has been validated for predicting 3 C -like prote ase inhibitors , which are relevant for COVID - 19 treatment .
+Based on the context, I would recommend using the ImageMol model to filter your virtual library of 1M compounds. ImageMol has been shown to accurately predict molecular properties and targets, including drug metabolism, brain penetration, and toxicity. Specifically, it has been validated for predicting 3C-like protease inhibitors, which are relevant for COVID-19 treatment.
 
-You can use Image M ol to :
+You can use ImageMol to:
 
-1 . Predict h ERG toxicity : Image M ol can help identify compounds that are likely to be h ERG -to xic , allowing you to filter out these compounds from your virtual library . 2 . Predict ant iv iral activity against S ARS -Co V - 2 : Image M ol can also predict the ant iv iral activity of compounds against S ARS -Co V - 2 , enabling you to retain compounds that are likely to be effective .
+1. Predict hERG toxicity: ImageMol can help identify compounds that are likely to be hERG-toxic, allowing you to filter out these compounds from your virtual library.
+2. Predict antiviral activity against SARS-CoV-2: ImageMol can also predict the antiviral activity of compounds against SARS-CoV-2, enabling you to retain compounds that are likely to be effective.
 
-By using Image M ol , you can efficiently filter your virtual library to minimize the risk of h ERG toxicity while retaining compounds with ant iv iral activity against S ARS -Co V - 2 .
+By using ImageMol, you can efficiently filter your virtual library to minimize the risk of hERG toxicity while retaining compounds with antiviral activity against SARS-CoV-2.
 
 Model: eos9f6t
 
@@ -47,11 +48,17 @@ Title: Sars-Cov Inhibition
 
 Explanation:
 
-Given your starting point , I recommend using a combination of computational methods to filter your virtual library of 1 M compounds . Here 's a step -by -step approach :
+Given your starting point, I recommend using a combination of computational methods to filter your virtual library of 1M compounds. Here's a step-by-step approach:
 
-1 . ** h ERG toxicity prediction **: Util ize a machine learning -based model , such as the one described in the paper " A Deep Learning Approach to Antib iotic Discovery " ( 202 0 ), to predict h ERG toxicity . Train a model on a dataset of known h ERG -to xic and non -to xic compounds . Then , apply this model to your virtual library to identify compounds with a low risk of h ERG toxicity . 2 . ** S ARS -Co V - 2 ant iv iral activity prediction **: Employ a separate machine learning model , trained on a dataset of compounds with known ant iv iral activity against S ARS -Co V - 2 . This model can be used to predict the ant iv iral activity of your virtual library compounds . 3 . ** Filter ing and ranking **: Combine the predictions from both models to filter your virtual library . Ret ain compounds that : * Have a low predicted risk of h ERG toxicity ( e .g ., top 50 % of the model 's confidence score ). * Have a high predicted ant iv iral activity against S ARS -Co V - 2 ( e .g ., top 20 % of the model 's confidence score ). 4 . ** En semble modeling and validation **: Consider using ensemble modeling techniques , such as stacking or bag ging , to combine the predictions from multiple models . This can help improve the accuracy of your predictions . 5 . ** Experimental validation **: Short list the top -ranked compounds and perform experimental validation , such as in vitro assays , to confirm their ant iv iral activity and h ERG toxicity profile .
+1. **hERG toxicity prediction**: Utilize a machine learning-based model, such as the one described in the paper "A Deep Learning Approach to Antibiotic Discovery" (2020), to predict hERG toxicity. Train a model on a dataset of known hERG-toxic and non-toxic compounds. Then, apply this model to your virtual library to identify compounds with a low risk of hERG toxicity.
+2. **SARS-CoV-2 antiviral activity prediction**: Employ a separate machine learning model, trained on a dataset of compounds with known antiviral activity against SARS-CoV-2. This model can be used to predict the antiviral activity of your virtual library compounds.
+3. **Filtering and ranking**: Combine the predictions from both models to filter your virtual library. Retain compounds that:
+    * Have a low predicted risk of hERG toxicity (e.g., top 50% of the model's confidence score).
+    * Have a high predicted antiviral activity against SARS-CoV-2 (e.g., top 20% of the model's confidence score).
+4. **Ensemble modeling and validation**: Consider using ensemble modeling techniques, such as stacking or bagging, to combine the predictions from multiple models. This can help improve the accuracy of your predictions.
+5. **Experimental validation**: Shortlist the top-ranked compounds and perform experimental validation, such as in vitro assays, to confirm their antiviral activity and hERG toxicity profile.
 
-By following this approach , you can efficiently filter your virtual library to minimize the risk of h ERG toxicity while retaining ant iv iral activity against S ARS -Co V - 2 .
+By following this approach, you can efficiently filter your virtual library to minimize the risk of hERG toxicity while retaining antiviral activity against SARS-CoV-2.
 
 Model: eos4tcc
 
@@ -61,13 +68,17 @@ Title: Bayesherg: Herg Channel Blockade
 
 Explanation:
 
-Given your starting point , I recommend using the Bay esh ERG model to filter your virtual library of 1 M compounds . This model is specifically designed to predict h ERG channel blockers with enhanced robust ness , reliability , and interpret ability .
+Given your starting point, I recommend using the BayesHERG model to filter your virtual library of 1M compounds. This model is specifically designed to predict hERG channel blockers with enhanced robustness, reliability, and interpretability.
 
-Here 's a step -by -step approach :
+Here's a step-by-step approach:
 
-1 . ** Pre -processing **: Convert your virtual library of 1 M compounds into a format compatible with the Bay esh ERG model , such as SM ILES or In Ch I . 2 . ** Model deployment **: Util ize the Bay esh ERG model to predict the likelihood of each compound being a h ERG channel blocker . You can use the model 's output to filter out compounds with high predicted h ERG toxicity . 3 . ** Filter ing **: Set a threshold for the predicted h ERG toxicity score , and remove compounds with scores above this threshold . This will help minimize the risk of h ERG toxicity . 4 . ** Ret ain ant iv iral activity **: Use a separate model or dataset to predict the ant iv iral activity of each compound against S ARS -Co V - 2 . You can use this information to prioritize compounds with high predicted ant iv iral activity . 5 . ** Rank ing and selection **: Combine the h ERG toxicity filtering with the ant iv iral activity predictions to rank your compounds . Select the top compounds that balance both h ERG safety and ant iv iral efficacy .
+1. **Pre-processing**: Convert your virtual library of 1M compounds into a format compatible with the BayesHERG model, such as SMILES or InChI.
+2. **Model deployment**: Utilize the BayesHERG model to predict the likelihood of each compound being a hERG channel blocker. You can use the model's output to filter out compounds with high predicted hERG toxicity.
+3. **Filtering**: Set a threshold for the predicted hERG toxicity score, and remove compounds with scores above this threshold. This will help minimize the risk of hERG toxicity.
+4. **Retain antiviral activity**: Use a separate model or dataset to predict the antiviral activity of each compound against SARS-CoV-2. You can use this information to prioritize compounds with high predicted antiviral activity.
+5. **Ranking and selection**: Combine the hERG toxicity filtering with the antiviral activity predictions to rank your compounds. Select the top compounds that balance both hERG safety and antiviral efficacy.
 
-By following this approach , you can efficiently filter your virtual library to minimize the risk of h ERG toxicity while retaining ant iv iral activity against S ARS -Co V - 2 .
+By following this approach, you can efficiently filter your virtual library to minimize the risk of hERG toxicity while retaining antiviral activity against SARS-CoV-2.
 
 Model: eos2ta5
 
@@ -77,13 +88,18 @@ Title: Ligand-Based Prediction Of Herg Blockade
 
 Explanation:
 
-Given your starting point , I recommend using the Cardio To x net model to filter your virtual library of 1 M compounds . This model is specifically designed to predict h ERG channel blockade and has been shown to be robust and accurate in its predictions .
+Given your starting point, I recommend using the CardioToxnet model to filter your virtual library of 1M compounds. This model is specifically designed to predict hERG channel blockade and has been shown to be robust and accurate in its predictions.
 
-Here 's a step -by -step approach to filter your library :
+Here's a step-by-step approach to filter your library:
 
-1 . ** Pre process your library **: Ensure that your virtual library is in a format compatible with the Cardio To x net model . This may involve converting your compounds to SM ILES or other chemical representations . 2 . ** Run Cardio To x net **: Use the Cardio To x net model to predict the h ERG channel blockade probability for each compound in your library . This will give you a probability score for each compound . 3 . ** Set a threshold **: Set a threshold for the h ERG channel blockade probability ( e .g ., 0 . 5 ). Comp ounds with a probability below this threshold are considered low -risk for h ERG toxicity . 4 . ** Filter your library **: Remove compounds with a h ERG channel blockade probability above the threshold . This will leave you with a filtered library of compounds with minimal risk of h ERG toxicity . 5 . ** Ret ain ant iv iral activity **: Use a separate model or dataset to predict the ant iv iral activity of each compound against S ARS -Co V - 2 . You can use this information to prioritize compounds with high ant iv iral activity . 6 . ** Combine filters **: Combine the h ERG toxicity filter with the ant iv iral activity filter to identify compounds that meet both criteria .
+1. **Pre-process your library**: Ensure that your virtual library is in a format compatible with the CardioToxnet model. This may involve converting your compounds to SMILES or other chemical representations.
+2. **Run CardioToxnet**: Use the CardioToxnet model to predict the hERG channel blockade probability for each compound in your library. This will give you a probability score for each compound.
+3. **Set a threshold**: Set a threshold for the hERG channel blockade probability (e.g., 0.5). Compounds with a probability below this threshold are considered low-risk for hERG toxicity.
+4. **Filter your library**: Remove compounds with a hERG channel blockade probability above the threshold. This will leave you with a filtered library of compounds with minimal risk of hERG toxicity.
+5. **Retain antiviral activity**: Use a separate model or dataset to predict the antiviral activity of each compound against SARS-CoV-2. You can use this information to prioritize compounds with high antiviral activity.
+6. **Combine filters**: Combine the hERG toxicity filter with the antiviral activity filter to identify compounds that meet both criteria.
 
-By following these steps , you can efficiently filter your virtual library to minimize the risk of h ERG toxicity while retaining ant iv iral activity against S ARS -Co V - 2 .
+By following these steps, you can efficiently filter your virtual library to minimize the risk of hERG toxicity while retaining antiviral activity against SARS-CoV-2.
 
 Model: eos9ivc
 
@@ -93,15 +109,15 @@ Title: Antituberculosis Activity Prediction
 
 Explanation:
 
-Based on the context , I would recommend using a machine learning model that combines both h ERG toxicity prediction and ant iv iral activity prediction . A Random Forest model would be best suited for this task .
+Based on the context, I would recommend using a machine learning model that combines both hERG toxicity prediction and antiviral activity prediction. A Random Forest model would be best suited for this task.
 
-Here 's why :
+Here's why:
 
-    Random Forest models are robust and can handle high -dimensional data , making them suitable for filtering a large virtual library of compounds .
-    They can learn complex relationships between molecular features and biological activities , allowing them to predict both h ERG toxicity and ant iv iral activity .
-    Random Forest models can also handle missing data and are less prone to over fit ting , making them a reliable choice for this task .
+- Random Forest models are robust and can handle high-dimensional data, making them suitable for filtering a large virtual library of compounds.
+- They can learn complex relationships between molecular features and biological activities, allowing them to predict both hERG toxicity and antiviral activity.
+- Random Forest models can also handle missing data and are less prone to overfitting, making them a reliable choice for this task.
 
-By using a Random Forest model , you can filter your virtual library to identify compounds that are both h ERG -to xic ity -free and active against S ARS -Co V - 2 , minimizing the risk of off -target effects while maximizing the chances of identifying effective ant iv iral compounds .
+By using a Random Forest model, you can filter your virtual library to identify compounds that are both hERG-toxicity-free and active against SARS-CoV-2, minimizing the risk of off-target effects while maximizing the chances of identifying effective antiviral compounds.
 
 Model: eos2re5
 
@@ -111,7 +127,7 @@ Title: Admetlab Models For Evaluation Of Drug Candidates
 
 Explanation:
 
-AD MET lab is the best suited platform for this task . It provides a comprehensive database and four main modules for drug -li ken ess analysis , ADM ET prediction , systematic evaluation , and database /s im ilarity searching . Specifically , it offers predictions for 31 ADM ET -related endpoints , including h ERG toxicity . You can use ADM ET lab 's h ERG toxicity prediction module to filter out compounds with high h ERG risk . Additionally , you can use its ant iv iral activity prediction module to identify compounds with potential activity against S ARS _C o V - 2 . By combining these two predictions , you can filter your virtual library to retain compounds with minimal h ERG toxicity risk while maintaining ant iv iral activity .
+ADMETlab is the best suited platform for this task. It provides a comprehensive database and four main modules for drug-likeness analysis, ADMET prediction, systematic evaluation, and database/similarity searching. Specifically, it offers predictions for 31 ADMET-related endpoints, including hERG toxicity. You can use ADMETlab's hERG toxicity prediction module to filter out compounds with high hERG risk. Additionally, you can use its antiviral activity prediction module to identify compounds with potential activity against SARS-CoV-2. By combining these two predictions, you can filter your virtual library to retain compounds with minimal hERG toxicity risk while maintaining antiviral activity.
 
 Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
 

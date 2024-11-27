@@ -16,19 +16,23 @@ Title: Antituberculosis Activity Prediction
 
 Explanation:
 
-Based on the context , I would recommend using a combination of computational and experimental approaches to identify the most effective natural products for My cob acter ium tuberculosis .
+Based on the context, I would recommend using a combination of computational and experimental approaches to identify the most effective natural products for Mycobacterium tuberculosis.
 
-** Comput ational Approach : **
+**Computational Approach:**
 
-1 . ** Virtual screening **: Use molecular docking software ( e .g ., Auto Dock , Glide ) to screen a large database of natural products against the M . tuberculosis membrane protein targets ( e .g ., M mp L 3 , M mp L 4 ). 2 . ** Per me ability prediction **: Use machine learning models ( e .g ., random forest , neural networks ) to predict the perme ability of the top -ranked compounds across the bacterial membrane . 3 . ** Prior itize compounds **: Select the top -ranked compounds with high predicted perme ability and low predicted toxicity .
+1. **Virtual screening**: Use molecular docking software (e.g., AutoDock, Glide) to screen a large database of natural products against the M. tuberculosis membrane protein targets (e.g., MmpL3, MmpL4).
+2. **Permeability prediction**: Use machine learning models (e.g., random forest, neural networks) to predict the permeability of the top-ranked compounds across the bacterial membrane.
+3. **Prioritize compounds**: Select the top-ranked compounds with high predicted permeability and low predicted toxicity.
 
-** Experimental Approach : **
+**Experimental Approach:**
 
-1 . ** In vitro testing **: Test the priorit ized compounds against M . tuberculosis cultures using a standard MIC ( Minimum In hib itory Concent ration ) assay . 2 . ** Mem brane perme ability assay **: Use a fluorescent dye -based assay ( e .g ., cal ce in - AM ) to measure the perme ability of the top -per forming compounds across the bacterial membrane . 3 . ** Validate results **: Confirm the results using additional assays ( e .g ., growth inhibition , viability assays ).
+1. **In vitro testing**: Test the prioritized compounds against M. tuberculosis cultures using a standard MIC (Minimum Inhibitory Concentration) assay.
+2. **Membrane permeability assay**: Use a fluorescent dye-based assay (e.g., calcein-AM) to measure the permeability of the top-performing compounds across the bacterial membrane.
+3. **Validate results**: Confirm the results using additional assays (e.g., growth inhibition, viability assays).
 
-** Model Suit ability : **
+**Model Suitability:**
 
-The proposed model is best suited for this task because it combines the strengths of computational predictions ( speed , scalability , and cost -effect iveness ) with experimental validation ( accuracy , reliability , and relevance ). This hybrid approach allows for the efficient identification of promising natural products and their optimization for membrane perme ability .
+The proposed model is best suited for this task because it combines the strengths of computational predictions (speed, scalability, and cost-effectiveness) with experimental validation (accuracy, reliability, and relevance). This hybrid approach allows for the efficient identification of promising natural products and their optimization for membrane permeability.
 
 Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
 
