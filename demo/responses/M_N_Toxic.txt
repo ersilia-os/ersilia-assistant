@@ -1,0 +1,32 @@
+This is my understanding of your query:
+
+    You have a collection of natural products that you are considering for antimalarial therapies.
+    You want to ensure that these natural products are safe for use in humans by assessing their potential for hERG toxicity.
+    You also want to evaluate their potential for interactions with the cytochrome P450 (CYP) enzyme system.
+    You are looking for methods or strategies to screen and assess the safety of these natural products in relation to hERG toxicity and CYP metabolism.
+
+For your query, I have selected the following model:
+
+Model: eos4tcc
+
+URL: https://github.com/ersilia-os/eos4tcc
+
+Title: Bayesherg: Herg Channel Blockade
+
+Explanation:
+
+To ensure that natural products in your collection are free from h ERG toxicity and safe for C YP metabolism when designing ant imal arial therapies , you can use the Bay esh ERG model . This model is specifically designed to predict h ERG channel blockers and can help you identify potential cardi otoxic ity risks associated with your natural products .
+
+Here's a step-by-step approach :
+
+1 . ** Pre-process your natural product dataset **: Prepare your dataset of natural products by converting their molecular structures into a format compatible with the Bay esh ERG model . 2 . ** Run the Bay esh ERG model **: Input your pre - processed dataset into the Bay esh ERG model to predict the likelihood of each natural product being a h ERG channel blocker . 3 . ** Evaluate the results **: Analy ze the output of the Bay esh ERG model to identify natural products with a high likelihood of being h ERG channel blockers . These compounds may require further testing or modification to ensure safety . 4 . ** Ass ess C YP metabolism **: Use computational tools or in vitro assays to evaluate the potential of your natural products to interact with C YP enzymes . This will help you identify potential issues with C YP metabolism . 5 . ** Validate the results **: Perform in vitro or in vivo experiments to validate the predictions made by the Bay esh ERG model and assess the safety of your natural products in the context of ant imal arial therapy .
+
+By following this approach , you can effectively screen your natural product collection for potential h ERG toxicity and C YP metabolism issues , ensuring the safety and efficacy of your ant imal arial therapies .
+
+Use the following recipe to run the identified models on your data. The following instructions assume that your dataset is stored in a file called 'input.csv'.
+
+This file should contain a column called smiles with the SMILES strings of the molecules in your dataset.
+
+ersilia fetch eos4tcc
+ersilia serve eos4tcc
+ersilia run -i input.csv -o output_eos4tcc.csv
