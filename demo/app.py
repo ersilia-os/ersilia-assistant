@@ -1,12 +1,13 @@
 import streamlit as st
 import time
 import json
+import os
 from inputs import disease, dataset, objective, prompts, about
 from PIL import Image
 
 
 # Function for the typing effect
-def type_text(text, placeholder, delay=0.05):
+def type_text(text, placeholder, delay=0.02):
     typed_text = ""
     for char in text:
         typed_text += char
@@ -145,11 +146,9 @@ else:
 if st.session_state.get('query_generated', False):
     if st.button("Ask the Ersilia Assistant"):
         # Load the response text from the JSON file
-        with open("response.json", "r") as f:
-            response_data = json.load(f)
-
-        # Get the response text
-        response_text = response_data.get("response", "No response found.")
+        file_name = "_".join(st.session_state.selections.values()) + ".txt"
+        with open(os.path.join("responses", file_name), "r") as f:
+            response_text = f.read()
 
         # Display the response with the typing effect
         response_placeholder = st.empty()  # Placeholder for typing effect
