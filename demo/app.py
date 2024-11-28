@@ -33,9 +33,9 @@ def load_images():
         "M": Image.open("images/malaria.jpg"),
         "T": Image.open("images/tb.jpg"),
         "C": Image.open("images/coronavirus.jpg"),
-        "N": Image.open("images/plant.jpg"),
+        "N": Image.open("images/plants.jpg"),
         "S": Image.open("images/pills.jpg"),
-        "Select": Image.open("images/petri_pipet.jpg"),
+        "Select": Image.open("images/petri.jpg"),
         "Toxic": Image.open("images/flasks.jpg"),
         "Expand": Image.open("images/multiwell.jpg"),
     }
@@ -45,7 +45,7 @@ images = load_images()
 
 # Main application
 st.set_page_config(layout="wide", page_title="Ersilia Self Service")
-st.sidebar.image("images/Ersilia_Brand.png")
+st.sidebar.image("images/Ersilia_Brand_white_transp.png")
 st.sidebar.markdown("The [Ersilia Open Source Initiative](www.ersilia.io) is a tech **nonprofit organization** aimed at supporting research **scientists in the Global South** with **AI/ML tools for drug discovery and infectious disease research**.")
 for i in range(3):
     st.sidebar.write(about[i])
