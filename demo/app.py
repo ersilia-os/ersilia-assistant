@@ -5,6 +5,7 @@ import os
 from inputs import disease, dataset, objective, prompts, about
 from PIL import Image
 
+root = os.path.dirname(__file__)
 
 # Function for the typing effect
 def type_text(text, placeholder, delay=0.02):
@@ -30,22 +31,27 @@ def type_text(text, placeholder, delay=0.02):
 @st.cache_data(show_spinner=False)
 def load_images():
     images = {
-        "M": Image.open("images/malaria.jpg"),
-        "T": Image.open("images/tb.jpg"),
-        "C": Image.open("images/coronavirus.jpg"),
-        "N": Image.open("images/plants.jpg"),
-        "S": Image.open("images/pills.jpg"),
-        "Select": Image.open("images/petri.jpg"),
-        "Toxic": Image.open("images/flasks.jpg"),
-        "Expand": Image.open("images/multiwell.jpg"),
+        "M": Image.open(os.path.join(root,"images", "app-01.png")),
+        "T": Image.open(os.path.join(root, "images", "app-03.png")),
+        "C": Image.open(os.path.join(root, "images", "app-02.png")),
+        "N": Image.open(os.path.join(root,"images", "app-05.png")),
+        "S": Image.open(os.path.join(root,"images", "app-08.png")),
+        "Select": Image.open(os.path.join(root,"images", "app-06.png")),
+        "Toxic": Image.open(os.path.join(root,"images", "app-07.png")),
+        "Expand": Image.open(os.path.join(root,"images", "app-04.png")),
     }
     return images
+
+def clear_cache():
+    keys = list(st.session_state.keys())
+    for key in keys:
+        st.session_state.pop(key)
 
 images = load_images()
 
 # Main application
 st.set_page_config(layout="wide", page_title="Ersilia Self Service")
-st.sidebar.image("images/Ersilia_Brand_white_transp.png")
+st.sidebar.image(os.path.join(root, "images", "Ersilia_Brand_white_transp.png"))
 st.sidebar.markdown("The [Ersilia Open Source Initiative](www.ersilia.io) is a tech **nonprofit organization** aimed at supporting research **scientists in the Global South** with **AI/ML tools for drug discovery and infectious disease research**.")
 for i in range(3):
     st.sidebar.write(about[i])
@@ -142,14 +148,18 @@ if None not in st.session_state.selections.values():
 else:
     st.info("Please complete all selections to generate a query.")
 
+st.write("")
 # Ask the Ersilia Assistant Button appears only after query is generated
 if st.session_state.get('query_generated', False):
     if st.button("Ask the Ersilia Assistant"):
         # Load the response text from the JSON file
         file_name = "_".join(st.session_state.selections.values()) + ".txt"
-        with open(os.path.join("responses", file_name), "r") as f:
+        with open(os.path.join(root, "responses", file_name), "r") as f:
             response_text = f.read()
 
         # Display the response with the typing effect
         response_placeholder = st.empty()  # Placeholder for typing effect
         type_text(response_text, response_placeholder)
+
+# Reset app
+        st.button('Reset', on_click=clear_cache)
