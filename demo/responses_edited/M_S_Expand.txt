@@ -1,0 +1,33 @@
+
+**This is my understanding of your query:**
+
+You want to design new synthetic compounds for malaria treatment.
+You are particularly interested in addressing drug-resistant strains.
+You are looking to leverage scaffold hopping to improve chemical diversity.
+You also want to apply fragment-based drug design to enhance your approach.
+You aim to achieve these goals to develop effective treatments for malaria.
+
+Scaffold hopping and fragment-based drug design are both approaches that can be used for generating new compounds based on existing candidates. In addition, you can use antimalarial predictors to assess the bioactivity of the new compounds. The following models in the Ersilia Model Hub can help you:
+
+**CREM Fragment-Based structure generation** (eos4q1a):
+Chemically Reasonable Mutations (CREM) breaks the input molecule into fragments and iteratively combines them with pre-set fragments
+
+**MoLeR: extending molecular scaffolds with fragments** (eos9taz):
+Combines fragments from Enamine with the existing scaffold in the dataset. The model has been pretrained with GuacaMol
+
+**SAFE Scaffold morphing** (eos8bhe):
+Sequential Attachement-based Fragment Embedding is a GPT-like model that designs new compounds by representing them as interconnected fragments as a language model.
+
+**H3D virtual screening cascade** (eos7kpb):
+The H3D centre has contributed its historic data on antimalarial and antituberculosis drug discovery pipelines and Ersilia has developed a suite of models with Zairachem, an automated AI/ML tool. Relevant to this use case, the model contains both a classifier of _in vitro_ activity (IC50) against the strains NF54 (drug-sensitive) and K1 (drug-resistant) of _P.falciparum_.
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**Summary**
+Based on your query, I propose a few generative approaches that include fragment-based drug design and working with molecular scaffolds. Currently the Hub does not contain any scaffold hopping model as it is a complex exercise. In addition I suggest using the H3D Model for predicting activity against _P.falciparum_ K1 strain, which is drug resistant. Other interesting tests could be assessing the synthetic accessibility of proposed molecules. Feel free to query about that to get more information.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

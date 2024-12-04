@@ -1,0 +1,30 @@
+
+**This is my understanding of your query:**
+
+You have curated the scientific literature for African Natural Products with potential antituberculosis activity.
+You want to obtain a full toxicity profile for these compounds.
+You plan to use this toxicity profile to annotate the compounds before proceeding with further research.
+
+Identifying the toxicity profile early on the drug discovery cascade is important to discard compounds. The following models in the Ersilia Model Hub can help you:
+
+**ADMET properties prediction** (eos7d58):
+ADMET-AI offers a suite of ADME-related predictors based on the Therapeutics Data Commons datasets. It can help you identify CYP interactions with your natural products and other toxicity endpoints like Drug-Induced Liver Injury.
+
+**H3D virtual screening cascade** (eos7kpb):
+The H3D centre has contributed its historic data on antimalarial and antituberculosis drug discovery pipelines and Ersilia has developed a suite of models with Zairachem, an automated AI/ML tool. This includes primary and secondary ADMET assays like CYP interaction.
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**BayeshERG: hERG channel blockade** (eos4tcc):
+This model is specifically designed to predict hERG channel blockers (IC50 < 10uM) and can help you identify potential cardiotoxicity risks associated with your natural products.
+The model is a classifier that returns the probability of a compound being active (inhibitor).
+
+
+**Summary**
+Based on your requirements, I suggest assessing the cardiotoxicity of compounds, as well as a more broad profiling with a general model like ADMET-AI. Models specific to the TB cascade at the H3D Centre can be helpful.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

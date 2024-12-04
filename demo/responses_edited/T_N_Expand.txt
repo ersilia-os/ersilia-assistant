@@ -1,0 +1,49 @@
+This is my understanding of your query:
+
+You have a set of natural products with activity against Mycobacterium tuberculosis.
+You want to explore related chemical structures to identify derivatives.
+The goal is to improve the solubility and ADME (Absorption, Distribution, Metabolism, and Excretion) properties of these derivatives.
+You are looking for a strategy to identify potential lead compounds with enhanced pharmacokinetic properties.
+
+You want to look for better ADME profile while retaining bioactivity against _M.tb_. I recommend to expand the chemical space using generative approaches and identifying those derivaties that meet your requirements. The following models from the Ersilia Model Hub can help you:
+
+**STONED sampler** (eos8fma):
+STONED is a method to introduce modifications to molecules based on SELFIES strings instead of SMILES. It can quickly provide many derivatives from your starting 30 candidates. It will not check for synthetic feasibility or bioavailability.
+
+**MoLeR: extending molecular scaffolds with fragments** (eos9taz):
+Combines fragments from Enamine with the existing scaffold in the dataset. The model has been pretrained with GuacaMol
+
+**REINVENT4: Libinvent** (eos6ost):
+LibInvent is one of the modalities of REINVENT that appends R groups to the input. The attachement points must be provided or they will be guessed by the model
+
+**Antituberculosis activity prediction** (eos9ivc):
+An Ersilia developed model based on a dataset provided by the Seattle's Children Hospital measuring _in vitro_ activiy of small molecules against _M.tb_ (% of inhibition, IC50 and MIC90).
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**Qcrb Inhibition (M. Tuberculosis)** (eos24jm):
+The cytochrome bcc complex (QcrB) is a suggested target for _M.tb_. This model can help you find compounds that inhibit specifically this target.
+The model will classify compounds in class 1: active, class 2: moerately active, class 3:inactive.
+
+**Aqueous solubility prediction** (eos6oli):
+A Molecule Attention Transformer (MAT) was used to train a model using the AqSolDB. The model is a regression and predicts the experimentally determined solubility in water (LogS)
+
+**Aqueous Kinetic Solubility** (eos74bo):
+The National Centre for Advancing Translational Sciences (NCATS) has measured the Kinetic aqueous solubility (μg/mL) of NCATS drug discovery programs (11780).
+The model is a classifier that returns the probability of a compound having poor solublibity (< 10 µg/ml)
+
+**ADMET properties prediction** (eos7d58):
+ADMET-AI offers a suite of ADME-related predictors based on the Therapeutics Data Commons datasets. It can help you identify CYP interactions with your natural products and other toxicity endpoints like Drug-Induced Liver Injury.
+
+**Natural product score** (eos8ioa):
+An Ersilia implementation of the RDKIT Natural Product score. Higher values indicate higher natural product likeness.
+
+**Summary**
+
+You have presented a complex query with several requirements. From a starting natural product library, you want to generate derivatives and ensure they have a better pharmacokinetic profile, specially for solubility, and retain anti _M.tb_ activity. I suggest a few molecular generators followed by stringent filtering according to your parameters.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

@@ -1,0 +1,32 @@
+
+**This is my understanding of your query:**
+
+You have a library of synthetic compounds.
+You are interested in identifying compounds suitable for developing antivirals.
+The target for these antivirals is the SARS-CoV-2 spike protein.
+Bioavailability is a key factor to consider when selecting compounds.
+You want to know which compounds in your library are the best suited for this purpose.
+    
+For your query, I suggest reducing the library to bioavailable compounds and then predict the inhibition of the S protein, which will inhibit viral entry into human cells. The following models from the Ersilia Model Hub can help you:
+
+**Human oral bioavaliability prediction** (eos2lqb):
+The HobPre model predicts oral bioavailability in humans of small molecules based on public data of 1200 compounds. High oral bioavailability is defined by HOB > 20% and HOB > 50%.
+The model is a classifier that returns the probability of a compound being bioavailable at the selected cut-off.
+
+**REDIAL-2020 Sars-Cov-2 Antiviral Prediction** (eos8fth):
+Redial-2020 has been trained on high-through put screening data from the NCATS COVID-19 portal. It returns the probability that compounds inhibit the viral entry and the viral replication.
+
+**Sars-Cov-2 Anti Viral Screening** (eos4cxk):
+Using molecular graphs as images ImageMol provides a framework for drug activity prediction. In this model ImageMol is fine tuned on 13 assays concerned with a number of target categories ranging from viral entry to toxicity in humans. 
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**Summary**
+
+By using the proposed models, you can quickly and efficiently prioritize your synthetic compounds for antiviral testing, focusing on those with the highest predicted Spike protein inhibition. Bioavailability constraints can be set at the beginning of the screening. 
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

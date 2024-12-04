@@ -1,0 +1,38 @@
+
+**This is my understanding of your query:**
+
+You are at the starting point of a drug discovery campaign for COVID-19.
+You have a virtual library of 1M compounds.
+You want to filter the library to minimize the risk of hERG toxicity.
+You also want to retain antiviral activity against SARS-CoV-2 in the filtered compounds.
+
+I propose that you rank your candidates based on hERG cardiotoxicity predictions and assess the SARS-CoV-2 inhibitory potential for viral entry into cells or for viral replication of the non cardiotoxic compounds.  The following models from the Ersilia Model Hub can aid you in this task:
+
+**BayeshERG: hERG channel blockade** (eos4tcc):
+This model is specifically designed to predict hERG channel blockers (IC50 < 10uM) and can help you identify potential cardiotoxicity risks associated with your natural products.
+The model is a classifier that returns the probability of a compound being active (inhibitor).
+
+**Ligand-based prediction of hERG blockade** (eos2ta5):
+This model is based on public data of hERG inhibition (IC50<10uM).
+The model is a classifier that returns the probability of a compound being active (inhibitor).
+
+**REDIAL-2020 Sars-Cov-2 Antiviral Prediction** (eos8fth):
+Redial-2020 has been trained on high-through put screening data from the NCATS COVID-19 portal. It returns the probability that compounds inhibit the viral entry and the viral replication.
+
+**Sars-Cov Inhibition** (eos9f6t):
+A ChemProp-based model trained using SARS-CoV-1 inhibition data. The model is a classifier that returns the probability of that a compound inhibts SARS-3CLpro-mediated peptide cleavage.
+
+**Sars-Cov-2 Anti Viral Screening** (eos4cxk):
+Using molecular graphs as images ImageMol provides a framework for drug activity prediction. In this model ImageMol is fine tuned on 13 assays concerned with a number of target categories ranging from viral entry to toxicity in humans. 
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**Summary**
+
+Depending on the characteristics of the initial library you can start by discarding cardiotoxic compounds or by selecting the most active in SARS-CoV-2 inhibition assays. This can be complemented by assessing the binding of molecules to specific SARS-CoV-2 using docking. The Ersilia Model Hub does not have any docking capabilities at the moment.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

@@ -1,0 +1,33 @@
+
+**This is my understanding of your query:**
+
+You have a collection of marine natural products that may inhibit SARS-CoV-2 replication.
+You want to prioritize candidates for antiviral testing.
+You are looking for a systematic approach to select the most promising compounds for further evaluation.
+
+I propose that you rank your candidates based on predictions of their inhibitory potential on SARS-CoV-2.  The following models from the Ersilia Model Hub can aid you in this task:
+
+**REDIAL-2020 Sars-Cov-2 Antiviral Prediction** (eos8fth):
+Redial-2020 has been trained on high-through put screening data from the NCATS COVID-19 portal. It returns the probability that compounds inhibit the viral entry and the viral replication.
+
+**Sars-Cov Inhibition** (eos9f6t):
+A ChemProp-based model trained using SARS-CoV-1 inhibition data. The model is a classifier that returns the probability of that a compound inhibts SARS-3CLpro-mediated peptide cleavage.
+
+**Sars-Cov-2 Anti Viral Screening** (eos4cxk):
+Using molecular graphs as images ImageMol provides a framework for drug activity prediction. In this model ImageMol is fine tuned on 13 assays concerned with a number of target categories ranging from viral entry to toxicity in humans. 
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**MPro inbition** (eos3nn9):
+Mpro is one of the main targets of SARS-CoV-2. Inhibiting the protease blocks viral replication. This model has been developed with PADEL descriptors and predicts the probability that a compound is an MPro inhibitor.
+
+**Summary**
+
+By using the proposed models, you can quickly and efficiently prioritize your marine natural products for antiviral testing, focusing on those with the highest predicted anti-SARS-CoV-2 activities. 
+You can classify compounds according to their inhibitory effect on the viral entry or the viral replication depending on the target. None of the models has been developed specifically for the chemical space of natural products.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

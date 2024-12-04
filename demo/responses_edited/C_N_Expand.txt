@@ -1,53 +1,47 @@
 
-**Understanding Your Query:**
+**This is my understanding of your query:**
 
-You have described the following objectives:
+You have manually curated the literature to identify natural products that inhibit SARS-CoV-1 and/or SARS-CoV-2.
+You would like to explore the chemical space around these identified natural products.
+You are likely seeking to understand the structural features and potential modifications that could enhance or alter the activity of these compounds against SARS-CoV-1 and/or SARS-CoV-2.
 
-1. **Manual Curation of Literature:**  
-   You have carefully reviewed scientific literature to identify natural products with inhibitory activity against SARS-CoV-1 and/or SARS-CoV-2.
+Expanding the chemical space of natural products can help identify easily synthesisable compounds with similar bioactivity. 
+The following models from the Ersilia Model Hub can help you:
 
-2. **Exploration of Chemical Space:**  
-   Your goal is to investigate the chemical space surrounding these identified natural products. This involves examining related molecular structures, potential derivatives, and modifications that could enhance their activity.
+**REINVENT4: Libinvent** (eos6ost):
+LibInvent is one of the modalities of REINVENT that appends R groups to the input. The attachement points must be provided or they will be guessed by the model
 
-3. **Insights into Structural Features:**  
-   You aim to understand the structural properties of these compounds that contribute to their efficacy. Additionally, you seek to identify possible structural modifications that could improve their antiviral activity against SARS-CoV-1 and/or SARS-CoV-2.
+**CREM Fragment-Based structure generation** (eos4q1a):
+Chemically Reasonable Mutations (CREM) breaks the input molecule into fragments and iteratively combines them with pre-set fragments
 
----
+**SAFE Scaffold morphing** (eos8bhe):
+Sequential Attachement-based Fragment Embedding is a GPT-like model that designs new compounds by representing them as interconnected fragments as a language model.
 
-**Recommended Models**
+**CHEESE similarity search with multiple similarity measures and against various databases** (eos9uqy):
+CHEESE is an ultra-fast search method for similar compounds in large databases like ENAMINE REAL, and takes into account measures like 3D shape, relevamnt for retaining bioactivity of compounds against specific targets.
 
-Model: **eos8fth**  
-**URL:** [https://github.com/ersilia-os/eos8fth](https://github.com/ersilia-os/eos8fth)  
-**Title:** Sars-Cov-2 Antiviral Prediction: REDIAL-2020  
+**REDIAL-2020 Sars-Cov-2 Antiviral Prediction** (eos8fth):
+Redial-2020 has been trained on high-through put screening data from the NCATS COVID-19 portal. It returns the probability that compounds inhibit the viral entry and the viral replication.
 
-**Explanation:**  
-The REDIAL-2020 model is designed to predict the activity of small molecules against SARS-CoV-2. Trained on a large dataset from high-throughput screening, it employs an ensemble learning approach with diverse descriptor types, making it ideal for identifying potential analogs or derivatives. By inputting the chemical structures of the natural products you curated, you can predict their activity against SARS-CoV-2 and explore related chemical spaces to discover promising leads.
+**Sars-Cov Inhibition** (eos9f6t):
+A ChemProp-based model trained using SARS-CoV-1 inhibition data. The model is a classifier that returns the probability of that a compound inhibts SARS-3CLpro-mediated peptide cleavage.
 
----
+**Synthetic accessibility score** (eos9ei3):
+The model estimates the synthetic accessibility of a given compound based on its molecular complexity and the presence of certain fragments (based on PubChem)
+Low scores indicate higher synthetic accessibility.
 
-Model: **eos4cxk**  
-**URL:** [https://github.com/ersilia-os/eos4cxk](https://github.com/ersilia-os/eos4cxk)  
-**Title:** Sars-Cov-2 Anti Viral Screening  
+**Natural product score** (eos8ioa):
+An Ersilia implementation of the RdKIT Natural Product score. Higher values indicate higher natural product likeness.
 
-**Explanation:**  
-The ImageMol model utilizes a self-supervised deep learning framework to capture structural information from molecular images. This capability is particularly useful for analyzing the chemical properties of natural products. ImageMol's robustness in predicting molecular properties and targets, including those relevant to COVID-19, makes it a valuable tool for exploring the chemical space around your curated molecules and identifying potential leads.
+**Summary**
 
----
+You can cerainly expand the chemical space around known SARS-Cov1 and SARS-CoV-2 inhibitors using similarity searches and generative models. 
+The broader chemical space can then be annotated for several SARS-CoV-2 endpoints. 
+For the Natural Product space, synthetic accessibility might be a key element.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
 
-**Instructions to Run the Models:**  
+ersilia fetch <model_id>
 
-Prepare your dataset file (`input.csv`) containing a column labeled `smiles` with the SMILES strings of the molecules.
+ersilia serve <model_id>
 
-1. **For eos8fth:**  
-   ```
-   ersilia fetch eos8fth
-   ersilia serve eos8fth
-   ersilia run -i input.csv -o output_eos8fth.csv
-   ```
-
-2. **For eos4cxk:**  
-   ```
-   ersilia fetch eos4cxk
-   ersilia serve eos4cxk
-   ersilia run -i input.csv -o output_eos4cxk.csv
-   ```
+ersilia run -i input.csv -o output.csv

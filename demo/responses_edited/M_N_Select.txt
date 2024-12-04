@@ -1,0 +1,41 @@
+
+**This is my understanding of your query:**
+
+You want to identify synthetic compounds.
+These compounds should have high efficacy against Plasmodium falciparum.
+You also want to prioritize compounds with good solubility.
+Additionally, you want to prioritize compounds with good permeability.
+The initial studies will be based on these prioritized compounds.
+
+I propose that you rank your candidates based on predictions of their inhibitory potential on malaria parasites (_P.falciparum_ and others).  The following models from the Ersilia Model Hub can aid you in this task:
+
+**Antimalarial activity (ABS and Sexual stages)** (eos80ch): 
+This model predicts both the activity of compounds against both Sexual and Asexual Blood Stages (ABS) of the _P.falciparum_ parasite. Understanding the effect of your compounds on different stages of the parasite might be relevant to define their potential applications.
+The model is a classifier that returns the probability of a compound being active (inhibitor).
+
+**MAIP: Antimalarial Activity Prediction** (eos4zfy):
+MAIP (Malaria Inhibitor Predictor) uses a consensus machine learning model to predict compounds with potential blood-stage malaria inhibitory activity. It has been built using a large dataset (~7M compounds) from several private and public sources.
+MAIP returns a score, the higher the score the higher the inhibitory potential. This model posts queries to an online server, if you have IP concerns Ersilia offers a local implementation of the MAIP model (eos2gth).
+
+**Antimalarial activity from OSM** (eos7yti):
+Ersilia has built this antimalarial predictor based on the Open Source Malaria series 4 data. The series 4 is a chemical series with a triazolopyrazine core that have been proposed to inhibit the PfATPase4. 
+The model is a classifier that returns the probability of a compound being active (inhibitor)
+
+**Antimalarial activity from MMV** (eos4rta):
+Ersilia has built this antimalarial predictor based on historic _in vitro_ data from Medicines for Malaria Venture for _P.falciparum_ strain NF54 measured both as percentage of inhibition (with luminescence and LDH) and IC50.
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**H3D virtual screening cascade** (eos7kpb):
+The H3D centre has contributed its historic data on antimalarial and antituberculosis drug discovery pipelines and Ersilia has developed a suite of models with Zairachem, an automated AI/ML tool. Relevant to this use case, the model contains both a classifier of _in vitro_ activity (IC50) against the strains NF54 (drug-sensitive) and K1 (drug-resistant) of _P.falciparum_.
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**Summary**
+
+The Ersilia Model Hub includes a few antimalarial predictors. None of them has been specifically developed based on Natural Products. I therefore recommend using models that have been trained on large datasets, like MAIP, to maximise coverage of the chemical space.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

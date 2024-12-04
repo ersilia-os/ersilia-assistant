@@ -1,0 +1,38 @@
+
+**This is my understanding of your query:**
+
+You want to design new synthetic compounds that target SARS-CoV-2.
+You want to optimize the binding of these compounds to SARS-CoV-2 targets.
+You want to increase diversity in your chemical library.
+You are looking for computational techniques to achieve these goals.
+
+To start your experiments you need initial hits positive for SARS-CoV-2 inhibition. You may want to look at ChEMBL and other databases to find specific inhibitors of targets like the 3CLpro or the Spike protein. 
+From those you can use generative AI approaches to expand the diversity of the library.
+The following models from the Ersilia Model Hub can help you:
+
+**Similarity search in ChEMBL** (eos2a9n):
+Using ECFPs this model looks for the 100 nearest molecules to the input molecule in ChEMBL. The measure used is Tanimoto Similarity.
+
+**GDBMedChem similarity search** (eos7jlv):
+Using ECFPs this model looks for the 100 nearest molecules to the input molecule in GDBMedChem, which has more than 10M compounds. The measure used is Tanimoto Similarity.
+
+**STONED sampler** (eos8fma)
+STONED is a method to introduce modifications to molecules based on SELFIES strings instead of SMILES. It can quickly provide many derivatives from your starting 30 candidates. It will not check for synthetic feasibility or bioavailability.
+
+**MoLeR: extending molecular scaffolds with fragments** (eos9taz)
+Combines fragments from Enamine with the existing scaffold in the dataset. The model has been pretrained with GuacaMol
+
+**REDIAL-2020 Sars-Cov-2 Antiviral Prediction** (eos8fth):
+Redial-2020 has been trained on high-through put screening data from the NCATS COVID-19 portal. It returns the probability that compounds inhibit the viral entry and the viral replication.
+
+**Summary**
+
+From an initial online search, you can expand it by looking for similar molecules in established databases like GDBMedChem, and by using generative techniques. The best way to assess the SARS-CoV-2 target inhibition would be to perform docking experiments. 
+The Ersilia Model Hub does not contain any docking capabilities. I suggest using predictors of activity inhibition instead.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

@@ -1,0 +1,37 @@
+
+**This is my understanding of your query:**
+
+You are looking to use computational methods to propose new derivatives of existing synthetic hits.
+The goal is to enhance the activity of these compounds against tuberculosis.
+You also want to ensure that the new derivatives maintain good pharmacokinetic properties.
+You are seeking a computational approach to achieve this.
+
+A computational approach seems the best method for your problem. You can use molecular generative models to expand your chemical space and assess their properties. The following models from the Ersilia Model Hub can help you:
+
+**STONED sampler** (eos8fma)
+STONED is a method to introduce modifications to molecules based on SELFIES strings instead of SMILES. It can quickly provide many derivatives from your starting 30 candidates. It will not check for synthetic feasibility or bioavailability.
+
+**MoLeR: extending molecular scaffolds with fragments** (eos9taz)
+Combines fragments from Enamine with the existing scaffold in the dataset. The model has been pretrained with GuacaMol
+
+**SAFE Scaffold morphing** (eos8bhe)
+Sequential Attachement-based Fragment Embedding is a GPT-like model that designs new compounds by representing them as interconnected fragments as a language model.
+
+**Antituberculosis activity prediction** (eos9ivc)
+An Ersilia developed model based on a dataset provided by the Seattle's Children Hospital measuring _in vitro_ activiy of small molecules against M.tb (% of inhibition, IC50 and MIC90).
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**H3D virtual screening cascade** (eos7kpb):
+The H3D centre has contributed its historic data on antimalarial and antituberculosis drug discovery pipelines and Ersilia has developed a suite of models with Zairachem, an automated AI/ML tool. Relevant to this use case, the model contains a classifier of _in vitro_ activity (MIC90) against M.tb H37Rv.
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**PhaKinPro: Pharmacokinetics profiler** (eos39dp)
+PhaKinPro predicts 12 pharmacokinetic-related endpoints.
+The model is a classifier that returns the probability of a compound being active  for each assay.
+
+I propose several approaches to generating new compounds, followed by constrainted selection based on desired bioactivity and PK profile.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+ersilia serve <model_id>
+ersilia run -i input.csv -o output.csv

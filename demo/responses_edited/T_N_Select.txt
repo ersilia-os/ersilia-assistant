@@ -1,0 +1,34 @@
+
+**This is my understanding of your query:**
+
+You are looking for natural products that are effective against Mycobacterium tuberculosis.
+The main criterion for these natural products is high permeability across the bacterial membrane.
+You need help designing an experiment to identify and evaluate these natural products.
+
+For your query, I suggest starting from a natural product database like the COCONUT or ANPDB and filter it using the following models from the Ersilia Model Hub
+
+**Antituberculosis activity prediction** (eos9ivc):
+An Ersilia developed model based on a dataset provided by the Seattle's Children Hospital measuring _in vitro_ activiy of small molecules against _M.tb_ (% of inhibition, IC50 and MIC90).
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**H3D virtual screening cascade** (eos7kpb):
+The H3D centre has contributed its historic data on antimalarial and antituberculosis drug discovery pipelines and Ersilia has developed a suite of models with Zairachem, an automated AI/ML tool. Relevant to this use case, the model contains a classifier of _in vitro_ activity (MIC90) against _M.tb_ H37Rv.
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**MycPermCheck: Membrane permeability in Mycobacterium tuberculosis** (eos8d8a):
+_M.tb_ has a thick cell wall and it is challenging for compounds to enter the bacteria. MycPermCheck allows you to predict the permeability across the bacterial cell wall based on physicochemical properties.
+
+**NCATS Parallel Artificial Membrane Permeability Assay (PAMPA) 7** (eos9tyg):
+The National Centre for Advancing Translational Sciences (NCATS) has experimentally determined the permeability of compounds in a surrogate PAMPA assay and used the dataset to train a classifier. The model uses a PH=7.4 (neutral).
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**Summary**
+
+To filter any desired Natural Product database you can use antituberculosis activity predictors. None of them has been specifically developed based on Natural Products. You can further your initial screen by checking broad cell membrane permeability (PAMPA) and specific _M.tb_ permeability (MycPermCheck)
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

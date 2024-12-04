@@ -1,0 +1,39 @@
+
+**This is my understanding of your query:**
+
+You want to prioritize synthetic compounds that target Mycobacterium tuberculosis.
+The strains you are interested in are drug-resistant.
+You want to select these compounds for preclinical studies.
+You are looking for an effective approach to prioritize these compounds.
+
+Your query is amenable for AI/ML modelling. I suggest you filter your library of interest for _M.tb_ activity and additionally check for relevant physicochemical parameters like solubility or cell wall permeation. The following models from the Ersilia Model Hub can help you:
+
+**Antituberculosis activity prediction** (eos9ivc):
+An Ersilia developed model based on a dataset provided by the Seattle's Children Hospital measuring _in vitro_ activiy of small molecules against _M.tb_ (% of inhibition, IC50 and MIC90).
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**H3D virtual screening cascade** (eos7kpb):
+The H3D centre has contributed its historic data on antimalarial and antituberculosis drug discovery pipelines and Ersilia has developed a suite of models with Zairachem, an automated AI/ML tool. Relevant to this use case, the model contains a classifier of _in vitro_ activity (MIC90) against _M.tb_ H37Rv.
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**MycPermCheck: Membrane permeability in Mycobacterium tuberculosis** (eos8d8a):
+_M.tb_ has a thick cell wall and it is challenging for compounds to enter the bacteria. MycPermCheck allows you to predict the permeability across the bacterial cell wall based on physicochemical properties.
+
+**Qcrb Inhibition (M. Tuberculosis)** (eos24jm):
+The cytochrome bcc complex (QcrB) is a suggested target for _M.tb_. This model can help you find compounds that inhibit specifically this target.
+The model will classify compounds in class 1: active, class 2: moerately active, class 3:inactive.
+
+**NCATS Parallel Artificial Membrane Permeability Assay (PAMPA) 7** (eos9tyg):
+The National Centre for Advancing Translational Sciences (NCATS) has experimentally determined the permeability of compounds in a surrogate PAMPA assay and used the dataset to train a classifier. The model uses a PH=7.4 (neutral).
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**Summary**
+
+I suggest using _M.tb_ bioactivity predictors as well as cell membrane permeability tests. The Hub does not have an Mtb model specifically for drug-resistant strains. You can look for specific targets of your molecules, for example Qcrb.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

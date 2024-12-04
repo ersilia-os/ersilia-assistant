@@ -1,0 +1,57 @@
+
+**This is my understanding of your query:**
+
+You have an initial library of 30 compounds isolated from plants with activity against _P.falciparum_.
+You want to use generative models, specifically scaffold hopping, to expand this library.
+The new molecules you want to generate should be easy to synthesize.
+The new molecules should retain the bioactivity against _P.falciparum_.
+
+I propose that you first generate new candidates and then rank them with constraints for _P.falciparum_ activity and synthetic accessibility. 
+Some possible tools and techniques you can use for scaffold hopping include:
+1. Ligand-based virtual screening: This involves using 3D structures of the initial compounds to search for similar molecules in databases or libraries.
+2. Structure-based virtual screening: This involves using the 3D structure of the target protein (in this case, the P. falciparum protein) to search for molecules that bind to it.
+3. Fragment-based design: This involves breaking down the initial compounds into smaller fragments and reassembling them to create new molecules with the desired bioactivity.
+4. Pharmacophore-based design: This involves identifying the key pharmacophores that contribute to the bioactivity of the initial compounds and using these to design new molecules.
+The following models from the Ersilia Model Hub can aid you in this task:
+
+**STONED sampler** (eos8fma):
+STONED is a method to introduce modifications to molecules based on SELFIES strings instead of SMILES. It can quickly provide many derivatives from your starting 30 candidates. It will not check for synthetic feasibility or bioavailability.
+
+**MoLeR: extending molecular scaffolds with fragments** (eos9taz):
+Combines fragments from Enamine with the existing scaffold in the dataset. The model has been pretrained with GuacaMol
+
+**REINVENT4: Libinvent** (eos6ost):
+LibInvent is one of the modalities of REINVENT that appends R groups to the input. The attachement points must be provided or they will be guessed by the model
+
+**Antimalarial activity (ABS and Sexual stages)** (eos80ch): 
+This model predicts both the activity of compounds against both Sexual and Asexual Blood Stages (ABS) of the _P.falciparum_ parasite. Understanding the effect of your compounds on different stages of the parasite might be relevant to define their potential applications.
+The model is a classifier that returns the probability of a compound being active (inhibitor).
+
+**MAIP: Antimalarial Activity Prediction** (eos4zfy):
+MAIP (Malaria Inhibitor Predictor) uses a consensus machine learning model to predict compounds with potential blood-stage malaria inhibitory activity. It has been built using a large dataset (~7M compounds) from several private and public sources.
+MAIP returns a score, the higher the score the higher the inhibitory potential. This model posts queries to an online server, if you have IP concerns Ersilia offers a local implementation of the MAIP model (eos2gth).
+
+**Antimalarial activity from MMV** (eos4rta):
+Ersilia has built this antimalarial predictor based on historic _in vitro_ data from Medicines for Malaria Venture for _P.falciparum_ strain NF54 measured both as percentage of inhibition (with luminescence and LDH) and IC50.
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**Synthetic accessibility score** (eos9ei3):
+The model estimates the synthetic accessibility of a given compound based on its molecular complexity and the presence of certain fragments (based on PubChem)
+Low scores indicate higher synthetic accessibility.
+
+**Retrosynthetic accessibility score** (eos2r5a):
+The model ranks the feasibility of molecules to be synthesised in the lab based on the planning tool AiZynthfinder. It has been trained on ChEMBL data.
+Higher score indicates higher retrosynthetic accessibility
+
+**Natural product score** (eos8ioa):
+An Ersilia implementation of the RdKIT Natural Product score. Higher values indicate higher natural product likeness.
+
+**Summary**
+There is no model in the Ersilia Model Hub that will directly resolve your question. I suggest starting by molecular generation techniques and then filtering candidates based on predicted bioactivity against your target organism and synthetic accessibility. You can be more or less stringent in the filtering criteria. I suggest using a combination of the suggested models.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

@@ -1,0 +1,36 @@
+
+**This is my understanding of your query:**
+
+You want to use the ChemDiv Diversity Set as a starting library for your drug discovery project.
+You are looking for molecules in this library that are least likely to interfere with CYP3A4 metabolism.
+You want these molecules to show selective activity against tuberculosis bacteria.
+You are seeking to minimize the potential for drug-drug interactions and maximize the efficacy of your compounds against the target disease.
+
+ChemDiv Diversity Library is a database of synthetic compounds covering a wide chemical space. It is a good starting point for drug design. The following models in the Ersilia Model Hub can help you:
+
+**Antituberculosis activity prediction** (eos9ivc):
+An Ersilia developed model based on a dataset provided by the Seattle's Children Hospital measuring _in vitro_ activiy of small molecules against _M.tb_ (% of inhibition, IC50 and MIC90).
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**H3D virtual screening cascade** (eos7kpb):
+The H3D centre has contributed its historic data on antimalarial and antituberculosis drug discovery pipelines and Ersilia has developed a suite of models with Zairachem, an automated AI/ML tool. Relevant to this use case, the model contains a classifier of _in vitro_ activity (MIC90) against _M.tb_ H37Rv, and CYP inhibition data.
+The model is a classifier that returns the probability of a compound being active (inhibitor) for each assay.
+
+**Coloring molecules for interaction with CYP3A4** (eos96ia):
+MolGrad is a Message-Passing Graph Neural Network (MPGNN) with explainable features. MolGrad has been used on CYP3A4 inhibition ChEMBL data.
+The model is a classifier that returns the probability of a compound being active (inhibitor).
+
+**NCATS CYP450 metabolism** (eos44zp):
+The National Centre for Advancing Translational Sciences (NCATS) has measured the metabolic stability of compounds due to CYP450 enzyme interaction. NCATS has tested CYP2C9, CYP2D6 and CYP3A4. Those models are also available independently in the Ersilia Model Hub.
+The model is a classifier that returns the probability of a compound being (A) active (inhibitor) and (B) a substrate.
+
+**Summary**
+
+I suggest the following models to start filtering out the ChemDiv Diversity Library and select the best _M.tb_ inhibitors with a good CYP450 non-inhibitory profile.+
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv

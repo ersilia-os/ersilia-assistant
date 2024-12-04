@@ -1,0 +1,38 @@
+
+**This is my understanding of your query:**
+
+You have a library of natural products.
+You are interested in prioritizing these natural products for COVID-19 treatment.
+You want to assess their cytotoxicity and metabolic stability in liver microsomes.
+You are looking for natural products with low cytotoxicity and good metabolic stability.
+
+Your interest is in non-toxic, stable compounds. This is a good approach to find compounds for a single-dosage administration. The following models from the Ersilia Model Hub can help you:
+
+**Human liver microsomal stability** (eos31ve):
+The National Centre for Advancing Translational Sciences (NCATS) takes into account the liver-mediated drug metabolism to assess the stability of a compound in the human body. 
+The model is a classifier that predicts the probability of a molecule being unstable (_in vitro_ half-life; unstable ≤  30 min, stable >30 min)
+
+**Rat liver microsomal stability** (eos5505):
+The National Centre for Advancing Translational Sciences (NCATS) takes into account the liver-mediated drug metabolism to assess the stability of a compound in the human body using rat microsomes as a surrogate. 
+The model is a classifier that predicts the probability of a molecule being unstable (_in vitro_ half-life; unstable ≤  30 min, stable >30 min)
+
+**NCATS CYP450 metabolism** (eos44zp):
+The National Centre for Advancing Translational Sciences (NCATS) has measured the metabolic stability of compounds due to CYP450 enzyme interaction. NCATS has tested CYP2C9, CYP2D6 and CYP3A4. Those models are also available independently in the Ersilia Model Hub.
+The model is a classifier that returns the probability of a compound being (A) active (inhibitor) and (B) a substrate.
+
+**ADMET properties prediction** (eos7d58):
+ADMET-AI offers a suite of ADME-related predictors based on the Therapeutics Data Commons datasets. It can help you identify CYP interactions with your natural products.
+
+**Summary**
+
+You can filter your compounds for specific microsomal stability as well as several other ADMET endpoints, including bioavailability, CYP inhibition and cytotoxicity. 
+Some models are developed using _in vitro_ data from animal models, so the results may not translate into humans. The models have not been developed specifically for the natural product chemical space.
+Once you have identified compounds with good metabolic stability and low cytotoxicity, you can further evaluate their potential as COVID-19 treatments using in vitro and in vivo models.
+To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
+
+ersilia fetch <model_id>
+
+ersilia serve <model_id>
+
+ersilia run -i input.csv -o output.csv
+
