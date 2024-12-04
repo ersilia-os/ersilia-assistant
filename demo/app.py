@@ -7,7 +7,7 @@ from PIL import Image
 root = os.path.dirname(__file__)
 
 # Function for the typing effect
-def type_text(text, placeholder, delay=0.0):
+def type_text(text, placeholder, delay=0.02):
     typed_text = ""
     for char in text:
         typed_text += char
