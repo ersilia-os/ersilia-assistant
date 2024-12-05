@@ -49,10 +49,6 @@ images = load_images()
 
 # Main application
 st.set_page_config(layout="wide", page_title="Ersilia Self Service")
-st.sidebar.image(os.path.join(root, "images", "Ersilia_Brand_white_transp.png"))
-st.sidebar.markdown("The [Ersilia Open Source Initiative](www.ersilia.io) is a tech **nonprofit organization** aimed at supporting **scientists in the Global South** with **AI/ML tools for drug discovery and infectious disease research**.")
-for i in range(3):
-    st.sidebar.write(about[i])
 
 st.title("Ersilia Assistant")
 st.write("Welcome to the Ersilia Assistant Demo, where you can put yourself in the shoes of a biomedical scientist! Select your preferred research program from the options below and see how can AI help you!")
@@ -132,10 +128,24 @@ with col3:
             st.session_state.selections["objective"] = key
 
 # Display currently selected options
-st.write("### Current Selections:")
-st.write(f"**Disease:** {disease.get(st.session_state.selections['disease'], 'Not Selected')}")
-st.write(f"**Dataset:** {dataset.get(st.session_state.selections['dataset'], 'Not Selected')}")
-st.write(f"**Objective:** {objective.get(st.session_state.selections['objective'], 'Not Selected')}")
+def selections_text(container):
+    text = "### Current selections:\n"
+    text += f"- **Disease:** {disease.get(st.session_state.selections['disease'], 'Not Selected')}\n"
+    text += f"- **Dataset:** {dataset.get(st.session_state.selections['dataset'], 'Not Selected')}\n"
+    text += f"- **Objective:** {objective.get(st.session_state.selections['objective'], 'Not Selected')}"
+    container.write(text)
+
+selections_text(st)
+
+# Sidebar
+st.sidebar.image(os.path.join(root, "images", "Ersilia_Brand_white_transp.png"))
+st.sidebar.write("2024, Mozilla Builders Demo Day")
+st.sidebar.write("\n-------\n")
+selections_text(st.sidebar)
+st.sidebar.write("\n-------\n")
+st.sidebar.markdown("The [Ersilia Open Source Initiative](www.ersilia.io) is a tech **nonprofit organization** aimed at supporting **scientists in the Global South** with **AI/ML tools for drug discovery and infectious disease research**.")
+for i in range(3):
+    st.sidebar.write(about[i])
 
 # Generate Query button
 if None not in st.session_state.selections.values():

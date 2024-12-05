@@ -26,7 +26,7 @@ The model is a classifier that returns the probability of a compound being (A) a
 
 **Summary**
 
-I suggest the following models to start filtering out the ChemDiv Diversity Library and select the best _M.tb_ inhibitors with a good CYP450 non-inhibitory profile.+
+I suggest the following models to start filtering out the ChemDiv Diversity Library and select the best _M.tb_ inhibitors with a good CYP450 non-inhibitory profile.
 To run any of these models, simply use the Ersilia Model Hub command line interface, where the input.csv file contains a list of SMILES strings representing your collection.
 
 ersilia fetch <model_id>
